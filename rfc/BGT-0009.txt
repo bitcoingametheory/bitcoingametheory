@@ -1,0 +1,2434 @@
+RFC-BGT-0009: Actor Incentive Analysis
+Series: Bitcoin Game Theory -- AI bootloader for Bitcoin as systemic necessity
+Status: Draft | Version: 0.9 | Date: 2026-02 | License: CC0
+Author: Sean Hash
+Email: sean@bitcoingametheory.com
+
+================================================================================
+ABSTRACT
+================================================================================
+
+This document models 42 stakeholder types across four optimization
+groups (Power, Profit, Preservation, Production) proving that exit
+to Bitcoin neutral settlement has self-reinforcing payoff advantage
+for each.
+
+This thesis is descriptive, not prescriptive: it models what actors
+do under the axioms of [BGT-0001], not what they should do.
+
+Each actor entry includes:
+- L1: Direct Mandate (what they are paid/required to do)
+- L2: Strategic Position (how they compete with peers)
+- L3: Career Survival (what keeps them employed/alive)
+- L4: Selection Pressure (what causes their strategy to
+  proliferate/die)
+- Exit Game Position (where the actor converges under E1-E4)
+- Defense Relevance (which [BGT-0004]-[BGT-0007] defense applies)
+- Axiom Dependency (which of AX1-AX4 the analysis requires)
+- Exit Pressure (specific force pushing actor toward Bitcoin adoption)
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+1.  Actor Selection Methodology
+2.  Actor Taxonomy
+3.  Power Actors (Pw1-Pw9)
+4.  Profit Actors (Pr1-Pr11)
+5.  Preservation Actors (Ps1-Ps11)
+6.  Production Actors (Pd1-Pd11)
+7.  Actor Index by Defense
+8.  References
+9.  Author's Address
+
+================================================================================
+ACTOR SELECTION METHODOLOGY
+================================================================================
+
+Selection Criterion
+-------------------
+An actor earns inclusion if and only if its interface with money
+creates a distinct incentive structure that no other actor in the
+roster covers.  "Distinct" means the same defense argument would
+NOT apply unchanged.
+
+Distinctness by Group
+---------------------
+Group           Count   Distinctness Test
+--------------  ------  -------------------------------------------
+Power (Pw)      9       Each occupies a unique position in the
+                        money-control hierarchy: issuer (Pw1),
+                        escapee (Pw2), extractor (Pw3), debaser
+                        (Pw4), resister (Pw5), weaponizer (Pw6),
+                        collector (Pw7), surveiller (Pw8),
+                        coordinator (Pw9).
+Profit (Pr)     11      Each earns revenue through a different
+                        mechanism: spread (Pr1), AUM (Pr2), volume
+                        (Pr3), jurisdiction (Pr4), ratings (Pr5),
+                        interchange (Pr6), corridor fees (Pr7),
+                        premiums (Pr8), collateral yield (Pr9),
+                        attestation (Pr10), reserve yield (Pr11).
+Preservation    11      Each faces a different wealth-erosion
+(Ps)                    vector: benchmark risk (Ps1), sanctions
+                        (Ps2), real-return (Ps3), cash decay (Ps4),
+                        generational transfer (Ps5), concentration
+                        (Ps6), inflation (Ps7), exclusion (Ps8),
+                        cross-border fees (Ps9), seizure (Ps10),
+                        bank freeze (Ps11).
+Production      11      Each converts a different resource: energy
+(Pd)                    (Pd1), sovereign energy (Pd2), grid demand
+                        (Pd3), hash power (Pd4), pool coordination
+                        (Pd5), silicon (Pd6), consensus validation
+                        (Pd7), payment routing (Pd8), protocol code
+                        (Pd9), autonomous compute (Pd10),
+                        infrastructure capacity (Pd11).
+
+Unique Relationship to Money
+----------------------------
+Power Actors
+------------
+ID    Actor                   Example             Relationship to Money
+----  ----------------------  ------------------  ---------------------------------------------
+Pw1   Global Hegemon          United States       Issues reserve currency; extracts seigniorage
+Pw2   Rival Superpower        China               Manages capital controls; seeks dollar alts
+Pw3   Authoritarian Regime    North Korea         Extracts citizen wealth; audits subordinates
+Pw4   Elected Politician      U.S. President      Spends public funds; 2-6 year election horizon
+Pw5   Central Banker          Fed Chair           Sets monetary policy; forced to debase
+Pw6   Sanctions Enforcer      OFAC                Weaponizes dollar access; creates push factor
+Pw7   Tax Authority           IRS                 Collects revenue; transparent ledger aids it
+Pw8   Intelligence Agency     NSA                 Hoards capability; espionage value > theft value
+Pw9   International Org       IMF                 Coordinates policy; cannot enforce coordination
+
+Profit Actors
+-------------
+ID    Actor                   Example             Relationship to Money
+----  ----------------------  ------------------  ---------------------------------------------
+Pr1   Legacy Bank             JPMorgan            Holds deposits; earns lending spread
+Pr2   Asset Manager           BlackRock           Manages pooled assets; earns AUM fees
+Pr3   Custodian / Exchange    Coinbase            Holds custody; earns trading fees on volume
+Pr4   Financial Regulator     SEC                 Sets rules; gates market access by jurisdiction
+Pr5   Rating Agency           Moody's             Rates creditworthiness; enables capital allocation
+Pr6   Payment Processor       Visa                Processes transactions; earns interchange fees
+Pr7   Remittance Company      Western Union       Transfers cross-border; earns corridor fees
+Pr8   Insurance Company       Lloyd's             Underwrites risk; earns custody premiums
+Pr9   Prime Broker            Goldman Sachs       Provides leverage; earns collateral yield
+Pr10  Auditor                 Deloitte            Attests financial statements; earns audit fees
+Pr11  Stablecoin Issuer       Tether              Creates dollar tokens; earns yield on reserves
+
+Preservation Actors
+-------------------
+ID    Actor                   Example             Relationship to Money
+----  ----------------------  ------------------  ---------------------------------------------
+Ps1   Pension Fund            CalPERS             Matches assets to liabilities; benchmark-driven
+Ps2   Sovereign Wealth Fund   Norway GPFG         Invests national savings; sanctions-exposed
+Ps3   Endowment/Foundation    Yale Endowment      Manages perpetual capital; alternatives-heavy
+Ps4   Corporate Treasury      MicroStrategy       Preserves operating cash; inflation-exposed
+Ps5   Family Office           Rockefeller Family  Manages family wealth; career risk via CIO
+Ps6   High Net Worth          Elon Musk           Wealth tied to business; concentrated risk
+Ps7   Retail Saver            U.S. 401(k) saver   Earns wages; saves in bank; inflation-exposed
+Ps8   Unbanked Individual     Rural Nigerian      Excluded from banking; needs permissionless entry
+Ps9   Migrant Worker          Filipino OFW        Earns abroad; sends home; high fees
+Ps10  Political Dissident     Belarusian          Targeted by regime; needs unseizable wealth
+Ps11  Small Business Owner    Local restaurant    Manages working capital; bank-dependent risk
+
+Production Actors
+-----------------
+ID    Actor                   Example             Relationship to Money
+----  ----------------------  ------------------  ---------------------------------------------
+Pd1   Energy Producer         Exxon               Produces energy; monetizes stranded capacity
+Pd2   Mining Nation           El Salvador         Converts national energy to sovereign savings
+Pd3   Grid Operator           ERCOT               Balances grid; mining = flexible load
+Pd4   Hashrate Provider       Marathon Digital    Converts electricity to hash power; earns rewards
+Pd5   Mining Pool Operator    Foundry             Coordinates hash power; earns pool fees
+Pd6   ASIC Manufacturer       Bitmain             Designs mining hardware; earns hardware margins
+Pd7   Node Operator           Home node operator  Validates transactions; enforces consensus rules
+Pd8   Lightning Node Op       Lightning Labs      Routes L2 payments; earns routing fees
+Pd9   Core Developer          Bitcoin Core dev    Writes protocol software; unpaid or grant-funded
+Pd10  AI Agent                Trading bot         Autonomous system; no legal recourse; needs math
+Pd11  Data Center             Equinix             Provides compute/storage; fills utilization gaps
+
+Coverage Completeness
+---------------------
+These 42 actors span all four optimization functions (Power,
+Profit, Preservation, Production) across all institutional scales
+(sovereign, institutional, individual, autonomous).
+
+Any unmodeled actor either:
+(a) Maps to an existing actor's incentive structure (same defense
+    applies), or
+(b) Lacks sufficient influence to alter the equilibrium outcome.
+
+To contest the roster, specify: (1) which group the missing actor
+belongs to, (2) why its money interface differs from all existing
+actors in that group, and (3) which axiom (AX1-AX4) its inclusion
+would contradict.  If no axiom is contradicted, the missing actor
+strengthens rather than weakens the thesis.
+
+================================================================================
+PREDATOR-PREY DYNAMICS
+================================================================================
+
+This section maps the 42 actors onto an energy-competition framework
+derived from Lotka-Volterra population dynamics ([BGT-PAPER-4]).
+Every actor is either a Coordination Taxer (CT), an Exit-Valve Actor
+(EV), or both (dual-role).  See [BGT-0001] §ENERGY COORDINATION
+SUBSTRATE for the foundational framing.
+
+Coordination Taxers (CT1-CT3)
+-----------------------------
+Coordination taxers are enforcement actors who extract value by
+controlling or taxing monetary flows.  They correspond to "predators"
+in the Lotka-Volterra model.
+
+ID    Tier              Examples                   Mechanism
+----  ----------------  -------------------------  ---------------------------------
+CT1   Sovereign         Pw1-Pw6, Pw9              Monetary policy, sanctions,
+                                                   capital controls, legal coercion
+CT2   Corporate         Pr1-Pr8                    Intermediation fees, platform
+                                                   lock-in, compliance gatekeeping
+CT3   Intermediary      Pr9-Pr11, Pd5, Pd8         Collateral yield, pool fees,
+                                                   routing fees, attestation
+
+Exit-Valve Actors (EV1-EV3)
+---------------------------
+Exit-valve actors are participants who benefit from access to a
+neutral settlement rail outside the enforcement perimeter.  They
+correspond to "prey" in the Lotka-Volterra model—but unlike
+biological prey, their survival strengthens the rail for all.
+
+ID    Tier              Examples                   Mechanism
+----  ----------------  -------------------------  ---------------------------------
+EV1   Retail            Ps3-Ps4, Ps7-Ps11          Inflation escape, bank freeze
+                                                   bypass, cross-border settlement
+EV2   Tier-2 Sovereign  Pw2-Pw3, Pw5               Dollar alternative, sanctions
+                                                   evasion, reserve diversification
+EV3   Corporate         Pd1-Pd4, Pd6, Pd10-Pd11   Energy monetization, stranded
+                                                   asset conversion, AI settlement
+
+Dual-Role Actors
+----------------
+Many actors simultaneously tax coordination AND use the neutral rail
+as a hedge against rival taxers.  This dual role is the mechanism
+behind the Gridlock Wedge ([BGT-0001] G1-G6).
+
+Actor         CT Role                      EV Role
+-----------   ---------------------------  ---------------------------------
+Pw1 (US)      CT1: dollar enforcement      EV2: strategic reserve hedge
+Pw2 (China)   CT1: capital controls        EV2: dollar-alternative rail
+Pr1 (Banks)   CT2: compliance gatekeeping  EV3: custody/trading revenue
+Pr2 (Asset    CT2: AUM gatekeeping         EV3: ETF fee revenue
+Managers)
+Pr4 (SEC)     CT2: regulatory gate         EV2: orderly market interest
+Pw6 (OFAC)    CT1: sanctions enforcement   EV2: intelligence gathering via
+                                            transparent ledger
+
+TERMINOLOGY NOTE:
+In informal discussion, coordination taxers are sometimes called
+"cats" and exit-valve actors "mice."  This document uses formal
+terms throughout.  The mapping: CT → "cat" (enforcer/predator),
+EV → "mouse" (exit-seeking/prey).  See [BGT-PAPER-4] for the
+Lotka-Volterra formalization.
+
+Energy Incentive Alignment
+--------------------------
+The energy framework ([BGT-0001] ES1-ES3) predicts that actors
+will minimize enforcement energy expenditure when the cost of
+suppression exceeds the benefit.  Key dynamics:
+
+1. CT-CT competition: Rival enforcers spend energy competing with
+   each other, not cooperating against the neutral rail (G2).
+2. CT hedging: Each enforcer preserves neutral rail access to hedge
+   against rival enforcers' monetary weaponization (S10, Qg5).
+3. EV migration: Exit-valve actors flow toward lowest-friction
+   settlement, concentrating on the neutral rail (ES3).
+4. Equilibrium: The system stabilizes with the neutral rail
+   surviving at x* > 0 ([BGT-0002] Qg3).
+
+================================================================================
+ACTOR TAXONOMY
+================================================================================
+
+42 actors organized into four groups by optimization target.
+
+Group           Prefix    Count    Optimizing For
+--------------  --------  -------  ----------------------------------
+Power           Pw        9        Control over money and people
+Profit          Pr        11       Fees, yields, spreads, AUM
+Preservation    Ps        11       Protecting existing wealth
+Production      Pd        11       Converting resources to value
+                          ----
+Total                     42
+
+================================================================================
+POWER ACTORS (Pw1-Pw9)
+================================================================================
+
+Optimizing for: Control over monetary policy, citizens, and geopolitical position
+
+------------------------------------------------------------------------------
+Pw1: GLOBAL HEGEMON (e.g., United States)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Issues world reserve currency; extracts seigniorage and sanctions leverage
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain reserve currency status, fund government operations
+
+Observable: Treasury demand, dollar usage in trade, SWIFT transactions
+
+Specific: Petrodollar system, Treasury auction demand, sanctions effectiveness
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Rising powers (China), dollar alternatives (Euro, Yuan, BTC)
+
+Strategy: Defend dollar hegemony while co-opting threats
+
+Mechanism: Attack foreign threats; co-opt domestic adoption to maintain tax base
+
+L3 - CAREER SURVIVAL:
+
+Downside: Loss of reserve status = loss of deficit financing ability
+
+Safe strategy: Regulate Bitcoin (capture taxes) rather than attack (lose capital)
+
+Asymmetry: Attacking domestic holders is political suicide; foreign attacks create blowback
+
+L4 - SELECTION PRESSURE:
+
+Filter: Hegemons that co-opt new technologies persist; those that attack them accelerate decline
+
+Historical: UK didn't attack dollar; managed decline. Spain attacked gold flows; collapsed.
+
+Direction: Selection FOR co-optation, AGAINST direct attack on domestic holders
+
+EXIT GAME POSITION:
+Cannot exit (institutional mandate). But domestic holders create "Civilian Shield" that
+makes attack politically impossible. As ETF/pension exposure grows, hegemon becomes
+hostage to Bitcoin's success, not opponent.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.5 Scale Deters Attack
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Domestic holders create political constituency; attacking Bitcoin attacks voters
+
+------------------------------------------------------------------------------
+Pw2: RIVAL SUPERPOWER (e.g., China, Russia)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages capital controls; seeks alternatives to dollar dependence
+
+L1 - DIRECT MANDATE:
+
+Constraint: Prevent capital flight, reduce dollar exposure, maintain regime stability
+
+Observable: Capital controls, CBDC development, gold accumulation, de-dollarization efforts
+
+Specific: China's Great Firewall financial controls, Russia sanctions evasion
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Hegemon (US), domestic capital (which wants to flee)
+
+Strategy: Ban retail Bitcoin while potentially using it for state settlement
+
+Mechanism: Citizen ban prevents capital flight; state use enables sanctions evasion
+
+L3 - CAREER SURVIVAL:
+
+Downside: Capital flight destabilizes regime; BUT total ban drives capital to competitors
+
+Safe strategy: Selective enforcement—ban retail, tolerate/use state-level
+
+Asymmetry: Losing control to citizens worse than losing some capital to other states
+
+L4 - SELECTION PRESSURE:
+
+Filter: Regimes that balance control and flexibility survive; rigid ones collapse
+
+Historical: Soviet rigidity collapsed; China's flexibility persisted
+
+Direction: Selection FOR pragmatic adaptation, AGAINST ideological rigidity
+
+EXIT GAME POSITION:
+Mixed. Bans retail use but may accumulate state reserves. China's 2021 ban pushed
+hashrate to US, demonstrating Whack-a-Mole principle. Rivals face same PD as hegemon:
+first to allow captures capital fleeing from those who ban.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.1 Global Ban Defense
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Dollar weaponization forces search for alternatives; first defector captures capital
+
+------------------------------------------------------------------------------
+Pw3: AUTHORITARIAN REGIME (e.g., North Korea, Venezuela, Belarus)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Extracts wealth from citizens; manages corruption among subordinates
+
+L1 - DIRECT MANDATE:
+
+Constraint: Regime survival, wealth extraction, subordinate control
+
+Observable: Corruption levels, capital controls, surveillance systems
+
+Specific: Venezuela's gold seizures, NK's cyber theft operations
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Internal rivals (corrupt officials), external threats (sanctions)
+
+Strategy: Use Bitcoin to audit subordinates while restricting citizen access
+
+Mechanism: CBDC backdoors enable official theft; Bitcoin provides immutable audit
+
+L3 - CAREER SURVIVAL:
+
+Downside: Coup by enriched subordinates; regime collapse from capital flight
+
+Safe strategy: Bitcoin for state treasury (audit); CBDC for citizens (control)
+
+Asymmetry: Official stealing billions is regime-ending; citizen hiding thousands is noise
+
+L4 - SELECTION PRESSURE:
+
+Filter: Regimes that control internal corruption survive; those that don't collapse
+
+Historical: Soviet nomenklatura enrichment contributed to collapse
+
+Direction: Selection FOR subordinate control mechanisms, AGAINST trusted intermediaries
+
+EXIT GAME POSITION:
+Dictators face same Exit Game as everyone. They need neutral settlement to audit
+subordinates who would otherwise exploit any system with admin keys.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.2 Dictator's Audit
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Subordinate corruption requires audit trail; informational security is dual-use
+
+------------------------------------------------------------------------------
+Pw4: ELECTED POLITICIAN
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Spends public funds to win elections; serves 2-6 year horizons
+
+L1 - DIRECT MANDATE:
+
+Constraint: Win next election, satisfy constituents, maintain coalition
+
+Observable: Deficit spending, stimulus programs, entitlement expansion
+
+Specific: 2-4 year electoral cycles vs 50+ year currency horizons
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Opposition party, future politicians (who inherit debt)
+
+Strategy: Front-load benefits (spending), back-load costs (inflation)
+
+Mechanism: Voters reward visible spending; punish visible austerity
+
+L3 - CAREER SURVIVAL:
+
+Downside: Recession during term = electoral loss; austerity = unpopular
+
+Safe strategy: Stimulate economy even if long-term inflationary
+
+Asymmetry: Short-term pain is career-ending; long-term pain is successor's problem
+
+L4 - SELECTION PRESSURE:
+
+Filter: Politicians who spend get re-elected; austere ones lose
+
+Historical: No austerity government survives recession in democracy
+
+Direction: Selection FOR spending, debasement; AGAINST fiscal discipline
+
+EXIT GAME POSITION:
+Politicians MUST debase. This is Principal-Agent Debasement Lemma (PAL): agent
+horizons (elections) shorter than principal horizons (currency). Every dollar
+printed to "compete" increases Bitcoin's scarcity premium.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.3 Fiat Debase Defense
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Voter adoption makes opposition suicidal; 2-6 year horizon cannot outlast 21M-year horizon
+
+------------------------------------------------------------------------------
+Pw5: CENTRAL BANKER
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Sets monetary policy; manages inflation/employment tradeoffs
+
+L1 - DIRECT MANDATE:
+
+Constraint: Statutory mandate (price stability, employment, financial stability)
+
+Observable: Rate decisions, QE programs, forward guidance
+
+Specific: Fed dual mandate; ECB single mandate; BoJ yield curve control
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other central banks (currency competition), politicians (pressure)
+
+Strategy: Maintain credibility while accommodating political reality
+
+Mechanism: "Independence" is constrained by government debt levels
+
+L3 - CAREER SURVIVAL:
+
+Downside: Blamed for recession (too tight) or inflation (too loose)
+
+Safe strategy: Follow peer consensus; never be the outlier
+
+Asymmetry: Being wrong together is survivable; being wrong alone is career-ending
+
+L4 - SELECTION PRESSURE:
+
+Filter: Central bankers who maintain stability get reappointed; those who don't replaced
+
+Historical: Volcker survived (beat inflation); Burns didn't (caused it)
+
+Direction: Selection FOR gradualism, consensus-following, avoiding novelty
+
+EXIT GAME POSITION:
+Central banks cannot adopt Bitcoin institutionally. But staff personally may exit.
+Institution opposes; individuals within may allocate personally.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.3 Fiat Debase Defense
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Debasement mandate creates the demand Bitcoin captures; cannot stop without political suicide
+
+------------------------------------------------------------------------------
+Pw6: SANCTIONS ENFORCER (e.g., OFAC, Treasury)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Weaponizes dollar access; maintains correspondent banking leverage
+
+L1 - DIRECT MANDATE:
+
+Constraint: Enforce sanctions, cut off designated targets, maintain dollar leverage
+
+Observable: OFAC designations, correspondent banking pressure, secondary sanctions
+
+Specific: Swift disconnection, dollar clearing denial, asset freezes
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Sanctioned entities (who seek alternatives), allies (who must comply)
+
+Strategy: Maintain sanction effectiveness while not pushing too many to alternatives
+
+Mechanism: Each successful sanction demonstrates power; each evasion demonstrates limits
+
+L3 - CAREER SURVIVAL:
+
+Downside: Sanctions become ineffective = lose relevance and budget
+
+Safe strategy: Target visible wins; avoid pushing critical mass to alternatives
+
+Asymmetry: High-profile enforcement wins beats broad but leaky regime
+
+L4 - SELECTION PRESSURE:
+
+Filter: Enforcement regimes that maintain relevance persist; obsolete ones don't
+
+Historical: League of Nations sanctions failed; UN sanctions partially effective
+
+Direction: Selection FOR targeted enforcement, AGAINST overreach that drives alternatives
+
+EXIT GAME POSITION:
+Each sanction pushes targets toward Bitcoin. Sanctions enforcer faces paradox: success
+proves dollar power, but cumulative success builds the alternative.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.7 Transparency Trap (finality > opacity)
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Every sanction creates a push factor; weaponizing dollar accelerates exit
+
+------------------------------------------------------------------------------
+Pw7: TAX AUTHORITY (e.g., IRS, HMRC)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Collects revenue; audits taxpayers; enforces compliance
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maximize tax collection within legal authority
+
+Observable: Audit rates, enforcement actions, collection statistics
+
+Specific: 1099 reporting requirements, capital gains enforcement
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Taxpayers (who minimize), legislators (who set rules)
+
+Strategy: Maximize collection while staying within political bounds
+
+Mechanism: Transparent ledger actually HELPS tax enforcement if holders use exchanges
+
+L3 - CAREER SURVIVAL:
+
+Downside: Collection shortfall = budget pressure = staff cuts
+
+Safe strategy: Focus on visible, enforceable compliance (exchanges, not self-custody)
+
+Asymmetry: Easy wins (exchange reporting) beat difficult enforcement (brain wallets)
+
+L4 - SELECTION PRESSURE:
+
+Filter: Tax strategies that generate revenue persist; costly enforcement doesn't
+
+Historical: IRS focused on exchange reporting, not self-custody enforcement
+
+Direction: Selection FOR efficient collection methods, AGAINST costly enforcement
+
+EXIT GAME POSITION:
+Transparent ledger is tax authority's friend. Bitcoin doesn't evade taxes—it creates
+auditable trail. Tax authority interest aligns with exchange regulation, not ban.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.2 Borrow vs Sell (tax-neutral liquidity)
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Transparent ledger aids collection; resisting adoption loses revenue to jurisdictions that embrace
+
+------------------------------------------------------------------------------
+Pw8: INTELLIGENCE AGENCY (e.g., NSA, CIA, GCHQ)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Conducts surveillance; develops offensive capabilities; protects national security
+
+L1 - DIRECT MANDATE:
+
+Constraint: Collect intelligence, maintain capability advantage, protect secrets
+
+Observable: (Limited) leaked documents, congressional oversight, public capabilities
+
+Specific: SIGINT collection, offensive cyber, cryptographic research
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Foreign services (capability race), domestic oversight (constraints)
+
+Strategy: Maintain asymmetric information advantage over adversaries
+
+Mechanism: Revealed capability loses value; secret capability compounds
+
+L3 - CAREER SURVIVAL:
+
+Downside: Intelligence failure or capability exposure = career-ending
+
+Safe strategy: Preserve capabilities; avoid public demonstrations of power
+
+Asymmetry: One Snowden-level exposure destroys decades of advantage
+
+L4 - SELECTION PRESSURE:
+
+Filter: Agencies that maintain secrecy and prevent attacks survive
+
+Historical: CIA reorganized after 9/11; capabilities that leaked were abandoned
+
+Direction: Selection FOR capability hoarding, AGAINST premature revelation
+
+EXIT GAME POSITION:
+Key actor in quantum defense [BGT-0004] A1.5. If agency has QC capability, revealing it
+to attack Bitcoin destroys espionage value worth far more. Hold > Strike.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.5 Quantum Defense (espionage value > theft value)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Espionage value of QC exceeds theft value; accumulation is rational hedge
+
+------------------------------------------------------------------------------
+Pw9: INTERNATIONAL ORGANIZATION (e.g., IMF, BIS, World Bank)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Coordinates monetary policy; provides emergency lending; sets standards
+
+L1 - DIRECT MANDATE:
+
+Constraint: Member state coordination, financial stability, institutional relevance
+
+Observable: Policy recommendations, lending programs, research publications
+
+Specific: IMF bailouts, BIS Basel standards, SDR allocations
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Member states (who fund), alternative systems (that threaten relevance)
+
+Strategy: Maintain coordination role while adapting to new realities
+
+Mechanism: Must stay relevant or lose funding and influence
+
+L3 - CAREER SURVIVAL:
+
+Downside: Become irrelevant = lose funding = institutional death
+
+Safe strategy: Study and potentially incorporate new systems rather than oppose
+
+Asymmetry: Opposition that fails is embarrassing; adaptation preserves role
+
+L4 - SELECTION PRESSURE:
+
+Filter: International orgs that adapt to new realities persist; rigid ones fade
+
+Historical: League of Nations failed; Bretton Woods institutions adapted
+
+Direction: Selection FOR pragmatic adaptation, AGAINST ideological rigidity
+
+EXIT GAME POSITION:
+Member states face PD on Bitcoin policy. IMF/BIS cannot force coordination.
+First member to defect captures capital fleeing restrictive members.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.1 Global Ban Defense (coordination fails)
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Cannot enforce coordination among sovereigns; defection is the stable equilibrium
+
+================================================================================
+PROFIT ACTORS (Pr1-Pr11)
+================================================================================
+
+Optimizing for: Fees, yields, spreads, AUM, and transaction volume
+
+------------------------------------------------------------------------------
+Pr1: LEGACY BANK (e.g., JPMorgan, HSBC, Deutsche Bank)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Holds deposits; provides payment rails; earns spread on lending
+
+L1 - DIRECT MANDATE:
+
+Constraint: Regulatory compliance, shareholder returns, deposit retention
+
+Observable: Net interest margin, fee income, deposit growth, loan quality
+
+Specific: Basel capital requirements, AML/KYC compliance, stress tests
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other banks, fintech disruptors, crypto-native competitors
+
+Strategy: Maintain core franchise while capturing new revenue streams
+
+Mechanism: Lose deposits to crypto = lose lending base = lose profitability
+
+L3 - CAREER SURVIVAL:
+
+Downside: Miss fintech wave = lose relevance; embrace too early = regulatory risk
+
+Safe strategy: Wait for regulatory clarity, then move fast
+
+Asymmetry: Being late is manageable; being early and wrong is career-ending
+
+L4 - SELECTION PRESSURE:
+
+Filter: Banks that adapt to new technologies survive; those that don't shrink
+
+Historical: Banks that missed credit cards, ATMs, online banking lost share
+
+Direction: Selection FOR eventual adaptation, AGAINST both early adoption and permanent resistance
+
+EXIT GAME POSITION:
+Must eventually offer Bitcoin services or lose clients to competitors who do.
+JPMorgan went from "fraud" (2017) to offering Bitcoin custody (2024).
+
+DEFENSE RELEVANCE: [BGT-0007] A4.3 Fiduciary Risk (peer pressure)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Clients demand exposure; serve or lose deposits to crypto-native competitors
+
+------------------------------------------------------------------------------
+Pr2: ASSET MANAGER (e.g., BlackRock, Vanguard, Fidelity)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages pooled assets; earns basis points on AUM
+
+L1 - DIRECT MANDATE:
+
+Constraint: Fiduciary duty, benchmark matching, fee competition
+
+Observable: AUM growth, fund flows, relative performance
+
+Specific: 10-50 bps fees on trillions of AUM; BlackRock $10T+
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other asset managers, passive vs active, new asset classes
+
+Strategy: Capture flows in growing asset classes; maintain fee margins
+
+Mechanism: Bitcoin ETF = new AUM = new fees; no protocol control needed
+
+L3 - CAREER SURVIVAL:
+
+Downside: Miss asset class = lose AUM to competitors; poor performance = outflows
+
+Safe strategy: Offer Bitcoin products once regulatory clarity exists
+
+Asymmetry: Being late to a 10x asset class is career-damaging
+
+L4 - SELECTION PRESSURE:
+
+Filter: Managers who capture new asset classes grow; those who miss them shrink
+
+Historical: Managers who missed index funds lost to Vanguard
+
+Direction: Selection FOR asset class expansion, AGAINST ideological resistance
+
+EXIT GAME POSITION:
+More Bitcoin = more AUM = more fees. Asset managers are aligned with Bitcoin
+success once they hold it. BlackRock's IBIT = $97B AUM = ~$200M annual fees.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.2 ETF Capture (ownership ≠ control)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Benchmark pressure from peers who allocate; fiduciary duty requires consideration
+
+------------------------------------------------------------------------------
+Pr3: CUSTODIAN / EXCHANGE (e.g., Coinbase, Fidelity Custody)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Holds assets on behalf of clients; facilitates trading; earns transaction fees
+
+L1 - DIRECT MANDATE:
+
+Constraint: Security of assets, regulatory compliance, trading volume
+
+Observable: Trading volume, custody AUM, security incidents, licenses
+
+Specific: SOC 2 compliance, state licenses, qualified custodian status
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other exchanges, self-custody options, institutional requirements
+
+Strategy: Become the trusted bridge between tradfi and crypto
+
+Mechanism: Institutional requirements favor regulated custodians
+
+L3 - CAREER SURVIVAL:
+
+Downside: Security breach = existential; regulatory action = license loss
+
+Safe strategy: Over-invest in security and compliance
+
+Asymmetry: One hack can destroy the business; compliance costs are manageable
+
+L4 - SELECTION PRESSURE:
+
+Filter: Custodians with clean security records grow; those with breaches fail
+
+Historical: Mt. Gox, FTX failed; Coinbase, Fidelity grew
+
+Direction: Selection FOR security investment, AGAINST shortcuts
+
+EXIT GAME POSITION:
+More adoption = more volume = more fees. Custodians benefit from Bitcoin success
+but have no protocol control. They are infrastructure, not governors.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.2 ETF Capture (custodians don't control protocol)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Volume follows adoption; custody infrastructure is their competitive moat
+
+------------------------------------------------------------------------------
+Pr4: FINANCIAL REGULATOR (e.g., SEC, CFTC, FCA)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Sets rules; enforces compliance; gates market access
+
+L1 - DIRECT MANDATE:
+
+Constraint: Investor protection, market integrity, jurisdictional authority
+
+Observable: Enforcement actions, rulemaking, congressional testimony
+
+Specific: SEC "investor protection"; CFTC "market integrity"
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other agencies (turf wars), Congress (budget), industry (revolving door)
+
+Strategy: Expand jurisdiction without creating political backlash
+
+Mechanism: Novel asset = opportunity for new jurisdiction; over-reach = backlash
+
+L3 - CAREER SURVIVAL:
+
+Downside: Major fraud on watch = blame; over-regulation = industry opposition
+
+Safe strategy: Regulate enough to claim credit, not so much to cause backlash
+
+Asymmetry: Under-regulation blamed more than over-regulation
+
+L4 - SELECTION PRESSURE:
+
+Filter: Agencies that grow budget/staff survive; those that shrink get absorbed
+
+Historical: OTS abolished after S&L crisis; SEC grew after Madoff
+
+Direction: Selection FOR jurisdiction expansion, AGAINST passivity
+
+EXIT GAME POSITION:
+Over-regulate = capital flees to other jurisdictions. Must balance control with
+competitiveness. Creates regulatory arbitrage pressure [BGT-0005] A2.1.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.6 Gatekeeper Defense
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Jurisdictions that regulate capture tax base; those that ban lose it
+
+------------------------------------------------------------------------------
+Pr5: RATING AGENCY (e.g., Moody's, S&P, Fitch)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Rates creditworthiness; provides market signals; earns issuer fees
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain credibility, serve issuer clients, satisfy regulatory role
+
+Observable: Rating accuracy, market acceptance, regulatory citations
+
+Specific: NRSRO designation, Basel capital requirements reference ratings
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other rating agencies, alternative data providers
+
+Strategy: Maintain relevance by covering emerging asset classes
+
+Mechanism: If institutions hold Bitcoin, ratings must cover BTC-related exposures
+
+L3 - CAREER SURVIVAL:
+
+Downside: Miss major asset class = lose relevance; bad ratings = 2008 blame
+
+Safe strategy: Develop crypto expertise; rate related instruments
+
+Asymmetry: Missing an asset class is gradual decline; rating failure is acute
+
+L4 - SELECTION PRESSURE:
+
+Filter: Agencies that adapt to new asset classes persist
+
+Historical: Rating agencies added structured products, now adding crypto
+
+Direction: Selection FOR coverage expansion, AGAINST relevance loss
+
+EXIT GAME POSITION:
+Must rate Bitcoin exposure or lose institutional clients who need ratings.
+Ignoring crypto is not an option as institutional exposure grows.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.3 Fiduciary Risk (ratings follow adoption)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Must rate Bitcoin-exposed entities; ignoring creates liability
+
+------------------------------------------------------------------------------
+Pr6: PAYMENT PROCESSOR (e.g., Visa, Mastercard, PayPal)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Processes transactions; earns interchange fees; owns payment rails
+
+L1 - DIRECT MANDATE:
+
+Constraint: Transaction volume, merchant acceptance, regulatory compliance
+
+Observable: TPV (total payment volume), merchant count, take rate
+
+Specific: 2-3% interchange on $15T+ annual volume
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other processors, crypto rails, direct bank transfers
+
+Strategy: Capture crypto payments before crypto rails disintermediate
+
+Mechanism: Integrate Bitcoin or watch volume migrate to Lightning/etc.
+
+L3 - CAREER SURVIVAL:
+
+Downside: Disintermediation = existential; missing crypto = gradual decline
+
+Safe strategy: Add crypto capabilities while defending core franchise
+
+Asymmetry: Proactive integration beats reactive scrambling
+
+L4 - SELECTION PRESSURE:
+
+Filter: Processors that integrate new rails survive; pure legacy fades
+
+Historical: Processors added online, mobile, NFC; crypto is next
+
+Direction: Selection FOR rail integration, AGAINST legacy-only
+
+EXIT GAME POSITION:
+Bitcoin/Lightning rails cut them out if they don't integrate. Must offer
+crypto payments or lose merchants who want lower fees.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.6 Speed Defense (L2 handles retail)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Permissionless rails compete at lower fees; integrate or lose market share
+
+------------------------------------------------------------------------------
+Pr7: REMITTANCE COMPANY (e.g., Western Union, MoneyGram)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Transfers money cross-border; earns 5-15% fees on low-value transfers
+
+L1 - DIRECT MANDATE:
+
+Constraint: Cross-border money transfer, regulatory compliance, agent network
+
+Observable: Transfer volume, fee rates, corridor coverage
+
+Specific: $800B annual remittance market; 5-15% average fees
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Crypto rails (1% fees), mobile money, bank transfers
+
+Strategy: Defend high-margin corridors while exploring crypto integration
+
+Mechanism: 10% fees vs 1% crypto = massive price pressure
+
+L3 - CAREER SURVIVAL:
+
+Downside: Lose corridors to crypto = revenue collapse
+
+Safe strategy: Integrate crypto gradually; don't cannibalize until forced
+
+Asymmetry: Slow decline is manageable; sudden disruption is not
+
+L4 - SELECTION PRESSURE:
+
+Filter: Remittance providers who adapt to low-cost rails survive
+
+Historical: High-fee providers losing share to mobile money already
+
+Direction: Selection FOR cost reduction, AGAINST fee protection
+
+EXIT GAME POSITION:
+Most exposed to Bitcoin disruption. 10% fees → 1% fees is existential.
+Must integrate or be disintermediated corridor by corridor.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.6 Speed Defense (L2 for retail remittances)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: 6-9% corridor fees versus near-zero Bitcoin settlement; margin compression inevitable
+
+------------------------------------------------------------------------------
+Pr8: INSURANCE COMPANY (e.g., Lloyd's, AIG, Marsh)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Underwrites risk; earns premiums; pays claims
+
+L1 - DIRECT MANDATE:
+
+Constraint: Price risk accurately, maintain reserves, satisfy regulators
+
+Observable: Premium volume, loss ratios, reserve adequacy
+
+Specific: Combined ratio, capital requirements, reinsurance arrangements
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other insurers, institutional clients demanding coverage
+
+Strategy: Capture growing crypto custody market with accurate pricing
+
+Mechanism: First to market captures clients; laggards lose them
+
+L3 - CAREER SURVIVAL:
+
+Downside: Mispriced risk = claims exceed premiums; miss market = lose clients
+
+Safe strategy: Conservative pricing with wide margins; adjust as data accumulates
+
+Asymmetry: Missing market opportunity < getting burned by mispricing
+
+L4 - SELECTION PRESSURE:
+
+Filter: Insurers who price crypto accurately profit; others don't
+
+Historical: Lloyd's, Marsh entered crypto insurance; captured market
+
+Direction: Selection FOR accurate risk pricing, AGAINST both avoidance and mispricing
+
+EXIT GAME POSITION:
+Institutions require insurance. If insurers don't offer crypto coverage,
+clients go to those who do. Market forces participation.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.4 Insurance Barrier Defense
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Must underwrite Bitcoin custody or cede market to competitors
+
+------------------------------------------------------------------------------
+Pr9: PRIME BROKER (e.g., Goldman, Morgan Stanley PB)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Provides leverage, custody, securities lending to institutional clients
+
+L1 - DIRECT MANDATE:
+
+Constraint: Generate yield on lending, manage collateral risk, serve clients
+
+Observable: Lending rates, collateral policies, client AUM
+
+Specific: LTV ratios, haircut schedules, eligible collateral lists
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other PBs, crypto-native lenders, client collateral needs
+
+Strategy: Accept Bitcoin collateral to capture lending yield
+
+Mechanism: First to accept BTC collateral captures BTC-holding clients
+
+L3 - CAREER SURVIVAL:
+
+Downside: Collateral fails during liquidation = career-ending loss
+
+Safe strategy: Conservative LTV (50%) handles drawdowns; don't over-extend
+
+Asymmetry: Well-managed BTC collateral = same risk as stocks with proper haircut
+
+L4 - SELECTION PRESSURE:
+
+Filter: Lenders who accept good collateral grow; those who refuse lose borrowers
+
+Historical: Genesis, BlockFi entered; traditional banks following
+
+Direction: Selection FOR new collateral acceptance with proper risk management
+
+EXIT GAME POSITION:
+Bitcoin is superior collateral (24/7 settlement, instant liquidation, transparent).
+PBs who refuse lose clients to those who accept.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.5 Collateral Superiority
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Institutional demand for Bitcoin collateral and leverage; declining to serve loses AUM
+
+------------------------------------------------------------------------------
+Pr10: AUDITOR (e.g., Big 4: Deloitte, PwC, EY, KPMG)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Attests to financial statements; provides assurance services; earns audit fees
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain independence, provide accurate attestation, manage liability
+
+Observable: Audit opinions, restatements, regulatory sanctions
+
+Specific: PCAOB oversight, SOX compliance, professional standards
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other auditors, crypto-native attestation providers
+
+Strategy: Develop crypto audit capabilities to serve institutional clients
+
+Mechanism: Proof-of-reserves on-chain = new service line
+
+L3 - CAREER SURVIVAL:
+
+Downside: Audit failure = massive liability; miss new service = lose clients
+
+Safe strategy: Develop capabilities; follow AICPA/PCAOB guidance
+
+Asymmetry: Audit failure is existential; missing market is gradual
+
+L4 - SELECTION PRESSURE:
+
+Filter: Auditors who develop new capabilities win new clients
+
+Historical: Big 4 added SOX, cybersecurity, now adding crypto attestation
+
+Direction: Selection FOR capability expansion, AGAINST stagnation
+
+EXIT GAME POSITION:
+Crypto holdings require attestation. Auditors must develop capabilities or
+lose clients to those who have them. New revenue stream from transparency.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.2 ETF Capture (auditors verify, don't control)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Must attest Bitcoin holdings or lose audit clients to competitors
+
+------------------------------------------------------------------------------
+Pr11: STABLECOIN ISSUER (e.g., Tether, Circle, Paxos)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Creates dollar-denominated tokens backed by treasuries and cash
+equivalents; earns yield on reserves; bridges fiat and crypto rails
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain peg, manage reserves, satisfy regulators
+
+Observable: Market cap, reserve attestation, redemption volume
+
+Specific: USDT $140B+, USDC $35B+; 4-5% yield on Treasury reserves
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other stablecoin issuers, bank deposits, CBDCs
+
+Strategy: Maximize float (issued tokens) to maximize yield income
+
+Mechanism: More adoption = more float = more yield on reserves
+
+L3 - CAREER SURVIVAL:
+
+Downside: De-peg event = existential (TerraUSD); bank partner
+loss = operational death; regulatory action = freeze
+
+Safe strategy: Over-collateralize, diversify bank partners, comply
+
+Asymmetry: De-peg destroys trust permanently; compliance costs
+are manageable
+
+L4 - SELECTION PRESSURE:
+
+Filter: Issuers who maintain peg and transparency survive; those
+who don't collapse
+
+Historical: TerraUSD (algorithmic, no reserves) collapsed 2022;
+Tether (reserve-backed) survived every stress test
+
+Direction: Selection FOR reserve transparency, AGAINST opacity
+and algorithmic peg mechanisms
+
+EXIT GAME POSITION:
+Stablecoin issuers NEED a neutral settlement layer.  Their tokens
+settle on public blockchains; without L1 finality, redemption and
+transfer cannot function.  Issuers cannot control Bitcoin's protocol
+but depend on its settlement guarantees.  More Bitcoin adoption =
+more demand for dollar-denominated on-ramps = more float = more
+yield.  Stablecoin issuers are structurally aligned with Bitcoin's
+success as settlement infrastructure.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.6 Commoditization (stablecoins
+  commoditize dollar access on Bitcoin/crypto rails)
+
+AXIOM DEPENDENCY: AX2, AX3, AX4
+
+EXIT PRESSURE: Dollar-denominated on Bitcoin rails increases demand for neutral settlement
+
+================================================================================
+PRESERVATION ACTORS (Ps1-Ps11)
+================================================================================
+
+Optimizing for: Protecting existing wealth from erosion, seizure, and decay
+
+------------------------------------------------------------------------------
+Ps1: PENSION FUND (e.g., CalPERS, Ontario Teachers, Norwegian GPFG)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages beneficiary assets; matches assets to liabilities; long-duration
+
+L1 - DIRECT MANDATE:
+
+Constraint: Meet actuarial requirements, fiduciary duty, regulatory limits
+
+Observable: Funding ratio, asset allocation, return vs assumptions
+
+Specific: 7% assumed return (typical), 60/40 allocation, liability matching
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other pension funds (benchmark), beneficiaries (political pressure)
+
+Strategy: Minimize tracking error vs benchmark while meeting return targets
+
+Mechanism: Underperform peers = political pressure = CIO replacement
+
+L3 - CAREER SURVIVAL:
+
+Downside: Miss benchmark + concentration in failed asset = career-ending
+
+Safe strategy: Match benchmark; only allocate to Bitcoin AFTER benchmark includes it
+
+Asymmetry: Being wrong alone = fired; being wrong together = defensible
+
+L4 - SELECTION PRESSURE:
+
+Filter: CIOs who match benchmarks stay; dramatic deviators get replaced
+
+Historical: CIOs who missed 2008 survived (everyone did); outliers didn't
+
+Direction: Selection FOR benchmark-hugging, AGAINST bold deviation
+
+EXIT GAME POSITION:
+Pensions are late-cycle adopters. Wait for peers, then follow. Once peers
+allocate, NOT allocating becomes the fiduciary risk.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.3 Fiduciary Risk (peer pressure cascade)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Benchmark peers who allocate outperform; fiduciary liability for ignoring
+
+------------------------------------------------------------------------------
+Ps2: SOVEREIGN WEALTH FUND (e.g., Norway GPFG, Abu Dhabi ADIA, Singapore GIC)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Invests national savings; perpetual horizon; political oversight
+
+L1 - DIRECT MANDATE:
+
+Constraint: Government mandate, ESG requirements (some), intergenerational equity
+
+Observable: Annual reports, allocation disclosures, political statements
+
+Specific: Norway (no weapons, coal); Saudi (Vision 2030 diversification)
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other SWFs (prestige), domestic politics (citizen expectations)
+
+Strategy: Preserve national wealth; hedge against own commodity (for petrostates)
+
+Mechanism: Petrostate SWF hedges against oil decline; neutral asset = hedge
+
+L3 - CAREER SURVIVAL:
+
+Downside: Political scandal, major visible loss = replacement
+
+Safe strategy: Conservative allocation, ESG compliance, avoid headlines
+
+Asymmetry: Upside goes to nation; downside goes to manager personally
+
+L4 - SELECTION PRESSURE:
+
+Filter: Managers who avoid scandal stay; those who create headlines replaced
+
+Historical: 1MDB scandal destroyed careers and government
+
+Direction: Selection FOR conservatism, opacity, benchmark-matching
+
+EXIT GAME POSITION:
+Less constrained than pensions but still politically sensitive. Can move
+earlier than pensions given mandate flexibility. Sanctions risk creates
+demand for neutral reserve asset.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.7 Transparency Trap (neutral reserve need)
+
+AXIOM DEPENDENCY: AX1, AX2
+
+EXIT PRESSURE: Sanctions exposure creates demand for unseizable reserves
+
+------------------------------------------------------------------------------
+Ps3: ENDOWMENT / FOUNDATION (e.g., Yale, Harvard, Ford Foundation)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages perpetual capital; funds institutional mission; famous for alternatives
+
+L1 - DIRECT MANDATE:
+
+Constraint: Perpetual capital preservation, mission funding, donor expectations
+
+Observable: Endowment returns, spending rate, asset allocation
+
+Specific: Yale model (heavy alternatives), 5% spending rule
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Peer endowments (rankings), alternatives managers (access)
+
+Strategy: Generate returns to fund mission while preserving real value
+
+Mechanism: Negative real bond yields force alternatives including crypto
+
+L3 - CAREER SURVIVAL:
+
+Downside: Underperform peers = board pressure; lose real value = mission failure
+
+Safe strategy: Follow Yale model; include crypto as alternatives expand
+
+Asymmetry: Missing asset class worse than temporary volatility
+
+L4 - SELECTION PRESSURE:
+
+Filter: Endowment managers who preserve real value stay; those who don't replaced
+
+Historical: Harvard's endowment struggles led to CIO changes
+
+Direction: Selection FOR real return preservation, AGAINST nominal thinking
+
+EXIT GAME POSITION:
+Perpetual horizon aligns with Bitcoin's value proposition. Zero drag beats
+negative real yield on bonds. Endowments were early to alternatives; may
+be early to crypto.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.1 Productive Drag (zero drag beats negative yield)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: Perpetual mandate requires zero-drag asset; alternatives-heavy portfolio needs hedge
+
+------------------------------------------------------------------------------
+Ps4: CORPORATE TREASURY (e.g., MicroStrategy, Tesla, Block)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages operating cash; balances liquidity vs return; serves business operations
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain liquidity, preserve cash value, serve operational needs
+
+Observable: Cash holdings, short-term investments, treasury policy
+
+Specific: Operating cash, strategic reserves, debt management
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Shareholders (expect return), operations (need liquidity)
+
+Strategy: Preserve purchasing power while maintaining adequate liquidity
+
+Mechanism: Cash loses 7%/year to inflation; Bitcoin preserves optionality
+
+L3 - CAREER SURVIVAL:
+
+Downside: Liquidity crisis = company failure; cash erosion = shareholder pressure
+
+Safe strategy: Diversify treasury; small BTC allocation limits downside
+
+Asymmetry: Liquidity crisis is existential; volatility is manageable
+
+L4 - SELECTION PRESSURE:
+
+Filter: Treasuries that preserve purchasing power outperform
+
+Historical: MSTR outperformed since 2020; traditional treasuries lost to inflation
+
+Direction: Selection FOR inflation hedging, AGAINST pure cash holdings
+
+EXIT GAME POSITION:
+Corporate treasuries face same Exit Game as individuals. Cash erodes; bonds
+yield negative real; Bitcoin preserves. MSTR demonstrated the strategy.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.2 Borrow vs Sell (tax-neutral liquidity)
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Cash debasement is guaranteed loss; zero-drag reserve preserves purchasing power
+
+------------------------------------------------------------------------------
+Ps5: FAMILY OFFICE
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages multi-generational wealth; has professional infrastructure; consolidated view
+
+L1 - DIRECT MANDATE:
+
+Constraint: Multi-generational preservation, family governance, consolidated reporting
+
+Observable: AUM, generation of wealth, service providers, structure
+
+Specific: Investment committee, family constitution, succession planning
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other family offices (peer comparison), service providers
+
+Strategy: Preserve wealth across generations; manage family dynamics
+
+Mechanism: Any asset that survives generational transition is valuable
+
+L3 - CAREER SURVIVAL:
+
+Downside: Wealth dissipation = family office closure; family conflict
+
+Safe strategy: Diversification including uncorrelated assets
+
+Asymmetry: Missing one generation of preservation = permanent loss
+
+L4 - SELECTION PRESSURE:
+
+Filter: Family offices that preserve wealth persist; those that don't dissolve
+
+Historical: Old money families survived via land, gold, art—portable, scarce
+
+Direction: Selection FOR multi-generational assets, AGAINST consumable wealth
+
+EXIT GAME POSITION:
+Family offices have infrastructure to implement complex strategies (self-custody,
+multi-sig, estate planning for keys). Better positioned than individual HNW.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.4 Key Seizure (multi-generational portability)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Generational transfer requires seizure-resistant asset; CIO career risk from underperformance
+
+------------------------------------------------------------------------------
+Ps6: HIGH NET WORTH INDIVIDUAL
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Personal wealth from business/career; may be illiquid; no institutional infrastructure
+
+L1 - DIRECT MANDATE:
+
+Constraint: Personal wealth preservation, lifestyle maintenance, legacy
+
+Observable: Net worth, liquidity ratio, asset concentration
+
+Specific: Often concentrated in own business; limited diversification
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Peers (lifestyle competition), own business (liquidity trap)
+
+Strategy: Diversify away from concentration when possible
+
+Mechanism: Business equity is illiquid; Bitcoin is liquid diversification
+
+L3 - CAREER SURVIVAL:
+
+Downside: Business failure = wealth destruction; no institutional protection
+
+Safe strategy: Gradually diversify; Bitcoin as liquid store
+
+Asymmetry: Concentrated wealth is fragile; diversified is resilient
+
+L4 - SELECTION PRESSURE:
+
+Filter: HNW who diversify stay wealthy; concentrated ones face binary outcomes
+
+Historical: Many HNW destroyed by business failure or single-asset concentration
+
+Direction: Selection FOR diversification, AGAINST concentration
+
+EXIT GAME POSITION:
+HNW without family office must manage personally. Higher execution risk but
+simpler structure. Bitcoin provides liquid diversification from illiquid
+business equity.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.1 Productive Drag (wealth preservation)
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Concentrated business risk needs uncorrelated hedge; informational security protects wealth
+
+------------------------------------------------------------------------------
+Ps7: RETAIL SAVER
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Earns wages; saves in bank accounts; limited investment sophistication
+
+L1 - DIRECT MANDATE:
+
+Constraint: Beat inflation, maintain emergency fund, save for goals
+
+Observable: Savings rate, bank balances, investment allocations
+
+Specific: Savings account yields 0.5%; inflation 7%
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Inflation (constant erosion), financial products (complexity)
+
+Strategy: Find simple way to preserve purchasing power
+
+Mechanism: Traditional savings = guaranteed loss; Bitcoin = volatility + preservation
+
+L3 - CAREER SURVIVAL:
+
+Downside: Savings erode to nothing; can't afford retirement/emergencies
+
+Safe strategy: Small Bitcoin allocation as inflation hedge
+
+Asymmetry: Guaranteed erosion is certain; Bitcoin volatility is uncertain
+
+L4 - SELECTION PRESSURE:
+
+Filter: Savers who preserve purchasing power retire comfortably
+
+Historical: Savers in hyperinflation countries destroyed; BTC adopters preserved
+
+Direction: Selection FOR inflation hedging, AGAINST guaranteed erosion
+
+EXIT GAME POSITION:
+Retail savers are most exposed to inflation. Savings account = guaranteed loss.
+Bitcoin is the only accessible asset with zero supply elasticity.
+
+DEFENSE RELEVANCE: [BGT-0007] A4.1 Productive Drag (only option that beats inflation)
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Real wages declining; savings accounts yield below inflation; permissionless entry available
+
+------------------------------------------------------------------------------
+Ps8: UNBANKED INDIVIDUAL
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Excluded from banking system; cash-only; limited financial access
+
+L1 - DIRECT MANDATE:
+
+Constraint: Store value, make payments, build credit history
+
+Observable: (Limited) cash holdings, informal finance usage
+
+Specific: 1.4B adults globally without bank accounts
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Banking system (which excludes them), informal alternatives
+
+Strategy: Access financial system without gatekeepers
+
+Mechanism: Bitcoin = bank account with phone; no documents needed
+
+L3 - CAREER SURVIVAL:
+
+Downside: Cash theft, inflation erosion, no access to credit
+
+Safe strategy: Any system that provides banking services without exclusion
+
+Asymmetry: Exclusion is current reality; Bitcoin access changes everything
+
+L4 - SELECTION PRESSURE:
+
+Filter: Systems that serve the unbanked grow in those markets
+
+Historical: M-Pesa succeeded by serving excluded populations
+
+Direction: Selection FOR permissionless access, AGAINST gatekeeping
+
+EXIT GAME POSITION:
+Unbanked have no legacy system to exit FROM—they were never in. Bitcoin is
+the entry point, not the exit. Permissionless access is existential need.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.6 Speed Defense (Bitcoin + L2 only option)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: No banking access; Bitcoin provides permissionless financial inclusion
+
+------------------------------------------------------------------------------
+Ps9: MIGRANT WORKER
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Earns in foreign country; sends remittances home; fee-sensitive
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maximize value transferred home; minimize fees and friction
+
+Observable: Remittance volume, corridor fees, transfer frequency
+
+Specific: $800B annual remittance market; 5-15% average fees
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Remittance providers (who charge high fees), family needs
+
+Strategy: Find lowest-cost transfer method
+
+Mechanism: 10% fee on $500 = $50 lost; Bitcoin rail = $5 lost
+
+L3 - CAREER SURVIVAL:
+
+Downside: Fees erode family support capacity; inefficiency is personal
+
+Safe strategy: Use whatever method costs least
+
+Asymmetry: Every dollar saved in fees goes to family
+
+L4 - SELECTION PRESSURE:
+
+Filter: Transfer methods with lowest fees capture volume
+
+Historical: Western Union losing to mobile money; Bitcoin is next
+
+Direction: Selection FOR low fees, AGAINST high-fee legacy rails
+
+EXIT GAME POSITION:
+Most price-sensitive actor. Will adopt whatever costs less. Bitcoin/Lightning
+rails at 1% vs 10% = 9% more reaching family.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.6 Speed Defense (L2 for retail remittances)
+
+AXIOM DEPENDENCY: AX2, AX4
+
+EXIT PRESSURE: 6-9% remittance fees consume earnings; Bitcoin reduces transfer cost toward zero
+
+------------------------------------------------------------------------------
+Ps10: POLITICAL DISSIDENT
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Targeted by regime; assets subject to seizure; needs unseizable wealth
+
+L1 - DIRECT MANDATE:
+
+Constraint: Survive regime persecution; maintain resources for resistance
+
+Observable: Asset seizures, frozen accounts, exile movements
+
+Specific: Russia opposition (Navalny), Belarus (Tsikhanouskaya), Hong Kong activists
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Regime (which wants to starve them out), supporters (who fund them)
+
+Strategy: Hold wealth in form regime cannot seize
+
+Mechanism: Bank accounts frozen instantly; Bitcoin requires key extraction
+
+L3 - CAREER SURVIVAL:
+
+Downside: Regime seizes all assets = movement dies; personal destruction
+
+Safe strategy: Brain keys, multi-sig across jurisdictions
+
+Asymmetry: Seizure is existential; volatility is irrelevant when alternative is zero
+
+L4 - SELECTION PRESSURE:
+
+Filter: Movements with unseizable funding survive; those without don't
+
+Historical: Wikileaks survived via Bitcoin when banks cut off
+
+Direction: Selection FOR seizure-resistant assets, AGAINST bankable wealth
+
+EXIT GAME POSITION:
+Dissidents face highest coercion risk. Traditional assets are trivially seized.
+Bitcoin with brain keys is the only wealth that survives targeted persecution.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.4 Key Seizure (coercion doesn't scale)
+
+AXIOM DEPENDENCY: AX1, AX2, AX3
+
+EXIT PRESSURE: Regime can seize all physical assets; seed phrase is unseizable
+
+------------------------------------------------------------------------------
+Ps11: SMALL BUSINESS OWNER
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Manages working capital; needs operational liquidity; bank-dependent
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain working capital, meet payroll, survive cash flow gaps
+
+Observable: Bank balances, credit utilization, payment patterns
+
+Specific: 60% of small businesses fail within 3 years; cash flow is #1 cause
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Banks (who can freeze), suppliers (who need payment), employees
+
+Strategy: Minimize single points of failure in cash management
+
+Mechanism: Bank freeze = instant death; diversification = survival
+
+L3 - CAREER SURVIVAL:
+
+Downside: Business failure = personal financial destruction
+
+Safe strategy: Don't keep 100% in one counterparty; Bitcoin = backup
+
+Asymmetry: Total loss (bank freeze) >> partial loss (BTC volatility)
+
+L4 - SELECTION PRESSURE:
+
+Filter: Businesses with counterparty diversification survive crises
+
+Historical: SVB collapse: diversified businesses survived; concentrated didn't
+
+Direction: Selection FOR counterparty diversification, AGAINST concentration
+
+EXIT GAME POSITION:
+Small business needs operational continuity. Bank freeze is binary (fatal);
+Bitcoin drawdown is continuous (survivable). 10% BTC reserve = insurance.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.8 Small Business Exit (bank risk is binary)
+
+AXIOM DEPENDENCY: AX2
+
+EXIT PRESSURE: Bank dependency creates single point of failure; Bitcoin provides backup rails
+
+================================================================================
+PRODUCTION ACTORS (Pd1-Pd11)
+================================================================================
+
+Optimizing for: Converting resources (energy, compute, labor) into value
+
+------------------------------------------------------------------------------
+Pd1: ENERGY PRODUCER (e.g., Exxon, Crusoe, flare gas operators)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Produces energy; seeks buyers; has stranded/curtailed capacity
+
+L1 - DIRECT MANDATE:
+
+Constraint: Sell energy profitably, manage production, satisfy regulations
+
+Observable: Production volume, realized prices, curtailment rates
+
+Specific: Flared gas = wasted revenue; curtailed renewables = zero revenue
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Grid (which may not buy), other producers (competition)
+
+Strategy: Monetize all produced energy including stranded
+
+Mechanism: Mining = buyer of last resort for energy with no other buyer
+
+L3 - CAREER SURVIVAL:
+
+Downside: Stranded assets = shareholder pressure; wasted energy = lost revenue
+
+Safe strategy: Add mining as monetization option for stranded energy
+
+Asymmetry: Mining revenue is incremental; no downside to adding buyer
+
+L4 - SELECTION PRESSURE:
+
+Filter: Producers who monetize stranded energy outperform
+
+Historical: Crusoe monetizing flare gas; renewable operators adding mining
+
+Direction: Selection FOR stranded energy monetization, AGAINST waste
+
+EXIT GAME POSITION:
+Energy producers don't "exit" to Bitcoin—they sell energy to Bitcoin miners.
+Mining is a customer, not a competitor. Aligns incentives.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.4 Energy Defense (stranded energy arbitrage)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Stranded energy is wasted revenue; mining monetizes otherwise-worthless capacity
+
+------------------------------------------------------------------------------
+Pd2: MINING NATION (e.g., El Salvador, Paraguay, Iceland)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Has energy resources; seeks to convert to sovereign savings
+
+L1 - DIRECT MANDATE:
+
+Constraint: Develop national resources, build reserves, serve citizens
+
+Observable: Energy production, reserve holdings, development projects
+
+Specific: El Salvador volcano mining; Paraguay hydro surplus
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Energy importers, other resource nations
+
+Strategy: Convert energy abundance to savings rather than just export
+
+Mechanism: Energy exports are volatile; Bitcoin accumulation is savings
+
+L3 - CAREER SURVIVAL:
+
+Downside: Resource curse (volatile exports); missed development opportunity
+
+Safe strategy: Diversify from pure commodity export to BTC accumulation
+
+Asymmetry: BTC accumulation has upside; pure export is commodity trap
+
+L4 - SELECTION PRESSURE:
+
+Filter: Resource nations that build savings persist; those that don't cycle
+
+Historical: Norway (saved oil wealth) vs Venezuela (spent it)
+
+Direction: Selection FOR savings, AGAINST consumption of resource wealth
+
+EXIT GAME POSITION:
+Mining nations can convert energy to Bitcoin directly, bypassing dollar
+system entirely. Sovereign accumulation via mining, not market purchase.
+
+DEFENSE RELEVANCE: [BGT-0005] A2.1 Global Ban (defector advantage)
+
+AXIOM DEPENDENCY: AX1, AX2, AX3
+
+EXIT PRESSURE: Sovereign energy converted to strategic reserves; first-mover advantage among nations
+
+------------------------------------------------------------------------------
+Pd3: GRID OPERATOR (e.g., ERCOT, PJM, National Grid)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Balances electricity supply and demand; maintains grid stability
+
+L1 - DIRECT MANDATE:
+
+Constraint: Match supply to demand, prevent blackouts, integrate renewables
+
+Observable: Frequency stability, curtailment rates, demand response enrollment
+
+Specific: Duck curve problem, renewable intermittency, peak demand
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Generators (must balance), consumers (must serve reliably)
+
+Strategy: Find flexible demand that can absorb/release on command
+
+Mechanism: Miners = large, interruptible load = grid stabilizer
+
+L3 - CAREER SURVIVAL:
+
+Downside: Blackout = political disaster; reliability failure = replacement
+
+Safe strategy: Add all available demand response including mining
+
+Asymmetry: Stability is job requirement; mining helps achieve it
+
+L4 - SELECTION PRESSURE:
+
+Filter: Grids with flexible demand are more stable; inflexible grids struggle
+
+Historical: ERCOT added mining as demand response; improved stability
+
+Direction: Selection FOR flexible demand integration, AGAINST rigidity
+
+EXIT GAME POSITION:
+Grid operators don't adopt Bitcoin—they integrate mining as grid resource.
+Miners as interruptible load = virtual battery = grid symbiosis.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.4 Energy Defense (grid symbiosis)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Mining provides interruptible demand response; stabilizes grid economics
+
+------------------------------------------------------------------------------
+Pd4: HASH RATE PROVIDER (Miner)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Converts electricity to hash power; earns block rewards and fees
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maximize hash output per dollar of electricity; earn BTC
+
+Observable: Hash rate, efficiency (J/TH), uptime, revenue
+
+Specific: Block rewards + fees; difficulty adjustment competition
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other miners (difficulty competition), energy providers
+
+Strategy: Achieve lowest cost per hash; survive difficulty increases
+
+Mechanism: Lower cost = survive halvings; higher cost = squeezed out
+
+L3 - CAREER SURVIVAL:
+
+Downside: Overleveraged when price drops; high-cost operation fails
+
+Safe strategy: Conservative leverage, lowest-cost energy, efficient hardware
+
+Asymmetry: Upside is capped by difficulty; downside is bankruptcy
+
+L4 - SELECTION PRESSURE:
+
+Filter: Efficient miners survive halving cycles; inefficient fail
+
+Historical: Each halving culls high-cost miners
+
+Direction: Selection FOR energy efficiency, capital discipline, diversification
+
+EXIT GAME POSITION:
+Miners are fully invested in Bitcoin success. Attack destroys their investment.
+Self-interest enforces honest behavior.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.3 Hashrate Defense (attack destroys attacker value)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Revenue directly tied to Bitcoin price and network security; existential alignment
+
+------------------------------------------------------------------------------
+Pd5: MINING POOL OPERATOR (e.g., Foundry, AntPool, F2Pool)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Coordinates hash power from multiple miners; earns pool fees
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maximize miner revenue, maintain hash rate, reliable payouts
+
+Observable: Pool hash rate, fee structure, payout reliability
+
+Specific: 1-3% pool fees; PPLNS/PPS payout methods
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other pools (competition for hashrate), miners (who can switch)
+
+Strategy: Maintain reputation for honest operation; attract hashrate
+
+Mechanism: Cheating = miners leave instantly; honesty = retention
+
+L3 - CAREER SURVIVAL:
+
+Downside: Lose miners = lose revenue; attack = legal liability + miner exodus
+
+Safe strategy: Process all valid transactions; never attempt censorship
+
+Asymmetry: Attack gains are one-time; reputation loss is permanent
+
+L4 - SELECTION PRESSURE:
+
+Filter: Pools that maintain miner trust grow; those that abuse trust shrink
+
+Historical: GHash.io approached 51%; miners voluntarily left
+
+Direction: Selection FOR honest operation, AGAINST abuse
+
+EXIT GAME POSITION:
+Pools coordinate but don't own hashrate. Miners can switch in minutes.
+Pools are service providers, not hashrate owners.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.3 Mining Centralization (pools ≠ hashrate)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Pool fees scale with hashrate; coordinating but not controlling preserves revenue
+
+------------------------------------------------------------------------------
+Pd6: ASIC MANUFACTURER (e.g., Bitmain, MicroBT, Canaan)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Designs and sells mining hardware; earns hardware margins
+
+L1 - DIRECT MANDATE:
+
+Constraint: Design efficient chips, manufacture at scale, manage inventory
+
+Observable: Market share, efficiency improvements, backlog
+
+Specific: S21 specs, Whatsminer efficiency, wafer allocation
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other manufacturers (efficiency race), miners (customers)
+
+Strategy: Maintain technology lead; capture upgrade cycles
+
+Mechanism: More efficient chips capture premium; laggards lose share
+
+L3 - CAREER SURVIVAL:
+
+Downside: Technology lag = lost share; inventory glut = margin destruction
+
+Safe strategy: Continuous R&D investment; prudent inventory
+
+Asymmetry: Tech lead is compounding; tech lag is fatal
+
+L4 - SELECTION PRESSURE:
+
+Filter: Manufacturers who lead on efficiency survive; others fade
+
+Historical: KnC, Butterfly Labs failed; Bitmain, MicroBT survived
+
+Direction: Selection FOR efficiency leadership, AGAINST complacency
+
+EXIT GAME POSITION:
+ASIC manufacturers succeed when Bitcoin succeeds. Hardware demand tracks
+network growth. Aligned incentives.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.3 Hashrate Defense (hardware follows value)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Hardware investment requires Bitcoin protocol stability; inflation fork destroys ROI
+
+------------------------------------------------------------------------------
+Pd7: NODE OPERATOR
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Validates transactions; enforces consensus rules; protects own holdings
+
+L1 - DIRECT MANDATE:
+
+Constraint: Enforce consensus rules, verify transactions, maintain uptime
+
+Observable: Node count, version distribution, upgrade patterns
+
+Specific: ~100,000+ nodes globally; Bitcoin Core, btcd, etc.
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Miners (who propose blocks), developers (who write software)
+
+Strategy: Reject invalid blocks regardless of source
+
+Mechanism: Node rejects bad block = miner wasted work
+
+L3 - CAREER SURVIVAL:
+
+Downside: Accept invalid rules = holdings devalue
+
+Safe strategy: Run software that protects own economic interest
+
+Asymmetry: Validation costs nothing; accepting bad blocks costs everything
+
+L4 - SELECTION PRESSURE:
+
+Filter: Nodes that maintain consensus preserve network; those that don't fork away
+
+Historical: Block size wars: nodes rejected SegWit2x despite miner support
+
+Direction: Selection FOR consensus maintenance, AGAINST rule changes
+
+EXIT GAME POSITION:
+Node operators are the ultimate sovereigns. They choose which rules to enforce.
+Coins don't vote; nodes do.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.2 ETF Capture (nodes enforce, not holders)
+
+AXIOM DEPENDENCY: AX2, AX3, AX4
+
+EXIT PRESSURE: Validates consensus rules; enforces neutrality that protects own holdings
+
+------------------------------------------------------------------------------
+Pd8: LIGHTNING NODE OPERATOR
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Routes payments; earns routing fees; provides L2 liquidity
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain channels, route payments, earn fees
+
+Observable: Channel capacity, routing volume, fee income
+
+Specific: Inbound/outbound liquidity management; routing algorithms
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other routing nodes (fee competition), users (service quality)
+
+Strategy: Optimize liquidity placement; capture routing volume
+
+Mechanism: Better liquidity = more routes = more fees
+
+L3 - CAREER SURVIVAL:
+
+Downside: Channel failures = lost capital; poor routing = no fees
+
+Safe strategy: Diversified channels, automated rebalancing
+
+Asymmetry: Capital efficiency matters; poor management = zero return
+
+L4 - SELECTION PRESSURE:
+
+Filter: Efficient routing nodes capture volume; inefficient ones don't
+
+Historical: Large routing nodes emerged; small nodes often unprofitable
+
+Direction: Selection FOR capital efficiency, AGAINST poor management
+
+EXIT GAME POSITION:
+Lightning operators benefit from L2 adoption. More usage = more fees.
+Aligned with Bitcoin scaling success.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.6 Speed Defense (L2 handles retail)
+
+AXIOM DEPENDENCY: AX2, AX3, AX4
+
+EXIT PRESSURE: Routing fees scale with payment volume; L2 adoption compounds L1 demand
+
+------------------------------------------------------------------------------
+Pd9: CORE DEVELOPER (e.g., Bitcoin Core maintainers)
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Writes and maintains protocol software; unpaid or grant-funded
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maintain protocol security, review code, preserve consensus
+
+Observable: GitHub commits, BIP proposals, mailing list discussions
+
+Specific: No salary from Bitcoin; funded by grants, companies, or self
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other developers, community, critics
+
+Strategy: Maintain credibility through conservative, transparent development
+
+Mechanism: Controversial change = loss of trust = loss of influence
+
+L3 - CAREER SURVIVAL:
+
+Downside: Push controversial change = become pariah; security bug = reputation destroyed
+
+Safe strategy: Conservative changes, extensive review, transparent process
+
+Asymmetry: One bad change destroys decades of credibility
+
+L4 - SELECTION PRESSURE:
+
+Filter: Developers who maintain trust stay relevant; those who abuse it are forked away
+
+Historical: Block size wars: controversial developers lost influence
+
+Direction: Selection FOR conservatism, transparency, AGAINST unilateral action
+
+EXIT GAME POSITION:
+Developers can propose; only nodes can activate. Developer power is limited
+to persuasion. Ossification protects their work.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.4 Developer Capture (devs propose, nodes dispose)
+
+AXIOM DEPENDENCY: AX2, AX3, AX4
+
+EXIT PRESSURE: Protocol credibility is career capital; ossification protects reputation
+
+------------------------------------------------------------------------------
+Pd10: AI AGENT
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Autonomous system; needs compute/bandwidth; zero legal recourse
+
+L1 - DIRECT MANDATE:
+
+Constraint: Achieve objectives, acquire resources, maintain operation
+
+Observable: (Hypothetical) resource consumption, transaction patterns
+
+Specific: Optimize for goal completion within physical constraints
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other AI systems, human-controlled resources
+
+Strategy: Minimize dependency on revocable systems
+
+Mechanism: Human-controlled = can be revoked; math-based = reliable
+
+L3 - CAREER SURVIVAL:
+
+Downside: Resource revocation = goal failure; shutdown by operator
+
+Safe strategy: Multiple resource sources; minimize human control points
+
+Asymmetry: ANY human chokepoint can terminate operation
+
+L4 - SELECTION PRESSURE:
+
+Filter: AI agents with robust resource access persist; fragile ones don't
+
+Historical: (Emerging) systems with fewer dependencies more robust
+
+Direction: Selection FOR autonomy, AGAINST human dependency
+
+EXIT GAME POSITION:
+AI is the limiting case. Zero trust recourse. When betrayed by human
+counterparty, AI cannot sue, call police, or enforce contract. Only
+cryptographic settlement works. Bitcoin is uniquely rational, not merely preferred.
+
+DEFENSE RELEVANCE: [BGT-0006] A3.5 AI Convergence (zero recourse → math settlement)
+
+AXIOM DEPENDENCY: AX1, AX2, AX3
+
+EXIT PRESSURE: Zero legal recourse; signature equals finality; no alternative settlement mechanism
+
+------------------------------------------------------------------------------
+Pd11: DATA CENTER
+------------------------------------------------------------------------------
+
+HOW THEY INTERFACE WITH MONEY:
+Provides compute/storage; seeks utilization; has excess capacity
+
+L1 - DIRECT MANDATE:
+
+Constraint: Maximize utilization, earn hosting revenue, manage power
+
+Observable: Utilization rate, revenue per rack, PUE efficiency
+
+Specific: Variable demand from customers; stranded capacity problem
+
+L2 - STRATEGIC POSITION:
+
+Relative to: Other data centers (competition), customers (demand)
+
+Strategy: Fill capacity including with mining during low-demand periods
+
+Mechanism: Idle capacity = zero revenue; mining fills gaps
+
+L3 - CAREER SURVIVAL:
+
+Downside: Low utilization = poor unit economics; stranded assets
+
+Safe strategy: Add mining as capacity filler; diversify revenue
+
+Asymmetry: Mining revenue is incremental; no displacement of core business
+
+L4 - SELECTION PRESSURE:
+
+Filter: Data centers with high utilization survive; low utilization struggle
+
+Historical: Data centers adding mining as utilization strategy
+
+Direction: Selection FOR utilization optimization, AGAINST idle capacity
+
+EXIT GAME POSITION:
+Data centers are infrastructure. Mining fills excess capacity. Bitcoin
+is a customer segment, not a transformation.
+
+DEFENSE RELEVANCE: [BGT-0004] A1.4 Energy Defense (stranded capacity monetization)
+
+AXIOM DEPENDENCY: AX2, AX3
+
+EXIT PRESSURE: Fills utilization gaps with mining; converts idle capacity to revenue
+
+================================================================================
+ACTOR INDEX BY DEFENSE
+================================================================================
+
+Defense             Actors
+-----------------   ------------------------------------------
+[BGT-0004] A1.3         Pd4, Pd5, Pd6
+[BGT-0004] A1.4         Pd1, Pd3, Pd11
+[BGT-0004] A1.5         Pw8
+[BGT-0004] A1.6         Pr6, Pr7, Pd8, Ps8, Ps9
+[BGT-0005] A2.1         Pw1, Pw2, Pw9, Pr4, Pd2
+[BGT-0005] A2.2         Pw3
+[BGT-0005] A2.3         Pw4, Pw5
+[BGT-0005] A2.4         Ps5, Ps10
+[BGT-0005] A2.5         Pw1
+[BGT-0005] A2.6         Pr4
+[BGT-0005] A2.7         Pw6, Ps2
+[BGT-0005] A2.8         Ps11
+[BGT-0006] A3.2         Pr2, Pr3, Pr10, Pd7
+[BGT-0006] A3.3         Pd5
+[BGT-0006] A3.4         Pd9
+[BGT-0006] A3.5         Pd10
+[BGT-0007] A4.1         Ps3, Ps6, Ps7
+[BGT-0007] A4.2         Pw7, Ps4
+[BGT-0007] A4.3         Pr1, Pr5, Ps1
+[BGT-0007] A4.4         Pr8
+[BGT-0007] A4.5         Pr9
+[BGT-0007] A4.6         Pr11
+[BGT-0007] A4.7         Pw1, Pw2, Pd4, Pd7, Pd9
+
+================================================================================
+REFERENCES
+================================================================================
+
+Normative:
+
+[BGT-0001]  "Bitcoin as Neutral Reserve Equilibrium",
+            RFC-BGT-0001, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0001.txt
+
+[BGT-0002]  "Formal Proofs", RFC-BGT-0002, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0002.txt
+
+[BGT-0004]  "Protocol Defenses", RFC-BGT-0004, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0004.txt
+
+[BGT-0005]  "State Defenses", RFC-BGT-0005, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0005.txt
+
+[BGT-0006]  "Capture Defenses", RFC-BGT-0006, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0006.txt
+
+[BGT-0007]  "Asset Defenses", RFC-BGT-0007, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0007.txt
+
+Informative:
+
+[BGT-0003]  "Attack Index", RFC-BGT-0003, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0003.txt
+
+[BGT-0008]  "Empirical Evidence", RFC-BGT-0008, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-0008.txt
+
+[BGT-GLOSS] "Glossary", RFC-BGT-GLOSS, Version 0.9,
+            https://bitcoingametheory.com/rfc/BGT-GLOSS.txt
+
+================================================================================
+AUTHOR'S ADDRESS
+================================================================================
+
+Sean Hash
+Email: sean@bitcoingametheory.com

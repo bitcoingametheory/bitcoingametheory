@@ -1,0 +1,774 @@
+% Paper 4: Monetary Predator-Prey Dynamics: Enforcement Gridlock and
+%          Neutral Settlement Survival
+% Build: xelatex BGT-PAPER-4.tex (run twice for cross-references)
+
+\documentclass[12pt]{article}
+
+% --- Math (must load before unicode-math) ---
+\usepackage{mathtools}  % loads amsmath automatically
+
+% --- Fonts and encoding ---
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+
+% --- Page layout ---
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Theorem environments ---
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{condition}{Condition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{calc}
+
+% --- Page numbers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% --- Misc ---
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue,
+  pdftitle={Monetary Predator-Prey Dynamics: Enforcement Gridlock and Neutral Settlement Survival},
+  pdfauthor={Sean Hash},
+  pdfkeywords={Bitcoin, Lotka-Volterra, enforcement gridlock, predator-prey dynamics, neutral settlement, coordination failure, coalition stability, game theory}
+}
+\usepackage{microtype}
+
+% --- Suppress section numbering (manual numbers in headings) ---
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+% ============================================================
+% TITLE BLOCK
+% ============================================================
+
+\begin{center}
+{\LARGE\bfseries Monetary Predator-Prey Dynamics:\\Enforcement Gridlock and Neutral Settlement Survival}
+
+\bigskip
+
+{\large Sean Hash}\\
+\url{bitcoingametheory.com}\\
+\href{mailto:sean@bitcoingametheory.com}{sean@bitcoingametheory.com}
+
+\bigskip
+
+February 2026\\[4pt]
+{\normalsize Working Paper}
+
+\medskip
+
+{\small
+\textbf{JEL Codes:} C72, C73, D74, E42, F33, G15, L14\\[4pt]
+\textbf{Keywords:} Bitcoin, Lotka--Volterra, enforcement gridlock, predator-prey dynamics, neutral settlement, coordination failure, coalition stability, game theory, network effects
+}
+\end{center}
+
+\bigskip
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+
+\begin{abstract}
+\noindent
+This paper formalizes the survivability question for neutral settlement:
+\emph{why can enforcement actors not coordinate to suppress it?} We model
+enforcement actors as ``predators'' (coordination taxers) and neutral
+settlement rail usage as ``prey'' within a multi-predator Lotka--Volterra
+framework. When inter-predator competition coefficients are strictly
+positive---a condition guaranteed by geopolitical multipolarity---the
+interior equilibrium ensures prey survival ($x^{*} > 0$). We prove that
+no stable suppression coalition exists: for any proposed coalition, at
+least one member gains by defecting (Theorem~\ref{thm:gridlock}).
+Further, we establish that each enforcer's dominant strategy is to
+preserve neutral rail access as a hedge against rival enforcers' monetary
+weaponization (Lemma~\ref{lem:hedging}). Finally, we introduce duration
+fragility inequalities (Proposition~\ref{prop:duration}) showing that
+equity valuations suffer terminal value collapse under AI-driven moat
+erosion, strengthening the marginal case for scarcity-based settlement.
+These results complete the causal chain from Hash~(2026a): the
+coordination failure in the exit game is not merely possible but
+\emph{structurally guaranteed} by inter-predator competition.
+\end{abstract}
+
+% ============================================================
+\section{1. Introduction}\label{sec:intro}
+% ============================================================
+
+The Bitcoin Game Theory framework establishes that exit to neutral
+settlement is self-reinforcing (Hash, 2026a, Theorem~1), that
+coordination to stay fails (Theorem~2), and that the resulting
+equilibrium is absorbing (Theorem~3). The seven-property elimination
+(Hash, 2026b) shows Bitcoin is the unique survivor among candidate
+assets. The trust gradient (Hash, 2026c) extends the result to
+autonomous economic agents.
+
+A critical gap remains: \emph{why} does coordination to stay fail?  The
+prior result (Hash, 2026a, Theorem~2) establishes that no enforcement
+mechanism exists to prevent exit, but does not explain the structural
+dynamics that guarantee this condition persists. This paper fills that
+gap.
+
+We observe that enforcement actors---sovereigns imposing capital
+controls, corporations gatekeeping financial access, intermediaries
+extracting compliance rents---are not a monolithic bloc cooperating
+against Bitcoin. They are \emph{competitors}, each taxing coordination
+in ways that interfere with other enforcers' interests. This competitive
+structure maps precisely onto multi-predator Lotka--Volterra population
+dynamics (Volterra, 1928; May, 1973), where inter-species competition
+among predators guarantees prey survival at the interior equilibrium.
+
+\subsection{1.1 Contributions}
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Actor Taxonomy} (Section~2): We classify monetary actors
+    into coordination taxers (CT$_1$--CT$_3$) and exit-valve
+    participants (EV$_1$--EV$_3$), identifying dual-role actors who
+    simultaneously enforce and exit.
+  \item \textbf{Lotka--Volterra Formalization} (Section~3): We model the
+    system as a multi-predator ecology and derive existence conditions
+    for the interior equilibrium.
+  \item \textbf{Gridlock Wedge Theorem} (Section~4): We prove that
+    inter-predator competition permanently prevents coordinated
+    suppression (Theorem~\ref{thm:gridlock}).
+  \item \textbf{Predator Hedging Lemma} (Section~5): We establish the
+    dominant strategy cascade in which each enforcer preserves the
+    neutral rail (Lemma~\ref{lem:hedging}).
+  \item \textbf{Duration Fragility} (Section~6): We prove that
+    AI-driven moat erosion compresses equity terminal values
+    (Proposition~\ref{prop:duration}).
+  \item \textbf{Falsification} (Section~8): We specify condition~F7
+    under which these results fail.
+\end{enumerate}
+
+% ============================================================
+\newpage
+
+\section{2. Actor Taxonomy}\label{sec:taxonomy}
+% ============================================================
+
+\subsection{2.1 Coordination Taxers}
+
+\begin{definition}[Coordination Taxer]\label{def:ct}
+A \emph{coordination taxer} (CT) is an enforcement actor that extracts
+value by controlling or taxing monetary flows. We identify three tiers:
+\end{definition}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}clll@{}}
+\toprule
+ID & Tier & Examples & Mechanism \\
+\midrule
+CT$_1$ & Sovereign & Governments, central banks, & Monetary policy, capital \\
+       &           & sanctions agencies           & controls, legal coercion \\[3pt]
+CT$_2$ & Corporate & Banks, asset managers,       & Intermediation fees, \\
+       &           & payment processors           & compliance gatekeeping \\[3pt]
+CT$_3$ & Intermediary & Prime brokers, mining     & Collateral yield, pool \\
+       &              & pools, payment routers    & fees, routing fees \\
+\bottomrule
+\end{tabular}
+\caption{Coordination taxer classification.}
+\label{tab:ct}
+\end{table}
+
+\subsection{2.2 Exit-Valve Participants}
+
+\begin{definition}[Exit-Valve Participant]\label{def:ev}
+An \emph{exit-valve participant} (EV) is an actor who benefits from
+access to a neutral settlement rail outside the enforcement perimeter.
+\end{definition}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}clll@{}}
+\toprule
+ID & Tier & Examples & Mechanism \\
+\midrule
+EV$_1$ & Retail & Savers, remittance users, & Inflation escape, bank \\
+       &        & unbanked populations      & freeze bypass \\[3pt]
+EV$_2$ & Tier-2 Sovereign & Rival powers, & Dollar alternative, \\
+       &                  & sanctioned states & sanctions evasion \\[3pt]
+EV$_3$ & Corporate & Energy producers, miners, & Energy monetization, \\
+       &           & AI agents                & autonomous settlement \\
+\bottomrule
+\end{tabular}
+\caption{Exit-valve participant classification.}
+\label{tab:ev}
+\end{table}
+
+\subsection{2.3 Dual-Role Actors}
+
+Many actors simultaneously tax coordination \emph{and} use the neutral
+rail, creating the strategic tension that drives the Gridlock Wedge:
+
+\begin{itemize}
+  \item \textbf{United States} (CT$_1$ + EV$_2$): Enforces dollar
+    hegemony via SWIFT sanctions while maintaining a strategic Bitcoin
+    reserve as a hedge against de-dollarization.
+  \item \textbf{China} (CT$_1$ + EV$_2$): Imposes capital controls and
+    bans domestic crypto trading while using cryptocurrency for
+    cross-border trade settlement.
+  \item \textbf{Russia/Iran} (CT$_1$ + EV$_2$): Nominally restrict
+    domestic use while employing Bitcoin for sanctions evasion in
+    international trade.
+  \item \textbf{Major banks} (CT$_2$ + EV$_3$): Gatekeep fiat access
+    while building custody and trading infrastructure to capture
+    Bitcoin-denominated revenue.
+\end{itemize}
+
+\begin{remark}
+In informal discussion, coordination taxers are sometimes called
+``cats'' and exit-valve participants ``mice,'' referencing the familiar
+cat-and-mouse enforcement dynamic. We use formal terms throughout.
+\end{remark}
+
+% ============================================================
+\section{3. Model: Multi-Predator Lotka--Volterra System}\label{sec:model}
+% ============================================================
+
+\subsection{3.1 System Equations}
+
+Let $x(t) \in \mathbb{R}_{\geq 0}$ denote neutral rail usage (a proxy
+for prey population) and $y_k(t) \in \mathbb{R}_{\geq 0}$ the
+enforcement intensity of actor~$k \in \{1, \ldots, n\}$.
+
+\begin{definition}[Multi-Predator Enforcement System]\label{def:system}
+The enforcement dynamics are governed by:
+\begin{align}
+  \frac{dx}{dt} &= r\,x\!\left(1 - \frac{x}{K}\right)
+    - \sum_{k=1}^{n} a_k \, x \, y_k \,,
+    \label{eq:prey} \\[6pt]
+  \frac{dy_k}{dt} &= b_k \, x \, y_k - d_k \, y_k
+    - \sum_{\substack{j=1 \\ j \neq k}}^{n}
+      \varepsilon_{jk} \, y_j \, y_k \,,
+    \qquad k = 1, \ldots, n \,,
+    \label{eq:predator}
+\end{align}
+where the parameters are defined in Table~\ref{tab:params}.
+\end{definition}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cl@{}}
+\toprule
+Symbol & Definition \\
+\midrule
+$x(t)$            & Neutral rail usage (prey population proxy) \\
+$y_k(t)$          & Enforcement intensity of actor~$k$ \\
+$r > 0$           & Intrinsic growth rate of neutral rail adoption \\
+$K > 0$           & Carrying capacity (maximum adoption) \\
+$a_k > 0$         & Suppression efficiency of enforcer~$k$ \\
+$b_k > 0$         & Benefit enforcer~$k$ extracts from enforcement \\
+$d_k > 0$         & Cost/decay rate of enforcement effort \\
+$\varepsilon_{jk} > 0$ & Inter-predator competition coefficient between $j$ and~$k$ \\
+\bottomrule
+\end{tabular}
+\caption{Model parameters.}
+\label{tab:params}
+\end{table}
+
+\subsection{3.2 Inter-Predator Competition}
+
+The critical structural parameter is $\varepsilon_{jk}$: the degree to
+which enforcer~$j$'s actions interfere with enforcer~$k$'s enforcement
+capacity.
+
+\begin{assumption}[Multipolarity]\label{asm:multi}
+There exist at least three tier-1 enforcement actors ($n \geq 3$), and
+inter-predator competition is strictly positive:
+$\varepsilon_{jk} > 0$ for all $j \neq k$.
+\end{assumption}
+
+\begin{remark}
+Assumption~\ref{asm:multi} is not a modeling convenience---it is an
+empirical regularity guaranteed by geopolitical multipolarity (AX1/W1 in
+Hash, 2026a). Concrete channels include: US sanctions pushing sanctioned
+parties toward Bitcoin (undermining China's capital controls); EU
+regulation pushing capital to permissive jurisdictions (undermining
+enforcement coherence); bank compliance requirements creating demand for
+non-custodial alternatives (expanding the enforcement perimeter).
+\end{remark}
+
+\subsection{3.3 Interior Equilibrium}
+
+Setting \eqref{eq:prey}--\eqref{eq:predator} to zero and solving for
+the interior fixed point $(x^{*}, y_1^{*}, \ldots, y_n^{*})$ with all
+components strictly positive, we obtain:
+
+\begin{equation}\label{eq:xstar}
+  x^{*} = K \left( 1 - \frac{1}{r} \sum_{k=1}^{n} a_k \, y_k^{*}
+  \right) > 0 \,,
+\end{equation}
+
+where the $y_k^{*}$ satisfy the coupled system
+\begin{equation}\label{eq:ystar}
+  b_k \, x^{*} - d_k - \sum_{\substack{j=1 \\ j \neq k}}^{n}
+    \varepsilon_{jk} \, y_j^{*} = 0 \,,
+    \qquad k = 1, \ldots, n \,.
+\end{equation}
+
+The positivity of $x^{*}$ in \eqref{eq:xstar} holds because
+inter-predator friction bounds each $y_k^{*}$ from above: the
+competition terms $\varepsilon_{jk} \, y_j^{*}$ in
+\eqref{eq:ystar} prevent any single enforcer from achieving the
+suppression threshold at which $\sum_k a_k y_k^{*} / r \geq 1$.
+
+% ============================================================
+\section{4. The Gridlock Wedge Theorem}\label{sec:gridlock}
+% ============================================================
+
+\begin{theorem}[Gridlock Wedge]\label{thm:gridlock}
+Under Assumption~\ref{asm:multi} ($n \geq 3$,
+$\varepsilon_{jk} > 0$ for all $j \neq k$), the following hold:
+\begin{enumerate}[label=\textup{(G\arabic*)}]
+  \item\label{G1} Multiple enforcers exist at all observed~$t$.
+  \item\label{G2} Inter-predator competition is strictly positive.
+  \item\label{G3} The neutral settlement rail survives at a positive
+    interior equilibrium: $x^{*} > 0$.
+  \item\label{G4} Each enforcer strictly prefers that rivals not
+    suppress.
+  \item\label{G5} Given that rivals preserve the rail, each enforcer's
+    best response is to also preserve.
+  \item\label{G6} No stable suppression coalition exists.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\ref{G1} is an empirical observation: at least three tier-1 enforcement
+actors (US, EU, China) operate simultaneously at all observed time
+periods.
+
+\ref{G2} follows from \ref{G1} and Assumption~\ref{asm:multi}: every
+enforcer pair exhibits strictly positive competition
+($\varepsilon_{jk} > 0$) through the channels described in
+Section~3.2.
+
+For \ref{G3}, rearrange each predator's equilibrium
+condition~\eqref{eq:ystar}:
+\begin{equation}\label{eq:survival}
+  b_k \, x^{*} = d_k + \sum_{\substack{j=1 \\ j \neq k}}^{n}
+    \varepsilon_{jk} \, y_j^{*} \,.
+\end{equation}
+Since $d_k > 0$ and every term on the right-hand side is non-negative,
+\[
+  x^{*} = \frac{d_k + \sum_{j \neq k}
+    \varepsilon_{jk} \, y_j^{*}}{b_k}
+    \;\geq\; \frac{d_k}{b_k} \;>\; 0 \,.
+\]
+This is the standard survival result in multi-predator
+Lotka--Volterra theory: each predator's equilibrium condition
+\emph{individually} guarantees $x^{*} > 0$, because enforcement
+profitability requires a positive prey population.  Inter-predator
+competition strengthens this bound: the $\varepsilon_{jk} \, y_j^{*}$
+terms in~\eqref{eq:survival} increase $x^{*}$ above the
+single-predator baseline $d_k/b_k$, as competition diverts enforcement
+resources from prey suppression to inter-predator rivalry.
+
+For \ref{G4}, each enforcer~$k$'s per-period extraction is
+$b_k \, x \, y_k$, which is strictly increasing in~$x$.  If rivals
+intensify suppression (raise $y_j$ for $j \neq k$), the prey
+equation~\eqref{eq:prey} yields a lower equilibrium~$x$, reducing
+$k$'s extraction.  Conversely, if rivals \emph{reduce} enforcement,
+$x$ rises and $k$'s extraction improves.  Thus each enforcer strictly
+prefers that rivals maintain lower enforcement intensity:
+\[
+  \frac{\partial}{\partial y_j}\!\bigl(b_k \, x^{*}(y_j)\bigr)
+  < 0 \quad \text{for all } j \neq k \,,
+\]
+where $x^{*}(y_j)$ denotes the equilibrium prey level as a function of
+rival enforcement.  No surplus-splitting mechanism is required; the
+preference follows directly from the competitive structure of the
+multi-predator system.
+
+\ref{G5} follows from game-theoretic dominance analysis. Fix the
+strategies of all enforcers $j \neq k$ at ``preserve.'' If $k$ bans,
+$k$ loses neutral rail access (hedge value against rivals'
+weaponization) while competitors maintain access. If $k$ preserves, $k$
+retains both hedge value and compliance revenue from supervised activity.
+Since the hedge value is strictly positive under multipolarity (rival
+weaponization is a non-degenerate threat), preservation weakly dominates
+banning. This generates a dominant strategy cascade: once any enforcer
+preserves, all others' best response is to preserve
+(Lemma~\ref{lem:hedging}).
+
+For \ref{G6}, suppose a suppression coalition
+$C \subseteq \{1, \ldots, n\}$ forms. Consider any member~$k \in C$.
+If $k$ deviates to ``preserve'' while $C \setminus \{k\}$ continues
+suppressing:
+\begin{enumerate}[label=(\alph*)]
+  \item $k$ captures fleeing capital from the suppressed jurisdictions.
+  \item $k$ retains neutral rail access as a hedge against
+    $(C \setminus \{k\})$'s residual enforcement power.
+  \item Rivals in $C \setminus \{k\}$ bear higher per-capita
+    enforcement costs due to $k$'s defection.
+\end{enumerate}
+The deviation payoff strictly exceeds the coalition payoff, so no Nash
+stable coalition exists.
+\end{proof}
+
+% ============================================================
+\section{5. The Dominant Strategy Cascade}\label{sec:hedging}
+% ============================================================
+
+\begin{lemma}[Predator Hedging]\label{lem:hedging}
+Let $\mathcal{G}$ be the simultaneous-move game in which each enforcer
+$k \in \{1, \ldots, n\}$ chooses $s_k \in \{\text{ban}, \text{preserve}\}$.
+Under Assumption~\ref{asm:multi}, ``preserve'' weakly dominates ``ban''
+for every~$k$, regardless of rivals' strategies. Consequently,
+suppression is never unanimous.
+\end{lemma}
+
+\begin{proof}
+Define enforcer~$k$'s payoff function as
+\begin{equation}\label{eq:payoff}
+  U_k(s_k, s_{-k}) = \underbrace{R_k(s_k, s_{-k})}_{\text{enforcement revenue}}
+    + \underbrace{H_k(s_k, s_{-k})}_{\text{hedge value}}
+    - \underbrace{C_k(s_k)}_{\text{enforcement cost}} \,,
+\end{equation}
+where:
+\begin{itemize}
+  \item $R_k$ is the revenue from enforcement activity (compliance fees,
+    taxation of supervised Bitcoin activity).
+  \item $H_k$ is the option value of maintaining neutral rail access as
+    a hedge against rival monetary weaponization (sanctions, SWIFT
+    exclusion, capital freezes).
+  \item $C_k$ is the direct cost of the chosen strategy.
+\end{itemize}
+
+\medskip\noindent
+\textbf{Case 1:} Rival strategies $s_{-k}$ include at least one
+``preserve.''
+
+If some rival preserves, the neutral rail persists. If $k$~bans,
+$H_k = 0$ (loses hedge). If $k$~preserves, $H_k > 0$ and $R_k \geq 0$
+(can tax supervised activity). Since $C_k(\text{preserve}) \leq
+C_k(\text{ban})$ (suppression requires active enforcement),
+$U_k(\text{preserve}) > U_k(\text{ban})$.
+
+\medskip\noindent
+\textbf{Case 2:} All rivals choose ``ban'' ($s_j = \text{ban}$ for all
+$j \neq k$).
+
+If all rivals ban and $k$ also bans, the rail is fully suppressed:
+$R_k = 0$, $H_k = 0$, but $C_k(\text{ban}) > 0$. If $k$ deviates to
+``preserve,'' $k$ captures all fleeing capital from rival jurisdictions
+($R_k \gg 0$) and retains the hedge ($H_k > 0$). Thus
+$U_k(\text{preserve}) \gg U_k(\text{ban})$.
+
+\medskip
+In both cases, ``preserve'' yields a payoff at least as large as
+``ban.'' Since Case~2 yields strict inequality, ``preserve'' is the
+unique best response for at least one~$k$, which by induction
+(Case~1) propagates to all enforcers.
+\end{proof}
+
+\subsection{5.1 Empirical Validation}
+
+The predator hedging mechanism is observable in practice:
+
+\begin{itemize}
+  \item \textbf{Russia (2022--present):} Despite nominally restricting
+    cryptocurrency domestically, Russia authorized Bitcoin for
+    international settlements to circumvent Western
+    sanctions---exhibiting dual-role behavior (CT$_1$ + EV$_2$).
+  \item \textbf{El~Salvador (2021--present):} Small sovereign adopts
+    Bitcoin as legal tender, demonstrating EV$_2$ first-mover behavior;
+    IMF pressure fails to reverse the policy.
+  \item \textbf{United States (2024--present):} Establishes strategic
+    Bitcoin reserve while maintaining SEC enforcement---CT$_1$ + EV$_2$
+    simultaneously.
+\end{itemize}
+
+% ============================================================
+\section{6. Duration Fragility}\label{sec:duration}
+% ============================================================
+
+We now establish that the principal alternative store of value---equity
+in AI companies---faces structural vulnerabilities that strengthen the
+case for scarcity-based settlement.
+
+\subsection{6.1 Moat Half-Life Under AI Acceleration}
+
+\begin{definition}[Moat Half-Life]\label{def:moat}
+Let $H(t)$ denote the competitive moat half-life of a technology firm
+at time~$t$. Under AI-driven acceleration:
+\begin{equation}\label{eq:moat}
+  H(t) = H_0 \, e^{-\alpha t} \,,
+\end{equation}
+where $H_0 > 0$ is the initial moat half-life and $\alpha > 0$ captures
+the rate of AI-driven competitive erosion.
+\end{definition}
+
+Historical calibration suggests $H_0 \approx 15$ years for pre-AI
+technology moats (e.g., Microsoft's OS dominance persisted for
+approximately~15 years before commoditization pressure materialized). Under
+AI acceleration with $\alpha \approx 0.20$, projected moat half-lives
+compress to $H \approx 3$--$5$ years.
+
+\subsection{6.2 Multiple Compression}
+
+\begin{proposition}[Duration Fragility]\label{prop:duration}
+Let $E_t$ denote a firm's current earnings, $r > 0$ the risk-free
+discount rate, and $\alpha \geq 0$ the moat erosion rate. The
+earnings-based terminal value satisfies:
+\begin{equation}\label{eq:pe}
+  V_t = \frac{E_t}{r + \alpha} \,,
+\end{equation}
+which is strictly decreasing in $\alpha$. In particular:
+\begin{enumerate}[label=(\alph*)]
+  \item At $\alpha = 0$ (no moat erosion): $P/E = 1/r$.
+  \item At $\alpha = r$ (moat erodes at discount rate): $P/E = 1/(2r)$,
+    a $50\%$ compression.
+  \item As $\alpha \to \infty$ (instantaneous commoditization):
+    $V_t \to 0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The terminal value of a perpetual earnings stream $E_t$ subject to
+exponential decay at rate~$\alpha$ is
+\[
+  V_t = \int_0^{\infty} E_t \, e^{-\alpha s} \, e^{-rs} \, ds
+      = E_t \int_0^{\infty} e^{-(r+\alpha)s} \, ds
+      = \frac{E_t}{r + \alpha} \,.
+\]
+Statements (a)--(c) follow by substitution.
+\end{proof}
+
+\begin{remark}[The 100$\times$ Compression Scenario]
+A firm earning \$10/share with $r = 0.10$ and $\alpha = 0$ trades at
+$P/E = 10$ ($\$100$/share). With $\alpha = 0.20$ (moat half-life
+$\approx 3.5$~years): $P/E = 3.3$ ($\$33$/share)---a $67\%$ haircut
+with \emph{identical} current earnings. At $\alpha = 0.90$: $P/E = 1.0$
+($\$10$/share)---a $90\%$ haircut. The fiber-optic precedent
+(1997--2010: margins from $60\%$ to $15\%$) demonstrates this pattern at
+infrastructure scale.
+\end{remark}
+
+\subsection{6.3 Implication for Settlement Asset Selection}
+
+Bitcoin has no earnings and therefore no duration fragility. Its value
+derives entirely from scarcity (21M fixed supply) and network effects
+(Metcalfe-type scaling)---properties immune to competitive moat erosion.
+For long-duration wealth preservation across generational time horizons,
+the absence of duration fragility is a structural advantage over any
+earnings-dependent asset class.
+
+% ============================================================
+\section{7. Empirical Evidence}\label{sec:evidence}
+% ============================================================
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{5cm}cp{3.2cm}@{}}
+\toprule
+Observation & Classification & Supports \\
+\midrule
+Russia authorizes crypto for international trade (2024)
+  & CT$_1$ + EV$_2$
+  & Lemma~\ref{lem:hedging}, \ref{G5} \\[3pt]
+Iran uses Bitcoin mining for energy monetization (2020--)
+  & CT$_1$ + EV$_3$
+  & \ref{G4} \\[3pt]
+El Salvador accumulates 6{,}000+ BTC (2021--2025)
+  & EV$_2$
+  & E4, K1 \\[3pt]
+US establishes strategic Bitcoin reserve (2024--)
+  & CT$_1$ + EV$_2$
+  & Lemma~\ref{lem:hedging}, \ref{G5} \\[3pt]
+China bans crypto trading but mines hash (2021--)
+  & CT$_1$ + EV$_2$/EV$_3$
+  & \ref{G2}, \ref{G4} \\[3pt]
+NVIDIA P/E: $70\times \to 30\times$ (2023--2026)
+  & ---
+  & Prop.~\ref{prop:duration} \\[3pt]
+Fiber-optic margins: $60\% \to 15\%$ (1997--2010)
+  & ---
+  & Historical precedent \\[3pt]
+Singapore issues 13 DPT licenses (2024)
+  & EV$_2$
+  & \ref{G2}, \ref{G4} \\
+\bottomrule
+\end{tabular}
+\caption{Empirical observations classified by actor taxonomy.}
+\label{tab:evidence}
+\end{table}
+
+% ============================================================
+\section{8. Falsification}\label{sec:falsification}
+% ============================================================
+
+\begin{condition}[F7: Gridlock Closes]\label{cond:F7}
+The results of this paper are falsified if:
+\begin{quote}
+\emph{Synchronized global suppression eliminates all enforcement gaps
+\textbf{and} permanent tier-1 capability lockout prevents
+re-emergence.}
+\end{quote}
+\end{condition}
+
+Specifically, F7 requires:
+\begin{enumerate}[label=(\roman*)]
+  \item All tier-1 enforcers (US, EU, China at minimum) simultaneously
+    and permanently suppress Bitcoin access.
+  \item No tier-2 sovereign defects to capture fleeing capital.
+  \item Technical capability to run nodes and mine is permanently
+    eliminated (not merely pushed underground).
+  \item The above conditions persist indefinitely (not merely during a
+    crisis period).
+\end{enumerate}
+
+F7 subsumes and strengthens F4 (stable cartel, Hash 2026a): it requires
+not just a cartel but synchronized action with permanent capability
+destruction. Under Assumption~\ref{asm:multi}, the inter-predator
+competition coefficients $\varepsilon_{jk}$ would need to collapse to
+zero---meaning geopolitical competition itself would need to end.
+
+% ============================================================
+\section{9. Limitations}\label{sec:limitations}
+% ============================================================
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Parameter estimation:} The Lotka--Volterra coefficients
+    ($a_k$, $b_k$, $d_k$, $\varepsilon_{jk}$) are modeled
+    qualitatively. Empirical calibration would strengthen the results
+    but is not required for the qualitative survival conclusion
+    ($x^{*} > 0$).
+  \item \textbf{Regime changes:} The model assumes multipolarity
+    persists. If W1 (Open World) transitions to W2 (Closed World---a
+    single global hegemon), the inter-predator competition coefficients
+    collapse to zero and F7 becomes possible.
+  \item \textbf{Duration fragility calibration:} The moat erosion rate
+    $\alpha$ is estimated from limited historical precedent. If AI
+    creates genuinely permanent moats (unprecedented in technological
+    history), the equity compression argument weakens.
+  \item \textbf{Biological analogy limits:} Monetary enforcement
+    dynamics differ from biological predator-prey systems in that
+    actors are strategic (game-theoretic) rather than mechanistic. The
+    Lotka--Volterra structure captures the competitive dynamics but
+    understates the full strategic complexity. A richer formulation
+    using differential games (Isaacs, 1965) could refine the
+    quantitative predictions without altering the qualitative survival
+    result.
+\end{enumerate}
+
+% ============================================================
+\section{10. Conclusion}\label{sec:conclusion}
+% ============================================================
+
+The enforcement coordination problem is not merely a prisoner's
+dilemma---it is a structurally guaranteed gridlock arising from
+inter-predator competition. Competing enforcement actors cannot suppress
+the neutral settlement rail because each preserves it as a hedge against
+rivals. This result completes the causal chain:
+
+\begin{enumerate}
+  \item Exit is self-reinforcing (Hash, 2026a, Theorem~1).
+  \item Coordination to stay fails \emph{because enforcement actors are
+    in permanent gridlock} (Theorem~\ref{thm:gridlock}).
+  \item The resulting equilibrium is absorbing (Hash, 2026a, Theorem~3).
+  \item Bitcoin is the unique survivor of seven-property elimination
+    (Hash, 2026b).
+  \item The result extends to autonomous agents at zero trust (Hash,
+    2026c).
+\end{enumerate}
+
+The correct framing for Bitcoin's survivability is not eradication risk
+but \emph{containment}. Enforcement actors will regulate, tax, and
+monitor Bitcoin activity at the application layer---but they cannot and
+will not eliminate the settlement layer, because doing so would surrender
+their hedge against rival enforcers. The neutral rail survives not
+despite enforcement but \emph{because of} the competitive structure of
+enforcement itself.
+
+% ============================================================
+\section{References}\label{sec:references}
+% ============================================================
+
+Chainalysis (2024). The 2024 Crypto Crime Report.
+
+Hash (2026a). Bitcoin exit dominance in monetary coordination games.
+Working paper, bitcoingametheory.com.
+
+Hash (2026b). Bitcoin as unique neutral settlement: A seven-property
+elimination. Working paper, bitcoingametheory.com.
+
+Hash (2026c). Settlement at zero trust: Bitcoin and autonomous economic
+agents. Working paper, bitcoingametheory.com.
+
+Isaacs, R. (1965). \emph{Differential Games: A Mathematical Theory with
+Applications to Warfare and Pursuit, Control and Optimization.} John
+Wiley \& Sons.
+
+May, R. M. (1973). \emph{Stability and Complexity in Model Ecosystems.}
+Princeton University Press.
+
+Volterra, V. (1928). Variations and fluctuations of the number of
+individuals in animal species living together. \emph{ICES Journal of
+Marine Science}, 3(1), 3--51.
+
+% ============================================================
+% APPENDIX
+% ============================================================
+
+\appendix
+\section{Appendix: Notation}\label{app:notation}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cl@{}}
+\toprule
+Symbol & Definition \\
+\midrule
+$x(t)$                 & Neutral rail usage (prey population proxy) \\
+$y_k(t)$               & Enforcement intensity of actor~$k$ \\
+$n$                    & Number of enforcement actors \\
+$r$                    & Intrinsic growth rate of neutral rail adoption \\
+$K$                    & Carrying capacity (maximum adoption) \\
+$a_k$                  & Suppression efficiency of enforcer~$k$ \\
+$b_k$                  & Benefit enforcer~$k$ extracts from enforcement \\
+$d_k$                  & Cost/decay rate of enforcement effort for~$k$ \\
+$\varepsilon_{jk}$     & Inter-predator competition coefficient ($j \neq k$) \\
+$x^{*}, y_k^{*}$      & Interior equilibrium values \\
+$H(t)$                 & Competitive moat half-life at time~$t$ \\
+$H_0$                  & Initial moat half-life (pre-AI) \\
+$\alpha$               & Rate of AI-driven moat erosion \\
+$E_t$                  & Current earnings of a firm \\
+$V_t$                  & Terminal value of earnings stream \\
+$U_k(s_k, s_{-k})$    & Enforcer~$k$'s payoff under strategy profile \\
+$R_k, H_k, C_k$       & Revenue, hedge value, and cost components \\
+CT$_1$--CT$_3$         & Coordination taxer tiers \\
+EV$_1$--EV$_3$         & Exit-valve participant tiers \\
+\bottomrule
+\end{tabular}
+\caption{Summary of notation.}
+\label{tab:notation}
+\end{table}
+
+\end{document}

@@ -1,0 +1,113 @@
+RFC-BGT-0009: Compressed Actor Roster (42 Actors × 4 Groups)
+Series: Bitcoin Game Theory
+Status: Reference | Version: 0.9 | Date: 2026-02
+Source: BGT-0009 §Unique Relationship to Money
+
+================================================================================
+ACTOR ROSTER: 42 STAKEHOLDER TYPES
+================================================================================
+
+42 actors × 4 optimization groups, defined by unique interface with money.
+Each actor listed with ID, Name, and one-line relationship to money.
+
+================================================================================
+T1: POWER ACTORS (Pw1-Pw9)
+Optimizing for: Control over money and people
+================================================================================
+
+ID    ACTOR                      UNIQUE RELATIONSHIP TO MONEY
+----  -------------------------  --------------------------------------------------------
+Pw1   Global Hegemon             Issues reserve currency; extracts seigniorage
+Pw2   Rival Superpower           Manages capital controls; seeks dollar alternatives
+Pw3   Authoritarian Regime       Extracts citizen wealth; audits subordinates
+Pw4   Elected Politician         Spends public funds; 2-6 year election horizon
+Pw5   Central Banker             Sets monetary policy; forced to debase
+Pw6   Sanctions Enforcer         Weaponizes dollar access; creates exit pressure
+Pw7   Tax Authority              Collects revenue; transparent ledger aids enforcement
+Pw8   Intelligence Agency        Hoards capability; espionage value > theft value
+Pw9   International Organization Coordinates policy; cannot enforce coordination
+
+================================================================================
+T2: PROFIT ACTORS (Pr1-Pr11)
+Optimizing for: Fees, yields, spreads, AUM
+================================================================================
+
+ID    ACTOR                      UNIQUE RELATIONSHIP TO MONEY
+----  -------------------------  --------------------------------------------------------
+Pr1   Legacy Bank                Holds deposits; earns lending spread
+Pr2   Asset Manager              Manages pooled assets; earns AUM fees
+Pr3   Custodian / Exchange       Holds custody; earns trading fees on volume
+Pr4   Financial Regulator        Sets rules; gates market access by jurisdiction
+Pr5   Rating Agency              Rates creditworthiness; enables capital allocation
+Pr6   Payment Processor          Processes transactions; earns interchange fees
+Pr7   Remittance Company         Transfers cross-border; earns 5-15% corridor fees
+Pr8   Insurance Company          Underwrites custody risk; earns premiums
+Pr9   Prime Broker               Provides leverage; earns collateral yield
+Pr10  Auditor                    Attests reserves; earns attestation fees
+Pr11  Stablecoin Issuer          Creates dollar tokens; earns yield on reserves
+
+================================================================================
+T3: PRESERVATION ACTORS (Ps1-Ps11)
+Optimizing for: Protecting existing wealth from erosion, seizure, decay
+================================================================================
+
+ID    ACTOR                      UNIQUE RELATIONSHIP TO MONEY
+----  -------------------------  --------------------------------------------------------
+Ps1   Pension Fund               Matches assets to liabilities; benchmark-driven
+Ps2   Sovereign Wealth Fund      Invests national savings; sanctions-exposed
+Ps3   Endowment / Foundation     Manages perpetual capital; alternatives-heavy
+Ps4   Corporate Treasury         Preserves operating cash; inflation-exposed
+Ps5   Family Office              Manages multi-generational wealth; transfer risk
+Ps6   High Net Worth Individual  Wealth tied to business; concentrated risk
+Ps7   Retail Saver              Earns wages; saves in bank; inflation-exposed
+Ps8   Unbanked Individual       Excluded from banking; needs permissionless entry
+Ps9   Migrant Worker            Earns abroad; sends home; high-fee transfer
+Ps10  Political Dissident        Targeted by regime; needs unseizable wealth
+Ps11  Small Business Owner      Manages working capital; bank-dependent risk
+
+================================================================================
+T4: PRODUCTION ACTORS (Pd1-Pd11)
+Optimizing for: Converting resources to value
+================================================================================
+
+ID    ACTOR                      UNIQUE RELATIONSHIP TO MONEY
+----  -------------------------  --------------------------------------------------------
+Pd1   Energy Producer           Produces energy; monetizes stranded/curtailed capacity
+Pd2   Mining Nation             Converts national energy to sovereign savings
+Pd3   Grid Operator             Balances supply/demand; mining = flexible load
+Pd4   Hash Rate Provider        Converts electricity to hash power; earns rewards
+Pd5   Mining Pool Operator      Coordinates hash power; earns pool fees
+Pd6   ASIC Manufacturer         Designs mining hardware; earns hardware margins
+Pd7   Node Operator             Validates transactions; enforces consensus rules
+Pd8   Lightning Node Operator   Routes payments; earns routing fees
+Pd9   Core Developer            Writes protocol software; unpaid or grant-funded
+Pd10  AI Agent                  Autonomous system; zero legal recourse; needs math
+Pd11  Data Center               Provides compute/storage; fills utilization gaps
+
+================================================================================
+COVERAGE PROOF
+================================================================================
+
+Total Actors: 42
+
+Distinctness Test:
+- Pw1-Pw9: 9 unique positions in money-control hierarchy
+- Pr1-Pr11: 11 different revenue mechanisms
+- Ps1-Ps11: 11 different wealth-erosion vectors
+- Pd1-Pd11: 11 different resource conversions
+
+Any unmodeled actor either:
+(a) Maps to existing actor's incentive structure (same defense applies), or
+(b) Lacks sufficient influence to alter equilibrium outcome.
+
+To contest roster, specify: (1) which group the missing actor belongs to,
+(2) why its money interface differs from all existing actors in that group,
+and (3) which axiom (AX1-AX4) its inclusion would contradict.
+
+================================================================================
+SOURCE
+================================================================================
+
+RFC-BGT-0009: Actor Incentive Analysis, Version 0.9
+https://bitcoingametheory.com/rfc/BGT-0009.txt
+Lines 86-148 (Unique Relationship to Money tables)
