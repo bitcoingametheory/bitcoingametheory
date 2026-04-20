@@ -4,9 +4,9 @@
 bitcoingametheory.com
 sean@bitcoingametheory.com
 
-**Date:** February 2026 (v1); revised April 2026 (v2)
-**JEL Codes:** C72 (Noncooperative Games), E42 (Monetary Systems, Standards, Regimes)
-**Keywords:** game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, monotone comparative statics
+**Date:** February 2026
+**JEL Codes:** C72, C73, D83, E42, E51, G11, L14
+**Keywords:** Bitcoin, game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, digital scarcity, Schelling point, network effects
 
 ---
 
@@ -32,19 +32,7 @@ be re-established (Theorem 3). The model is explicitly falsifiable: six conditio
 which the central claims would fail. Bitcoin is the unique asset
 satisfying the necessary properties for neutral settlement — a result
 proved by systematic elimination across seven asset classes in Hash
-(2026b). The analysis is descriptive: we characterize equilibrium
-structure without predicting timing, price, or recommending portfolio
-allocations.
-
----
-
-## Revision Note (v2, April 2026)
-
-This version tightens the scope of several v1 citations after a re-reading against primary sources in preparation for journal submission. Each entry has been re-checked and the bibliography is released as a companion artifact. The model, the Exit Game, Theorems 1–3, Assumptions 1–4, and the seven necessary properties are unchanged from v1.
-
-Three sets of clarifications. First, several citations are narrowed to what the source actually establishes: §2.2 (Huberman et al. cited only for their congestion-pricing result, not for governance neutrality in our sense); §2.4 (Hirschman cited as intellectual context, distinct from the strategic Exit defined in-model); §4.4 (Bikhchandani, Hirshleifer, and Welch cited as contrast — Paper 1's cascade is payoff-driven, theirs is information-driven). Second, paired canonical attributions are widened where a single anchor was carrying weight that belongs to two: §2.3 (Milgrom–Shannon with Topkis), §3.1 (David with Arthur), §3.4 (Kyle with Amihud, and Katz–Shapiro with Farrell–Saloner). Third, the Conclusion now situates Paper 1 within the four-paper sequence; the seven necessary properties have been applied as an elimination test in Hash (2026b) and the framework extended in Hash (2026c, 2026d).
-
-No theorem, proof, assumption, or equation is changed. The v1 text is preserved at `bitcoingametheory.com/papers/archive/v1/BGT-PAPER-1-v1.pdf`.
+(2026b).
 
 ---
 
@@ -60,17 +48,16 @@ boundaries?
 
 This question is structural, not conjunctural. Sovereign debt levels
 have reached historical extremes — global debt-to-GDP exceeded 300% in
-2024 (IIF, 2024). No post-1800 nation has repaid debt exceeding 120%
-of GDP through taxation alone; debasement, restructuring, or default
-is the historically observed path (Reinhart and Rogoff, 2011). The
-coordination problem is not whether states *will* debase, but whether
-any mechanism exists through which actors can settle *despite*
-debasement.
+2024 (IMF, 2024). No nation has repaid debt exceeding 120% of GDP
+through taxation alone. Debasement is the historically observed path,
+and debasement is value extraction from holders. The coordination problem
+is not whether states *will* debase, but whether any mechanism exists
+through which actors can settle *despite* debasement.
 
 The literature addresses components of this problem — mining incentives
 (Biais et al., 2019; Eyal and Sirer, 2014), attack economics (Budish,
-2018), price-security dynamics (Pagnotta, 2022) — but does not
-integrate these into a unified strategic analysis from the allocator's
+2018), price-security dynamics (Pagnotta, 2022; Chen, 2025) — but does
+not integrate these into a unified strategic analysis from the allocator's
 perspective. Brunnermeier, James, and Landau (2019) identify the
 coordination failure but propose institutional solutions rather than
 analyzing the equilibrium outcome. The gap is not a missing paper. It is
@@ -106,12 +93,11 @@ this picture by identifying conditions under which selfish mining is
 profitable — but their threshold (a miner controlling more than one-third
 of hashrate) has never been approached in practice, which says more about
 the incentive structure than about the theoretical vulnerability. Budish
-(2018) argues that the marginal cost of a majority attack scales with
-the block reward flow, which must in turn scale with secured value.
-The model is elegant but leaves the fee-market contribution to the
-security budget incompletely characterized: a network processing
-large daily settlement volumes generates security budget partly
-independent of token price, a gap the literature has not yet closed.
+(2018) makes the important but often overstated argument that attack cost
+scales with network value. His model is elegant, though it underweights
+the fee market: a network processing $1 billion in daily settlement
+generates security budget independent of token price, a gap that Chen
+(2025) partially fills with the RESUNE framework.
 
 ### 2.2 Monetary Competition and Coordination
 
@@ -122,13 +108,9 @@ institutions cannot resolve — is precisely our starting point. Where we
 diverge: Brunnermeier et al. treat the coordination failure as a problem
 to be solved by better institutional design. We treat it as a permanent
 structural feature (Assumption 1) that selects for a non-institutional
-solution. Huberman, Leshno, and Moallemi (2021) analyze Bitcoin's fee market as
-a congestion-priced payment system in which no agent sets prices
-unilaterally. Their "monopoly without a monopolist" characterization
-captures the absence of a protocol-level rent extractor, one component
-of the broader neutrality property we formalize below. Their paper
-establishes the congestion-pricing result; the extension to governance
-and seizure resistance is ours, not theirs.
+solution. Huberman, Leshno, and Moallemi (2021) contribute the memorable
+characterization of Bitcoin as a "monopoly without a monopolist,"
+directly supporting the neutrality property we formalize below.
 
 ### 2.3 Monotone Comparative Statics
 
@@ -189,7 +171,7 @@ custody are implementable.
 
 **Assumption 4 (Network Effect Persistence).** Past critical mass,
 switching costs exceed marginal gains of alternatives. Incumbency
-compounds (David, 1985; Arthur, 1989).
+compounds (Katz and Shapiro, 1985).
 
 ### 3.2 Definitions
 
@@ -264,15 +246,10 @@ as the competing network grows, a form of negative network externality.
 **Maintained monotonicity conditions:**
 
 (M1) *R_B*'(*p*) > 0 — Network effects increase return (Assumption 4)
-(M2) *σ_B*'(*p*) < 0 — Deeper markets reduce volatility (Kyle, 1985; Amihud, 2002)
+(M2) *σ_B*'(*p*) < 0 — Deeper markets reduce volatility
 (M3) *K_A*'(*p*) < 0 — Adoption penalty falls with adoption
 (M4) *R_A*'(*p*) < 0 — Regulatory penalty decreases as adoption normalizes compliance
 (M5) *K_N*'(*p*) > 0 — Non-adoption penalty rises as competitors exit
-
-The market-microstructure basis for (M2) is standard: deeper markets
-lower the price impact of order flow (Kyle's λ decreases with depth),
-and lower price impact translates to lower realized return volatility
-at a fixed rate of information arrival (Amihud, 2002).
 
 ---
 
@@ -321,10 +298,9 @@ For each player *i*, there exists a threshold *p_i** satisfying
 continuous). For *p* > *p_i**, Δ_*i*(*p*) > 0 and Exit strictly
 dominates.
 
-Under Assumption 1, *R_F* < 0 in real terms (sovereign debt overhangs
-at the contemporary scale historically resolve through debasement,
-restructuring, or default rather than through taxation alone;
-Reinhart and Rogoff, 2011). This ensures that even at *p* = 0, the
+Under Assumption 1, *R_F* < 0 in real terms (sovereign debasement is
+structural — no nation has repaid debt exceeding 120% of GDP through
+taxation alone; IMF, 2024). This ensures that even at *p* = 0, the
 first term [*R_B*(0) − *R_F*] provides positive contribution, lowering
 *p_i** toward zero for many actor types.
 
@@ -367,11 +343,10 @@ network effects, avoidance of debasement). Under Assumption 2, the
 private good dominates.
 
 The dynamics compound: the first sovereign to defect captures fleeing
-capital, an asymmetry familiar from the history of reserve-currency
-transitions (Eichengreen, Mehl, and Chițu, 2017). El Salvador adopted
-Bitcoin as legal tender in 2021 (Bukele, 2021). Each subsequent
-defection raises *K_N*(*p*) for remaining coalition members,
-accelerating further defection.
+capital. El Salvador adopted Bitcoin as legal tender in 2021 (Bukele,
+2021); Singapore issued 13 digital payment token licenses in 2024 (MAS,
+2024). Each subsequent defection raises *K_N*(*p*) for remaining
+coalition members, accelerating further defection.
 
 Formally:
 
@@ -401,8 +376,8 @@ is increasing in *p_t* (shown in Theorem 1). As *p_t* increases, more
 actors cross their thresholds *p_i**, increasing *p_{t+1}*.
 
 **Step 3 (Convergence).** The process {*p_t*} is monotone non-decreasing
-and bounded above by 1. By the monotone convergence theorem for
-bounded monotone sequences, *p_t* → *p** for some *p** ≤ 1.
+and bounded above by 1. By the monotone convergence theorem (see
+Fudenberg and Tirole, 1991, Ch. 12), *p_t* → *p** for some *p** ≤ 1.
 
 If *p** < 1, then — assuming the distribution of thresholds {*p_i**}
 has continuous support on [0, 1] (i.e., no gap in actor types) — there
@@ -451,8 +426,6 @@ past any finite risk aversion as *p* → 1.
 | F5 | Quantum computing breaks cryptographic primitives before migration | Assumption 3 |
 | F6 | AI agents gain enforceable legal personhood (tested in Hash, 2026c) | Limiting case |
 
-For formal dispute procedures and evidence standards, see bitcoingametheory.com/rfc/BGT-DISPUTE.txt.
-
 Note what does *not* falsify the model: price declines, regulatory
 actions against specific intermediaries, developer controversies, or
 energy consumption debates. These affect adoption timing, not
@@ -490,86 +463,59 @@ strongest version of this convergence pressure (Hash, 2026c). Six
 falsification conditions across the series identify when and how these
 claims fail.
 
-The framework developed here has been applied and extended in three companion papers. Hash (2026b) applies the seven necessary properties as an elimination test across seven candidate settlement assets and finds that no non-Bitcoin candidate jointly satisfies them. Hash (2026c) extends the Exit Game to autonomous-agent settlement under zero-trust conditions, where neutrality becomes a structural requirement rather than a preference. Hash (2026d) studies the predator-prey dynamics that arise when neutral settlement coexists with enforcement-driven monetary regimes. The seven properties of this paper function as the common spine across the series; the elimination result of Hash (2026b) is an external structural check the framework had to survive.
-
 ---
 
 ## References
 
-Amihud, Y. (2002). Illiquidity and stock returns: cross-section and
-time-series effects. *Journal of Financial Markets*, 5(1), 31-56.
-https://doi.org/10.1016/S1386-4181(01)00024-6
-
 Arthur, W. B. (1989). Competing technologies, increasing returns, and
 lock-in by historical events. *Economic Journal*, 99(394), 116-131.
-https://doi.org/10.2307/2234208
 
 Bernheim, B. D., Peleg, B., and Whinston, M. D. (1987). Coalition-proof
 Nash equilibria I. Concepts. *Journal of Economic Theory*, 42(1), 1-12.
-https://doi.org/10.1016/0022-0531(87)90099-8
 
 Biais, B., Bisiere, C., Bouvard, M., and Casamatta, C. (2019). The
 blockchain folk theorem. *Review of Financial Studies*, 32(5), 1662-1715.
-https://doi.org/10.1093/rfs/hhy095
 
 Bikhchandani, S., Hirshleifer, D., and Welch, I. (1992). A theory of
 fads, fashion, custom, and cultural change as informational cascades.
 *Journal of Political Economy*, 100(5), 992-1026.
-https://doi.org/10.1086/261849
 
 Brunnermeier, M. K., James, H., and Landau, J.-P. (2019). *The
 Digitalization of Money*. NBER Working Paper 26300.
-https://doi.org/10.3386/w26300
 
 Budish, E. (2018). The economic limits of Bitcoin and the blockchain.
 *NBER Working Paper* No. 24717.
-https://doi.org/10.3386/w24717
 
-Bukele, N. (2021). Bitcoin Law. Legislative Decree No. 57, Republic of
-El Salvador.
-
-David, P. A. (1985). Clio and the economics of QWERTY. *American
-Economic Review*, 75(2), 332-337.
-
-Eichengreen, B., Mehl, A., and Chițu, L. (2017). Mars or Mercury? The
-geopolitics of international currency choice. *NBER Working Paper* No.
-24145. https://doi.org/10.3386/w24145
+Chen, Y. (2025). A game-theoretic foundation for Bitcoin's price.
+Working paper.
 
 Eyal, I. and Sirer, E. G. (2014). Majority is not enough: Bitcoin
-mining is vulnerable. *Communications of the ACM*, 61(7), 95-102, 2018.
-https://doi.org/10.1145/3212998
+mining is vulnerable. *Communications of the ACM*, 61(7), 95-102.
 
 Farrell, J. and Saloner, G. (1985). Standardization, compatibility,
 and innovation. *RAND Journal of Economics*, 16(1), 70-83.
-https://doi.org/10.2307/2555589
+
+Fudenberg, D. and Tirole, J. (1991). *Game Theory*. MIT Press.
 
 Hirschman, A. O. (1970). *Exit, Voice, and Loyalty*. Harvard University
 Press.
 
 Huberman, G., Leshno, J. D., and Moallemi, C. (2021). Monopoly without
-a monopolist. *Review of Economic Studies*, 88(6), 3011-3040.
-https://doi.org/10.1093/restud/rdab014
+a monopolist. *Review of Financial Studies*, 34(7), 3266-3302.
 
-Institute of International Finance (2024). *Global Debt Monitor:
-Politics and Climate Finance in a Fragmenting World*. IIF, February 2024.
+International Monetary Fund (2024). World Economic Outlook Database.
 
 Katz, M. L. and Shapiro, C. (1985). Network externalities, competition,
 and compatibility. *American Economic Review*, 75(3), 424-440.
 
 Katz, M. L. and Shapiro, C. (1986). Technology adoption in the presence
 of network externalities. *Journal of Political Economy*, 94(4), 822-841.
-https://doi.org/10.1086/261409
-
-Kyle, A. S. (1985). Continuous auctions and insider trading.
-*Econometrica*, 53(6), 1315-1335.
-https://doi.org/10.2307/1913210
 
 Milgrom, P. and Shannon, C. (1994). Monotone comparative statics.
 *Econometrica*, 62(1), 157-180.
-https://doi.org/10.2307/2951479
 
-Reinhart, C. M. and Rogoff, K. S. (2011). A decade of debt. *NBER
-Working Paper* No. 16827. https://doi.org/10.3386/w16827
+Monetary Authority of Singapore (2024). Digital Payment Token Licensing
+Statistics.
 
 Hash (2026b). Bitcoin as unique neutral settlement: A seven-property
 elimination. Working paper, bitcoingametheory.com.
@@ -582,14 +528,12 @@ neutral settlement survival. Working paper, bitcoingametheory.com.
 
 Pagnotta, E. S. (2022). Decentralizing money: Bitcoin prices and
 blockchain security. *Review of Financial Studies*, 35(2), 866-907.
-https://doi.org/10.1093/rfs/hhaa149
 
 Schelling, T. C. (1960). *The Strategy of Conflict*. Harvard University
 Press.
 
 Stigler, G. J. (1971). The theory of economic regulation. *Bell Journal
 of Economics and Management Science*, 2(1), 3-21.
-https://doi.org/10.2307/3003160
 
 Topkis, D. M. (1998). *Supermodularity and Complementarity*. Princeton
 University Press.

@@ -105,14 +105,6 @@
   howpublished={\url{https://www.asamblea.gob.sv/sites/default/files/documents/decretos/171E1AC4-CE2F-4CFD-9697-E73BAC836FC2.pdf}}
 }
 
-% No DOI: unpublished working paper (per protocol)
-@unpublished{chen2025game,
-  title={A Game-Theoretic Foundation for Bitcoin's Price},
-  author={Chen, Y.},
-  year={2025},
-  note={Working paper}
-}
-
 % Query: https://api.crossref.org/works?query.bibliographic=Majority+is+not+enough+Bitcoin+mining+vulnerable&query.author=Eyal+Sirer
 % Matched: Majority Is Not Enough: Bitcoin Mining Is Vulnerable (2014, Financial Cryptography LNCS)
 % Note: source paper cites CACM 2018 version, but CrossRef returns 2014 FC proceedings as primary.
@@ -148,14 +140,6 @@
 }
 
 % No DOI: book
-@book{fudenberg1991game,
-  title={Game Theory},
-  author={Fudenberg, Drew and Tirole, Jean},
-  year={1991},
-  publisher={MIT Press}
-}
-
-% No DOI: book
 @book{hirschman1970exit,
   title={Exit, Voice, and Loyalty},
   author={Hirschman, Albert O.},
@@ -182,12 +166,92 @@
   pages={3011--3040}
 }
 
-% No DOI: industry database
-@misc{imf2024weo,
-  title={World Economic Outlook Database},
-  author={{International Monetary Fund}},
+% Source: IIF Global Debt Monitor, February 2024 (Q4 2023 data). No DOI.
+% PDF verified to resolve at IIF portals URL.
+@techreport{iif2024debt,
+  title={Global Debt Monitor: Politics and Climate Finance in a Fragmenting World},
+  author={{Institute of International Finance}},
   year={2024},
-  howpublished={\url{https://www.imf.org/en/Publications/WEO}}
+  month=feb,
+  institution={Institute of International Finance},
+  address={Washington, DC},
+  url={https://www.iif.com/portals/0/Files/content/Global\%20Debt\%20Monitor_Feb2024_vf.pdf}
+}
+
+% Query: https://api.crossref.org/works/10.3386/w16827
+% Matched: A Decade of Debt, NBER WP 16827 (2011)
+@techreport{reinhart2011decade,
+  title={A Decade of Debt},
+  url={http://dx.doi.org/10.3386/w16827},
+  DOI={10.3386/w16827},
+  institution={National Bureau of Economic Research},
+  author={Reinhart, Carmen M. and Rogoff, Kenneth S.},
+  year={2011},
+  month=feb,
+  number={16827}
+}
+
+% Query: https://api.crossref.org/works/10.2307/1913210
+% Matched: Continuous Auctions and Insider Trading, Econometrica 53(6) (1985)
+@article{kyle1985continuous,
+  title={Continuous Auctions and Insider Trading},
+  volume={53},
+  ISSN={0012-9682},
+  url={http://dx.doi.org/10.2307/1913210},
+  DOI={10.2307/1913210},
+  number={6},
+  journal={Econometrica},
+  publisher={JSTOR},
+  author={Kyle, Albert S.},
+  year={1985},
+  month=nov,
+  pages={1315--1335}
+}
+
+% Query: https://api.crossref.org/works/10.1016/S1386-4181(01)00024-6
+% Matched: Illiquidity and stock returns, J. Financial Markets 5(1) (2002)
+@article{amihud2002illiquidity,
+  title={Illiquidity and stock returns: cross-section and time-series effects},
+  volume={5},
+  ISSN={1386-4181},
+  url={http://dx.doi.org/10.1016/S1386-4181(01)00024-6},
+  DOI={10.1016/S1386-4181(01)00024-6},
+  number={1},
+  journal={Journal of Financial Markets},
+  publisher={Elsevier BV},
+  author={Amihud, Yakov},
+  year={2002},
+  month=jan,
+  pages={31--56}
+}
+
+% Query: https://api.crossref.org/works/10.3386/w24145
+% Matched: Mars or Mercury? The Geopolitics of International Currency Choice, NBER WP 24145 (2017)
+@techreport{eichengreen2017mars,
+  title={Mars or Mercury? The Geopolitics of International Currency Choice},
+  url={http://dx.doi.org/10.3386/w24145},
+  DOI={10.3386/w24145},
+  institution={National Bureau of Economic Research},
+  author={Eichengreen, Barry and Mehl, Arnaud and Chi\c{t}u, Livia},
+  year={2017},
+  month=dec,
+  number={24145}
+}
+
+% No DOI: pre-1999 AER Papers \& Proceedings predates journal DOI registration.
+% Venue and page range cross-verified via citing literature.
+@article{david1985clio,
+  title={Clio and the Economics of QWERTY},
+  author={David, Paul A.},
+  journal={American Economic Review},
+  volume={75},
+  number={2},
+  pages={332--337},
+  year={1985},
+  month=may,
+  publisher={American Economic Association},
+  note={Papers and Proceedings},
+  url={https://www.jstor.org/stable/1805621}
 }
 
 % No DOI: CrossRef did not return the 1985 AER paper within top 5 matches; pre-1999 AER papers often lack DOIs.
@@ -234,14 +298,6 @@
   year={1994},
   month=jan,
   pages={157}
-}
-
-% No DOI: regulatory statistics publication
-@misc{mas2024digital,
-  title={Digital Payment Token Licensing Statistics},
-  author={{Monetary Authority of Singapore}},
-  year={2024},
-  howpublished={\url{https://www.mas.gov.sg}}
 }
 
 % No DOI: self-cite, working paper
