@@ -5,8 +5,8 @@ bitcoingametheory.com
 sean@bitcoingametheory.com
 
 **Date:** February 2026
-**JEL Codes:** C72, C73, D83, E42, E51, G11, L14
-**Keywords:** Bitcoin, game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, digital scarcity, Schelling point, network effects
+**JEL Codes:** C72 (Noncooperative Games), E42 (Monetary Systems, Standards, Regimes)
+**Keywords:** game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, monotone comparative statics
 
 ---
 
@@ -32,7 +32,9 @@ be re-established (Theorem 3). The model is explicitly falsifiable: six conditio
 which the central claims would fail. Bitcoin is the unique asset
 satisfying the necessary properties for neutral settlement — a result
 proved by systematic elimination across seven asset classes in Hash
-(2026b).
+(2026b). The analysis is descriptive: we characterize equilibrium
+structure without predicting timing, price, or recommending portfolio
+allocations.
 
 ---
 
@@ -426,6 +428,8 @@ past any finite risk aversion as *p* → 1.
 | F5 | Quantum computing breaks cryptographic primitives before migration | Assumption 3 |
 | F6 | AI agents gain enforceable legal personhood (tested in Hash, 2026c) | Limiting case |
 
+For formal dispute procedures and evidence standards, see bitcoingametheory.com/rfc/BGT-DISPUTE.txt.
+
 Note what does *not* falsify the model: price declines, regulatory
 actions against specific intermediaries, developer controversies, or
 energy consumption debates. These affect adoption timing, not
@@ -469,31 +473,42 @@ claims fail.
 
 Arthur, W. B. (1989). Competing technologies, increasing returns, and
 lock-in by historical events. *Economic Journal*, 99(394), 116-131.
+https://doi.org/10.2307/2234208
 
 Bernheim, B. D., Peleg, B., and Whinston, M. D. (1987). Coalition-proof
 Nash equilibria I. Concepts. *Journal of Economic Theory*, 42(1), 1-12.
+https://doi.org/10.1016/0022-0531(87)90099-8
 
 Biais, B., Bisiere, C., Bouvard, M., and Casamatta, C. (2019). The
 blockchain folk theorem. *Review of Financial Studies*, 32(5), 1662-1715.
+https://doi.org/10.1093/rfs/hhy095
 
 Bikhchandani, S., Hirshleifer, D., and Welch, I. (1992). A theory of
 fads, fashion, custom, and cultural change as informational cascades.
 *Journal of Political Economy*, 100(5), 992-1026.
+https://doi.org/10.1086/261849
 
 Brunnermeier, M. K., James, H., and Landau, J.-P. (2019). *The
 Digitalization of Money*. NBER Working Paper 26300.
+https://doi.org/10.3386/w26300
 
 Budish, E. (2018). The economic limits of Bitcoin and the blockchain.
 *NBER Working Paper* No. 24717.
+https://doi.org/10.3386/w24717
+
+Bukele, N. (2021). Bitcoin Law. Legislative Decree No. 57, Republic of
+El Salvador.
 
 Chen, Y. (2025). A game-theoretic foundation for Bitcoin's price.
 Working paper.
 
 Eyal, I. and Sirer, E. G. (2014). Majority is not enough: Bitcoin
-mining is vulnerable. *Communications of the ACM*, 61(7), 95-102.
+mining is vulnerable. *Communications of the ACM*, 61(7), 95-102, 2018.
+https://doi.org/10.1145/3212998
 
 Farrell, J. and Saloner, G. (1985). Standardization, compatibility,
 and innovation. *RAND Journal of Economics*, 16(1), 70-83.
+https://doi.org/10.2307/2555589
 
 Fudenberg, D. and Tirole, J. (1991). *Game Theory*. MIT Press.
 
@@ -501,7 +516,8 @@ Hirschman, A. O. (1970). *Exit, Voice, and Loyalty*. Harvard University
 Press.
 
 Huberman, G., Leshno, J. D., and Moallemi, C. (2021). Monopoly without
-a monopolist. *Review of Financial Studies*, 34(7), 3266-3302.
+a monopolist. *Review of Economic Studies*, 88(6), 3011-3040.
+https://doi.org/10.1093/restud/rdab014
 
 International Monetary Fund (2024). World Economic Outlook Database.
 
@@ -510,9 +526,11 @@ and compatibility. *American Economic Review*, 75(3), 424-440.
 
 Katz, M. L. and Shapiro, C. (1986). Technology adoption in the presence
 of network externalities. *Journal of Political Economy*, 94(4), 822-841.
+https://doi.org/10.1086/261409
 
 Milgrom, P. and Shannon, C. (1994). Monotone comparative statics.
 *Econometrica*, 62(1), 157-180.
+https://doi.org/10.2307/2951479
 
 Monetary Authority of Singapore (2024). Digital Payment Token Licensing
 Statistics.
@@ -528,12 +546,14 @@ neutral settlement survival. Working paper, bitcoingametheory.com.
 
 Pagnotta, E. S. (2022). Decentralizing money: Bitcoin prices and
 blockchain security. *Review of Financial Studies*, 35(2), 866-907.
+https://doi.org/10.1093/rfs/hhaa149
 
 Schelling, T. C. (1960). *The Strategy of Conflict*. Harvard University
 Press.
 
 Stigler, G. J. (1971). The theory of economic regulation. *Bell Journal
 of Economics and Management Science*, 2(1), 3-21.
+https://doi.org/10.2307/3003160
 
 Topkis, D. M. (1998). *Supermodularity and Complementarity*. Princeton
 University Press.

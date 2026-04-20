@@ -5,8 +5,8 @@ bitcoingametheory.com
 sean@bitcoingametheory.com
 
 **Date:** February 2026
-**JEL Codes:** C72, C73, D74, E42, F33, G15, L14
-**Keywords:** Bitcoin, Lotka-Volterra, enforcement gridlock, predator-prey dynamics, neutral settlement, coordination failure, coalition stability, game theory, network effects
+**JEL Codes:** C72, D74, E42, F33, G15
+**Keywords:** Bitcoin, Lotka-Volterra, enforcement gridlock, predator-prey, neutral settlement, coordination failure, game theory
 
 ---
 
@@ -277,6 +277,7 @@ University Press.
 Volterra, V. (1928). Variations and fluctuations of the number of
 individuals in animal species living together. *ICES Journal of Marine
 Science*, 3(1), 3-51.
+https://doi.org/10.1093/icesjms/3.1.3
 
 ---
 

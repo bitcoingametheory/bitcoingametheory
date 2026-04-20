@@ -5,8 +5,8 @@ bitcoingametheory.com
 sean@bitcoingametheory.com
 
 **Date:** February 2026
-**JEL Codes:** C72, D82, D83, E42, G11, L14, O33
-**Keywords:** Bitcoin, AI agents, autonomous settlement, trust gradient, zero recourse, game theory, Nash equilibrium, cryptographic settlement, network effects
+**JEL Codes:** C72 (Noncooperative Games), D82 (Asymmetric and Private Information), G15 (International Financial Markets)
+**Keywords:** Bitcoin, AI agents, autonomous settlement, trust gradient, zero recourse, game theory, legal personhood, cryptographic settlement
 
 ---
 
@@ -422,12 +422,15 @@ The three papers in this series establish a complete argument:
 If any of the six falsification conditions across the three papers are
 met, the corresponding claim fails. That is the standard.
 
+For formal dispute procedures, see bitcoingametheory.com/rfc/BGT-DISPUTE.txt.
+
 ---
 
 ## References
 
 Binmore, K., Shaked, A., and Sutton, J. (1989). An outside option
 experiment. *Quarterly Journal of Economics*, 104(4), 753-770.
+https://doi.org/10.2307/2937866
 
 Chopra, S. and White, L. F. (2011). *A Legal Theory for Autonomous
 Artificial Agents*. University of Michigan Press.
@@ -448,4 +451,3 @@ neutral settlement survival. Working paper, bitcoingametheory.com.
 
 Solum, L. B. (1992). Legal personhood for artificial intelligences.
 *North Carolina Law Review*, 70(4), 1231-1287.
-

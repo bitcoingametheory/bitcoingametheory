@@ -764,12 +764,14 @@ multipolar-sovereign regimes in which that flow accelerates.
 
 Biais, B., Bisiere, C., Bouvard, M., and Casamatta, C. (2019). The
 blockchain folk theorem. *Review of Financial Studies*, 32(5), 1662-1715.
+https://doi.org/10.1093/rfs/hhy095
 
 Bitcoin Treasuries (2025). Sovereign Bitcoin holdings tracker.
 bitcointreasuries.net.
 
 Budish, E. (2018). The economic limits of Bitcoin and the blockchain.
 *NBER Working Paper* No. 24717.
+https://doi.org/10.3386/w24717
 
 BullionVault (2025). Gold settlement cost analysis.
 
@@ -782,6 +784,7 @@ Electricity Consumption Index: Global hashrate data.
 Carlsten, M., Kalodner, H., Weinberg, S. M., and Narayanan, A. (2016).
 On the instability of Bitcoin without the block reward. *Proceedings of
 the 2016 ACM SIGSAC*, 154-167.
+https://doi.org/10.1145/2976749.2978408
 
 Chainalysis (2024). The 2024 Geography of Cryptocurrency Report.
 
@@ -789,7 +792,8 @@ Federal Reserve Bank of St. Louis (2024). FRED Economic Data: 10-Year
 Treasury minus inflation expectations (DGS10, T10YIE series).
 
 Huberman, G., Leshno, J. D., and Moallemi, C. (2021). Monopoly without
-a monopolist. *Review of Financial Studies*, 34(7), 3266-3302.
+a monopolist. *Review of Economic Studies*, 88(6), 3011-3040.
+https://doi.org/10.1093/restud/rdab014
 
 Krugman, P. (2018). Transaction costs and tethers: Why I'm a crypto
 skeptic. *The New York Times*, July 31.
@@ -814,6 +818,7 @@ neutral settlement survival. Working paper, bitcoingametheory.com.
 
 Taleb, N. N. (2021). Bitcoin, currencies, and fragility. *Quantitative
 Finance*, 21(8), 1249-1255.
+https://doi.org/10.1080/14697688.2021.1952702
 
 The Block (2025). Bitcoin ETF AUM tracker.
 

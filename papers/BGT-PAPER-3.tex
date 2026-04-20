@@ -37,22 +37,10 @@
 \usepackage{tabularx}
 \usepackage{calc}
 
-% --- Page numbers ---
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-
 % --- Misc ---
 \usepackage{enumitem}
 \usepackage{hyperref}
-\hypersetup{
-  colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue,
-  pdftitle={Settlement at Zero Trust: Bitcoin and Autonomous Economic Agents},
-  pdfauthor={Sean Hash},
-  pdfkeywords={Bitcoin, AI agents, autonomous settlement, trust gradient, zero recourse, game theory, legal personhood, cryptographic settlement, Nash equilibrium, network effects}
-}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue}
 \usepackage{microtype}
 
 % --- Suppress section numbering (manual numbers in headings) ---
@@ -70,19 +58,18 @@
 \bigskip
 
 {\large Sean Hash}\\
-\url{bitcoingametheory.com}\\
-\href{mailto:sean@bitcoingametheory.com}{sean@bitcoingametheory.com}
+bitcoingametheory.com\\
+sean@bitcoingametheory.com
 
 \bigskip
 
-February 2026\\[4pt]
-{\normalsize Working Paper}
+February 2026
 
 \medskip
 
 {\small
-\textbf{JEL Codes:} C72, D82, D83, E42, G11, L14, O33\\[4pt]
-\textbf{Keywords:} Bitcoin, AI agents, autonomous settlement, trust gradient, zero recourse, game theory, Nash equilibrium, cryptographic settlement, network effects
+\textbf{JEL Codes:} C72 (Noncooperative Games), D82 (Asymmetric and Private Information), G15 (International Financial Markets)\\[4pt]
+\textbf{Keywords:} Bitcoin, AI agents, autonomous settlement, trust gradient, zero recourse, game theory, legal personhood, cryptographic settlement
 }
 \end{center}
 
@@ -137,8 +124,6 @@ This makes AI agents a \emph{limiting case} of the Exit Game: entities
 that face the same monetary coordination problem as human actors but
 with zero recourse when trust fails. What human actors prefer, AI agents
 require. The distinction is categorical.
-
-
 \section{2. The Trust Gradient}\label{the-trust-gradient}
 
 \subsection{2.1 Formal Statement}\label{formal-statement}
@@ -217,8 +202,6 @@ agents} \\
 The gradient is continuous, but the qualitative shift occurs at the
 boundary: actors with \emph{any} recourse can tolerate capturable
 systems (at a cost). Actors with \emph{zero} recourse cannot.
-
-
 \section{3. AI Agents as Economic
 Actors}\label{ai-agents-as-economic-actors}
 
@@ -294,7 +277,7 @@ to AI agents).
 \emph{j} ∈ \emph{N\_A}, \emph{i} ∈ \emph{N\_H}
 
 The payoff differential is larger for autonomous agents than for any
-human actor. AI agents reach their adoption threshold $p_j^*$
+human actor. AI agents reach their adoption threshold *p\_j**
 \emph{before} any human actor with comparable risk preferences.
 
 \textbf{Implication.} AI agents will be the fastest-adopting class of
@@ -368,8 +351,6 @@ compliance, sanctions screening); what persists is \emph{bilateral}
 acceptance --- each agent's discretionary decision to engage. Settlement
 remains a protocol-layer fact; acceptance remains a counterparty-layer
 decision, even when both counterparties are machines.
-
-
 \section{4. Implications}\label{implications}
 
 \subsection{4.1 Strengthening Effect}\label{strengthening-effect}
@@ -382,7 +363,7 @@ Increases \emph{K\_N}(\emph{p}) (non-adoption penalty rises) - Reduces
 \emph{σ\_B}(\emph{p}) (volatility falls) - Increases
 \emph{R\_B}(\emph{p}) (return rises)
 
-This pushes human actors closer to their thresholds $p_i^*$,
+This pushes human actors closer to their thresholds *p\_i**,
 accelerating the cascade. The limiting case acts as a \emph{catalyst}
 for the broader adoption dynamics.
 
@@ -462,8 +443,6 @@ is not merely inconvenient for AI agents --- it is structurally
 inaccessible. The agent must either operate in the gray market or
 restrict itself to counterparties that do not require compliance. Both
 options exist today; neither is stable.
-
-
 \section{5. Evidence and Emerging
 Trends}\label{evidence-and-emerging-trends}
 
@@ -507,8 +486,6 @@ intermediation at either end. In such transactions, both parties have
 self-enforcing or it does not occur. Bitcoin's cryptographic finality is
 the only existing settlement mechanism that functions in this scenario
 without requiring trust in any third party.
-
-
 \section{6. Falsification}\label{falsification}
 
 \textbf{F6: AI agents gain legal personhood with enforceable rights.}
@@ -533,8 +510,6 @@ Achieving this requires legislative action across multiple
 jurisdictions, resolution of liability questions, and enforcement
 mechanisms for non-human entities --- all subject to the same
 coordination failures described in Assumption 1.
-
-
 \section{7. Limitations}\label{limitations}
 
 The analysis assumes AI agents are rational economic optimizers. If
@@ -556,8 +531,6 @@ uncertain. The framework says \emph{where} the equilibrium lies (Bitcoin
 as the uniquely rational settlement choice), not \emph{when} AI agents
 become large enough to materially affect adoption dynamics. This may be
 years or decades.
-
-
 \section{8. Conclusion}\label{conclusion}
 
 The Trust Gradient is a structural result: as legal recourse decreases,
@@ -582,11 +555,13 @@ response (this paper)
 If any of the six falsification conditions across the three papers are
 met, the corresponding claim fails. That is the standard.
 
-
+For formal dispute procedures, see
+bitcoingametheory.com/rfc/BGT-DISPUTE.txt.
 \section{References}\label{references}
 
 Binmore, K., Shaked, A., and Sutton, J. (1989). An outside option
-experiment. \emph{Quarterly Journal of Economics}, 104(4), 753-770.
+experiment. \emph{Quarterly Journal of Economics}, 104(4), 753--770.
+\url{https://doi.org/10.2307/2937866}
 
 Chopra, S. and White, L. F. (2011). \emph{A Legal Theory for Autonomous
 Artificial Agents}. University of Michigan Press.
@@ -604,6 +579,31 @@ elimination. Working paper, bitcoingametheory.com.
 
 Solum, L. B. (1992). Legal personhood for artificial intelligences.
 \emph{North Carolina Law Review}, 70(4), 1231-1287.
+\section{Author's Note}\label{authors-note}
 
+``Sean Hash'' is a pen name. The author is a single human individual
+writing under a pseudonym. The framework is designed to be evaluated on
+its logical structure --- every claim derives from four empirical
+axioms, and every claim specifies falsification conditions. The author's
+identity is irrelevant to whether the axioms hold.
 
+The author acknowledges modest priors: a preference for multipolar
+worlds over global monopoly, and for individual economic sovereignty
+over total state control of capital. These do not predetermine the
+framework's conclusions --- the game-theoretic derivation works for
+purely selfish actors regardless of values.
+
+The author also acknowledges a real moral cost: a neutral settlement
+layer will process transactions for harmful actors. For autonomous
+agents --- the limiting case this paper formalizes --- the moral
+dimension sharpens: agents converge on near-perfect provenance filtering
+not from morality but from the trivial cost of on-chain analysis
+relative to any nonzero expected punishment. Settlement is not
+acceptance, even for machines. See Hash (2026b), Section 5.4.
+
+For full disclosure on authorship, moral position, and the
+settlement-acceptance distinction, see the Author's Note
+(bitcoingametheory.com/rfc/BGT-AUTHOR.txt).
+
+\section{Disclosure}\label{disclosure}
 \end{document}
