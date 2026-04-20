@@ -4,7 +4,7 @@
 bitcoingametheory.com
 sean@bitcoingametheory.com
 
-**Date:** February 2026 (v1); revised April 2026 (v2)
+**Date:** Preprint: February 2026 (SSRN 6299081). Revised: April 2026.
 **JEL Codes:** C72 (Noncooperative Games), E42 (Monetary Systems, Standards, Regimes)
 **Keywords:** game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, monotone comparative statics
 
@@ -38,13 +38,13 @@ allocations.
 
 ---
 
-## Revision Note (v2, April 2026)
+## Revision Note — April 2026
 
-This version tightens the scope of several v1 citations after a re-reading against primary sources in preparation for journal submission. Each entry has been re-checked and the bibliography is released as a companion artifact. The model, the Exit Game, Theorems 1–3, Assumptions 1–4, and the seven necessary properties are unchanged from v1.
+This revision tightens the scope of several citations from the preprint (SSRN 6299081, February 2026) after a re-reading against primary sources in preparation for journal submission. Each entry has been re-checked and the bibliography is released as a companion artifact. The model, the Exit Game, Theorems 1–3, Assumptions 1–4, and the seven necessary properties are unchanged from the preprint.
 
 Three sets of clarifications. First, several citations are narrowed to what the source actually establishes: §2.2 (Huberman et al. cited only for their congestion-pricing result, not for governance neutrality in our sense); §2.4 (Hirschman cited as intellectual context, distinct from the strategic Exit defined in-model); §4.4 (Bikhchandani, Hirshleifer, and Welch cited as contrast — Paper 1's cascade is payoff-driven, theirs is information-driven). Second, paired canonical attributions are widened where a single anchor was carrying weight that belongs to two: §2.3 (Milgrom–Shannon with Topkis), §3.1 (David with Arthur), §3.4 (Kyle with Amihud, and Katz–Shapiro with Farrell–Saloner). Third, the Conclusion now situates Paper 1 within the four-paper sequence; the seven necessary properties have been applied as an elimination test in Hash (2026b) and the framework extended in Hash (2026c, 2026d).
 
-No theorem, proof, assumption, or equation is changed. The v1 text is preserved at `bitcoingametheory.com/papers/archive/v1/BGT-PAPER-1-v1.pdf`.
+No theorem, proof, assumption, or equation is changed. The preprint text (SSRN 6299081, February 2026) is preserved at `bitcoingametheory.com/papers/1-exit-dominance/archive/preprint-ssrn-6299081/BGT-PAPER-1-preprint.pdf`.
 
 ---
 
