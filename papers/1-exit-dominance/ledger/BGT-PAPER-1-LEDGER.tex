@@ -1,19 +1,19 @@
-% Paper 1: Exit Dominance in Monetary Coordination Games
+% Paper 1: Exit Dominance in Monetary Coordination Games (Ledger journal fork)
 
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
-% --- Fonts and encoding ---
+% --- Fonts and encoding (R005, R048: Times 11.5 pt / 13.5 pt leading) ---
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
+\setmainfont[Scale=1.045]{Liberation Serif}
 \usepackage{amsmath}
-% Note: amssymb omitted---unicode-math provides all symbols for XeLaTeX
 \usepackage{unicode-math}
 \setmathfont{Latin Modern Math}
 
-% --- Page layout ---
-\usepackage[margin=1in]{geometry}
+% --- Page layout (R007: 3.1 cm margins; R011: 1.2 cm paragraph indent) ---
+\usepackage[top=3.1cm,bottom=3.1cm,left=3.1cm,right=3.1cm]{geometry}
 \usepackage{setspace}
-\onehalfspacing
+\linespread{1.174} % 13.5/11.5 leading ratio
+\setlength{\parindent}{1.2cm}
 
 % --- Theorem environments ---
 \usepackage{amsthm}
@@ -40,6 +40,15 @@
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
+% --- First-page footer with BTC signing address (R023, R158) ---
+\fancypagestyle{firstpage}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \fancyfoot[L]{\footnotesize\ttfamily bc1qsigningaddressplaceholderreplacebeforesubmit00000}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
 % --- Misc ---
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -59,30 +68,28 @@
 \newcommand{\E}{\mathbb{E}}
 
 \begin{document}
+\thispagestyle{firstpage}
 
 % ============================================================
-% TITLE BLOCK
+% TITLE BLOCK (Ledger: R014--R018, R030--R032)
 % ============================================================
 
 \begin{center}
+{\footnotesize\MakeUppercase{Research Article}}
+
+\bigskip
+
 {\LARGE\bfseries Bitcoin Exit Dominance in Monetary Coordination Games}
 
 \bigskip
 
-{\large Sean Hash}\\
-\url{bitcoingametheory.com}\\
-\href{mailto:sean@bitcoingametheory.com}{sean@bitcoingametheory.com}
-
-\bigskip
-
-Preprint: February 2026 (SSRN 6299081) \\ Revised: April 2026\\[4pt]
-{\normalsize Working Paper}
+{\large S. Hash}\\[2pt]
+{\footnotesize bitcoingametheory.com \quad (sean@bitcoingametheory.com)}
 
 \medskip
 
 {\small
-\textbf{JEL Codes:} C72, C73, D83, E42, E51, G11, L14\\[4pt]
-\textbf{Keywords:} Bitcoin, game theory, Nash equilibrium, monetary coordination, neutral settlement, absorbing state, coordination failure, threshold strategy, digital scarcity, Schelling point, network effects
+\textbf{Key words:} 1. Game theory. 2. Nash equilibrium. 3. Monetary coordination. 4. Neutral settlement. 5. Absorbing state. 6. Coordination failure. 7. Threshold strategy. 8. Digital scarcity. 9. Schelling point. 10. Network effects.
 }
 \end{center}
 
@@ -117,66 +124,6 @@ satisfying the necessary properties for neutral settlement---a result
 proved by systematic elimination across seven asset classes in a
 companion paper.
 \end{abstract}
-
-\newpage
-
-\noindent\textbf{Revision Note---April 2026.}
-This revision prepares the February 2026 preprint (SSRN 6299081) for
-journal submission. All revisions sharpen presentation, widen
-literature engagement, or scope claims more honestly.
-
-\smallskip
-
-Citations previously narrowed to what the source establishes, and
-paired where a single anchor carried weight that belongs to two, are
-retained from the February revision: \S2.2 (Huberman, Leshno, and
-Moallemi for congestion pricing only); \S2.5 (Hirschman as
-intellectual context, distinct from strategic Exit in-model); \S4.4
-(Bikhchandani, Hirshleifer, and Welch as contrast, not analog); \S2.3
-(Milgrom--Shannon paired with Topkis); \S3.1 (David paired with
-Arthur); \S3.4 (Kyle paired with Amihud, Katz--Shapiro paired with
-Farrell--Saloner).
-
-\smallskip
-
-The threshold-coverage condition previously stated parenthetically
-in Theorem 3's proof is promoted to Assumption 5. A new monotonicity
-condition (M6) makes the capturable return $R_F$ a function of
-adoption $p$, consistent with every other quantity in the model;
-Theorem 1's proof is extended accordingly and is strengthened under
-strict inequality. Theorem 3's information-structure framing is upgraded
-from complete-information + common-knowledge to public-information +
-heterogeneous-priors (following Morris and Shin 1998, Carlsson and van Damme
-1993), placing the model in the global-games tradition. Theorem 3's Step 4
-is rewritten from Bayesian-updating-over-hidden-types to higher-order-belief
-coordination breakdown. Utility is stated explicitly as mean-variance in
-\S3.4. The debt-repayment claim in \S1 is tightened. The falsification table
-in \S5 is reorganized into axiom falsifiers, theorem falsifiers, and scope
-conditions.
-
-\smallskip
-
-Three adjacent literatures are now acknowledged: global games
-(Carlsson and van Damme\textsuperscript{9}; Morris and
-Shin\textsuperscript{27}) as the standard tool for equilibrium selection
-in coordination games under incomplete information; self-fulfilling
-currency crises (Obstfeld\textsuperscript{28,29}) as the intellectual
-ancestor of the coordination-failure mechanism; and search-theoretic
-money (Kiyotaki and Wright\textsuperscript{23}; Lagos and
-Wright\textsuperscript{25}) as providing microfoundations this paper
-does not re-derive. The paper's complete-information modeling choice
-and equilibrium-selection framing are defended against each.
-
-\smallskip
-
-Section~6 names three scope deferrals: the binary Exit/Stay structure
-(continuous-allocation extension deferred); deterministic monotone
-convergence (stochastic stability in the Kandori--Mailath--Rob sense
-deferred); and Theorem~2's single-defection result (full coalition-proof
-Nash analysis in the Bernheim--Peleg--Whinston sense deferred). No
-theorem, proof, or axiom has been weakened or reversed. The February
-2026 preprint is preserved at
-\url{bitcoingametheory.com/papers/1-exit-dominance/archive}.
 
 \newpage
 
@@ -863,7 +810,7 @@ had to survive.
 
 \section{Acknowledgement}
 
-The author thanks participants and readers of the February 2026 preprint for feedback that informed this revision.
+The author thanks readers of the February 2026 preprint (SSRN 6299081) whose feedback informed this journal submission.
 
 % ============================================================
 % CONFLICT OF INTEREST
