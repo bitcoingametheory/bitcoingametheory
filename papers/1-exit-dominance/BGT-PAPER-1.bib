@@ -3,7 +3,8 @@
 % indexing, LLM context). The .tex file uses a manual \begin{enumerate} list per
 % Ledger format (R081-R109); this .bib is NOT compiled into the PDF.
 % Numeric \textsuperscript{N} ordering in the body matches alphabetical surname
-% ordering of the entries below.
+% ordering of the entries below. Cite slots 24-25 are explanatory endnotes,
+% present in the .tex but not represented here.
 
 @article{armstrong2016racing,
   author  = {Armstrong, Stuart and Bostrom, Nick and Shulman, Carl},
@@ -27,18 +28,6 @@
   note         = {Cite slot: 2. Originally IMF Working Paper No.~2023/014.}
 }
 
-@article{arthur1989competing,
-  author  = {Arthur, W. Brian},
-  title   = {Competing technologies, increasing returns, and lock-in by historical events},
-  journal = {Economic Journal},
-  volume  = {99},
-  number  = {394},
-  pages   = {116--131},
-  year    = {1989},
-  doi     = {10.2307/2234208},
-  note    = {Cite slot: 3}
-}
-
 @article{bernheim1987coalition,
   author  = {Bernheim, B. Douglas and Peleg, Bezalel and Whinston, Michael D.},
   title   = {Coalition-proof {N}ash equilibria {I}: concepts},
@@ -48,7 +37,7 @@
   pages   = {1--12},
   year    = {1987},
   doi     = {10.1016/0022-0531(87)90099-8},
-  note    = {Cite slot: 4}
+  note    = {Cite slot: 3}
 }
 
 @article{biais2019blockchain,
@@ -60,7 +49,7 @@
   pages   = {1662--1715},
   year    = {2019},
   doi     = {10.1093/rfs/hhy095},
-  note    = {Cite slot: 5}
+  note    = {Cite slot: 4}
 }
 
 @techreport{brunnermeier2019digitalization,
@@ -71,7 +60,7 @@
   type        = {NBER Working Paper},
   year        = {2019},
   doi         = {10.3386/w26300},
-  note        = {Cite slot: 6}
+  note        = {Cite slot: 5}
 }
 
 @techreport{budish2018economic,
@@ -82,7 +71,7 @@
   type        = {NBER Working Paper},
   year        = {2018},
   doi         = {10.3386/w24717},
-  note        = {Cite slot: 7}
+  note        = {Cite slot: 6}
 }
 
 @book{cantillon1755essai,
@@ -92,13 +81,13 @@
   address   = {London},
   pages     = {161--173},
   year      = {1931},
-  note      = {Cite slot: 8. Originally c.~1755. English translation by Henry Higgs. Pages cited for the channel-of-issuance / Cantillon-effect passages.}
+  note      = {Cite slot: 7. Originally c.~1755. English translation by Henry Higgs. Pages cited for the channel-of-issuance / Cantillon-effect passages.}
 }
 
 @unpublished{chen2025gametheoretic,
   author = {Chen, Yan},
   title  = {A game-theoretic foundation for {B}itcoin's price},
-  note   = {Working Paper. Cite slot: 9},
+  note   = {Working Paper. Cite slot: 8},
   year   = {2025}
 }
 
@@ -111,19 +100,7 @@
   pages   = {95--102},
   year    = {2018},
   doi     = {10.1145/3212998},
-  note    = {Cite slot: 10}
-}
-
-@article{farrell1985standardization,
-  author  = {Farrell, Joseph and Saloner, Garth},
-  title   = {Standardization, compatibility, and innovation},
-  journal = {RAND Journal of Economics},
-  volume  = {16},
-  number  = {1},
-  pages   = {70--83},
-  year    = {1985},
-  doi     = {10.2307/2555589},
-  note    = {Cite slot: 11}
+  note    = {Cite slot: 9}
 }
 
 @article{feldstein1980inflation,
@@ -135,7 +112,7 @@
   pages   = {839--847},
   year    = {1980},
   url     = {https://www.jstor.org/stable/1805772},
-  note    = {Cite slot: 12}
+  note    = {Cite slot: 10}
 }
 
 @book{fisher1928moneyillusion,
@@ -145,7 +122,7 @@
   address   = {New York},
   pages     = {3--22},
   year      = {1928},
-  note      = {Cite slot: 13. Ch.~I ``What is the Money Illusion?''}
+  note      = {Cite slot: 11. Ch.~I ``What is the Money Illusion?''}
 }
 
 @book{fudenberg1991game,
@@ -155,19 +132,21 @@
   address   = {Cambridge, MA},
   pages     = {3--7},
   year      = {1991},
-  note      = {Cite slot: 14. \S1.1 strategic-form games.}
+  note      = {Cite slot: 12. \S1.1 strategic-form games.}
 }
 
-@article{huberman2021monopoly,
-  author  = {Huberman, Gur and Leshno, Jacob D. and Moallemi, Ciamac},
-  title   = {Monopoly without a monopolist: an economic analysis of the {B}itcoin payment system},
-  journal = {Review of Economic Studies},
-  volume  = {88},
-  number  = {6},
-  pages   = {3011--3040},
-  year    = {2021},
-  doi     = {10.1093/restud/rdab014},
-  note    = {Cite slot: 15}
+@inproceedings{garay2015backbone,
+  author    = {Garay, Juan and Kiayias, Aggelos and Leonardos, Nikos},
+  title     = {The {B}itcoin Backbone Protocol: Analysis and Applications},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2015},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9057},
+  publisher = {Springer},
+  address   = {Berlin, Heidelberg},
+  pages     = {281--310},
+  year      = {2015},
+  doi       = {10.1007/978-3-662-46803-6_10},
+  note      = {Cite slot: 13. Formal proof of common prefix, chain quality, chain growth under honest majority.}
 }
 
 @misc{imf2024weo,
@@ -177,7 +156,7 @@
   year         = {2024},
   month        = oct,
   url          = {https://www.imf.org/en/Publications/WEO},
-  note         = {Cite slot: 16}
+  note         = {Cite slot: 14}
 }
 
 @article{katz1985network,
@@ -189,7 +168,7 @@
   pages   = {424--440},
   year    = {1985},
   url     = {https://www.jstor.org/stable/1814809},
-  note    = {Cite slot: 17}
+  note    = {Cite slot: 15}
 }
 
 @book{kuran1995private,
@@ -199,7 +178,7 @@
   address   = {Cambridge},
   pages     = {3--21},
   year      = {1995},
-  note      = {Cite slot: 18. Ch.~1 living a lie.}
+  note      = {Cite slot: 16. Ch.~1 living a lie.}
 }
 
 @article{menger1892origin,
@@ -211,7 +190,7 @@
   pages        = {239--255},
   year         = {1892},
   url          = {https://www.jstor.org/stable/2956146},
-  note         = {Cite slot: 19. Translation of "Geld" from Handw\"orterbuch der Staatswissenschaften.}
+  note         = {Cite slot: 17. Translation of "Geld" from Handw\"orterbuch der Staatswissenschaften.}
 }
 
 @article{milgrom1994monotone,
@@ -223,7 +202,7 @@
   pages   = {157--180},
   year    = {1994},
   doi     = {10.2307/2951479},
-  note    = {Cite slot: 20}
+  note    = {Cite slot: 18}
 }
 
 @misc{nakamoto2008bitcoin,
@@ -232,7 +211,7 @@
   howpublished = {White paper},
   year         = {2008},
   doi          = {10.2139/ssrn.3440802},
-  note         = {Cite slot: 21}
+  note         = {Cite slot: 19}
 }
 
 @article{powell1993guns,
@@ -244,7 +223,7 @@
   pages   = {115--132},
   year    = {1993},
   doi     = {10.2307/2938959},
-  note    = {Cite slot: 22. Formal guns-vs-butter under the security dilemma.}
+  note    = {Cite slot: 20. Formal guns-vs-butter under the security dilemma.}
 }
 
 @article{reinhart2015liquidation,
@@ -256,7 +235,7 @@
   pages   = {291--333},
   year    = {2015},
   doi     = {10.1093/epolic/eiv003},
-  note    = {Cite slot: 23}
+  note    = {Cite slot: 21}
 }
 
 @book{richardson1960arms,
@@ -266,15 +245,14 @@
   address   = {Pittsburgh and Chicago},
   pages     = {12--35},
   year      = {1960},
-  note      = {Cite slot: 24. Founding mathematical arms-race model (action-reaction dynamics).}
+  note      = {Cite slot: 22. Founding mathematical arms-race model (action-reaction dynamics).}
 }
 
-@book{schelling1960strategy,
-  author    = {Schelling, Thomas C.},
-  title     = {The Strategy of Conflict},
-  publisher = {Harvard University Press},
-  address   = {Cambridge, MA},
-  pages     = {54--58},
-  year      = {1960},
-  note      = {Cite slot: 25. Ch.~3 focal points.}
+@misc{szabo2002shelling,
+  author       = {Szabo, Nick},
+  title        = {Shelling Out: The Origins of Money},
+  howpublished = {Unenumerated},
+  year         = {2002},
+  url          = {https://nakamotoinstitute.org/library/shelling-out/},
+  note         = {Cite slot: 23. Source of the unforgeable-costliness framing.}
 }

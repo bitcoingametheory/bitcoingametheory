@@ -61,10 +61,10 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \hypersetup{
-  colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue,
+  colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black,
   pdftitle={Bitcoin Exit Dominance in Monetary Coordination Games},
   pdfauthor={Sean Hash},
-  pdfkeywords={Bitcoin, game theory, Nash equilibrium, monetary coordination, neutral settlement, capital-weighted adoption, path dependence, coordination failure, threshold strategy, monotone comparative statics, digital scarcity, Schelling point, network effects}
+  pdfkeywords={Bitcoin, game theory, coalition-proof Nash equilibrium, monetary coordination, neutral settlement, strategic complementarities, coordination failure, threshold strategy, monotone comparative statics, digital scarcity, network effects}
 }
 \def\UrlBreaks{\do\/\do-\do.\do=\do_\do?\do\&\do\%\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z}
 \usepackage{microtype}
@@ -99,8 +99,8 @@ Revised: May 2026\\[4pt]
 \medskip
 
 {\small
-\textbf{JEL Codes:} C72, C73, D83, E42, E51, G11, L14\\[4pt]
-\textbf{Keywords:} Bitcoin, game theory, Nash equilibrium, monetary coordination, neutral settlement, capital-weighted adoption, path dependence, coordination failure, threshold strategy, digital scarcity, Schelling point, network effects
+\textbf{JEL Codes:} C72, D71, D83, E42, E51, G11, L14\\[4pt]
+\textbf{Keywords:} Bitcoin, game theory, coalition-proof Nash equilibrium, monetary coordination, neutral settlement, strategic complementarities, coordination failure, threshold strategy, digital scarcity, network effects
 }
 \end{center}
 
@@ -126,9 +126,9 @@ persistence of network effects.
 Three results follow. First, the payoff advantage of Exit over
 Stay grows as adoption rises (Proposition~1). Second, no Stay
 coalition is internally stable once any allocator's threshold is
-reached (Proposition~2). Third, above a critical adoption threshold Stay
-coalitions cannot reform, and persistent debasement drives that threshold
-downward over time (Theorem~1). Together these
+reached (Proposition~2). Third, the high-Exit region $\{p > p_c\}$ is
+coalition-proof against returning Stay coalitions, and persistent
+debasement drives $p_c$ monotonically downward over time (Theorem~1). Together these
 establish Bitcoin as the primary candidate for neutral settlement
 derived purely from ongoing incentives (Theorem~2). The formal Exit Game results show
 viable neutral settlement creates a new form of competition for the
@@ -143,11 +143,12 @@ Prepared for journal submission; references updated and tightened. Substantive c
 \smallskip
 
 \begin{itemize}
-\item Theorem~1 is recast in ratchet form. The preprint claimed full absorption at $p = 1$; the revision claims that $\{p > p_c\}$ is locally stable and that $p_c$ drifts monotonically downward as the slowly-varying state $(K_t, D_t)$ accumulates ($K_t$ recognition; $D_t$ debasement; \S3.5). Permanent holdouts are admitted by construction.
-\item Adoption is capital-weighted: $p_t = \sum_{i \in \text{Exit}_t} a_i$. Preference falsification (Kuran\textsuperscript{18}) provides the psychological reasoning for why actors say Stay but allocate Exit. Aggregate $p_t$ counts the allocation, not the stated posture.
-\item Volatility apparatus is dropped. $\sigma_B$, $\sigma_F$, and the risk-aversion weight $\lambda_i$ are removed; monotonicity conditions reduce from (M1)--(M5) to (M1)--(M4). The allocator-side friction is now money illusion (Fisher\textsuperscript{13}): nominal stability is read as safety and lumpy real outperformance as risk.
-\item Definition~2 (Capturable System) replaces the preprint's Capture Surface. $D_t$ in \S3.5 now indexes three post-1945 financial-repression channels: debt overhang (IMF\textsuperscript{16}), the inflation--capital-gains tax wedge (Feldstein\textsuperscript{12}), and the rate-cap and reserve-requirement toolkit (Reinhart and Sbrancia\textsuperscript{23}).
-\item Section~5 (Limitations) is tightened to negation-only wording (A1 fails only if rival regimes completely coordinate).
+\item Theorem~1 is recast in ratchet form. The preprint claimed full absorption at $p = 1$; the revision claims that $\{p > p_c\}$ is coalition-proof and that $p_c$ shifts monotonically downward as the slowly-varying state $(K_t, D_t)$ accumulates ($K_t$ recognition; $D_t$ debasement; \S3.5). Permanent holdouts are admitted by construction.
+\item Adoption is capital-weighted: $p_t = \sum_{i \in \text{Exit}_t} a_i$. Preference falsification (Kuran\textsuperscript{16}) provides the psychological reasoning for why actors say Stay but allocate Exit. Aggregate $p_t$ counts the allocation, not the stated posture.
+\item Volatility apparatus is dropped. $\sigma_B$, $\sigma_F$, and the risk-aversion weight $\lambda_i$ are removed; monotonicity conditions reduce from (M1)--(M5) to (M1)--(M4). The allocator-side friction is now money illusion (Fisher\textsuperscript{11}): nominal stability is read as safety and lumpy real outperformance as risk.
+\item Definition~2 (Capturable System) replaces the preprint's Capture Surface. $D_t$ in \S3.5 now indexes three post-1945 financial-repression channels: debt overhang (IMF\textsuperscript{14}), the inflation--capital-gains tax wedge (Feldstein\textsuperscript{10}), and the rate-cap and reserve-requirement toolkit (Reinhart and Sbrancia\textsuperscript{21}).
+\item Section~5 (formerly Limitations) is folded into the Conclusion; per-assumption failure conditions are retained at conclusion register, with A2's clause reformulated to a primitive of agent rationality. $D_t$ in \S3.2 is flagged as a latent structural index.
+\item Coalition Instability (Proposition~2) restated as Nash-stability, with P3 (permissionless access) as the load-bearing institutional clause; Bernheim-Peleg-Whinston coalition-proofness is now reserved for Theorem~1 (Ratchet), where it does formal work.
 \end{itemize}
 
 \smallskip
@@ -164,11 +165,11 @@ Prepared for journal submission; references updated and tightened. Substantive c
 
 A capital allocator with purchasing power to protect faces a choice between two settlement systems. The first is the prevailing one: sovereign currency, custodied by regulated intermediaries, settled through banking and securities infrastructure. Call this Stay. The second is a settlement asset that no government issues, no intermediary custodies, and no political body can debase or freeze. Call this Exit. This is the Exit Game. The question is not which system any one allocator prefers. It is whether the repeated incentives will push a critical mass of capital from Stay to Exit.
 
-While partial exit via gold has existed for thousands of years, true exit only became possible when Nakamoto\textsuperscript{21} mined his first block on 3 January 2009. In the genesis block of Bitcoin he encoded that morning's front-page headline from \emph{The Times} of London: ``Chancellor on brink of second bailout for banks.'' Since 2009, hashrate on the Bitcoin network has only ever trended higher, despite sovereign mining bans and several hostile hard-fork events. Adoption by ever larger cohorts of capital (ETFs, pension funds, sovereigns) suggests rational allocators continue to defect to Exit.
+While partial exit via gold has existed for thousands of years, true exit only became possible when Nakamoto\textsuperscript{19} mined his first block on 3 January 2009. In the genesis block of Bitcoin he encoded that morning's front-page headline from \emph{The Times} of London: ``Chancellor on brink of second bailout for banks.'' Since 2009, hashrate on the Bitcoin network has only ever trended higher, despite sovereign mining bans and several hostile hard-fork events. Adoption by ever larger cohorts of capital (ETFs, pension funds, sovereigns) suggests rational allocators continue to defect to Exit.
 
-The usual measure of debasement risk is debt-to-GDP. Public debt is near 100\% of GDP and projected at 115\% by the early 2030s (IMF\textsuperscript{16}). At that scale, history says the debt gets paid down by debasing the currency, not by taxes (Reinhart and Sbrancia\textsuperscript{23}). High debt is not itself new: what is new is what governments are now committed to spend through the 2030s with no tax base behind it. The United States is stepping back from its role as world military referee, and NATO members pledged in June 2025 to spend 5\% of GDP on defense by 2035. The logic in every arms race is the same: spend more or get left behind (Richardson\textsuperscript{24}; Powell\textsuperscript{22}). AI is the same race: better AI means better weapons, so winning compute means winning force. AI capex in 2026 runs at a multiple of Apollo's peak GDP share (\(\sim\)0.7\% in 1966), and China is investing at comparable scale through state direction. Neither side can stop without losing the lead (Armstrong, Bostrom, and Shulman\textsuperscript{1}). The Exit Game does not require any specific catalyst to work. The emerging AI-military arms race trends above set the backdrop because they are the largest known debasement catalysts today.
+The usual measure of debasement risk is debt-to-GDP. Public debt is near 100\% of GDP and projected at 115\% by the early 2030s (IMF\textsuperscript{14}). At that scale, history says the debt gets paid down by debasing the currency, not by taxes (Reinhart and Sbrancia\textsuperscript{21}). High debt is not itself new: what is new is what governments are now committed to spend through the 2030s with no tax base behind it. The United States is stepping back from its role as world military referee, and NATO members pledged in June 2025 to spend 5\% of GDP on defense by 2035. The logic in every arms race is the same: spend more or get left behind (Richardson\textsuperscript{22}; Powell\textsuperscript{20}). AI is the same race: better AI means better weapons, so winning compute means winning force. AI capex in 2026 runs at a multiple of Apollo's peak GDP share (\(\sim\)0.7\% in 1966), and China is investing at comparable scale through state direction. Neither side can stop without losing the lead (Armstrong, Bostrom, and Shulman\textsuperscript{1}). The Exit Game does not require any specific catalyst to work. The emerging AI-military arms race trends above set the backdrop because they are the largest known debasement catalysts today.
 
-The deeper point in the genesis block was the subtle nod to the Cantillon effect: in every fiat system, those nearest to issuance capture the wealth transfer that debasement creates (Cantillon\textsuperscript{8}). Will aggregate capital flee to a new system where no central issuer can benefit from the Cantillon effect to debase the many to enrich the few? This paper turns that question into a formal game.
+The deeper point in the genesis block was the subtle nod to the Cantillon effect: in every fiat system, those nearest to issuance capture the wealth transfer that debasement creates (Cantillon\textsuperscript{7}). Will aggregate capital flee to a new system where no central issuer can benefit from the Cantillon effect to debase the many to enrich the few? This paper turns that question into a formal game.
 
 \newpage
 
@@ -178,30 +179,16 @@ The deeper point in the genesis block was the subtle nod to the Cantillon effect
 
 \section{2. Related Work}
 
-The prevailing policy treatment of this coordination problem is
-Brunnermeier, James, and Landau\textsuperscript{6}, who describe the
-problem verbally without a formal game-theoretic derivation. They prescribe
-central bank digital currency as the institutional response. This
-paper agrees with the coordination problem but disagrees with the
-proposed CBDC solution: a CBDC remains sovereign-issued, freezable,
-and debaseable, fails Definition~1, and is therefore an instance of
+The closest prior policy treatment is
+Brunnermeier, James, and Landau\textsuperscript{5}, who describe the
+coordination problem verbally without formal derivation and prescribe
+central bank digital currency. A CBDC remains sovereign-issued,
+freezable, and debaseable, fails Definition~1, and is an instance of
 Stay that Theorem~2 covers.
 
-The existing Bitcoin game-theory literature analyzes the
-mining subgame that upholds this paper's
-computational-hardness assumption (Assumption~3). Biais,
-Bisiere, Bouvard, and Casamatta\textsuperscript{5} show that following the
-longest chain is an equilibrium of the miner game. Eyal and
-Sirer\textsuperscript{10} show that miners can profit by secretly withholding
-newly found blocks instead of publishing them. Budish\textsuperscript{7} links the security
-budget to attackable stock value: recurring miner rewards must
-remain large relative to the one-off benefit of a majority
-attack. Chen\textsuperscript{9} closes the loop with a general-equilibrium
-model in which Bitcoin's price and ledger security are jointly
-determined. Together these results establish that the protocol
-produces blocks and resists attack at prices endogenous to
-adoption. This paper inherits them as Assumption~3 and bridges
-the gap above the mining subgame to the macro coordination problem.
+The existing Bitcoin game-theoretic literature concentrates on the mining subgame, which sustains itself through miner skin in the game: hardware built for one purpose, rewards paid in the coin a successful attack would destroy. Two dissents press against this view. Budish\textsuperscript{6} extends his high-frequency-trading rent-seeking critique to Bitcoin mining. Eyal and Sirer\textsuperscript{9} identify a selfish-mining limit under which a concentrated pool earns above its honest share by withholding blocks. Neither attack has been profitably executed on chain: shorting Bitcoin at attack scale exceeds available derivatives liquidity, KYC at every fiat off-ramp makes the attacker's identity legible before they can position, and a pool revealed as malicious loses the hashrate it depends on.
+
+The view of this paper, in line with Szabo\textsuperscript{23}, is the opposite of Budish: mining energy is the unforgeable costliness sustaining neutral settlement.\textsuperscript{24} Three results triangulate the intertwined cryptographic and economic hardness Assumption~3 refers to. Biais, Bisiere, Bouvard, and Casamatta\textsuperscript{4} show that following the longest chain is a stable equilibrium in the mining subgame. Garay, Kiayias, and Leonardos\textsuperscript{13} prove that under honest majority the protocol delivers common prefix, chain quality, and chain growth: the formal cryptographic guarantee that proof-of-work yields consensus. Chen\textsuperscript{8} closes the price-security loop in general equilibrium.
 
 % ============================================================
 % 3. MODEL
@@ -223,25 +210,25 @@ agreements is unpunished or unpunishable, actors defect.
 \end{assumption}
 
 \begin{assumption}[Computational Hardness]
-Certain mathematical problems cannot be solved in practical time by any known algorithm. Digital scarcity and cryptographic custody are implementable.
+Certain mathematical problems cannot be solved in practical time by any known algorithm, sustained via economic incentive (see \S2). Digital scarcity and cryptographic custody are implementable.
 \end{assumption}
 
 \begin{assumption}[Network Effect Persistence]
-Past critical mass, switching costs exceed marginal gains of alternatives. An established network attracts further adopters; its lead compounds (Katz and Shapiro\textsuperscript{17}).
+Past critical mass, switching costs exceed marginal gains of alternatives. An established network attracts further adopters; its lead compounds (Katz and Shapiro\textsuperscript{15}).
 \end{assumption}
 
 \subsection{3.2 Definitions}
 
 \begin{definition}[Neutral Settlement]
-An asset $S$ is a \emph{neutral settlement asset} if and only if $S$ is immune to capture by force, debasement, or coordinated political action. Property P6 (neutrality) corresponds to what Huberman, Leshno, and Moallemi\textsuperscript{15} term ``monopoly without a monopolist'': the protocol exhibits monopoly-like network effects without an entity capable of exercising monopoly power. The cryptographic and consensus primitives that ground P1--P3 and P5--P6 trace to Nakamoto\textsuperscript{21}. P1--P7 are assumed throughout. So is the miner-subgame result of \S2.
+Bitcoin is the neutral settlement asset of the Exit-Stay game, satisfying Properties P1--P7. Each P$i$ closes one \emph{attack channel} a coalition of Exit holders could use to profitably return to Stay. Cryptographic and consensus primitives grounding P1--P3 and P5--P6 trace to Nakamoto\textsuperscript{19}. P1--P7 are assumed throughout, as is the miner-subgame result of \S2.
 \end{definition}
 
 \begin{table}[h]
 \centering
-\caption*{\textbf{Table 1.} The seven properties jointly necessary for Definition~1. Each row names what an asset must guarantee and the attack class it forecloses.}
+\caption*{\textbf{Table 1.} The seven attack channels Bitcoin closes. Each row names the property and the attack it blocks.}
 \begin{tabular}{ll}
 \toprule
-Property & Blocks \\
+Closure Property & Attack Channel \\
 \midrule
 P1: Informational security & Physical confiscation \\
 P2: Protocol security & Protocol rule change \\
@@ -254,7 +241,7 @@ P7: Adaptive resilience & Obsolescence \\
 \end{tabular}
 \end{table}
 
-\noindent\emph{Gold as Neutral Settlement.} Gold has been synonymous with neutral settlement across five millennia. Density, divisibility, recognizability, and aesthetic appeal sustained it as money in the market-selection account of monetary emergence (Menger\textsuperscript{19}). Wampum, cowrie shells, and salt shared the surface properties but failed P4 once industrial production, oceanic shipping, and refined extraction broke their scarcity. Only gold has held P4 across that span. Arslanalp, Eichengreen, and Simpson-Bell\textsuperscript{2} trace the post-2022 central-bank gold buying to financial-sanctions risk on the main reserve issuers, not generic flight-to-safety. Gold has four known structural failures: confiscation at handoff, with Executive Order 6102 as precedent; assay risk; settlement cost scaling with mass; and supply inflation at roughly 1.5\% annually.
+\noindent\emph{Gold as Neutral Settlement.} Gold has been synonymous with neutral settlement across five millennia. Density, divisibility, recognizability, and aesthetic appeal sustained it as money in the market-selection account of monetary emergence (Menger\textsuperscript{17}). Wampum, cowrie shells, and salt shared the surface properties but failed P4 once industrial production, oceanic shipping, and refined extraction broke their scarcity. Only gold has held P4 across that span. Arslanalp, Eichengreen, and Simpson-Bell\textsuperscript{2} trace the post-2022 central-bank gold buying to financial-sanctions risk on the main reserve issuers, not generic flight-to-safety. Gold has four known structural failures: confiscation at handoff, with Executive Order 6102 as precedent; assay risk; settlement cost scaling with mass; and supply inflation at roughly 1.5\% annually.
 
 
 \begin{definition}[Capturable System]
@@ -267,8 +254,6 @@ self-custodiable bearer asset. Gold terminates in physical gold,
 which retains the four failures above. Bitcoin ETFs can be
 redeemed in steps to self-custodied Bitcoin, which satisfies P1--P7.
 \end{definition}
-
-Alternate consensus ledgers fail to satisfy P1--P7 (and are therefore Capturable) through any of four channels: identifiable founders or foundations violate P6; validator, treasury, or premine concentration violates P1, P3, and P6; consensus and governance complexity weakens P5 and P7; insufficient adversarial exposure leaves P7 unvalidated. P7 is structurally distinct: P1--P6 can be designed into a candidate ledger, but P7 is earned only by surviving an open adversarial attack surface.
 
 \begin{definition}[Exit]
 The action of moving capital from a capturable system to a neutral
@@ -287,13 +272,13 @@ The Exit Game is a non-cooperative game in which each capital allocator chooses 
 \noindent\textbf{Objective.} Preserve real purchasing power. Preference for capturable versus neutral assets is a pure function of the Exit Game.
 
 \smallskip
-\noindent\textbf{Rules.} Each allocator chooses what share of capital sits in Exit versus Stay. The choice is not a one-time flip but an ongoing reallocation: sell Stay to buy Exit, or sell Exit to re-enter Stay. Switching assets incurs friction; positions are sticky. Only the net aggregate $p_t$ matters. As $p$ rises, Exit pays more and Stay pays less. \S3.4.
+\noindent\textbf{Rules.} Each allocator's per-period action is binary: Exit or Stay. The aggregate $p_t$ evolves continuously because allocators are heterogeneous in their thresholds and cross at different moments. Per-player actions are reversible: a player can re-Stay if $p_t$ retreats below their personal threshold. Switching assets incurs friction; positions are sticky. As $p$ rises, Exit pays more and Stay pays less. \S3.4.
 
 \smallskip
 \noindent\textbf{Dynamics.} Two things grow slowly and do not reverse: more allocators come to see that staying in the system is losing them real money, and the money itself keeps getting debased. As both build, net capital moves into Exit. \S3.5.
 
 \smallskip
-\noindent\textbf{Payoffs.} The game is $G = (N, S, u)$ in standard non-cooperative form (Fudenberg and Tirole\textsuperscript{14}), with $S = \prod_i S_i$, $S_i = \{\text{Exit}, \text{Stay}\}$, $\sum_i a_i = 1$, and $p_t = \sum_{i \in \text{Exit}_t} a_i$.
+\noindent\textbf{Payoffs.} The game is $G = (N, S, u)$ in standard non-cooperative form (Fudenberg and Tirole\textsuperscript{12}), with per-period action set $S_i = \{\text{Exit}, \text{Stay}\}$, capital weights $\sum_i a_i = 1$, and aggregate adoption $p_t = \sum_{i \in \text{Exit}_t} a_i$. Each player's strategy is a threshold $p_i^* \in [0, 1] \cup \{+\infty\}$ specializing \S3.5: Exit when $p_t > p_i^*$, Stay when $p_t \le p_i^*$. The per-player action is binary and reversible at the player level; the aggregate $p_t$ moves continuously across the heterogeneous threshold distribution and may itself drawdown. The monotone object is the critical mass $p_c$, which shifts downward as $(K_t, D_t)$ (recognition; debasement) accumulate (\S4.3).
 \[
 u_i^E(p) := R_B(p) - \kappa_i K_A(p) - \rho_i R_A(p),
 \]
@@ -304,7 +289,7 @@ u_i^S(p) := R_F - K_N(p).
 \begin{itemize}[nosep,leftmargin=*]
 \item $R_B(p)$: real return on the neutral asset.
 \item $R_F$: return on capturable assets.
-\item $K_A(p)$: conformity cost of acting before peers (Katz and Shapiro\textsuperscript{17}; Farrell and Saloner\textsuperscript{11}).
+\item $K_A(p)$: conformity cost of acting before peers (Katz and Shapiro\textsuperscript{15}).
 \item $R_A(p)$: realization and regulatory friction; gains tax, fees, \textit{etc}.
 \item $K_N(p)$: non-adoption penalty.
 \end{itemize}
@@ -327,7 +312,7 @@ Player $i$: Exit & $u_i^E(0)$ & $u_i^E(p)$ \\
 
 \subsection{3.4 Monotonicity Conditions}
 
-Milgrom and Shannon\textsuperscript{20} showed that when the payoff
+Milgrom and Shannon\textsuperscript{18} showed that when the payoff
 gap between two options widens as some parameter rises, the player's
 best response moves toward the favored option and does not return.
 This paper applies that result with adoption $p$ as the parameter
@@ -355,19 +340,18 @@ asset appreciation and the taxation of nominal gains. As
 debasement raises the price level, equities, real estate, and
 similar capturable assets appreciate nominally to preserve real
 value. Holders are then taxed on the nominal gain. Post-tax real
-returns are negative (Feldstein\textsuperscript{12}). Public debt keeps growing; private
+returns are negative (Feldstein\textsuperscript{10}). Public debt keeps growing; private
 claims lose real value to service the debt. Nominally, balances go up. The loss only shows in real terms. Multipolarity (Assumption~1) leaves debasement unchecked. The tax wedge on nominal gains then produces $R_F < 0$ in real terms.
 Allocators accept the slow erosion because money illusion
-(Fisher\textsuperscript{13}) reads nominal stability as safety
+(Fisher\textsuperscript{11}) reads nominal stability as safety
 and treats lumpy real outperformance as risk.
 
 The macro state evolves on two slowly-varying indices:
 \begin{itemize}[nosep,leftmargin=*]
 \item $K_t \in [0,1]$ (\emph{recognition}): the share of capital allocators who recognize capturable assets as financially repressed. Recognition accumulates gradually rather than arriving with a discrete capture event.
-\item $D_t \in [0, \infty)$ (\emph{debasement}): a debasement-intensity index summarizing three post-1945 financial-repression channels: debt-to-GDP overhang (IMF\textsuperscript{16}), the inflation--capital-gains tax wedge (Feldstein\textsuperscript{12}), and the rate-cap and reserve-requirement toolkit (Reinhart and Sbrancia\textsuperscript{23}).
+\item $D_t \in [0, \infty)$ (\emph{debasement}): a latent debasement-intensity index summarizing three post-1945 financial-repression channels: debt-to-GDP overhang (IMF\textsuperscript{14}), the inflation--capital-gains tax wedge (Feldstein\textsuperscript{10}), and the rate-cap and reserve-requirement toolkit (Reinhart and Sbrancia\textsuperscript{21}).
 \end{itemize}
-Both $K_t$ and $D_t$ rise slowly and do not reverse on the
-horizons relevant to Theorem~1.
+Both $K_t$ and $D_t$ trend monotonic over the structural horizon. Short-horizon reversals are admitted as fluctuations around the trend: generational forgetting in $K_t$, hawkish tightening episodes in $D_t$.
 
 Let $\Delta_i(p; K, D) := u_i^E(p) - u_i^S(p)$ denote player $i$'s Exit minus Stay payoff gap at adoption $p$ and macro state $(K, D)$. Each allocator's threshold depends on $(K, D)$:
 \[
@@ -387,11 +371,11 @@ The critical mass invoked in Assumption~4 is the smallest adoption level at whic
 \[
 p_c(K, D) := \inf\Bigl\{ p \in [0, 1] : \sum_{i\,:\,\Delta_i(p;\,K,D) > 0} a_i \;>\; 0 \Bigr\}.
 \]
-Above $p_c$, the M1--M4 feedbacks (Katz and Shapiro\textsuperscript{17}) prevent Stay coalitions from reforming (\S4.2). The endpoint is dominance in the network-effects sense, not full adoption $p = 1$. As $(K_t, D_t)$ accumulate, $p_c$ drifts downward (\S4.3): $p > p_c$ holds even when $p_t$ is flat. This is path-dependent adoption (Arthur\textsuperscript{3}).
+Above $p_c$, the M1--M4 feedbacks (Katz and Shapiro\textsuperscript{15}) prevent Stay coalitions from reforming (\S4.2). The endpoint is dominance in the network-effects sense, not full adoption $p = 1$. For each $(K, D)$, $\{p > p_c\}$ is coalition-proof against return-coalitions. As $(K_t, D_t)$ accumulate, $p_c$ shifts downward by monotone comparative statics (Milgrom and Shannon\textsuperscript{18}): $p > p_c$ holds even when $p_t$ is flat, and the coalition-proof region expands (\S4.3).
 
 The model's claims are structural and directional: existence
 of thresholds $\{p_i^*\}$, sign of comparative statics, and
-direction of drift in $p_c$ under accumulating $(K_t, D_t)$.
+direction of shift in $p_c$ under accumulating $(K_t, D_t)$.
 It does not predict specific values, tipping times, or
 saturation levels.
 
@@ -443,32 +427,31 @@ Therefore $d\Delta_i/dp > 0$: the advantage of Exit rises strictly with $p$. Eac
 \begin{proposition}[Coalition Instability]
 Under Assumption~2 and Property~P3, no Stay coalition $C$
 containing at least one actor with a crossed threshold
-($p > p_j^*$ for some $j \in C$) is self-enforcing in the
-Bernheim-Peleg-Whinston sense.
+($p > p_j^*$ for some $j \in C$) is Nash-stable.
 \end{proposition}
 
 \begin{proof}
-Consider a coalition $C \subseteq N$ maintaining Stay. For $C$ to be self-enforcing in the sense of Bernheim, Peleg, and Whinston\textsuperscript{4}, no member $j \in C$ can profit from unilateral defection. By Proposition~1, $u_j(\text{Exit}) > u_j(\text{Stay})$ when $p$ exceeds $p_j^*$. Property~P3 (open access) makes the institutional defection cost zero: no counterparty can refuse the trade and no clearing intermediary can foreclose settlement. Regulatory coercion enters the payoff as $R_A$ and is already baked into each actor's threshold; Proposition~2 takes that pricing as given. Under Assumption~2, the crossed-threshold member defects: for at least one $j \in C$, $u_j(\text{defect from } C) > u_j(\text{remain in } C)$. The coalition therefore fails Nash, and any coalition-proof refinement requires Nash.
+Consider a coalition $C \subseteq N$ maintaining Stay. For $C$ to be Nash-stable, no member $j \in C$ can profit from unilateral defection. By Proposition~1, $u_j(\text{Exit}) > u_j(\text{Stay})$ when $p$ exceeds $p_j^*$. Property~P3 (permissionless access) closes the institutional defection channel: no counterparty can refuse the trade and no clearing intermediary can foreclose settlement, so the only remaining friction is the regulatory cost already baked into each actor's threshold via $R_A$. Under Assumption~2, the crossed-threshold member defects: for at least one $j \in C$, $u_j(\text{defect from } C) > u_j(\text{remain in } C)$. The coalition therefore fails Nash.
 \end{proof}
 
 \begin{remark}
-Proposition~2 covers coalitions with at least one crossed-threshold member. Permanent holdouts ($p_j^* = +\infty$), admitted by Proposition~1, lie outside its scope: no private reason to defect. The aggregate share of capital held for ideological reasons rather than rational self-interest (Assumption~2) is assumed immaterial. The real-world case is regulatory coercion holding the coalition together: capital controls, fiduciary mandates, jurisdictional penalties. P1 limits what coercion can do. An asset controlled by secret information, not physical possession, can be seized only by forcing each holder to disclose it one at a time. Cost grows with the number of holders, not the size of any one holding. Preference falsification (Kuran\textsuperscript{18}) then separates what holders say from what they do. Aggregate $p_t$ tracks what they do. Once enough private exits register, public Stay breaks.
+Proposition~2 covers coalitions with at least one crossed-threshold member. Permanent holdouts ($p_j^* = +\infty$), admitted by Proposition~1, lie outside its scope: no private reason to defect. The aggregate share of capital held for ideological rather than rational reasons (Assumption~2) is endogenous: minds are malleable and adapt to new information. The real-world case is regulatory coercion holding the coalition together: capital controls, fiduciary mandates, jurisdictional penalties. P1 limits what coercion can do. An asset controlled by secret information, not physical possession, can be seized only by forcing each holder to disclose it one at a time. Cost grows with the number of holders, not the size of any one holding. Preference falsification (Kuran\textsuperscript{16}) then separates what holders say from what they do. Aggregate $p_t$ tracks what they do. Once enough private exits register, public Stay breaks.
 \end{remark}
 
 \subsection{4.3 Ratchet}
 
-Proposition~2 took the threshold profile as given. \S4.3 lets thresholds move. As $(K_t, D_t)$ accumulate (recognition, debasement), each $p_i^*$ drifts downward, and $p_c$ drifts with the $p_i^*$. Two claims follow. First, above $p_c$ no returning Stay coalition can form. Any candidate coalition with a crossed-threshold member is broken by Proposition~2. Any candidate coalition without a crossed-threshold member contains only allocators not moving to Exit. Second, $p_c$ is non-increasing in $t$.
+\S4.1 gave each actor a threshold. \S4.2 showed coalitions cannot hold once any one member crosses. \S4.3 is not about individual players: per-period actions stay binary and reversible at the player level, and individual thresholds $p_i^*$ stay where the \S3 payoff structure puts them at any given state. What moves is the slowly varying state $(K_t, D_t)$, and with it the critical mass $p_c$. Recognition $K_t$ does not unwind (Kuran\textsuperscript{16}) and debasement $D_t$ does not reverse, so $p_c$ keeps falling. The result is not that any specific player is locked in; it is that the floor a returning Stay coalition would have to clear keeps dropping. Proposition~2 took the threshold profile as given. \S4.3 lets thresholds move. As $(K_t, D_t)$ accumulate, each $p_i^*$ shifts downward, and $p_c$ shifts with the $p_i^*$. Two claims follow. First, above $p_c$ no returning Stay coalition can form. Any candidate coalition with a crossed-threshold member is broken by Proposition~2. Any candidate coalition without a crossed-threshold member contains only allocators not moving to Exit. Second, $p_c$ is non-increasing in $t$.
 
 \begin{theorem}[Ratchet]
 Under Assumptions~1--4, maintained conditions (M1)--(M4), and
 the \S3.5 sign conditions: (a) $\{p > p_c\}$
-is locally stable against returning Stay coalitions. (b) Under
+is coalition-proof\textsuperscript{3,25} against returning Stay coalitions. (b) Under
 monotonic accumulation of $(K_t, D_t)$, the critical mass
-$p_c(K_t, D_t)$ drifts monotonically downward in $t$.
+$p_c(K_t, D_t)$ shifts monotonically downward in $t$.
 \end{theorem}
 
 \begin{proof}
-\emph{(a) Local stability above $p_c$.} If $p > p_c(K, D)$, the crossed-threshold set
+\emph{(a) Coalition-proofness of $\{p > p_c\}$.} If $p > p_c(K, D)$, the crossed-threshold set
 \[
 H(p) := \{i : \Delta_i(p; K, D) > 0\}
 \]
@@ -476,9 +459,10 @@ has positive capital weight. Any perturbation attempting to coordinate
 a return to high-Stay above $p_c$ is a candidate Stay coalition
 $C$ and falls into one of two cases. If $C \cap H(p)$ is
 nonempty, Proposition~2 applies: the crossed-threshold member
-defects under P3, and $C$ is not self-enforcing. If $C \cap H(p)$
+defects under P3, so $C$ fails Nash and therefore fails BPW
+self-enforcement. If $C \cap H(p)$
 is empty, $C$ consists entirely of uncrossed-threshold capital. These actors already prefer Stay at the current $p$ and do not move toward Exit; no candidate Stay coalition expands above $p_c$.
-The system is locally stable above $p_c$, with $\{p > p_c\}$ acting as a focal coordination level in the sense of Schelling\textsuperscript{25}. The dynamic part, in which the finite-threshold Stay pool shrinks as $(K_t, D_t)$ accumulate, takes $p_t$ above $p_c$ in the long run. Drawdowns and cascade pauses along $p_t$ are admitted. A permanent stall would require two conditions to hold jointly: $p_t$ plateauing below $p_c$ indefinitely, and $p_c$ failing to fall. The second condition is ruled out by part (b).
+The system is coalition-proof above $p_c$, with $\{p > p_c\}$ acting as the coordinating region for the high-adoption equilibrium. The dynamic part, in which the finite-threshold Stay pool shrinks as $(K_t, D_t)$ accumulate, expands the coalition-proof region. Drawdowns and cascade pauses along $p_t$ are admitted. A permanent stall would require two conditions to hold jointly: $p_t$ plateauing below $p_c$ indefinitely, and $p_c$ failing to fall. The second condition is ruled out by part (b).
 
 \emph{(b) Drift of $p_c$.} Because $p_c$ is defined from the individual thresholds, the \S3.5 sign conditions transfer directly to $p_c$:
 \[
@@ -500,7 +484,7 @@ three of:
 in $p$ for every player type (Proposition~1);
 \item no Stay coalition with at least one crossed-threshold
 member is self-enforcing (Proposition~2);
-\item $\{p > p_c\}$ is locally stable, and $p_c$ drifts monotonically downward under accumulating $(K_t, D_t)$ (Theorem~1).
+\item $\{p > p_c\}$ is coalition-proof, and $p_c$ shifts monotonically downward under accumulating $(K_t, D_t)$ (Theorem~1).
 \end{enumerate}
 \end{theorem}
 
@@ -512,25 +496,21 @@ conjunction is the Bitcoin Exit Dominance claim.
 
 
 % ============================================================
-% 5. FALSIFICATION
+% 5. CONCLUSION (formerly Section 6; Section 5 Limitations folded in)
 % ============================================================
 
-\section{5. Limitations}
+\section{5. Conclusion}
 
-While Bitcoin holds the longest continuous public survival record, this paper does not formally exclude future ledgers from escaping Definition~2.
+The Exit Game treats capital allocators, not sovereign issuers, as the agents who decide what counts as settlement. The long-run outcome depends on whether an asset exists that no government issues. Once such an asset exists and satisfies P1--P7, the question is no longer whether allocators can leave the capturable system but whether continued debasement pushes adoption past $p_c$.
 
-A1--A4 are each independently load-bearing. A1 (persistent multipolarity) fails only if rival regimes completely coordinate and preference falsification is universally undermined. A2 (rational self-interest) fails only if net aggregate actors do not trend toward defection when defection goes unpunished. A3 (computational hardness) fails only if the underlying cryptography breaks and the protocol cannot replace the broken cryptography. A4 (persistence of network effects) fails only if the incumbency account of network goods is disproved.
+All capital allocators choose reserve assets on perceived risk and ability to store value. Since the Global Financial Crisis central banks have been accumulating gold. Smaller allocators have the unique opportunity to use higher risk tolerance and small size to shift first to any asset that does what gold does without gold's failures, at lower cost. \S3.5 predicts that continued debasement keeps moving more allocators out of fiat.
 
-\section{6. Conclusion}
-
-Previous work on monetary coordination treats sovereign issuers as the only agents that matter. The Exit Game flips that: capital allocators decide what counts as settlement. The long-run outcome depends on whether an asset exists that no government issues. Once such an asset exists and satisfies P1--P7, the question is no longer whether allocators can leave the capturable system but whether continued debasement pushes adoption past $p_c$.
-
-Central banks choose reserve assets by what those assets do, not only by politics. Since the Global Financial Crisis they have been accumulating gold. The Exit Game predicts the same pattern for any asset that does what gold does without gold's failures, at lower cost. \S3.5 predicts that continued debasement keeps moving more allocators out of fiat.
+A1--A4 are each independently load-bearing. A1 (persistent multipolarity) fails only if rival regimes coordinate and preference falsification no longer holds; rival seignorage is what holds the multipolar floor. A2 (rational self-interest) fails only if actors systematically forgo positive expected returns from unpunished defection. A3 (computational hardness) fails if either the underlying cryptography breaks and the protocol cannot replace it, or the economic incentive sustaining the mining subgame falls below the level §2 requires. A4 (persistence of network effects) fails only if the incumbency account of network goods is disproved.
 
 The Bitcoin Exit Dominance claim is new and depends on two conditions outside this paper's scope. First, no other consensus ledger holds all of P1--P7: alternatives must either fail one of the properties or fail to draw adoption. Second, autonomous AI agents that need a settlement asset choose Bitcoin rather than invent a new settlement asset. A companion paper in preparation addresses the first across consensus ledgers; a second extends neutral settlement to autonomous agents.
 
-\paragraph*{Acknowledgement.}
-The author thanks the canonical game-theoretic tradition this paper rests on: Nash, Schelling, Milgrom and Shannon, Katz and Shapiro, Farrell and Saloner, Bernheim, Peleg and Whinston, and Fudenberg and Tirole. The Exit Game could not be stated without them. The author also acknowledges Thorstein Veblen, whose institutional-psychological tradition surfaces the work of Cantillon, Fisher, and Kuran as load-bearing for any model of how humans actually allocate capital. Thanks to the readers who flagged the Theorem~1 ratchet-form gap and the redundancy of the volatility apparatus in the preprint. Finally, the author thanks Lyn Alden for popularizing the debasement concept to a general audience; her work in accelerating the broader recognition of fiat debasement aids the Exit Game.
+\paragraph*{Acknowledgements.}
+The author thanks the game-theoretic traditions this paper rests on. The equilibrium refinement program, from Nash and Selten through Bernheim, Peleg and Whinston, underwrites coalition-proofness. Katz and Shapiro and Milgrom and Shannon give the threshold dynamics their structure. Fudenberg and Tirole synthesize both. The Exit Game could not be stated without them. The author also acknowledges Thorstein Veblen, whose institutional-psychological tradition surfaces the work of Cantillon, Fisher, and Kuran as load-bearing for any model of how humans actually allocate capital. Thanks to the readers who flagged the Theorem~1 ratchet-form gap and the redundancy of the volatility apparatus in the preprint. Finally, the author thanks Lyn Alden for popularizing the debasement concept to a general audience; her work in accelerating the broader recognition of fiat debasement aids the Exit Game. The author also acknowledges Arthur Hayes, Jeff Booth, Fred Krueger, Lawrence Lepard, and others whose public writing has accelerated the bitcoin-specific debasement discourse this paper formalizes.
 
 \paragraph*{Author Contributions.}
 S.H.\ is the sole author and conducted all aspects of the work,
@@ -571,7 +551,7 @@ $\kappa_i, \rho_i$ & Conformity weight, friction weight (all $> 0$ strictly) \\
 \end{table}
 
 \clearpage
-\section{References}
+\section{6. Notes and References}
 
 \begin{enumerate}[leftmargin=*,labelsep=0.5em,label=\arabic*.]
 
@@ -585,10 +565,6 @@ international reserves: a barbarous relic no more?'' \emph{Journal of
 International Economics} \textbf{145} (2023)
 \url{https://doi.org/10.1016/j.jinteco.2023.103822}
 
-\item Arthur, W. B. ``Competing technologies, increasing returns,
-and lock-in by historical events.'' \emph{Economic Journal}
-\textbf{99.394} 116--131 (1989)
-\url{https://doi.org/10.2307/2234208}
 
 \item Bernheim, B. D., Peleg, B., Whinston, M. D.
 ``Coalition-proof Nash equilibria I. Concepts.'' \emph{Journal of
@@ -620,9 +596,6 @@ mining is vulnerable.'' \emph{Communications of the ACM}
 \textbf{61.7} 95--102 (2018)
 \url{https://doi.org/10.1145/3212998}
 
-\item Farrell, J., Saloner, G. ``Standardization, compatibility,
-and innovation.'' \emph{RAND Journal of Economics}
-\textbf{16.1} 70--83 (1985) \url{https://doi.org/10.2307/2555589}
 
 \item Feldstein, M. ``Inflation and the stock market.''
 \emph{American Economic Review} \textbf{70.5} 839--847 (1980)
@@ -634,10 +607,12 @@ Company 3--22 (1928).
 \item Fudenberg, D., Tirole, J. \emph{Game Theory}. Cambridge:
 MIT Press 3--7 (1991).
 
-\item Huberman, G., Leshno, J. D., Moallemi, C. ``Monopoly without
-a monopolist: an economic analysis of the Bitcoin payment
-system.'' \emph{Review of Economic Studies} \textbf{88.6}
-3011--3040 (2021) \url{https://doi.org/10.1093/restud/rdab014}
+\item Garay, J., Kiayias, A., Leonardos, N. ``The Bitcoin
+backbone protocol: analysis and applications.'' In
+\emph{Advances in Cryptology -- EUROCRYPT 2015},
+Lecture Notes in Computer Science \textbf{9057},
+Springer 281--310 (2015)
+\url{https://doi.org/10.1007/978-3-662-46803-6_10}
 
 \item International Monetary Fund. ``World Economic Outlook
 Database.'' \emph{IMF} (October 2024)
@@ -676,8 +651,13 @@ government debt.'' \emph{Economic Policy} \textbf{30.82}
 Study of the Causes and Origins of War}. Pittsburgh: Boxwood
 Press / Chicago: Quadrangle Books 12--35 (1960).
 
-\item Schelling, T. C. \emph{The Strategy of Conflict}. Cambridge:
-Harvard University Press 54--58 (1960).
+\item Szabo, N. ``Shelling Out: The Origins of Money.''
+\emph{Unenumerated} (2002)
+\url{https://nakamotoinstitute.org/library/shelling-out/}
+
+\item \emph{Note on Budish (\S2).} The mining subgame imposes real costs that are a legitimate object of inefficiency analysis. The viewpoint of this paper is that those costs are not inefficiency in the rent-seeking sense but unforgeable costliness (Szabo\textsuperscript{23}) sustaining neutral settlement: the specific property Bitcoin holders are paying to obtain. A full reconciliation with Budish's bound is beyond the scope of one paper and is left to subsequent work.
+
+\item \emph{Note on coalition-proofness vocabulary (\S4.3).} The claim is coalition-proofness in the Bernheim-Peleg-Whinston sense, not stochastic stability in the Young or Kandori-Mailath-Rob sense; the paper does not specify a perturbed best-response dynamic.
 
 \end{enumerate}
 
