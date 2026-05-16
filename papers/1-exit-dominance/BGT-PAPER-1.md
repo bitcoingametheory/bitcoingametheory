@@ -51,7 +51,7 @@ Stay that Theorem 2 covers.
 
 The existing Bitcoin game-theoretic literature concentrates on the mining subgame, which sustains itself through miner skin in the game: hardware built for one purpose, rewards paid in the coin a successful attack would destroy. Two dissents press against this view. Budish^6^ extends his high-frequency-trading rent-seeking critique to Bitcoin mining. Eyal and Sirer^9^ identify a selfish-mining limit under which a concentrated pool earns above its honest share by withholding blocks. Neither attack has been profitably executed on chain: shorting Bitcoin at attack scale exceeds available derivatives liquidity, KYC at every fiat off-ramp makes the attacker's identity legible before they can position, and a pool revealed as malicious loses the hashrate it depends on.
 
-The view of this paper, in line with Szabo^23^, is the opposite of Budish: mining energy is the unforgeable costliness sustaining neutral settlement.^24^ Three results triangulate the intertwined cryptographic and economic hardness Assumption 3 refers to. Biais, Bisiere, Bouvard, and Casamatta^4^ show that following the longest chain is a stable equilibrium in the mining subgame. Garay, Kiayias, and Leonardos^13^ prove that under honest majority the protocol delivers common prefix, chain quality, and chain growth: the formal cryptographic guarantee that proof-of-work yields consensus. Chen^8^ closes the price-security loop in general equilibrium.
+The view of this paper, in line with Szabo^23^, is the opposite of Budish: mining energy is the unforgeable costliness sustaining neutral settlement.^24^ Three results triangulate the intertwined cryptographic and economic hardness Assumption 3 refers to. Biais, Bisière, Bouvard, and Casamatta^4^ show that following the longest chain is a stable equilibrium in the mining subgame. Garay, Kiayias, and Leonardos^13^ prove that under honest majority the protocol delivers common prefix, chain quality, and chain growth: the formal cryptographic guarantee that proof-of-work yields consensus. Chen^8^ closes the price-security loop in general equilibrium.
 
 # 3. Model
 
@@ -380,7 +380,7 @@ The author holds bitcoin and operates bitcoingametheory.com.
     Economic Theory* **42.1** 1--12 (1987)
     <https://doi.org/10.1016/0022-0531(87)90099-8>
 
-4.  Biais, B., Bisiere, C., Bouvard, M., Casamatta, C. "The
+4.  Biais, B., Bisière, C., Bouvard, M., Casamatta, C. "The
     blockchain folk theorem." *Review of Financial Studies*
     **32.5** 1662--1715 (2019)
     <https://doi.org/10.1093/rfs/hhy095>
@@ -397,8 +397,9 @@ The author holds bitcoin and operates bitcoingametheory.com.
     général* (c. 1755). English translation: *Essay on the Nature
     of Trade in General*, trans. Higgs, H. London: Macmillan 161--173 (1931).
 
-8.  Chen, Y. "A game-theoretic foundation for Bitcoin's
-    price." *Working Paper* (2025).
+8.  Chen, L. "A game-theoretic foundation for Bitcoin's
+    price: a security-utility equilibrium." arXiv:2508.06071
+    *Working Paper* (2025) <https://arxiv.org/abs/2508.06071>
 
 9.  Eyal, I., Sirer, E. G. "Majority is not enough: Bitcoin
     mining is vulnerable." *Communications of the ACM*
@@ -445,11 +446,11 @@ The author holds bitcoin and operates bitcoingametheory.com.
 
 19. Nakamoto, S. "Bitcoin: a peer-to-peer electronic cash
     system." *White paper* (2008)
-    <https://doi.org/10.2139/ssrn.3440802>
+    <https://bitcoin.org/bitcoin.pdf>
 
 20. Powell, R. "Guns, butter, and anarchy." *American
     Political Science Review* **87.1** 115--132 (1993)
-    <https://doi.org/10.2307/2938959>
+    <https://doi.org/10.2307/2938960>
 
 21. Reinhart, C. M., Sbrancia, M. B. "The liquidation of
     government debt." *Economic Policy* **30.82**
