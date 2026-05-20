@@ -16,14 +16,14 @@ Academic papers. Each available in three formats.
 
 Each paper lives in its own folder (numeric prefix = reading order, slug = short title).
 
-| Paper | Folder | Title |
-|-------|--------|-------|
-| BGT-PAPER-1 | [1-exit-dominance/](1-exit-dominance/) | Bitcoin Exit Dominance in Monetary Coordination Games |
-| BGT-PAPER-2 | [2-neutral-settlement/](2-neutral-settlement/) | Bitcoin as Unique Neutral Settlement: A Seven-Property Elimination |
-| BGT-PAPER-3 | [3-zero-trust-settlement/](3-zero-trust-settlement/) | Settlement at Zero Trust: Bitcoin and Autonomous Economic Agents |
-| BGT-PAPER-4 | [4-predator-prey-dynamics/](4-predator-prey-dynamics/) | Monetary Predator-Prey Dynamics |
+| Paper | Folder | Title | Pages |
+|-------|--------|-------|-------|
+| BGT-PAPER-1 | [1-exit-dominance/](1-exit-dominance/) | Bitcoin Exit Dominance in Monetary Coordination Games | 18 |
+| BGT-PAPER-2 | [2-neutral-settlement/](2-neutral-settlement/) | Bitcoin as Unique Neutral Settlement: A Seven-Property Elimination | 18 |
+| BGT-PAPER-3 | [3-zero-trust-settlement/](3-zero-trust-settlement/) | Settlement at Zero Trust: Bitcoin and Autonomous Economic Agents | 11 |
+| BGT-PAPER-4 | [4-predator-prey-dynamics/](4-predator-prey-dynamics/) | Monetary Predator-Prey Dynamics | 14 |
 
-Each folder contains `{md, tex, pdf, bib}`. Paper 1's `archive/v1/` holds the original v1 (commit date 2026-02-24); `BGT-PAPER-1-diff-v1-v2.pdf` shows the delta.
+Each folder contains `{md, tex, pdf, bib}`. Paper 1 also ships a `ledger/` subfolder with `BGT-PAPER-1-LEDGER.{tex,pdf,bib}`, the journal-submission variant (revision note and Working Paper label stripped). Paper 1's `archive/preprint-ssrn-6299081/` preserves the February 2026 SSRN preprint.
 
 ---
 
