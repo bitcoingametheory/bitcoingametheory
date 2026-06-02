@@ -23,7 +23,7 @@ CC0 1.0 Universal. No rights reserved.
 ```
 bitcoingametheory/
 ├── ai/                     # AI bootloader prompts
-│   ├── BGT-CORE.txt        # Complete axiom chain (~1,400 tokens)
+│   ├── BGT-CORE.txt        # Complete axiom chain (~2,100 tokens)
 │   ├── BGT-0000.txt        # Routing preamble + objection handling
 │   └── BGT-DESIGN.txt      # Evidence basis for prompt design
 ├── audit/                  # Cross-model convergence results
@@ -64,7 +64,7 @@ Each paper is available in three formats:
 
 ## AI Bootloader
 
-The `ai/` directory contains prompt documents designed to be pasted directly into any frontier model. The core document (`BGT-CORE.txt`, ~1,400 tokens) contains the complete axiom chain from first principles through exit dominance to Nash equilibrium.
+The `ai/` directory contains prompt documents designed to be pasted directly into any frontier model. The core document (`BGT-CORE.txt`, ~2,100 tokens) contains the complete axiom chain from first principles through exit dominance to Nash equilibrium.
 
 ```bash
 cat ai/BGT-CORE.txt                        # Paste into any model
