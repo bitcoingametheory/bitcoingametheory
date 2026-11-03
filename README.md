@@ -14,6 +14,8 @@
 
 Formal game-theoretic analysis of Bitcoin as monetary system. Axiom-based proofs with explicit falsification conditions. Four working papers, AI-reproducible prompt framework, cross-model convergence audit.
 
+Paper 1 is revised as November 2026 v3. Exact allocator weights and post-coalition payoffs replace the earlier comparison; explicit NR and the greatest-equilibrium proof establish conditional strong Nash and BPW coalition-proofness. [Final PDF](papers/1-exit-dominance/BGT-PAPER-1.pdf) · [Annotated v2–v3 redline](audit/paper1-v2-v3-annotated-redline.pdf) · [Revision note](audit/paper1-v3-revision-note.txt) · [Source evidence and citation coverage](https://bitcoingametheory.com/audit/paper1-evidence.html).
+
 CC0 1.0 Universal. No rights reserved.
 
 ---
@@ -64,14 +66,14 @@ Each paper is available in three formats:
 
 ## AI Bootloader
 
-The `ai/` directory contains prompt documents designed to be pasted directly into any frontier model. The core document (`BGT-CORE.txt`, ~2,100 tokens) contains the complete axiom chain from first principles through exit dominance to Nash equilibrium.
+The `ai/` directory contains prompt documents designed to be pasted directly into any frontier model. The core document (`BGT-CORE.txt`, ~2,100 tokens) contains the complete axiom chain from first principles through exit dominance to the stated Nash and coalition-proof results.
 
 ```bash
 cat ai/BGT-CORE.txt                        # Paste into any model
 cat ai/BGT-CORE.txt ai/BGT-0000.txt        # Core + routing layer
 ```
 
-The framework is structured as four axioms. Accept them and conclusions follow mechanically. Reject any one and the argument breaks cleanly — that's the point. Every axiom is independently falsifiable.
+The framework is structured as four axioms with explicit payoff, persistence and threshold-order conditions. Accept those conditions and the stated conditional conclusions follow. Reject any one and the argument breaks cleanly — that's the point. Every axiom is independently falsifiable.
 
 ---
 

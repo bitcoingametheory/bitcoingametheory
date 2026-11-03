@@ -1,0 +1,19 @@
+I do not find an invalid inference in the paper’s central equilibrium proofs when all explicitly maintained conditions are treated as hypotheses. There are, however, places where the surrounding language suggests more than those proofs establish.
+
+The main mathematical steps work within the stated game. Conditions M1–M4 make Exit utility strictly increasing and Stay utility strictly decreasing in adoption. They therefore make the exact unilateral gain F_i(q) strictly increasing, including the allocator’s own capital contribution. Continuity then gives the stated threshold structure, with the paper’s endpoint and infinite-threshold conventions.
+
+Proposition 2 is valid but narrow: a Stay group containing someone with a strictly profitable unilateral deviation cannot be Nash-stable. This does not prove that every Stay group eventually acquires such a member or that one departure triggers a complete cascade.
+
+Theorem 1’s return-coalition argument also works. A profitable collective return lowers adoption, raising Stay utility and lowering Exit utility. Consequently, at the proposed return outcome, no subgroup can profitably re-enter Exit. This supports the claimed necessity and sufficiency of NR for resistance to the specified coalition-proof return deviations.
+
+The greatest-equilibrium construction is valid for the finite binary game with increasing best responses and ties resolved toward Exit. Its strong-Nash proof covers entry-only deviations through maximality and deviations containing returners through NR. Strong Nash then implies coalition-proofness under the paper’s stated restriction to pure deviations without transfers. I do not see a missing mathematical condition in those steps.
+
+Three qualifications matter:
+
+1. The “critical mass” is not derived as a sufficient tipping condition. It is defined as the minimum individual threshold. Those thresholds concern others’ adoption q, whereas the high-Exit region is expressed using total adoption p. Because q_i = p − a_i for an Exit holder, p above the minimum threshold does not generally imply that a particular allocator’s threshold has been crossed. Theorems remain valid because NR is independently imposed at the relevant Nash profiles, but the prose describing p_c as a macro critical mass should not be read as an additional proved coordination result.
+
+2. The ratchet is a comparative-statics conclusion, not a proved adoption dynamic. The threshold-order condition explicitly assumes that each threshold weakly decreases with recognition and debasement. Taking the minimum correctly preserves that ordering. The paper does not derive this condition from the four headline assumptions, specify a transition rule selecting equilibria, or prove that adoption reaches the high-Exit region. Its formal theorem acknowledges the extra condition and allows reversals; references to an “adoption process” are broader than the mathematics actually analyzes.
+
+3. The Bitcoin-specific identification is assumed rather than selected by the game. The payoff proof applies to an asset assigned the stipulated properties and payoff restrictions. Theorem 2 restates the preceding results; it does not compare Bitcoin with another neutral asset or prove uniqueness. The conclusion’s acknowledgment that rival ledgers and AI settlement choices remain outside scope is therefore substantive.
+
+These are qualifications to interpretation and theorem summaries, rather than counterexamples to the central conditional proofs. Rejecting NR, the monotonicity restrictions, the threshold-order condition, or Bitcoin’s assumed settlement properties would challenge the hypotheses, not reveal an invalid deduction from them.

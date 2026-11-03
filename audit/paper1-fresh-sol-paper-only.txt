@@ -1,0 +1,37 @@
+The paper argues that Bitcoin adoption can become self-reinforcing when capital owners seek protection from monetary debasement and political control. Its central contribution is an “Exit Game”: a formal model of choosing between existing financial systems and a supposedly neutral settlement asset. Its conclusions are conditional equilibrium results, rather than a prediction that everyone inevitably adopts Bitcoin.
+
+The choice the model describes
+
+“Stay” means keeping capital in a system whose settlement asset is susceptible to capture. “Exit” means moving it into neutral settlement. The paper treats Bitcoin as neutral because it assumes seven properties: informational security, protocol security, permissionless access, absolute scarcity, cheap finality, neutrality, and adaptive resilience. These are intended to block confiscation, rule changes, censorship, inflation, excessive settlement costs, governance takeover, and obsolescence.
+
+The underlying assumptions are persistent geopolitical multipolarity, rational self-interest, computational hardness sufficient to support digital scarcity, and persistent network effects. The seven Bitcoin properties are also maintained assumptions; the game does not independently establish them.
+
+Each allocator chooses Exit or Stay. Allocators differ in their share of capital and their sensitivity to social pressure and regulatory costs. Adoption, p, measures the share of capital allocated to Exit, not the number of adopters or their public statements. A large investor therefore matters more than a small investor. An actor can publicly endorse Stay while privately allocating to Exit.
+
+Why adoption encourages more adoption
+
+Exit utility consists of the neutral asset’s real return minus conformity and regulatory costs. Stay utility consists of the return on capturable assets minus a penalty for not adopting.
+
+Four restrictions give the model its direction: as adoption increases, Bitcoin’s modeled return rises, conformity costs fall, regulatory and realization frictions fall, and the penalty for remaining rises. Consequently, every allocator’s incentive to Exit increases with others’ adoption. This is strategic complementarity: your adoption makes my adoption more attractive.
+
+The model correctly includes an allocator’s own capital contribution when comparing choices. If everyone else has adoption q and allocator i controls share a_i, its gain from switching is:
+
+F_i(q) = Exit utility at q + a_i − Stay utility at q.
+
+Because this gain increases with q, each allocator has a threshold above which Exit is its unique best response. Some prefer Exit immediately; others never find it worthwhile. The model explicitly allows permanent holdouts.
+
+What the results establish
+
+Proposition 1 establishes the increasing payoff advantage and individual thresholds. Proposition 2 says a group maintaining Stay cannot be stable if any member would profit by leaving alone. Permissionless access is important because the model assumes that member can actually execute the exit, with regulatory costs already included in its payoff. This does not establish that every Stay coalition must collapse.
+
+Theorem 1 adds an explicit restriction called NR. For every proposed group of current Exit holders returning to Stay together, at least one member must fail to gain strictly. This is an additional payoff assumption, not a consequence of rising individual adoption incentives. It matters because coordinated departures could change everyone’s payoffs enough to make returning attractive even when leaving alone is unattractive.
+
+Under NR, Nash equilibria above the paper’s critical mass resist returning coalitions. If any such equilibrium exists, the greatest Nash equilibrium—the one containing the largest set of Exit adopters—is strong Nash and therefore coalition-proof under the paper’s pure-strategy, no-transfer framework. In ordinary language, no group can change its choices so that every member becomes strictly better off.
+
+The “ratchet” concerns thresholds, not irreversible adoption. The paper assumes that recognition of financial repression and debasement accumulate, and that each allocator’s threshold weakly falls as they do. Their minimum, defined as critical mass, therefore also falls. Individual choices and aggregate adoption can still reverse.
+
+How to interpret “Bitcoin Exit Dominance”
+
+Theorem 2 bundles those results together. It establishes a conditional case for reinforcing adoption and stable high-Exit equilibria. It supplies no numerical tipping point, adoption timetable, or guaranteed path to such an equilibrium. Its critical mass is the lowest individual threshold, not an independently demonstrated economy-wide tipping point.
+
+The Bitcoin-specific conclusion depends on Bitcoin satisfying the assumed settlement properties and on competing assets failing to displace it. The paper acknowledges that alternative consensus ledgers and autonomous AI settlement choices require further work. Its strongest supported reading is that a neutral settlement network can become difficult to dislodge under the specified incentives and persistence conditions.

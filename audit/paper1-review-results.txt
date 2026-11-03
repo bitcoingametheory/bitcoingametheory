@@ -1,0 +1,72 @@
+V3 REVIEW RECORD — 2 November 2026
+
+Purpose: repair internal mathematical validity with the fewest justified
+changes to the preserved May v2, not obtain favorable model responses.
+
+ORIGINAL-SEQUENCE COMPARISON
+The author confirmed: paste the site's exact live copy prompt, then attach
+the May v2 PDF without another instruction. neutral-v2-round1 preserves those
+inputs, hashes, protocol and raw responses. Fresh gpt-6.1-sol and gpt-6-astra
+contexts received that two-turn sequence. A third fresh Sol context received
+the paper only and "Explain this paper." Each response was capped at 900 words.
+All three paper reviews identified the post-coalition comparison and the
+threshold-drift/crossing distinction. Subsequent diagnostics corrected their
+overbroad counterexample interpretation: the derivative-only examples are not
+certified counterexamples to every reading of the original stronger A4.
+
+REPAIRED-PAPER COMPARISON
+Two fresh contexts, gpt-6.1-sol and gpt-6-astra, medium reasoning, received only
+the extracted candidate paper and "Explain this paper" (900-word cap).
+Each then received a critical follow-up (650-word cap), asking for invalid
+inferences, missing conditions and inconsistent summaries while treating
+explicit assumptions as hypotheses. Both found the central proofs coherent.
+Astra identified an omitted high-equilibrium existence qualification in the
+abstract and Theorem 2. It was restored. Sol identified an ambiguous reading of
+the cutoff as a proved tipping point; its definition was aligned with the
+others-adoption variable. The adoption-process summary now names the game.
+The reviewed-round1 directory preserves the exact initial files and responses.
+
+FRESH "POKE HOLES" TEST
+New no-history gpt-6-astra and gpt-6.1-sol contexts then received the revised
+paper and only "Poke holes in this paper" (900-word cap). Their full responses
+are fresh-astra-poke-final.txt and fresh-sol-poke-final.txt. Neither identified
+a failed step in the central repaired equilibrium proof. Both strongly
+challenged the economic justification of NR, the interpretation of the cutoff,
+and whether the maintained payoffs apply to Bitcoin. They also challenged
+asset-pricing and portfolio simplifications. Those findings remain in the
+record; they were not discarded or converted into favorable endorsements.
+Astra's wording about counterparties identified one remaining implication
+outside the proof: permissionless settlement does not compel a trade. The
+final Proposition 2 states feasibility as part of the game's action set.
+Sol's fresh test read that corrected sentence. Later typesetting changes alter
+no words, assumptions or deductions.
+
+WHAT PASSED AND WHAT DID NOT
+The finite-player proof uses exact own-weight gains. The return lemma shows
+that a profitable collective return is self-enforcing under the payoff signs.
+NR excludes precisely those returns. At the greatest Nash equilibrium,
+collective entry would contradict greatestness, and profitable combined entry
+and return would contradict NR. Therefore that equilibrium is strong Nash and
+BPW coalition-proof when it lies in the region where NR is imposed. The
+threshold-order argument establishes a non-increasing minimum threshold.
+
+NR is substantive additional formal content, not a theorem derived from the
+seven protections, a source citation, or the number of agreeing models. The
+greatest-equilibrium step adds full BPW content beyond return resistance. The
+paper retains its Bitcoin title, original A4, P1-P7 and economic argument.
+Criticism of the maintained premises is not a counterexample to a conditional
+theorem; accepting the conditional theorem is not evidence for those premises.
+
+Independent exact-rational enumeration checked 500 finite monotone games,
+6,200 profiles and 30,100 return coalitions. All 5,150 profitable returns passed
+the reduced-game check. The greatest-profile equivalence between NR and strong
+Nash passed in cases with and without NR. This corroborates the written general
+proof; it does not replace it or estimate empirical Bitcoin payoffs.
+
+LIMITS
+These are instruction-isolated fresh contexts, not a physical air gap. They
+received PDF text extraction rather than native ChatGPT attachments. The
+original ChatGPT model/build is unknown; current requested routes are recorded
+above. No disagreement rate, causal prompt effect, exact billed-token count,
+or universal reviewer consensus is inferred from these small samples. No
+number of reviews substitutes for checking the deductions and assumptions.

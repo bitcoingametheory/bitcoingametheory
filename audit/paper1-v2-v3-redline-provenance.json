@@ -1,0 +1,38 @@
+{
+  "baseline_sha256": "f2d136b878f735fe98d8c23fadfb6ef47e720f7a2d81a6bc52f0b721b82b311d",
+  "v3_sha256": "b8d3e3d04fe7ed46d9a6f3e3a6b0b21dd2a419f735e7f2df92de5ef9a69d26fd",
+  "redline_pdf_sha256": "28da0d9fd6aa4b2a815743dcdef80d0bd1f69a0bb48c374765b6d4ea301778b0",
+  "method": "latexdiff, complete-equation comparison, unchanged tables retained, source-specific reader notes, XeLaTeX twice",
+  "notes": [
+    [
+      "3.3",
+      "A mover changes total adoption",
+      "OWN-WEIGHT: With others at q, an allocator of weight a receives Exit utility at q+a and Stay utility at q. This is substitution into the existing aggregate definition. The finite-player version makes the BPW recursion applicable. BPW pp. 3, 6."
+    ],
+    [
+      "3.5",
+      "The cutoff and its direction",
+      "DRIFT: The minimum of ordered individual thresholds is ordered too. That does not imply that actual adoption crosses it. The cutoff is measured from others' adoption and the coalitional restriction is stated separately. Milgrom--Shannon pp. 162, 175."
+    ],
+    [
+      "4.1",
+      "The original derivative result survives",
+      "BOUNDARY / POINTWISE: The derivative signs apply to the modeled long-horizon utilities. The exact own-weight gain also increases. At a zero threshold the gain may already be positive, so the old claim that every finite threshold has zero gain is corrected."
+    ],
+    [
+      "4.2",
+      "Test the proposed outcome",
+      "POST-COALITION: A Stay member destabilizes a proposed coalition only when exiting is profitable at that proposed outcome, including its own weight. Profitability at the starting allocation is a different comparison. BPW p. 6."
+    ],
+    [
+      "4.3",
+      "Coordinated return and the replacement proof",
+      "A4-NR / PROFILE-SCOPE: If every returning member gains, any subgroup re-entering receives no more than its original Exit utility and therefore loses. Such a profitable return is self-enforcing. NR excludes it directly. The greatest Nash equilibrium additionally excludes profitable collective entry; departures mixed with entries are ruled out by NR. This yields strong Nash and BPW. The removed finite-plateau inference does not follow from downward threshold drift. BPW pp. 6--7; Milgrom--Shannon p. 175."
+    ],
+    [
+      "4.4",
+      "Keep the summary no stronger than its proof",
+      "PROFILE-SCOPE: The full BPW result applies to the greatest high-Exit Nash profile if one exists. The conjunction retains that existence qualification and calls the object a game, not an unspecified adoption dynamic."
+    ]
+  ]
+}

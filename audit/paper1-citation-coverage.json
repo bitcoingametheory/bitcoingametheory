@@ -1,0 +1,1518 @@
+{
+  "schema": "frozen-v2-citation-coverage-v1",
+  "created_utc": "2026-11-03T00:15:12.017930+00:00",
+  "frozen_manuscript": "rfc\\draft\\1-exit-dominance\\archive\\may-2026-before-proof-repair\\BGT-PAPER-1.tex",
+  "frozen_manuscript_sha256": "f2d136b878f735fe98d8c23fadfb6ef47e720f7a2d81a6bc52f0b721b82b311d",
+  "existing_review": "rfc\\audit\\paper1-2026-11-02\\citation-review.json",
+  "existing_review_sha256": "c1ce3e58bcfad2fbdb78d6fa7a55b2ddeb709347e33fbc162aeeb8742ca2d6ea",
+  "scope": "24 bibliographic works; notes 11 and 26 are not separate works. Existing evidence manifests not changed.",
+  "references": [
+    {
+      "slot": 1,
+      "v2_key": "nakamoto2008bitcoin",
+      "v2_bibliographic_entry": "Nakamoto, S. ``Bitcoin: a peer-to-peer electronic cash\nsystem.'' \\emph{White paper} (2008)\n\\url{https://bitcoin.org/bitcoin.pdf}",
+      "review_key": "nakamoto2008bitcoin",
+      "review_edition": "2008 white paper",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\nakamoto2008bitcoin\\original-20261102.pdf",
+          "sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",
+          "bytes": 184292,
+          "parsed_chars": 22009,
+          "pdf_pages": 9,
+          "url": "https://bitcoin.org/bitcoin.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Digital signatures and proof of work support a distributed transaction history.",
+        "anchor": "Digital signatures",
+        "anchor_found": true,
+        "excerpt": "eer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps t",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\nakamoto2008bitcoin\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\nakamoto2008bitcoin\\original-20261102.pdf",
+          "url": "https://bitcoin.org/bitcoin.pdf",
+          "role": "existing-primary",
+          "sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "v2_key": "ofac2026iran",
+      "v2_bibliographic_entry": "U.S. Department of the Treasury, Office of Foreign Assets\nControl. ``Iran-related Designations; Counter Terrorism and\nIran-related Designation Update; Issuance of Iran-related General\nLicense.'' \\emph{OFAC Recent Actions} (24 April 2026)\n\\url{https://ofac.treasury.gov/recent-actions/20260424}",
+      "review_key": "ofac2026iran",
+      "review_edition": "Official 24 April 2026 designation record",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\ofac2026iran\\original-20261102.html",
+          "sha256": "34c29a60bd9b6718579cbd4f587121c757b352de43136411d9c388d4fde9fc8b",
+          "bytes": 50541,
+          "parsed_chars": 13487,
+          "pdf_pages": null,
+          "url": "https://ofac.treasury.gov/recent-actions/20260424",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Sovereign designations illustrate jurisdictional controls over financial intermediaries.",
+        "anchor": "CENTRAL BANK OF IRAN",
+        "anchor_found": true,
+        "excerpt": "OUSHAN YAOHAI SHIPPING CO., LTD.). The following changes have been made to OFAC's SDN List: BANK MARKAZI JOMHOURI ISLAMI IRAN (a.k.a. BANK MARKAZI IRAN; a.k.a. CENTRAL BANK OF IRAN; a.k.a. CENTRAL BANK OF THE ISLAMIC REPUBLIC OF IRAN (Arabic: بانک مرکزی جمهوری اسلامی ایران)), PO Box 15875/7177, 144 Mirdamad Blvd, Tehran, Iran; 213 Ferdowsi Avenue, Tehran 11365, Iran; Mirdamad Blvd, 144 - P.O. Box 15875/7/77, Tehran, ",
+        "v2_claim_gap": "The OFAC designation text itself does not establish Tether/$344m; supplemental April23 issuer statement supports freeze, amount and U.S. cooperation, while legal-order wording is not independently established.",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\ofac2026iran\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        },
+        "supplemental_freeze_evidence": {
+          "key": "tether2026-344m-primary",
+          "publication_date": "2026-04-23",
+          "title": "Tether Supports Freeze of More Than $344 Million in USD₮ in Coordination with OFAC and U.S. Law Enforcement",
+          "url": "https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+          "original_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\original.html",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\parsed.txt",
+          "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\provenance.json",
+          "sha256": "d49baeea0226d879923e0ae889b51c8e3f56bee11f6c630bf98158744eed8205",
+          "primary_text_support_checked": true,
+          "locator": {
+            "first_factual_paragraph_parsed_line_1based": 25,
+            "following_paragraph_parsed_line_1based": 26,
+            "description": "Article paragraphs 1-3 following 23 April 2026 dateline."
+          },
+          "supported": "Tether says it supported the U.S. Government freezing $344m USDt across two addresses; U.S. authorities supplied information; issuer says it freezes assets upon request.",
+          "limits": "This is an issuer statement supporting freeze and official cooperation, not a published legal order. It does not itself establish the subsequent Iranian Bitcoin cargo-insurance narrative.",
+          "not_support_from_unrelated_record": "Amount/freeze support comes from this Tether statement, not the April24 OFAC designation record."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\ofac2026iran\\original-20261102.html",
+          "url": "https://ofac.treasury.gov/recent-actions/20260424",
+          "role": "existing-primary",
+          "sha256": "34c29a60bd9b6718579cbd4f587121c757b352de43136411d9c388d4fde9fc8b"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\original.html",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\parsed.txt",
+          "url": "https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+          "sha256": "d49baeea0226d879923e0ae889b51c8e3f56bee11f6c630bf98158744eed8205",
+          "role": "supplemental-primary-issuer-statement-not-existing-reference2-original",
+          "locator": {
+            "first_factual_paragraph_parsed_line_1based": 25,
+            "following_paragraph_parsed_line_1based": 26,
+            "description": "Article paragraphs 1-3 following 23 April 2026 dateline."
+          }
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "v2_key": "richardson1960arms",
+      "v2_bibliographic_entry": "Richardson, L. F. \\emph{Arms and Insecurity: A Mathematical\nStudy of the Causes and Origins of War}. Pittsburgh: Boxwood\nPress / Chicago: Quadrangle Books 12--35 (1960).",
+      "review_key": "richardson1960arms",
+      "review_edition": "1960 classic book",
+      "primary_file_present": false,
+      "primary_parsed": false,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": false,
+      "files": [],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only."
+      },
+      "status": "explicit-famous-old-book-exception",
+      "exception": "User-authorized exception for a well-known older book. Full text and edition-specific page claims are not certified. No theorem depends on this exception.",
+      "bibliographic_identity_checked": false,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": []
+    },
+    {
+      "slot": 4,
+      "v2_key": "powell1993guns",
+      "v2_bibliographic_entry": "Powell, R. ``Guns, butter, and anarchy.'' \\emph{American\nPolitical Science Review} \\textbf{87.1} 115--132 (1993)\n\\url{https://doi.org/10.2307/2938960}",
+      "review_key": "powell1994anarchy",
+      "review_edition": "Published 1994 article, academic mirror",
+      "primary_file_present": false,
+      "primary_parsed": false,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": false,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\powell1994anarchy\\original-primary-20261102.pdf",
+          "sha256": "e6b578f9a9c5768a84359f51c34b154580dba49269442f457ba71848c391ae5d",
+          "bytes": 2893843,
+          "parsed_chars": 103613,
+          "pdf_pages": 33,
+          "url": "https://www.rochelleterman.com/ir/sites/default/files/Powell%201994.pdf",
+          "role": "wrong-v2-work-or-object"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Powell discusses his resource-allocation model of conflict; anarchy alone does not determine behavior.",
+        "anchor": "guns-versus-butter",
+        "anchor_found": true,
+        "excerpt": "national cooperation and institutionalization there has been. The second argument is more theoretical and begins with a recent attempt to formalize the classic guns-versus-butter problem.72 To summarize the model, there are two states. In each period a state must decide how much of its output to consume, how much to allocate to its military sector, and whether or not to attack the other state. Each state's utility "
+      },
+      "status": "v2-mismatch-unresolved",
+      "bibliographic_identity_checked": false,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\powell1994anarchy\\original-primary-20261102.pdf",
+          "url": "https://www.rochelleterman.com/ir/sites/default/files/Powell%201994.pdf",
+          "role": "wrong-v2-work-or-object",
+          "sha256": "e6b578f9a9c5768a84359f51c34b154580dba49269442f457ba71848c391ae5d"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-publisher\\original.html",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-publisher\\parsed.txt",
+          "url": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/guns-butter-and-anarchy/97A64295816E37FE054C41E04D2C9845",
+          "role": "publisher-abstract-only",
+          "sha256": "ed97552a7ac2d3c922a4095d53cfb3ff325c872322ae70958d79c2054207490e"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-openalex\\original.json",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-openalex\\parsed.txt",
+          "url": "https://api.openalex.org/works/https://doi.org/10.2307/2938960",
+          "role": "discovery-metadata-only",
+          "sha256": "aeec306dda749797daff308342eb0c2f2f635d2ed655840737ab8169d47725e6"
+        }
+      ],
+      "unavailability_details": {
+        "classification": "unresolved-non-book-full-original; no exception granted",
+        "publisher": "Abstract retrieved; requested full PDF redirects to abstract page.",
+        "public_academic_mirrors": "UCSD course syllabus links JSTOR, not a local PDF. UCSD archived PDF index contains other Powell works, not the cited 1993 article. Rochelle Terman archived course files contain 1991/1994/1996 Powell, not 1993.",
+        "author_archive": "Berkeley/personal-site CDX attempts returned empty,503 or timed out.",
+        "metadata": "OpenAlex identifies no open-access fulltext location; Semantic Scholar discovery returned429. Crossref supplies publisher endpoint only.",
+        "exclusions": "Neither Powell1994, a summary, an adapted book chapter nor an unrelated article was accepted as Powell1993."
+      }
+    },
+    {
+      "slot": 5,
+      "v2_key": "armstrong2016racing",
+      "v2_bibliographic_entry": "Armstrong, S., Bostrom, N., Shulman, C. ``Racing to the\nprecipice: a model of artificial intelligence development.''\n\\emph{AI \\& Society} \\textbf{31.2} 201--206 (2016)\n\\url{https://doi.org/10.1007/s00146-015-0590-y}",
+      "review_key": "armstrong2016racing",
+      "review_edition": "2013 author-hosted technical report underlying the cited 2016 article; cited claim checked in this version",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\armstrong2016racing\\original-20261102.pdf",
+          "sha256": "7107ba4d2245ed5c6522fb061ea118e7b5e0af64c3de1b10b57980b6f0a18e2e",
+          "bytes": 707137,
+          "parsed_chars": 17927,
+          "pdf_pages": 9,
+          "url": "https://nickbostrom.com/papers/racing-to-the-precipice.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "An AI development race can alter safety incentives.",
+        "anchor": "skimping on safety",
+        "anchor_found": true,
+        "excerpt": "t teams race to build the ﬁrst AI. Under the assumption that the ﬁrst AI will be very powerful and transformative, each team is incentivised to ﬁnish ﬁrst – by skimping on safety precautions if need be. This paper presents the Nash equilibrium of this process, where each team takes the correct amount of safety precautions in the arms race. Having extra development teams and extra enmity between teams can increase t",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\armstrong2016racing\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "same-work-earlier-primary-version-only",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "2013 FHI Technical Report #2013-1; not the cited AI & Society 2016 pagination",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\armstrong2016racing\\original-20261102.pdf",
+          "url": "https://nickbostrom.com/papers/racing-to-the-precipice.pdf",
+          "role": "existing-primary",
+          "sha256": "7107ba4d2245ed5c6522fb061ea118e7b5e0af64c3de1b10b57980b6f0a18e2e"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "v2_key": "cantillon1755essai",
+      "v2_bibliographic_entry": "Cantillon, R. \\emph{Essai sur la nature du commerce en\ng\\'en\\'eral} (c.~1755). English translation: \\emph{Essay on the Nature\nof Trade in General}, trans.\\ Higgs, H. London: Macmillan 161--173 (1931).",
+      "review_key": "cantillon1755essai",
+      "review_edition": "Higgs translation, Part II Chapter VI; online 1959 reprint of the 1931 translation",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\cantillon1755essai\\chapter-ii-vi.html",
+          "sha256": "3819413a9efb2d1f34a44d03c9309e59fb361dc7c405ec6dfc846c162832265f",
+          "bytes": 145767,
+          "parsed_chars": 23981,
+          "pdf_pages": null,
+          "url": "https://www.econlib.org/library/NPDBooks/Cantillon/cntNT.html?chapter_num=25",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Monetary injections have distributional effects through channels of spending.",
+        "anchor": "channels of circulation",
+        "anchor_found": true,
+        "excerpt": "y need to spend. All this money, whether lent or spent, will enter into circulation and will not fail to raise the price of products and merchandise in all the channels of circulation which it enters. Increased money will bring about increased expenditure and this will cause an increase of Market prices in the highest years of exchange and gradually in the lowest. Everybody agrees that the abundance of money or its incr",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\cantillon1755essai\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "partial-translated-book-primary-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "Econlib 1959 reprint of Higgs 1931 translation, Part II Chapter VI only. Full book and cited pp. 161-173 coverage not certified.",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\cantillon1755essai\\chapter-ii-vi.html",
+          "url": "https://www.econlib.org/library/NPDBooks/Cantillon/cntNT.html?chapter_num=25",
+          "role": "existing-primary",
+          "sha256": "3819413a9efb2d1f34a44d03c9309e59fb361dc7c405ec6dfc846c162832265f"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "v2_key": "brunnermeier2019digitalization",
+      "v2_bibliographic_entry": "Brunnermeier, M. K., James, H., Landau, J.-P. ``The\ndigitalization of money.'' \\emph{NBER Working Paper}\n\\textbf{26300} (2019) \\url{https://doi.org/10.3386/w26300}",
+      "review_key": "brunnermeier2019digitalization",
+      "review_edition": "NBER WP 26300 (2019)",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\brunnermeier2019digitalization\\source.pdf",
+          "sha256": "661b642f10ff31a1f4b77470951f934dfa6837201929edfa6cb0eb4b0b721d48",
+          "bytes": 244434,
+          "parsed_chars": 79600,
+          "pdf_pages": 33,
+          "url": "https://www.nber.org/system/files/working_papers/w26300/w26300.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Digitalization changes monetary exchange and payment organization.",
+        "anchor": "monetary exchange",
+        "anchor_found": true,
+        "excerpt": " 26300 September 2019 JEL No. E41,E42,E51,E52,E58,G21,G23 ABSTRACT The ongoing digital revolution may lead to a radical departure from the traditional model of monetary exchange. We may see an unbundling of the separate roles of money, creating fiercer competition among specialized currencies. On the other hand, digital currencies associated with large platform ecosystems may lead to a re-bundling of money in whic",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\brunnermeier2019digitalization\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\brunnermeier2019digitalization\\source.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w26300/w26300.pdf",
+          "role": "existing-primary",
+          "sha256": "661b642f10ff31a1f4b77470951f934dfa6837201929edfa6cb0eb4b0b721d48"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "v2_key": "budish2018economic",
+      "v2_bibliographic_entry": "Budish, E. ``The economic limits of Bitcoin and the\nblockchain.'' \\emph{NBER Working Paper} \\textbf{24717} (2018)\n\\url{https://doi.org/10.3386/w24717}",
+      "review_key": "budish2018economic",
+      "review_edition": "NBER WP 24717 (2018)",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\budish2018economic\\source.pdf",
+          "sha256": "162c9af0dd929e68264a2fa099de4ee658edad6148aaa7a76995813f054d760f",
+          "bytes": 454566,
+          "parsed_chars": 61823,
+          "pdf_pages": 24,
+          "url": "https://www.nber.org/system/files/working_papers/w24717/w24717.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Security imposes economic costs and incentive constraints; the paper does not show Bitcoin inevitably dominates.",
+        "anchor": "computational costs of such an attack must exceed the benefits",
+        "anchor_found": true,
+        "excerpt": "ted with adding the next block to the chain; and (2) an incentive compatibility condition on the system's vulnerability to a “majority attack”, namely that the computational costs of such an attack must exceed the benefits. Together, these two equations imply that (3) the recurring, “flow”, payments to miners for running the blockchain must be large relative to the one-off, “stock”, benefits of attacking it. This is very expensive! The constraint is softer (",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\budish2018economic\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\budish2018economic\\source.pdf",
+          "url": "https://www.nber.org/system/files/working_papers/w24717/w24717.pdf",
+          "role": "existing-primary",
+          "sha256": "162c9af0dd929e68264a2fa099de4ee658edad6148aaa7a76995813f054d760f"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "v2_key": "eyal2018majority",
+      "v2_bibliographic_entry": "Eyal, I., Sirer, E. G. ``Majority is not enough: Bitcoin\nmining is vulnerable.'' \\emph{Communications of the ACM}\n\\textbf{61.7} 95--102 (2018)\n\\url{https://doi.org/10.1145/3212998}",
+      "review_key": "eyal2018majority",
+      "review_edition": "Earlier arXiv version underlying the cited 2018 CACM article; cited withholding mechanism checked in this version",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\eyal2018majority\\source.pdf",
+          "sha256": "109b92b724ee0714df88f98a11305972d6844aca79a7edb11a15a686b146aa94",
+          "bytes": 793350,
+          "parsed_chars": 43771,
+          "pdf_pages": 17,
+          "url": "https://arxiv.org/pdf/1311.0243",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Strategic block withholding can increase a mining coalition's rewards.",
+        "anchor": "keep its discovered blocks private",
+        "anchor_found": true,
+        "excerpt": "e than the pool’s fair share, that is, more than its ratio of the total mining power. The key idea behind this strategy, called Selﬁsh Mining, is for a pool to keep its discovered blocks private, thereby intentionally forking the chain. The honest nodes continue to mine on the public chain, while the pool mines on its own private branch. If the pool discovers more blocks, it develops a longer lead on the public chain, and continue",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\eyal2018majority\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "same-work-earlier-primary-version-only",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "arXiv:1311.0243v5 (15 November 2013); not the cited CACM 2018 typeset article",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\eyal2018majority\\source.pdf",
+          "url": "https://arxiv.org/pdf/1311.0243",
+          "role": "existing-primary",
+          "sha256": "109b92b724ee0714df88f98a11305972d6844aca79a7edb11a15a686b146aa94"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "v2_key": "szabo2002shelling",
+      "v2_bibliographic_entry": "Szabo, N. ``Shelling Out: The Origins of Money.''\n\\emph{Unenumerated} (2002)\n\\url{https://nakamotoinstitute.org/library/shelling-out/}",
+      "review_key": "szabo2002shelling",
+      "review_edition": "Author's 2002 essay, Satoshi Nakamoto Institute archive",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\szabo2002shelling\\original-20261102.html",
+          "sha256": "7113dd22ce82bd8fbb1fdf881e62819b3f906e54cebfaa6f8da61cd57a1e4b0e",
+          "bytes": 250288,
+          "parsed_chars": 84395,
+          "pdf_pages": null,
+          "url": "https://nakamotoinstitute.org/library/shelling-out/",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Costly-to-produce collectibles motivate unforgeable costliness; no adoption theorem follows.",
+        "anchor": "unforgeable costliness",
+        "anchor_found": true,
+        "excerpt": "n jewelry and coins, when some collectibles increasingly took a fungible form. Around 700 B.C., the Lydian kings started issuing coins, as described above. The unforgeable costliness of standard weights of precious metals could now be “assayed” in a marketplace, by wage earners, or by tax collectors via trademark, i.e. trust in the mint’s brand, instead of chopping coiled wire at a randomly selected spot. It is no coin",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\szabo2002shelling\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\szabo2002shelling\\original-20261102.html",
+          "url": "https://nakamotoinstitute.org/library/shelling-out/",
+          "role": "existing-primary",
+          "sha256": "7113dd22ce82bd8fbb1fdf881e62819b3f906e54cebfaa6f8da61cd57a1e4b0e"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "v2_key": "biais2019blockchain",
+      "v2_bibliographic_entry": "Biais, B., Bisi\\`ere, C., Bouvard, M., Casamatta, C. ``The\nblockchain folk theorem.'' \\emph{Review of Financial Studies}\n\\textbf{32.5} 1662--1715 (2019)\n\\url{https://doi.org/10.1093/rfs/hhy095}",
+      "review_key": "biais2019blockchain",
+      "review_edition": "TSE WP 17-817 revised January 2018, underlying 2019 RFS article",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\biais2019blockchain\\source.pdf",
+          "sha256": "14f829e3db4f0fa6f947b7ddd57f7387862d0aa052c95168949ab29dcdc50207",
+          "bytes": 1091273,
+          "parsed_chars": 134051,
+          "pdf_pages": 71,
+          "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2017/wp_tse_817.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "A strategic mining game can have multiple equilibria and forks.",
+        "anchor": "multiple equilibria",
+        "anchor_found": true,
+        "excerpt": "he longest chain is a Markov perfect equilibrium, without forking, in line with Nakamoto (2008). The blockchain protocol, however, is a coordination game, with multiple equilibria. There exist equilibria with forks, leading to orphaned blocks and persistent divergence between chains. We also show how forks can be generated by information delays and software upgrades. Last we identify negative externalities implying ",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\biais2019blockchain\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "same-work-earlier-primary-version-only",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "TSE WP 17-817, revised January 2018; not the cited RFS 2019 article",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\biais2019blockchain\\source.pdf",
+          "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2017/wp_tse_817.pdf",
+          "role": "existing-primary",
+          "sha256": "14f829e3db4f0fa6f947b7ddd57f7387862d0aa052c95168949ab29dcdc50207"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "v2_key": "garay2015backbone",
+      "v2_bibliographic_entry": "Garay, J., Kiayias, A., Leonardos, N. ``The Bitcoin\nbackbone protocol: analysis and applications.'' In\n\\emph{Advances in Cryptology -- EUROCRYPT 2015},\nLecture Notes in Computer Science \\textbf{9057},\nSpringer 281--310 (2015)\n\\url{https://doi.org/10.1007/978-3-662-46803-6_10}",
+      "review_key": "garay2015backbone",
+      "review_edition": "Published EUROCRYPT 2015 version, academic mirror",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\garay2015backbone\\original-attempt2-20261102.pdf",
+          "sha256": "d8aa146030cc64cd2c6752f564d4ea0b0f345d7e10a8c52ce0ab186029550657",
+          "bytes": 549364,
+          "parsed_chars": 87221,
+          "pdf_pages": 30,
+          "url": "https://ilyasergey.net/CS6213/_static/papers/backbone.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Common-prefix and chain-quality guarantees require explicit adversarial and synchronization assumptions.",
+        "anchor": "We show how the common",
+        "anchor_found": true,
+        "excerpt": "We show how the common preﬁx property and the\nchain-quality property of the backbone protocol ensure Agreement and Validity\n(BA’s basic properties; see Section 2) with high probability, thus turning the\nBitcoin backbone protocol into a probabilistic BA protocol.\n    Observe that for the above protocol to work the chain-quality property should\nensure that a majority of blocks in the blockchain originate from the honest play-\ners (otherwise Validity is lost). Our chain quality property enables this with over-\nwhelming probability assuming the adversarial power is bounded by 1/3. This\napproach is diﬀerent from Nakamoto’s proposal [30] for BA, wh",
+        "source_locator": "Introduction, passage on public transaction ledgers and honest majority",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\garay2015backbone\\verified-extract.txt",
+          "form_feed_page": 5,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\garay2015backbone\\original-attempt2-20261102.pdf",
+          "url": "https://ilyasergey.net/CS6213/_static/papers/backbone.pdf",
+          "role": "existing-primary",
+          "sha256": "d8aa146030cc64cd2c6752f564d4ea0b0f345d7e10a8c52ce0ab186029550657"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "v2_key": "chen2025gametheoretic",
+      "v2_bibliographic_entry": "Chen, L. ``A game-theoretic foundation for Bitcoin's\nprice: a security-utility equilibrium.'' arXiv:2508.06071\n\\emph{Working Paper} (2025) \\url{https://arxiv.org/abs/2508.06071}",
+      "review_key": "chen2025gametheoretic",
+      "review_edition": "arXiv v2, 11 August 2025, working paper",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\chen2025gametheoretic\\source.pdf",
+          "sha256": "5c470a61c1e73910a1b33d96c3e15b9a395dd7392ddd3519bc5668a0f720f55f",
+          "bytes": 259387,
+          "parsed_chars": 23486,
+          "pdf_pages": 10,
+          "url": "https://arxiv.org/pdf/2508.06071v2",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Models a security-utility equilibrium; not an established result about this allocator game.",
+        "anchor": "security suppliers",
+        "anchor_found": true,
+        "excerpt": "ef dynamics. This paper develops a structural game-theoretic model where Bitcoin’s price is determined in a general equilibrium of strategic interactions among security suppliers (miners), asset demanders (users and speculators), and potential attackers. We define and analyze a Rational-Expectations Security- Utility Nash Equilibrium (RESUNE), a fixed point where the market-clearing price simultaneously induces a f",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\chen2025gametheoretic\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\chen2025gametheoretic\\source.pdf",
+          "url": "https://arxiv.org/pdf/2508.06071v2",
+          "role": "existing-primary",
+          "sha256": "5c470a61c1e73910a1b33d96c3e15b9a395dd7392ddd3519bc5668a0f720f55f"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "v2_key": "katz1985network",
+      "v2_bibliographic_entry": "Katz, M. L., Shapiro, C. ``Network externalities,\ncompetition, and compatibility.'' \\emph{American Economic\nReview} \\textbf{75.3} 424--440 (1985)\n\\url{https://www.jstor.org/stable/1814809}",
+      "review_key": "katz1994systems",
+      "review_edition": "Published JEP 1994 article hosted by coauthor",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\katz1994systems\\original-author-20261102.pdf",
+          "sha256": "b97c8f96284ce413db0eb1128eaebd9583e1b9e9d82767e5e6fce068d90c74f9",
+          "bytes": 506661,
+          "parsed_chars": 73545,
+          "pdf_pages": 25,
+          "url": "https://faculty.haas.berkeley.edu/shapiro/systems.pdf",
+          "role": "wrong-v2-work-or-object"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\original.pdf",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\parsed.txt",
+          "url": "https://web.archive.org/web/20100715021123id_/http://idv.sinica.edu.tw:80/kongpin/teaching/io/KatzShapiro1.pdf",
+          "role": "exact-published-primary-archived-academic-mirror",
+          "sha256": "de500e9d2a3c5669ec89bf064f989fe7d7a7e9ed88c03a3faf3b6395edff3d62",
+          "bytes": 462392,
+          "pdf_pages": 18,
+          "provenance": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\provenance.json",
+          "identity_check": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\identity-check.json"
+        }
+      ],
+      "support": {
+        "scope": "Exact original downloaded and parsed; printed pp. 424-425 / PDF pp. 2-3 inspected for network externalities, fulfilled expectations and multiplicity.",
+        "url": "https://www.researchgate.net/profile/Carl-Shapiro/publication/4723878_Network_Externalities_Competition_and_Compatibility/links/55e858d508ae65b638997c9a/Network-Externalities-Competition-and-Compatibility.pdf",
+        "source_locator": "Printed pp. 424-425; PDF pp. 2-3 of 18",
+        "checked_claim": "Consumer utility can depend on network participation; fulfilled-expectations equilibria can be multiple.",
+        "does_not_certify": "The manuscript Assumption 4 switching-cost inequality or indefinite incumbency persistence.",
+        "local_parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\parsed.txt",
+        "local_identity_check": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\identity-check.json"
+      },
+      "status": "exact-published-primary-downloaded-from-archived-academic-mirror",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\katz1994systems\\original-author-20261102.pdf",
+          "url": "https://faculty.haas.berkeley.edu/shapiro/systems.pdf",
+          "role": "wrong-v2-work-or-object",
+          "sha256": "b97c8f96284ce413db0eb1128eaebd9583e1b9e9d82767e5e6fce068d90c74f9"
+        },
+        {
+          "url": "https://www.researchgate.net/profile/Carl-Shapiro/publication/4723878_Network_Externalities_Competition_and_Compatibility/links/55e858d508ae65b638997c9a/Network-Externalities-Competition-and-Compatibility.pdf",
+          "role": "exact-primary-online-inspection-only",
+          "local_original": null,
+          "locator": "Printed pp. 424-425; PDF pp. 2-3 of 18"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\original.pdf",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\parsed.txt",
+          "url": "https://web.archive.org/web/20100715021123id_/http://idv.sinica.edu.tw:80/kongpin/teaching/io/KatzShapiro1.pdf",
+          "role": "exact-published-primary-archived-academic-mirror",
+          "sha256": "de500e9d2a3c5669ec89bf064f989fe7d7a7e9ed88c03a3faf3b6395edff3d62",
+          "bytes": 462392,
+          "pdf_pages": 18,
+          "provenance": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\provenance.json",
+          "identity_check": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\identity-check.json"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "v2_key": "menger1892origin",
+      "v2_bibliographic_entry": "Menger, C. ``On the Origin of Money.'' \\emph{Economic Journal}\n\\textbf{2.6} 239--255 (1892)\n\\url{https://www.jstor.org/stable/2956146}",
+      "review_key": "menger1892origin",
+      "review_edition": "Foley translation of 1892 article, 2009 reprint; author's text distinguished from added foreword",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\menger1892origin\\original-20261102.pdf",
+          "sha256": "ae0073e11ffab901c55082541ca40a1ef557eac2868087e06302ab74dc928489",
+          "bytes": 1341232,
+          "parsed_chars": 49840,
+          "pdf_pages": 56,
+          "url": "https://cdn.mises.org/On%20the%20Origins%20of%20Money_5.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Monetary media can emerge from decentralized exchange and saleability.",
+        "anchor": "Money has not been generated by law",
+        "anchor_found": true,
+        "excerpt": "terially contributed to raise their saleableness and to forward the adoption and diffusion of them as money. [PDF page 52] IX. Influence of the Sovereign Power Money has not been generated by law. in its origin it is a social, and not a state institu - tion. sanction by the authority of the state is a notion alien to it. On the other hand, however, by state recognition and state regulation, this social institution of money has been",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\menger1892origin\\verified-extract.txt",
+          "form_feed_page": 52,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "authorized-reprint-same-work-primary",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "Authorized later reprint of the cited work; original pagination not independently checked.",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\menger1892origin\\original-20261102.pdf",
+          "url": "https://cdn.mises.org/On%20the%20Origins%20of%20Money_5.pdf",
+          "role": "existing-primary",
+          "sha256": "ae0073e11ffab901c55082541ca40a1ef557eac2868087e06302ab74dc928489"
+        }
+      ]
+    },
+    {
+      "slot": 17,
+      "v2_key": "arslanalp2023gold",
+      "v2_bibliographic_entry": "Arslanalp, S., Eichengreen, B., Simpson-Bell, C. ``Gold as\ninternational reserves: a barbarous relic no more?'' \\emph{Journal of\nInternational Economics} \\textbf{145} 103822 (2023)\n\\url{https://doi.org/10.1016/j.jinteco.2023.103822}",
+      "review_key": "arslanalp2023gold",
+      "review_edition": "IMF WP 2023/014 underlying the cited 2023 journal article",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\arslanalp2023gold\\original-curl-20261102.pdf",
+          "sha256": "e87275774aac1b15cba4166b1288b3b4c2a4f595551cdb294752e67e664a1727",
+          "bytes": 1101146,
+          "parsed_chars": 103203,
+          "pdf_pages": 37,
+          "url": "https://www.imf.org/-/media/files/publications/wp/2023/english/wpiea2023014-print-pdf.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Studies reserve-gold demand and association with financial sanctions; not a causal Bitcoin-demand estimate.",
+        "anchor": "imposition of financial sanctions",
+        "anchor_found": true,
+        "excerpt": "rve managers as a safe haven in periods of economic, financial and geopolitical volatility, when the return on alternative financial assets is low. Second, the imposition of financial sanctions by the United States, United Kingdom, European Union and Japan, the main reserve-issuing economies, is associated with an increase in the share of central bank reserves held in the form of gold. There is some evidence that multilateral san",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\arslanalp2023gold\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "same-work-earlier-primary-version-only",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "IMF WP/23/14, January 2023; not the cited JIE 145 article 103822",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\arslanalp2023gold\\original-curl-20261102.pdf",
+          "url": "https://www.imf.org/-/media/files/publications/wp/2023/english/wpiea2023014-print-pdf.pdf",
+          "role": "existing-primary",
+          "sha256": "e87275774aac1b15cba4166b1288b3b4c2a4f595551cdb294752e67e664a1727"
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "v2_key": "fudenberg1991game",
+      "v2_bibliographic_entry": "Fudenberg, D., Tirole, J. \\emph{Game Theory}. Cambridge:\nMIT Press 3--7 (1991).",
+      "review_key": "fudenberg1991game",
+      "review_edition": "1991 standard game-theory textbook",
+      "primary_file_present": false,
+      "primary_parsed": false,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": false,
+      "files": [],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only."
+      },
+      "status": "explicit-famous-old-book-exception",
+      "exception": "User-authorized exception for a well-known older book. Full text and edition-specific page claims are not certified. No theorem depends on this exception.",
+      "bibliographic_identity_checked": false,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": []
+    },
+    {
+      "slot": 19,
+      "v2_key": "milgrom1994monotone",
+      "v2_bibliographic_entry": "Milgrom, P., Shannon, C. ``Monotone comparative statics.''\n\\emph{Econometrica} \\textbf{62.1} 157--180 (1994)\n\\url{https://doi.org/10.2307/2951479}",
+      "review_key": "milgrom1994monotone",
+      "review_edition": "Published Econometrica 1994 version, academic mirror",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\milgrom1994monotone\\source.pdf",
+          "sha256": "c91a866171786483f03a8b56a0de214df74549aeb80b94d894136862114113a5",
+          "bytes": 736619,
+          "parsed_chars": 76750,
+          "pdf_pages": 25,
+          "url": "https://lonessmith.com/wp-content/uploads/2023/06/Milgrom-MonotoneComparativeStatics-1994.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Monotone comparative statics and single crossing are methodological background; they do not supply the new coalition theorem.",
+        "anchor": "solution set of an optimization",
+        "anchor_found": true,
+        "excerpt": "Vol. 62, No. 1 (January, 1994), 157-180 MONOTONE COMPARATIVE STATICS BY PAUL MILGROM AND CHRIS SHANNON ' We derive a necessary and sufficient condition for the solution set of an optimization problem to be monotonic in the parameters of the problem. In addition, we develop practical methods for checking the condition and demonstrate its applications to the classical theories of the competitive firm, the monopolist, the Bertrand",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\milgrom1994monotone\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\milgrom1994monotone\\source.pdf",
+          "url": "https://lonessmith.com/wp-content/uploads/2023/06/Milgrom-MonotoneComparativeStatics-1994.pdf",
+          "role": "existing-primary",
+          "sha256": "c91a866171786483f03a8b56a0de214df74549aeb80b94d894136862114113a5"
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "v2_key": "feldstein1980inflation",
+      "v2_bibliographic_entry": "Feldstein, M. ``Inflation and the stock market.''\n\\emph{American Economic Review} \\textbf{70.5} 839--847 (1980)\n\\url{https://www.jstor.org/stable/1805772}",
+      "review_key": "feldstein1980inflation",
+      "review_edition": "Authorized 1983 reprint explicitly identifies AER 70 (1980) 839â€“847",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\feldstein1980inflation\\original-20261102.pdf",
+          "sha256": "93a537946a85410b2c5c224a9d37012aee174a75da818a58aca26b14eba6f3dc",
+          "bytes": 204946,
+          "parsed_chars": 29854,
+          "pdf_pages": 14,
+          "url": "https://www.nber.org/system/files/chapters/c11335/c11335.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Taxation of nominal capital gains can affect real equity values in inflation.",
+        "anchor": "taxation of nominal capital gains",
+        "anchor_found": true,
+        "excerpt": "adverse effect of increased inflation on share prices results from basic features of the current U.S. tax laws, particularly historic cost depreciation and the taxation of nominal capital gains.3 This analysis shows that in order to understand the structural relation between inflation and share prices, it is crucial to distinguish between the Reprinted by permission from American Economic Review 70 (December 1980): 839-47. This s",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\feldstein1980inflation\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "authorized-reprint-same-work-primary",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "Authorized later reprint of the cited work; original pagination not independently checked.",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\feldstein1980inflation\\original-20261102.pdf",
+          "url": "https://www.nber.org/system/files/chapters/c11335/c11335.pdf",
+          "role": "existing-primary",
+          "sha256": "93a537946a85410b2c5c224a9d37012aee174a75da818a58aca26b14eba6f3dc"
+        }
+      ]
+    },
+    {
+      "slot": 21,
+      "v2_key": "fisher1928moneyillusion",
+      "v2_bibliographic_entry": "Fisher, I. \\emph{The Money Illusion}. New York: Adelphi\nCompany 3--22 (1928).",
+      "review_key": "fisher1928moneyillusion",
+      "review_edition": "1928 classic book",
+      "primary_file_present": false,
+      "primary_parsed": false,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": false,
+      "files": [],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only."
+      },
+      "status": "explicit-famous-old-book-exception",
+      "exception": "User-authorized exception for a well-known older book. Full text and edition-specific page claims are not certified. No theorem depends on this exception.",
+      "bibliographic_identity_checked": false,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": []
+    },
+    {
+      "slot": 22,
+      "v2_key": "imf2024weo",
+      "v2_bibliographic_entry": "International Monetary Fund. ``World Economic Outlook\nDatabase.'' \\emph{IMF} (October 2024)\n\\url{https://www.imf.org/en/Publications/WEO}",
+      "review_key": "imf2024weo",
+      "review_edition": "October 2024 report with 4 November 2024 errata, already present as weo.pdf in baseline repository",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\imf2024weo\\original-repository.pdf",
+          "sha256": "f961a81d37624b8964519e5adc2f60b17e4ac7486c5a3a0bbe2a9aa3b4e79fe6",
+          "bytes": 9442344,
+          "parsed_chars": 617159,
+          "pdf_pages": 174,
+          "url": "https://www.imf.org/en/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024",
+          "role": "wrong-v2-work-or-object"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\original.tsv",
+          "sha256": "46d492250b59b92e70668d2e1f4dec74ea60233a086fbe2070a70749b890ad8d",
+          "bytes": 20297276,
+          "role": "mirrored-primary-dataset",
+          "provenance": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\provenance.json"
+        }
+      ],
+      "support": {
+        "scope": "Parsed October 2024-labelled mirrored dataset; debt series and date columns checked. Does not establish inevitability of debasement. Official-host byte equivalence not established.",
+        "dataset_check": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\dataset-check.json",
+        "encoding": "utf-16-le",
+        "rows": 8625
+      },
+      "status": "same-vintage-primary-dataset-mirror-downloaded-unverified-byte-equivalence",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "mirror_authentication_limit": "URL and dataset schema identify the October 2024 vintage; byte equality to IMF-hosted original not established. This is a primary dataset mirror, not an IMF report substitution.",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\imf2024weo\\original-repository.pdf",
+          "url": "https://www.imf.org/en/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024",
+          "role": "wrong-v2-work-or-object",
+          "sha256": "f961a81d37624b8964519e5adc2f60b17e4ac7486c5a3a0bbe2a9aa3b4e79fe6"
+        },
+        {
+          "path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\original.tsv",
+          "url": "https://git.nomics.world/dbnomics-source-data/imf-source-data/-/raw/master/weo/WEOOct2024all.tsv",
+          "role": "mirrored-primary-dataset",
+          "sha256": "46d492250b59b92e70668d2e1f4dec74ea60233a086fbe2070a70749b890ad8d",
+          "locator": "WEO Subject Code GGXWDG_NGDP; ISO USA; year columns 1980–2029",
+          "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\parsed.txt"
+        }
+      ]
+    },
+    {
+      "slot": 23,
+      "v2_key": "reinhart2015liquidation",
+      "v2_bibliographic_entry": "Reinhart, C. M., Sbrancia, M. B. ``The liquidation of\ngovernment debt.'' \\emph{Economic Policy} \\textbf{30.82}\n291--333 (2015) \\url{https://doi.org/10.1093/epolic/eiv003}",
+      "review_key": "reinhart2015liquidation",
+      "review_edition": "IMF WP 15/7 (2015) underlying cited Economic Policy article",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\reinhart2015liquidation\\original-curl-20261102.pdf",
+          "sha256": "b5077eb8d5415f7405349c35e49284ae3dca2134b85b9f3023f93aad1057f4ad",
+          "bytes": 878652,
+          "parsed_chars": 109776,
+          "pdf_pages": 47,
+          "url": "https://www.imf.org/external/pubs/ft/wp/2015/wp1507.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Financial repression can reduce debt burdens through negative or below-market real rates.",
+        "anchor": "tax on bondholders",
+        "anchor_found": true,
+        "excerpt": "R. Ghosh January 2015 Abstract High public debt often produces the drama of default and restructuring. But debt is also reduced through financial repression, a tax on bondholders and savers via negative or below- market real interest rates. After WWII, capital controls and regulatory restrictions created a captive audience for government debt, limiting tax-base erosion. Financial repression is most successful in li",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\reinhart2015liquidation\\verified-extract.txt",
+          "form_feed_page": 2,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "same-work-earlier-primary-version-only",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "edition_gap": "IMF WP/15/7, January 2015; not the cited Economic Policy 2015 pagination",
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\reinhart2015liquidation\\original-curl-20261102.pdf",
+          "url": "https://www.imf.org/external/pubs/ft/wp/2015/wp1507.pdf",
+          "role": "existing-primary",
+          "sha256": "b5077eb8d5415f7405349c35e49284ae3dca2134b85b9f3023f93aad1057f4ad"
+        }
+      ]
+    },
+    {
+      "slot": 24,
+      "v2_key": "kuran1995private",
+      "v2_bibliographic_entry": "Kuran, T. \\emph{Private Truths, Public Lies: The Social\nConsequences of Preference Falsification}. Cambridge: Harvard\nUniversity Press 3--21 (1995).",
+      "review_key": "kuran1995private",
+      "review_edition": "1995 classic book",
+      "primary_file_present": false,
+      "primary_parsed": false,
+      "exact_cited_edition": false,
+      "primary_text_support_checked": false,
+      "files": [],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only."
+      },
+      "status": "explicit-famous-old-book-exception",
+      "exception": "User-authorized exception for a well-known older book. Full text and edition-specific page claims are not certified. No theorem depends on this exception.",
+      "bibliographic_identity_checked": false,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": []
+    },
+    {
+      "slot": 25,
+      "v2_key": "bernheim1987coalition",
+      "v2_bibliographic_entry": "Bernheim, B. D., Peleg, B., Whinston, M. D.\n``Coalition-proof Nash equilibria I. Concepts.'' \\emph{Journal of\nEconomic Theory} \\textbf{42.1} 1--12 (1987)\n\\url{https://doi.org/10.1016/0022-0531(87)90099-8}",
+      "review_key": "bernheim1987coalition",
+      "review_edition": "Published JET 1987 scan, third-party mirror; title, authors, pages and definitions checked against Stanford/publisher metadata",
+      "primary_file_present": true,
+      "primary_parsed": true,
+      "exact_cited_edition": true,
+      "primary_text_support_checked": true,
+      "files": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\bernheim1987coalition\\original-attempt2-20261102.pdf",
+          "sha256": "aca7a6fd0a6a4fad4140f23ea09eda36a2c061ae241d86afe8caabb38e0109c8",
+          "bytes": 788282,
+          "parsed_chars": 32032,
+          "pdf_pages": 12,
+          "url": "https://www.mobt3ath.com/uplode/book/book-93459.pdf",
+          "role": "existing-primary"
+        }
+      ],
+      "support": {
+        "scope": "Not a certification of all manuscript uses; narrowly checked excerpts only.",
+        "prior_review_narrow_claim": "Nash stability need not survive self-enforcing collective deviations; strong Nash implies coalition-proofness under the stated pure-deviation convention.",
+        "anchor": "necessary condition",
+        "anchor_found": true,
+        "excerpt": " make binding commit- ments. In such cases, any meaningful agreement between the players must be self- enforcing. Although the Nash best-response property is a necessary condition for self-enforceability, it is not sufftcient-it is in general possible for coalitions arrange plausible, mutually beneticial deviations from Nash agreements. We provide a stronger definition of self-enforceability, and label the class of ",
+        "extraction_locator": {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\bernheim1987coalition\\verified-extract.txt",
+          "form_feed_page": 1,
+          "note": "Page position in existing PDF extraction, not a verified printed-page number."
+        }
+      },
+      "status": "primary-version-present",
+      "bibliographic_identity_checked": true,
+      "full_v2_claim_support_certified": false,
+      "dag_source_nodes": [
+        {
+          "path": "rfc\\draft\\1-exit-dominance\\cited-sources\\bernheim1987coalition\\original-attempt2-20261102.pdf",
+          "url": "https://www.mobt3ath.com/uplode/book/book-93459.pdf",
+          "role": "existing-primary",
+          "sha256": "aca7a6fd0a6a4fad4140f23ea09eda36a2c061ae241d86afe8caabb38e0109c8"
+        }
+      ]
+    }
+  ],
+  "retrieval_attempts": [
+    {
+      "requested_url": "https://link.springer.com/content/pdf/10.1007/s00146-015-0590-y.pdf",
+      "retrieved_utc": "2026-11-03T00:12:44.727062+00:00",
+      "final_url": "https://link.springer.com/content/pdf/10.1007/s00146-015-0590-y.pdf",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.pdf",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "parsed_chars": 3036,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\armstrong2016racing-published\\provenance.json",
+      "is_pdf": false,
+      "classification": "HTML/access response, not original PDF"
+    },
+    {
+      "requested_url": "https://academic.oup.com/rfs/article-pdf/32/5/1662/28275172/hhy095.pdf",
+      "retrieved_utc": "2026-11-03T00:15:02.008751+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\biais2019blockchain-published\\provenance.json"
+    },
+    {
+      "requested_url": "https://dl.acm.org/doi/pdf/10.1145/3212998",
+      "retrieved_utc": "2026-11-03T00:12:44.727062+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\eyal2018majority-published\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/-/media/Websites/IMF/imported-datasets/4/2024/02/WEOOct2024all.ashx",
+      "retrieved_utc": "2026-11-03T00:12:12.623513+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-ashx\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/-/media/Websites/IMF/imported-datasets/4/2024/02/WEOOct2024all.ashx?download=1",
+      "retrieved_utc": "2026-11-03T00:13:09.337955+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-countrydata\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/-/media/Websites/IMF/imported-datasets/4/2024/02/weooct2024all.xls",
+      "retrieved_utc": "2026-11-03T00:12:44.759209+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-data-download\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/-/media/Websites/IMF/imported-datasets/4/2024/02/WEOOct2024all.xls",
+      "retrieved_utc": "2026-11-03T00:11:41.089703+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-database\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/en/Publications/WEO/weo-database/2024/October",
+      "retrieved_utc": "2026-11-03T00:11:41.089703+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-database-page\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.imf.org/external/pubs/ft/weo/2024/02/weodata/WEOOct2024all.xls",
+      "retrieved_utc": "2026-11-03T00:12:12.623513+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-legacy\\provenance.json"
+    },
+    {
+      "requested_url": "https://git.nomics.world/dbnomics-source-data/imf-source-data/-/raw/master/weo/WEOOct2024all.tsv",
+      "retrieved_utc": "2026-11-03T00:13:25.625586+00:00",
+      "final_url": "https://git.nomics.world/dbnomics-source-data/imf-source-data/-/raw/master/weo/WEOOct2024all.tsv",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "file": "original.tsv",
+      "bytes": 20297276,
+      "sha256": "46d492250b59b92e70668d2e1f4dec74ea60233a086fbe2070a70749b890ad8d",
+      "parsed_chars": 10148638,
+      "parse_encoding": "utf-16-le",
+      "parse_note": "UTF-16LE tab-separated original decoded to UTF-8 parsed.txt; dataset-check.json validates schema and debt series.",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\imf2024weo-mirrored-dataset\\provenance.json"
+    },
+    {
+      "requested_url": "https://idv.sinica.edu.tw/kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:11:41.089703+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network\\provenance.json"
+    },
+    {
+      "requested_url": "https://blog.rchss.sinica.edu.tw/FCLai/wp-content/uploads/2016/11/980730_Network-Externalities-Competition-and-Compatibility_Michael-L.-Katz-and-Carl-Shapiro-1985_AER-753_p.424-440.pdf",
+      "retrieved_utc": "2026-11-03T00:11:49.295042+00:00",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/web/20100715021123id_/http://idv.sinica.edu.tw:80/kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:18:52.298891+00:00",
+      "final_url": "https://web.archive.org/web/20100715021123id_/http://idv.sinica.edu.tw:80/kongpin/teaching/io/KatzShapiro1.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "file": "original.pdf",
+      "bytes": 462392,
+      "sha256": "de500e9d2a3c5669ec89bf064f989fe7d7a7e9ed88c03a3faf3b6395edff3d62",
+      "pages": 18,
+      "parsed_chars": 62984,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-academic-archive\\provenance.json",
+      "is_pdf": true
+    },
+    {
+      "requested_url": "https://faculty.haas.berkeley.edu/shapiro/network.pdf",
+      "retrieved_utc": "2026-11-03T00:12:12.623513+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-author\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.researchgate.net/profile/Carl-Shapiro/publication/4723878_Network_Externalities_Competition_and_Compatibility/links/55e858d508ae65b638997c9a/Network-Externalities-Competition-and-Compatibility.pdf",
+      "retrieved_utc": "2026-11-03T00:13:09.337955+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-author-upload\\provenance.json"
+    },
+    {
+      "requested_url": "https://brousseau.info/pdf/cours/Katz-Shapiro%5B1985%5D.pdf",
+      "retrieved_utc": "2026-11-03T00:12:44.727062+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-brousseau\\provenance.json"
+    },
+    {
+      "requested_url": "http://brousseau.info/pdf/cours/Katz-Shapiro%5B1985%5D.pdf",
+      "retrieved_utc": "2026-11-03T00:18:20.318265+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-brousseau-http\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.brousseau.info/pdf/cours/Katz-Shapiro%5B1985%5D.pdf",
+      "retrieved_utc": "2026-11-03T00:18:20.318265+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-brousseau-www\\provenance.json"
+    },
+    {
+      "requested_url": "http://idv.sinica.edu.tw/kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:12:12.623513+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-http\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.jstor.org/stable/pdf/1814809.pdf",
+      "retrieved_utc": "2026-11-03T00:12:12.623513+00:00",
+      "final_url": "https://www.jstor.org/stable/pdf/1814809.pdf",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.pdf",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "parsed_chars": 3036,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-jstor\\provenance.json",
+      "is_pdf": false,
+      "classification": "HTML/access response, not original PDF"
+    },
+    {
+      "requested_url": "https://homepage.ntu.edu.tw/~kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:18:20.318265+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-ntu\\provenance.json"
+    },
+    {
+      "requested_url": "http://homepage.ntu.edu.tw/~kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:18:34.263509+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-ntu-http\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.researchgate.net/publication/4723878_Network_Externalities_Competition_and_Compatibility",
+      "retrieved_utc": "2026-11-03T00:12:44.759209+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-rg\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.sinica.edu.tw/~kongpin/teaching/io/KatzShapiro1.pdf",
+      "retrieved_utc": "2026-11-03T00:18:20.318265+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-sinica-legacy\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=idv.sinica.edu.tw/kongpin/teaching/io/KatzShapiro1.pdf&output=json&filter=statuscode:200&filter=mimetype:application/pdf&filter=!digest:-&collapse=digest",
+      "retrieved_utc": "2026-11-03T00:18:34.263509+00:00",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=idv.sinica.edu.tw/kongpin/teaching/io/KatzShapiro1.pdf&output=json&filter=statuscode:200&filter=mimetype:application/pdf&filter=!digest:-&collapse=digest",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 291,
+      "sha256": "a50e7233a1ad906c2335921604eb1f3aaf89de86e81961a2241c86c9576dd645",
+      "parsed_chars": 291,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\katz1985network-wayback-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/97A64295816E37FE054C41E04D2C9845/S0003055400099111a.pdf/div-class-title-guns-butter-and-anarchy-div.pdf",
+      "retrieved_utc": "2026-11-03T00:11:59.122245+00:00",
+      "final_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/guns-butter-and-anarchy/97A64295816E37FE054C41E04D2C9845",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.pdf",
+      "bytes": 959055,
+      "sha256": "065ef4dba6ff58318db58f971969b465c369044bd8889e61b47eead043bb0d11",
+      "parsed_chars": 958337,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns\\provenance.json",
+      "is_pdf": false,
+      "classification": "HTML/access response, not original PDF"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=www.polisci.berkeley.edu/~rpowell/*&output=json&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "retrieved_utc": "2026-11-03T00:22:08.894178+00:00",
+      "error": "HTTP Error 503: Service Unavailable",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archive-apscourse-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=www.polisci.berkeley.edu/faculty/individual/powell/*&output=json&matchType=prefix&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "retrieved_utc": "2026-11-03T00:22:08.894178+00:00",
+      "error": "HTTP Error 503: Service Unavailable",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archive-author2-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=polisci.berkeley.edu/*&output=json&filter=original:.*[Pp]owell.*&filter=mimetype:application/pdf&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&filter=!digest:-",
+      "retrieved_utc": "2026-11-03T00:19:37.623813+00:00",
+      "error": "The read operation timed out",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archive-berkeley-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=rochelleterman.com/ir/sites/default/files/*&output=json&filter=original:.*[Pp]owell.*&filter=mimetype:application/pdf&filter=statuscode:200&collapse=urlkey&fl=timestamp,original",
+      "retrieved_utc": "2026-11-03T00:19:37.623813+00:00",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=rochelleterman.com/ir/sites/default/files/*&output=json&filter=original:.*[Pp]owell.*&filter=mimetype:application/pdf&filter=statuscode:200&collapse=urlkey&fl=timestamp,original",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 309,
+      "sha256": "430b9532513640062a1ce9f13162a7552dae89caae14d8996260fa233f4da25d",
+      "parsed_chars": 309,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archive-course-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=www.polisci.berkeley.edu/faculty/individual/powell/*&output=json&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "retrieved_utc": "2026-11-03T00:21:06.766828+00:00",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=www.polisci.berkeley.edu/faculty/individual/powell/*&output=json&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "parsed_chars": 3,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archived-author-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=socrates.berkeley.edu/~rpowell/*&output=json&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "retrieved_utc": "2026-11-03T00:21:06.766828+00:00",
+      "error": "HTTP Error 503: Service Unavailable",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-archived-personal-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=www.rochelleterman.com/ir/sites/default/files/Powell%201993.pdf&output=json&filter=statuscode:200&fl=timestamp,original,mimetype&collapse=digest",
+      "retrieved_utc": "2026-11-03T00:21:30.949866+00:00",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=www.rochelleterman.com/ir/sites/default/files/Powell%201993.pdf&output=json&filter=statuscode:200&fl=timestamp,original,mimetype&collapse=digest",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "parsed_chars": 3,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-course-archive93\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.rochelleterman.com/ir/sites/default/files/Powell%201993.pdf",
+      "retrieved_utc": "2026-11-03T00:19:37.623813+00:00",
+      "error": "HTTP Error 503: Service Unavailable",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-course-mirror\\provenance.json"
+    },
+    {
+      "requested_url": "https://api.crossref.org/works/10.2307/2938960",
+      "retrieved_utc": "2026-11-03T00:21:30.934649+00:00",
+      "final_url": "https://api.crossref.org/works/10.2307/2938960",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 12285,
+      "sha256": "0f278e1f0b6932daab7973730b14eba958abf66b86798ebc4d70e999ce4b0acc",
+      "parsed_chars": 12285,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-discovery-crossref\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.jstor.org/stable/pdf/2938960.pdf",
+      "retrieved_utc": "2026-11-03T00:18:34.263509+00:00",
+      "final_url": "https://www.jstor.org/stable/pdf/2938960.pdf",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.pdf",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "parsed_chars": 3036,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-jstor\\provenance.json",
+      "is_pdf": false,
+      "classification": "HTML/access response, not original PDF"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.2307/2938960",
+      "retrieved_utc": "2026-11-03T00:11:41.089703+00:00",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.2307/2938960",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 15037,
+      "sha256": "aeec306dda749797daff308342eb0c2f2f635d2ed655840737ab8169d47725e6",
+      "parsed_chars": 15037,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-openalex\\provenance.json"
+    },
+    {
+      "requested_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/guns-butter-and-anarchy/97A64295816E37FE054C41E04D2C9845",
+      "retrieved_utc": "2026-11-03T00:11:41.089703+00:00",
+      "final_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/guns-butter-and-anarchy/97A64295816E37FE054C41E04D2C9845",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.html",
+      "bytes": 959054,
+      "sha256": "ed97552a7ac2d3c922a4095d53cfb3ff325c872322ae70958d79c2054207490e",
+      "parsed_chars": 27588,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-publisher\\provenance.json"
+    },
+    {
+      "requested_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.2307/2938960?fields=title,year,authors,openAccessPdf,url,externalIds",
+      "retrieved_utc": "2026-11-03T00:22:08.878241+00:00",
+      "error": "HTTP Error 429: ",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-semantic-discovery\\provenance.json"
+    },
+    {
+      "requested_url": "https://web.archive.org/cdx/search/cdx?url=pages.ucsd.edu/~bslantchev/*&output=json&filter=original:.*([Gg]uns|[Pp]owell).*&filter=mimetype:application/pdf&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "retrieved_utc": "2026-11-03T00:21:30.934649+00:00",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=pages.ucsd.edu/~bslantchev/*&output=json&filter=original:.*([Gg]uns|[Pp]owell).*&filter=mimetype:application/pdf&filter=statuscode:200&collapse=urlkey&fl=timestamp,original&limit=100",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "original.json",
+      "bytes": 389,
+      "sha256": "0e8df0c43fe711b0adbca3162e3736142ffee9e0998a4c3bde5d7df1c4758c88",
+      "parsed_chars": 389,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\powell1993guns-ucsd-course-archive\\provenance.json"
+    },
+    {
+      "requested_url": "https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+      "retrieved_utc": "2026-11-03T00:17:08.946066+00:00",
+      "final_url": "https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "file": "original.html",
+      "bytes": 42037,
+      "sha256": "d49baeea0226d879923e0ae889b51c8e3f56bee11f6c630bf98158744eed8205",
+      "parsed_chars": 5316,
+      "parse_encoding": "utf-8",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\provenance.json"
+    },
+    {
+      "requested_url": "https://home.treasury.gov/news/press-releases/sb0502",
+      "retrieved_utc": "2026-11-03T00:22:39.114804+00:00",
+      "final_url": "https://home.treasury.gov/news/press-releases/sb0502",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "file": "original.html",
+      "bytes": 87514,
+      "sha256": "01492f169776097eda40caba8b3d974e6e5697864f6b5ac1ecc2dd4b11e35d5d",
+      "parsed_chars": 23333,
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\treasury2026-sb0502-primary\\provenance.json"
+    }
+  ],
+  "summary": {
+    "bibliographic_works": 24,
+    "local_primary_same_work_present": 19,
+    "explicit_famous_old_book_exceptions": [
+      3,
+      18,
+      21,
+      24
+    ],
+    "local_full_original_unresolved": [
+      4
+    ],
+    "earlier_primary_version_only": [
+      5,
+      9,
+      12,
+      17,
+      23
+    ],
+    "authorized_reprints": [
+      16,
+      20
+    ],
+    "partial_book": [
+      6
+    ],
+    "mirror_dataset": [
+      22
+    ],
+    "coverage_complete_under_strict_exact_original_rule": false,
+    "supplemental_primary_statement_for_344m_freeze": true
+  },
+  "method": "Frozen bibliography compared slot by slot, source originals parsed directly, relevant excerpts inspected. AI TLDRs, consensus files, witnesses and citation-review status labels are not treated as primary evidence. Support flags concern only the explicit narrow claim, not all v2 prose.",
+  "missing_work_details": {
+    "4": "Powell 1993 Guns, butter, and anarchy, APSR 87(1):115-132, DOI 10.2307/2938960. Powell 1994 Anarchy in International Relations Theory is a different work. Publisher abstract downloaded and parsed; full-PDF request redirects to abstract. No old-book exception applies.",
+    "15": "Resolved by exact published scan from archived academic course mirror, printed424-440,18 PDF pages; Katz1994 remains explicitly classified as a different work.",
+    "22": "Frozen citation is World Economic Outlook Database, October 2024. Existing World Economic Outlook report is a different object. Supplement holds parsed October 2024 dataset from DBnomics source-data mirror; official byte equivalence unverified."
+  },
+  "supplemental_primary_claim_evidence": [
+    {
+      "key": "tether2026-344m-primary",
+      "publication_date": "2026-04-23",
+      "title": "Tether Supports Freeze of More Than $344 Million in USD₮ in Coordination with OFAC and U.S. Law Enforcement",
+      "url": "https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/",
+      "original_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\original.html",
+      "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\parsed.txt",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\tether2026-344m-primary\\provenance.json",
+      "sha256": "d49baeea0226d879923e0ae889b51c8e3f56bee11f6c630bf98158744eed8205",
+      "primary_text_support_checked": true,
+      "locator": {
+        "first_factual_paragraph_parsed_line_1based": 25,
+        "following_paragraph_parsed_line_1based": 26,
+        "description": "Article paragraphs 1-3 following 23 April 2026 dateline."
+      },
+      "supported": "Tether says it supported the U.S. Government freezing $344m USDt across two addresses; U.S. authorities supplied information; issuer says it freezes assets upon request.",
+      "limits": "This is an issuer statement supporting freeze and official cooperation, not a published legal order. It does not itself establish the subsequent Iranian Bitcoin cargo-insurance narrative.",
+      "not_support_from_unrelated_record": "Amount/freeze support comes from this Tether statement, not the April24 OFAC designation record."
+    },
+    {
+      "key": "treasury2026-sb0502-primary",
+      "url": "https://home.treasury.gov/news/press-releases/sb0502",
+      "original_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\treasury2026-sb0502-primary\\original.html",
+      "parsed_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\treasury2026-sb0502-primary\\parsed.txt",
+      "provenance_path": "rfc\\audit\\paper1-2026-11-02\\minimal-v2-proposal\\citation-supplement\\treasury2026-sb0502-primary\\provenance.json",
+      "primary_text_support_checked": true,
+      "supported": "May19 statement describes nearly half a billion in regime-linked cryptocurrency frozen.",
+      "not_support_for_exact_344m_sentence": true,
+      "reason": "Different date/amount; contextual discovery only, not used to certify April $344m figure."
+    }
+  ],
+  "last_updated_utc": "2026-11-03T00:23:44.260827+00:00"
+}

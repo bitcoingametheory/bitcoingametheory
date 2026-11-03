@@ -7,7 +7,7 @@ Sean Hash<sup>\*</sup>
 <sean@bitcoingametheory.com>
 
 Preprint: February 2026 (SSRN 6299081)  
-Revised: May 2026  
+Revised: November 2026 (v3)  
 Working Paper
 
 **JEL Codes:** C72, D71, D83, E42, E51, G11, L14  
@@ -15,7 +15,30 @@ Working Paper
 
 </div>
 
-**Revision Note, May 2026.**
+**Abstract.** In a multipolar world with no trusted monetary
+coordinator, how do rational capital allocators preserve value when
+sovereign settlement systems are subject to debasement and political
+capture? The question is not hypothetical: the 2022 freezing of
+Russian foreign-exchange reserves demonstrated that sovereign settlement
+is capturable for any holder, central banks included. This paper models the choice as
+the Exit Game, a non-cooperative game in which allocators choose
+between capturable settlement systems, “Stay”, and neutral settlement,
+“Exit”. The model rests on four assumptions: persistent
+multipolarity, rational self-interest, computational hardness, and the
+persistence of network effects.
+Under the stated payoff and coalitional-persistence conditions, three results follow. First, the payoff advantage of Exit over
+Stay grows as adoption rises (Proposition 1). Second, no Stay
+coalition is internally stable once a member’s threshold is
+crossed at the proposed coalition outcome (Proposition 2). Third, Nash profiles in the high-Exit region resist returning Stay coalitions; if such profiles exist, the greatest is coalition-proof. Accumulating recognition and debasement shift the critical mass monotonically downward (Theorem 1). Together these
+establish Bitcoin as the primary candidate for neutral settlement
+derived purely from ongoing incentives (Theorem 2). The formal Exit Game results show
+viable neutral settlement creates a new form of competition for the
+existing monetary order.
+
+**Revision Note, November 2026 (v3).**
+Readers identified that the coalition proof must evaluate payoffs after a proposed coordinated move. This revision includes each allocator’s capital weight, states the coalitional-persistence condition (NR) explicitly, and proves that the greatest high-Exit Nash equilibrium, when one exists, is strong Nash and hence BPW coalition-proof. The threshold ratchet is retained; the inference that every adoption plateau must be temporary is removed. Assumptions A1–A4, Properties P1–P7, and the economic argument are retained. Theorem summaries are aligned with the repaired proof.
+
+**Previous Revision Note, May 2026.**
 References updated and tightened. Substantive changes from the February 2026 preprint (SSRN 6299081):
 
 - The preprint’s absorption theorem is recast in ratchet form as Theorem 1. The preprint claimed full absorption at $p = 1$; the revision claims that $\{p > p_c\}$ is coalition-proof and that $p_c$ shifts monotonically downward as the slowly-varying state $(K_t, D_t)$ accumulates ($K_t$ recognition; $D_t$ debasement; §3.5). Permanent holdouts are admitted by construction.
@@ -44,7 +67,7 @@ The 2022 reserve freeze was the starting gun. The 2026 US-Iran conflict produced
 
 High government debt is not new. What is new is the scale of forward spending now committed with no tax base behind it, which leaves debasement as the path of least resistance. The United States is stepping back from its role as world military referee, and its former allies and competitors are rearming. The logic in every arms race is the same: spend more or get left behind (Richardson<sup>3</sup>; Powell<sup>4</sup>). AI is the same race, since better AI means better weapons: AI capex now runs at the same order of magnitude as military capex, and neither side can stop without ceding the lead (Armstrong, Bostrom, and Shulman<sup>5</sup>).
 
-The deeper point in the genesis block is the nod to the *Cantillon effect*: in every fiat system, those nearest to issuance capture the wealth that debasement transfers, debasing the many to enrich the few (Cantillon<sup>6</sup>). This paper asks whether capital will flee to a settlement asset with no issuer, and so no Cantillon effect. The answer is an equilibrium result: once debasement pushes adoption past a critical mass, the move to Exit is self-reinforcing, and no coalition can bring capital back.
+The deeper point in the genesis block is the nod to the *Cantillon effect*: in every fiat system, those nearest to issuance capture the wealth that debasement transfers, debasing the many to enrich the few (Cantillon<sup>6</sup>). This paper asks whether capital will flee to a settlement asset with no issuer, and so no Cantillon effect. The answer is an equilibrium result: once debasement pushes a Nash allocation past a critical mass, coalitional persistence (NR) prevents a profitable return, and the greatest Nash allocation in that region is coalition-proof.
 
 # 2. Related Work
 
@@ -109,15 +132,15 @@ capital in the prevailing capturable system.
 
 The Exit Game is a non-cooperative game in which each capital allocator chooses one of two actions: hold capital in the prevailing capturable system (Stay) or move it to a neutral settlement asset (Exit). Exit is not free. Early exit to Bitcoin requires a social cost to act against peer consensus. Depending on jurisdiction and employment, exit to Bitcoin can also cost real legal or reputational damage.
 
-**Players.** $N$ is the population of capital allocators, weighted by their share $a_i$ of total capturable capital. $\kappa_i > 0$ is how much social cost allocator $i$ pays for moving before peers. $\rho_i > 0$ is how exposed allocator $i$ is to state penalty for the move itself. Fiduciaries answering to boards, committees, or constituencies sit at the high end of $\kappa_i$. Individuals and unilateral sovereigns sit lower. Both weights vary continuously across allocators.
+**Players.** $N=\{1,\ldots,n\}$ is the finite population of capital allocators, weighted by their share $a_i$ of total capturable capital. $\kappa_i > 0$ is how much social cost allocator $i$ pays for moving before peers. $\rho_i > 0$ is how exposed allocator $i$ is to state penalty for the move itself. Fiduciaries answering to boards, committees, or constituencies sit at the high end of $\kappa_i$. Individuals and unilateral sovereigns sit lower. Both weights vary continuously across allocators.
 
 **Objective.** Preserve real purchasing power. Preference between capturable and neutral assets follows from Exit Game payoffs alone.
 
-**Rules.** Each allocator’s per-period action is binary: Exit or Stay. The aggregate $p_t$ evolves continuously because allocators are heterogeneous in their thresholds and cross at different moments. Per-player actions are reversible: a player can re-Stay if $p_t$ retreats below their personal threshold. Switching assets incurs friction; positions are sticky. As $p$ rises, Exit pays more and Stay pays less (§3.4).
+**Rules.** Each allocator’s per-period action is binary: Exit or Stay. The aggregate $p_t$ changes as heterogeneous allocators cross their thresholds at different moments. Per-player actions are reversible: a player can re-Stay if other allocators’ Exit capital retreats below their personal threshold. Switching assets incurs friction; positions are sticky. As $p$ rises, Exit pays more and Stay pays less (§3.4).
 
-**Dynamics.** Recognition that capturable assets erode in real terms grows; debasement keeps accumulating. As both rise, $p_t$ trends upward (§3.5).
+**Dynamics.** Recognition that capturable assets erode in real terms grows; debasement keeps accumulating. As both rise, adoption thresholds shift downward (§3.5).
 
-**Payoffs.** The game is $G = (N, S, u)$ in standard non-cooperative form (Fudenberg and Tirole<sup>18</sup>), with per-period action set $S_i = \{\text{Exit}, \text{Stay}\}$, capital weights $\sum_i a_i = 1$, and aggregate adoption $p_t = \sum_{i \in \text{Exit}_t} a_i$. Each player’s strategy is a threshold $p_i^* \in [0, 1] \cup \{+\infty\}$ : Exit when $p_t > p_i^*$, Stay when $p_t \le p_i^*$. The per-player action is binary and reversible at the player level; the aggregate $p_t$ moves continuously across the heterogeneous threshold distribution and may itself drawdown. The monotone object is the critical mass $p_c$, which shifts downward as $(K_t, D_t)$ (recognition; debasement) accumulate (§4.3).
+**Payoffs.** The game is $G = (N, S, u)$ in standard non-cooperative form (Fudenberg and Tirole<sup>18</sup>), with per-period action set $S_i = \{\text{Exit}, \text{Stay}\}$, capital weights $\sum_i a_i = 1$, and aggregate adoption $p_t = \sum_{i \in \text{Exit}_t} a_i$. Write $x_i=1$ for Exit and $x_i=0$ for Stay, $p(x)=\sum_i a_i x_i$, and $q_i(x)=\sum_{j\ne i}a_jx_j$. Player $i$ receives $u_i^E(p(x))$ at Exit and $u_i^S(p(x))$ at Stay. With others fixed at adoption $q$, its unilateral Exit advantage is $F_i(q)=u_i^E(q+a_i)-u_i^S(q)$, for $0\le q\le1-a_i$. It chooses Exit when $F_i(q)>0$, Stay when $F_i(q)<0$; either is a best response at equality. The action is binary and reversible; aggregate $p_t$ changes across the heterogeneous threshold distribution and may itself drawdown. The monotone object is the critical mass $p_c$, which shifts downward as $(K_t,D_t)$ (recognition; debasement) accumulate (§4.3).
 $$u_i^E(p) := R_B(p) - \kappa_i K_A(p) - \rho_i R_A(p),$$
 $$u_i^S(p) := R_F - K_N(p).$$
 
@@ -131,14 +154,14 @@ $$u_i^S(p) := R_F - K_N(p).$$
 
 - $K_N(p)$: non-adoption penalty.
 
-Weights are strictly positive and differ across allocators. $R_B$, $K_A$, $R_A$, $K_N$ are continuous and bounded.
+Weights are strictly positive and differ across allocators. $R_B$, $K_A$, $R_A$, $K_N$ are continuously differentiable and bounded.
 
-|                  | Others: Stay | Others: Exit |
-|:-----------------|:------------:|:------------:|
-| Player $i$: Stay |  $u_i^S(0)$  |  $u_i^S(p)$  |
-| Player $i$: Exit |  $u_i^E(0)$  |  $u_i^E(p)$  |
+|                  | Others: Stay | Others: adoption $q$ |
+|:-----------------|:------------:|:--------------------:|
+| Player $i$: Stay |  $u_i^S(0)$  |      $u_i^S(q)$      |
+| Player $i$: Exit | $u_i^E(a_i)$ |    $u_i^E(q+a_i)$    |
 
-**Table 2.** Normal-form payoff matrix for player $i$, with $u_i^E$, $u_i^S$ as defined above.
+**Table 2.** Payoff comparison for player $i$, with $u_i^E$, $u_i^S$ as defined above.
 
 ## 3.4 Monotonicity Conditions
 
@@ -158,8 +181,7 @@ that widening.
 
 4.  $K_N'(p) > 0$: The cost of staying in capturable assets rises as competitors exit
 
-These conditions hold on average over long
-horizons rather than at every instant.
+These are pointwise conditions on the long-horizon payoff functions used in the formal results.
 
 ## 3.5 Threshold Drift
 
@@ -173,18 +195,18 @@ The macro state evolves on two slowly-varying indices:
 
 Both $K_t$ and $D_t$ are monotonic over the structural horizon. Short-horizon reversals are admitted as fluctuations around the trend: generational forgetting in $K_t$, hawkish tightening episodes in $D_t$.
 
-Let $\Delta_i(p; K, D) := u_i^E(p) - u_i^S(p)$ denote player $i$’s Exit minus Stay payoff gap at adoption $p$ and macro state $(K, D)$. Each allocator’s threshold depends on $(K, D)$:
-$$p_i^*(K, D) := \inf\{p \in [0, 1] : \Delta_i(p; K, D) > 0\}.$$
-Assume the sign conditions
-$$\frac{\partial p_i^*}{\partial K} \leq 0, \qquad \frac{\partial p_i^*}{\partial D} \leq 0.$$
+Let $\Delta_i(p; K, D) := u_i^E(p) - u_i^S(p)$ denote player $i$’s Exit minus Stay payoff gap at adoption $p$ and macro state $(K, D)$. Exact best responses use $F_i(q;K,D)=u_i^E(q+a_i;K,D)-u_i^S(q;K,D)$. Each allocator’s threshold depends on $(K,D)$:
+$$p_i^*(K,D):=\inf\{q\in[0,1-a_i]:F_i(q;K,D)>0\},\qquad\inf\varnothing=+\infty.$$
+Maintain the threshold-order condition
+$$p_i^*(K',D')\le p_i^*(K,D)\quad\text{whenever }K'\ge K,\ D'\ge D.$$
 These hold strictly for at least some capital allocators.
 Higher $D_t$ lowers $R_F$ in real terms. Higher $K_t$ erodes
 $\kappa_i K_A$ and $\rho_i R_A$. Both effects raise
-$\Delta_i(0; K, D)$ and push $p_i^*$ down.
+$F_i(0;K,D)$ and push $p_i^*$ down.
 
-The critical mass invoked in Assumption 4 is the smallest adoption level at which at least one allocator’s threshold has been crossed:
-$$p_c(K, D) := \inf\Bigl\{ p \in [0, 1] : \sum_{i\,:\,\Delta_i(p;\,K,D) > 0} a_i \;>\; 0 \Bigr\}.$$
-Above $p_c$, the M1–M4 feedbacks (Katz and Shapiro<sup>15</sup>) prevent Stay coalitions from reforming (§4.2). The endpoint is dominance in the network-effects sense, not full adoption $p = 1$. For each $(K, D)$, $\{p > p_c\}$ is coalition-proof against return-coalitions. As $(K_t, D_t)$ accumulate, $p_c$ shifts downward by monotone comparative statics (Milgrom and Shannon<sup>19</sup>): $p > p_c$ holds even when $p_t$ is flat, and the coalition-proof region expands (§4.3).
+The critical-mass cutoff used in Assumption 4’s formal restriction (NR) is the minimum individual threshold, measured in others’ adoption:
+$$p_c(K,D):=\min_{i\in N}p_i^*(K,D).$$
+Above $p_c$, the formal coalitional-persistence condition (NR) in §4.3 prevents profitable returns from Nash profiles. The endpoint is dominance in the network-effects sense, not full adoption $p=1$. If a Nash profile lies above $p_c$, the greatest Nash profile in that region is coalition-proof. As $(K_t,D_t)$ accumulate, $p_c$ shifts downward by monotone comparative statics (Milgrom and Shannon<sup>19</sup>): at fixed adoption, $p>p_c$, once satisfied, remains satisfied as $p_c$ weakly decreases (§4.3).
 
 The model’s claims are structural and directional: existence
 of thresholds $\{p_i^*\}$, sign of comparative statics, and
@@ -192,15 +214,13 @@ direction of shift in $p_c$ under accumulating $(K_t, D_t)$.
 It does not predict specific values, tipping times, or
 saturation levels.
 
-An adoption level $p$ is an equilibrium of the Exit Game when
-no allocator, alone or in any group that holds together, gains
-by switching.
+An action profile is Nash when no allocator gains by switching alone. Coalition-proofness additionally uses the recursive self-enforcement test of Bernheim, Peleg and Whinston<sup>25</sup>, with outsiders’ actions fixed. Coalitional gains require strict improvement for every member; deviations are pure and exclude transfers.
 
 # 4. Results
 
 ## 4.1 Monotone Exit Advantage
 
-First, each actor’s payoff gap from Stay to Exit widens as more actors exit. Every actor therefore has a threshold above which Exit becomes the only rational move. Hold the slowly varying state $(K, D)$ fixed throughout this subsection. By convention, $p_i^* = +\infty$ when $\Delta_i$ stays non-positive on $[0, 1]$.
+First, each actor’s payoff gap from Stay to Exit widens as more actors exit. Every actor therefore has a threshold above which Exit becomes the only rational move. Hold the slowly varying state $(K, D)$ fixed throughout this subsection. By convention, $p_i^*=+\infty$ when $F_i$ stays non-positive on $[0,1-a_i]$.
 
 **Proposition 1** (Monotone Exit Advantage). *Under Assumptions 1–4 and maintained conditions (M1)–(M4):*
 
@@ -208,13 +228,15 @@ First, each actor’s payoff gap from Stay to Exit widens as more actors exit. E
     in $p$ for all player types.*
 
 2.  *For each player $i$ there exists a threshold
-    $p_i^* \in [0, 1] \cup \{+\infty\}$ such that Exit is the unique
-    best response for $p > p_i^*$.*
+    $p_i^*\in[0,1-a_i]\cup\{+\infty\}$ such that Exit is the unique
+    best response for $q_i>p_i^*$. If $F_i(0)>0$, Exit is uniquely optimal also at $q_i=0$.*
 
 *Proof.* Define the payoff differential and take its derivative in $p$:
 $$\begin{aligned} \Delta_i(p) &= u_i(\text{Exit}) - u_i(\text{Stay}) \\ &= [R_B(p) - R_F] - \kappa_i K_A(p) - \rho_i R_A(p) + K_N(p), \\ \frac{d\Delta_i}{dp} &= R_B'(p) - \kappa_i K_A'(p) - \rho_i R_A'(p) + K_N'(p). \end{aligned}$$
 
-Under (M1)–(M4), each term is signed: $R_B'(p) > 0$ and $K_N'(p) > 0$ strictly, while $-\kappa_i K_A'(p) \geq 0$ and $-\rho_i R_A'(p) \geq 0$ for $\kappa_i, \rho_i > 0$. Therefore $d\Delta_i/dp > 0$: the advantage of Exit rises strictly with $p$. Each player’s threshold $p_i^* := \inf\{p \in [0, 1] : \Delta_i(p) > 0\}$ specializes the §3.5 definition with $(K, D)$ fixed. For actors with $p_i^* \in [0, 1]$, the intermediate value theorem applied to the continuous $\Delta_i$ delivers $\Delta_i(p_i^*) = 0$, and for $p > p_i^*$ Exit strictly dominates.
+Under (M1)–(M4), each term is signed: $R_B'(p) > 0$ and $K_N'(p) > 0$ strictly, while $-\kappa_i K_A'(p) \geq 0$ and $-\rho_i R_A'(p) \geq 0$ for $\kappa_i, \rho_i > 0$. Therefore $d\Delta_i/dp > 0$: the advantage of Exit rises strictly with $p$. For exact unilateral incentives,
+$$F_i'(q)=(u_i^E)'(q+a_i)-(u_i^S)'(q)>0.$$
+Thus the positive set of $F_i$ is an upper interval, possibly empty or the whole domain. Each player’s threshold is the §3.5 infimum with $(K,D)$ fixed. Continuity gives $F_i(p_i^*)=0$ at a finite interior threshold. If $F_i(0)>0$, the threshold is zero and Exit is uniquely optimal throughout; at an actual zero of $F_i$, either action is a best response.
 
 ## 4.2 Coalition Instability
 
@@ -222,36 +244,45 @@ Under (M1)–(M4), each term is signed: $R_B'(p) > 0$ and $K_N'(p) > 0$ strictly
 
 **Proposition 2** (Coalition Instability). *Under Assumption 2 and Property P3, no Stay coalition $C$
 containing at least one actor with a crossed threshold
-($p > p_j^*$ for some $j \in C$) is Nash-stable.*
+($F_j(p)>0$ for some $j\in C$ at the proposed coalition outcome) is Nash-stable.*
 
-*Proof.* Consider a coalition $C \subseteq N$ maintaining Stay. For $C$ to be Nash-stable, no member $j \in C$ can profit from unilateral defection. By Proposition 1, $u_j(\text{Exit}) > u_j(\text{Stay})$ when $p$ exceeds $p_j^*$. Property P3 (permissionless access) closes the institutional defection channel: no counterparty can refuse the trade and no clearing intermediary can foreclose settlement, so the only remaining friction is the regulatory cost already baked into each actor’s threshold via $R_A$. Under Assumption 2, the crossed-threshold member defects: for at least one $j \in C$, $u_j(\text{defect from } C) > u_j(\text{remain in } C)$. The coalition therefore fails Nash.
+*Proof.* Consider a coalition $C \subseteq N$ maintaining Stay. For $C$ to be Nash-stable, no member $j \in C$ can profit from unilateral defection. At that outcome, $F_j(p)>0$ means $u_j^E(p+a_j)>u_j^S(p)$. Property P3 (permissionless access) closes the institutional defection channel: Exit is feasible in the modeled action set $S_i$, and no clearing intermediary can foreclose settlement, so the only remaining friction is the regulatory cost already baked into each actor’s threshold via $R_A$. Under Assumption 2, the crossed-threshold member defects: for at least one $j \in C$, $u_j(\text{defect from } C) > u_j(\text{remain in } C)$. The coalition therefore fails Nash.
 
 Proposition 2 covers coalitions with at least one crossed-threshold member. Permanent holdouts ($p_j^* = +\infty$), admitted by Proposition 1, lie outside its scope: no private reason to defect. The aggregate share of capital held for ideological rather than rational reasons (Assumption 2) is not fixed: preferences adjust as new information arrives. The real-world case is regulatory coercion holding the coalition together: capital controls, fiduciary mandates, jurisdictional penalties. P1 limits what coercion can do. An asset controlled by secret information, not physical possession, can be seized only by forcing each holder to disclose it one at a time. Cost grows with the number of holders, not the size of any one holding. Preference falsification (Kuran<sup>24</sup>) then separates what holders say from what they do. Aggregate $p_t$ tracks what they do. Once enough private exits register, public Stay breaks.
 
 ## 4.3 Ratchet
 
-§4.1 gave each actor a threshold; §4.2 showed coalitions cannot hold once any one member crosses. §4.3 lets the slowly varying state $(K_t, D_t)$ move. Per-period actions stay binary and reversible at the player level. What changes over time is the macro state, and with it the threshold profile $\{p_i^*(K_t, D_t)\}$ and the critical mass $p_c(K_t, D_t)$. Recognition $K_t$ ratchets rather than oscillates: once private allocations reveal previously concealed Exit preferences, the social cost structure sustaining prior public Stay no longer holds (Kuran<sup>24</sup>). Debasement $D_t$ does not reverse on the structural horizon (Reinhart and Sbrancia<sup>23</sup>). Both push $p_c$ downward. The result is not that any specific player is locked in; it is that the floor a returning Stay coalition would have to clear keeps dropping. Two claims follow. First, above $p_c$ no returning Stay coalition can form: a candidate with a crossed-threshold member is broken by Proposition 2; a candidate without one contains only allocators not moving to Exit. Second, $p_c$ is non-increasing in $t$.
+§4.1 gave each actor a threshold; §4.2 showed coalitions cannot hold once any one member crosses. §4.3 lets the slowly varying state $(K_t, D_t)$ move. Per-period actions stay binary and reversible at the player level. What changes over time is the macro state, and with it the threshold profile $\{p_i^*(K_t, D_t)\}$ and the critical mass $p_c(K_t, D_t)$. Recognition $K_t$ ratchets rather than oscillates: once private allocations reveal previously concealed Exit preferences, the social cost structure sustaining prior public Stay no longer holds (Kuran<sup>24</sup>). Debasement $D_t$ does not reverse on the structural horizon (Reinhart and Sbrancia<sup>23</sup>). Both push $p_c$ downward. The result is not that any specific player is locked in; it is that the floor a returning Stay coalition would have to clear keeps dropping. Two claims follow under the explicit persistence condition below. First, Nash profiles above $p_c$ resist returning Stay coalitions; if such a profile exists, the greatest Nash profile is coalition-proof. Second, $p_c$ is non-increasing in $t$.
 
-**Theorem 1** (Ratchet). *Under Assumptions 1–4, maintained conditions (M1)–(M4), and
-the §3.5 sign conditions: (a) $\{p > p_c\}$
-is coalition-proof<sup>25,26</sup> against returning Stay coalitions. (b) Under
-monotonic accumulation of $(K_t, D_t)$, the critical mass
-$p_c(K_t, D_t)$ shifts monotonically downward in $t$.*
+#### Formal coalitional persistence.
 
-*Proof.* *(a) Coalition-proofness of $\{p > p_c\}$.* If $p > p_c(K, D)$, the crossed-threshold set
-$$H(p) := \{i : \Delta_i(p; K, D) > 0\}$$
-has positive capital weight. Any perturbation attempting to coordinate
-a return to high-Stay above $p_c$ is a candidate Stay coalition
-$C$ and falls into one of two cases. If $C \cap H(p)$ is
-nonempty, Proposition 2 applies: the crossed-threshold member
-defects under P3, so $C$ fails Nash and therefore fails BPW
-self-enforcement. If $C \cap H(p)$
-is empty, $C$ consists entirely of uncrossed-threshold capital. These actors already prefer Stay at the current $p$ and do not move toward Exit; no candidate Stay coalition expands above $p_c$.
-The system is coalition-proof above $p_c$. As $(K_t, D_t)$ accumulate, the finite-threshold Stay pool shrinks and the coalition-proof region expands. Drawdowns and cascade pauses along $p_t$ are admitted; price drawdowns are not equivalent to drawdowns in $p_t$, since allocators below target weight can rebalance during decline. A permanent stall would require two conditions to hold jointly: $p_t$ plateauing below $p_c$ indefinitely, and $p_c$ failing to fall. The second condition is ruled out by part (b), so any $p_t$ plateau is finite-duration.
+Keep Assumption 4 and make its coalitional scope explicit by maintaining the following additional payoff restriction. Write $E(x)=\{i:x_i=1\}$ and $a(C)=\sum_{i\in C}a_i$. At every Nash profile $x$ under consideration with $p=p(x)>p_c$, require
+$$\text{for every }\varnothing\ne C\subseteq E(x),\quad \text{some }i\in C\text{ has }u_i^E(p)\ge u_i^S(p-a(C)).\tag{NR}$$
+This compares current Exit utility with the utility after the whole returning group moves. It is maintained as the formal persistence restriction, not inferred from the derivative signs. The proof below shows why it is the exact return-coalition condition for this game.
 
-*(b) Drift of $p_c$.* Because $p_c$ is defined from the individual thresholds, the §3.5 sign conditions transfer directly to $p_c$:
-$$\frac{\partial p_i^*}{\partial K} \leq 0, \quad \frac{\partial p_i^*}{\partial D} \leq 0, \quad \frac{\partial p_c}{\partial K} \leq 0, \quad \frac{\partial p_c}{\partial D} \leq 0.$$
-Under monotonic accumulation of $(K_t, D_t)$, $p_c(K_t, D_t)$ is non-increasing in $t$.
+**Theorem 1** (Ratchet). *Under Assumptions 1–4, maintained conditions (M1)–(M4), (NR), and the §3.5 threshold-order condition: (a) every Nash profile with $p>p_c$ resists profitable returning Stay coalitions. If any Nash profile lies above $p_c$, the greatest Nash profile there is strong Nash and hence coalition-proof<sup>25,26</sup>. (b) Under monotonic accumulation of $(K_t,D_t)$, $p_c(K_t,D_t)$ is non-increasing in $t$.*
+
+*Proof.* *(a) Coalition-proofness.* First consider any strictly profitable return by $C\subseteq E(x)$ from adoption $p$ to $r=p-a(C)$. Every member then has $u_i^S(r)>u_i^E(p)$. In the game induced on $C$ with outsiders fixed, any nonempty subgroup $B\subseteq C$ re-entering Exit receives
+$$u_i^E(r+a(B))\le u_i^E(p)<u_i^S(r)\qquad(i\in B).$$
+Every actual re-entrant loses. The return outcome is therefore strong Nash in the induced game, hence BPW coalition-proof. Consequently (NR) is necessary and sufficient for resistance to profitable BPW return coalitions.
+
+For the full equilibrium result, define the greatest-best-response map
+$$T_i(x)=\mathbf{1}\{F_i(q_i(x))\ge0\}.$$
+It is increasing by Proposition 1. Iteration from all-Exit decreases and, since $N$ is finite, terminates at a Nash profile $x^+$. For any Nash profile $w$, $w\le T(w)$; induction gives $w\le x^+$, so $x^+$ is greatest, including equilibria choosing Stay at ties. This is the finite extremal-equilibrium construction of Milgrom and Shannon.<sup>19</sup> If any Nash profile exceeds $p_c$, so does $x^+$. Put $p^+=p(x^+)$.
+
+A profitable entry-only coalition $A$ would produce adoption $s=p^++a(A)$, with each entrant satisfying
+$$u_i^E(s)>u_i^S(p^+)\ge u_i^S(s-a_i).$$
+Old Exit holders remain best responding by monotonicity. Thus the new profile $y$ satisfies $y\le T(y)$; upward iteration yields a Nash profile above $x^+$, a contradiction.
+
+For a deviation containing returners $C$ and entrants $A$, resulting adoption is $s=p^+-a(C)+a(A)$. If every member strictly gains, each returner satisfies
+$$u_i^S(p^+-a(C))\ge u_i^S(s)>u_i^E(p^+),$$
+contradicting (NR). This covers coalitions containing unchanged members as well. No strictly profitable pure coalition deviation exists, so $x^+$ is strong Nash. Each restriction of a strong Nash profile to an induced game is strong Nash; induction on coalition size gives BPW self-enforcement, and strong Nash excludes a strict Pareto improvement by the whole coalition. Hence $x^+$ is BPW coalition-proof.<sup>25</sup>
+
+*(b) Drift of $p_c$.* For ordered states $z'\succeq z$, the §3.5 condition gives $p_i^*(z')\le p_i^*(z)$ for every player. Taking the minimum gives
+$$p_c(z')=\min_i p_i^*(z')\le\min_i p_i^*(z)=p_c(z).$$
+This order argument includes infinite thresholds and needs no derivative of the minimum. Under monotonic accumulation of $(K_t,D_t)$, $p_c$ is non-increasing.
+
+Drawdowns and cascade pauses along $p_t$ are admitted; price drawdowns are not equivalent to drawdowns in $p_t$, since allocators below target weight can rebalance during decline.
 
 ## 4.4 Bitcoin Exit Dominance
 
@@ -261,16 +292,15 @@ The three preceding results all hold simultaneously in the Exit Game under the s
 rational self-interest, computational hardness, network-effect
 persistence), the seven settlement properties P1–P7 of §3.2, the
 Exit Game $G$ of §3.3, the monotonicity conditions (M1)–(M4) of
-§3.4 governing payoff derivatives in $p$, and the §3.5 sign
-conditions, the capital-weighted adoption process satisfies all three of:*
+§3.4 governing payoff derivatives in $p$, the formal persistence condition (NR), and the §3.5 threshold-order
+condition, the capital-weighted Exit Game satisfies all three of:*
 
 1.  *the payoff advantage of Exit over Stay is strictly increasing
     in $p$ for every player type (Proposition 1);*
 
-2.  *no Stay coalition with at least one crossed-threshold
-    member is self-enforcing (Proposition 2);*
+2.  *no Stay coalition with a member whose exact Exit gain is positive at the proposed outcome is self-enforcing (Proposition 2);*
 
-3.  *$\{p > p_c\}$ is coalition-proof, and $p_c$ shifts monotonically downward under accumulating $(K_t, D_t)$ (Theorem 1).*
+3.  *Nash profiles above $p_c$ resist returning Stay coalitions; if such profiles exist, the greatest is coalition-proof. The critical mass $p_c$ shifts monotonically downward under accumulating $(K_t,D_t)$ (Theorem 1).*
 
 *Proof.* Proposition 1 gives (i). Proposition 2, with (i) supplying the
 per-defector incentive, gives (ii). Theorem 1 gives (iii). The
@@ -280,9 +310,9 @@ conjunction of (i)–(iii) is the Bitcoin Exit Dominance claim.
 
 The Exit Game treats capital allocators, not sovereign issuers, as the agents who decide what counts as settlement. Bitcoin is an asset that no government issues, and to date has satisfied P1–P7. The question is no longer whether allocators can leave the capturable system, but whether continued debasement pushes adoption past the critical mass $p_c$.
 
-All capital allocators choose reserve assets on perceived risk and ability to store value. Since the Global Financial Crisis central banks have been accumulating gold. Smaller allocators, with higher risk tolerance and lower position size, can shift first into an asset that holds gold’s monetary properties and satisfies P1, P4, and P5, which gold fails. §3.5 predicts that continued debasement keeps moving more allocators out of fiat.
+All capital allocators choose reserve assets on perceived risk and ability to store value. Since the Global Financial Crisis central banks have been accumulating gold. Smaller allocators, with higher risk tolerance and lower position size, can shift first into an asset that holds gold’s monetary properties and satisfies P1, P4, and P5, which gold fails. §3.5 predicts that continued debasement keeps lowering allocators’ Exit thresholds.
 
-A1–A4 are each independently load-bearing. A1 (persistent multipolarity) fails only if rival regimes coordinate and preference falsification no longer holds; rival seignorage is what holds the multipolar floor. A2 (rational self-interest) fails only if actors systematically forgo positive expected returns from unpunished defection. A3 (computational hardness) fails if either the underlying cryptography breaks and the protocol cannot replace it, or the economic incentive sustaining the mining subgame falls below the level §2 requires. A4 (persistence of network effects) fails only if the incumbency account of network goods is disproved.
+A1–A4 are each independently load-bearing. A1 (persistent multipolarity) fails only if rival regimes coordinate and preference falsification no longer holds; rival seignorage is what holds the multipolar floor. A2 (rational self-interest) fails only if actors systematically forgo positive expected returns from unpunished defection. A3 (computational hardness) fails if either the underlying cryptography breaks and the protocol cannot replace it, or the economic incentive sustaining the mining subgame falls below the level §2 requires. The formal coalitional-persistence restriction (NR) fails when a returning coalition strictly improves every member’s payoff at its resulting adoption level.
 
 The Bitcoin Exit Dominance claim is new and depends on two conditions outside this paper’s scope. First, no other consensus ledger holds all of P1–P7: alternatives must either fail one of the properties or fail to draw adoption. Second, autonomous AI agents that need a settlement asset choose Bitcoin rather than invent a new settlement asset. A companion paper in preparation addresses the first across consensus ledgers; a second extends neutral settlement to autonomous agents.
 
@@ -431,4 +461,4 @@ The author holds bitcoin and operates bitcoingametheory.com.
     Economic Theory* **42.1** 1–12 (1987)
     <https://doi.org/10.1016/0022-0531(87)90099-8>
 
-26. *Note on coalition-proofness vocabulary (§4.3).* The claim is coalition-proofness in the Bernheim-Peleg-Whinston sense, not stochastic stability in the Young or Kandori-Mailath-Rob sense; the paper does not specify a perturbed best-response dynamic.
+26. *Note on coalition-proofness vocabulary (§4.3).* The full coalition-proofness claim concerns the greatest Nash profile in the Bernheim-Peleg-Whinston sense; resistance to returning coalitions is stated separately. It is not stochastic stability in the Young or Kandori-Mailath-Rob sense; the paper does not specify a perturbed best-response dynamic.

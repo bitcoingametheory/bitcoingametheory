@@ -1,0 +1,20 @@
+V2 TO V3 — EXACT PROSE COMPARISON
+
+v2 4750 words; v3 5199 words; net +449.
+Section-wise alignment: 4390 retained (92.42% of v2), 360 removed, 809 added.
+Includes headings, revision notes, tables and references; excludes equation tokens and TeX commands. Gross counts depend on the stated alignment.
+
+SECTION | V2 | V3 | NET | REMOVED | ADDED
+Title, abstract, and revision note | 492 | 596 | 104 | 17 | 121
+1. Introduction | 457 | 463 | 6 | 12 | 18
+2. Related Work | 276 | 276 | 0 | 0 | 0
+3. Model | 1350 | 1403 | 53 | 100 | 153
+4. Results | 958 | 1228 | 270 | 209 | 479
+5. Conclusion | 547 | 549 | 2 | 20 | 22
+6. Notes and References | 670 | 684 | 14 | 2 | 16
+
+Original February preprint: 3,055 prose words. May v2: 4,750. Rejected broad November draft: 4,948. Final minimal v3: 5199.
+The rejected draft is not the release. Its ordered-core and new adjustment-model architecture is absent from final v3.
+This is a substantive formal repair, not a new economic framing. NR adds an explicit payoff restriction. The new proof keeps BPW and uses strong Nash as a sufficient route.
+Outside the mathematical sections, changes align theorem summaries, add the v3 date/note, and adjust the final methodological note. No unsolicited price-appreciation disclaimer was added.
+The full change ledger and primary-source reasoning are in paper1-change-review.txt and paper1-evidence.json.

@@ -1,0 +1,39 @@
+Sean Hash’s “Bitcoin Exit Dominance in Monetary Coordination Games” models monetary adoption as a coordination problem: when does moving capital into Bitcoin become individually attractive, and when can an established Bitcoin allocation withstand coordinated moves back into conventional assets?
+
+Its central mechanism is positive feedback. More adoption makes Bitcoin more attractive, reduces the social and regulatory costs of adopting it, and raises the cost of remaining outside. Under additional conditions, some high-adoption equilibria become resistant to coordinated reversal. The paper calls this combination “Bitcoin Exit Dominance.”
+
+The model
+
+Players are capital allocators choosing between two actions: “Stay” in a capturable monetary system or “Exit” into Bitcoin. Each player has a fixed capital weight, so adoption measures the share of capital allocated to Exit, rather than the percentage of people supporting Bitcoin. Players can reverse their decisions, and public statements need not match actual allocations.
+
+“Capturable” means that the settlement asset fails at least one of seven properties the paper attributes to Bitcoin: informational security, protocol security, permissionless access, absolute scarcity, cheap finality, neutrality, and adaptive resilience. Those properties are maintained premises. The paper does not derive all of them from its adoption game.
+
+An allocator’s Exit payoff is Bitcoin’s real return minus conformity costs and regulatory or realization frictions. Its Stay payoff is the return on conventional assets minus a penalty for failing to adopt. Allocators differ in their sensitivity to conformity and regulatory costs.
+
+Four explicit payoff assumptions drive the coordination mechanism: Bitcoin’s return increases with adoption; conformity costs decline; regulatory and realization frictions decline; and the non-adoption penalty increases. Consequently, other players’ adoption makes Exit more attractive. This is strategic complementarity: one allocator’s move encourages others to make the same move.
+
+What the results establish
+
+First, each allocator has an adoption threshold. Above it, Exit is the uniquely optimal individual decision. The calculation accounts for the allocator’s own capital: switching raises total adoption by that player’s weight. Thresholds can be zero, finite, or infinite, so some players may always prefer Exit and others may remain permanent holdouts.
+
+Second, a group trying to maintain Stay is unstable if even one member would benefit from switching individually. Permissionless access is assumed to make that switch feasible, with regulatory costs already included in the payoff. This establishes failure of Nash stability for such groups; it does not establish that every Stay group must collapse or that an initial defection necessarily produces universal adoption.
+
+Third, the paper adds a coalitional-persistence condition called NR. At a relevant high-adoption Nash equilibrium, every group considering a coordinated return to Stay must contain at least one member who would not strictly benefit. Unlike the individual threshold result, this condition compares payoffs after the entire group switches.
+
+NR is essential: the paper explicitly maintains it rather than deriving it from the four payoff slopes. Under the model’s monotonicity conditions, a return that benefited every participant would itself be internally stable. Thus excluding such returns requires a substantive restriction on coalition payoffs.
+
+With NR, high-adoption Nash equilibria resist returning coalitions. Moreover, if any equilibrium lies above the designated critical mass, the greatest Nash equilibrium—the equilibrium with the largest set of Exit players—is strong Nash and therefore coalition-proof. This rules out pure coordinated deviations that strictly improve every participating player’s payoff, without transfers between participants. The stronger conclusion concerns the greatest equilibrium, not every high-adoption equilibrium.
+
+What “ratchet” means
+
+The paper introduces two slowly changing variables: recognition of financial repression and accumulated debasement. It assumes that increases in these variables weakly lower each allocator’s threshold. The “critical mass” is defined as the smallest individual threshold; therefore it also cannot increase as those variables accumulate.
+
+The ratchet is this downward movement of thresholds. It is not a claim that Bitcoin adoption or price always rises. Reversals, pauses, and permanent holdouts remain possible. The revised paper expressly retreats from the earlier claim of complete adoption.
+
+How to interpret the conclusion
+
+The paper offers a conditional equilibrium argument, not an empirical forecast of Bitcoin’s eventual market share, price, or adoption date. Its conclusions depend on the specified payoff relationships, Bitcoin’s assumed settlement properties, NR, and the assumed direction of threshold changes, alongside its broad assumptions about multipolarity, rationality, computational hardness, and network effects.
+
+In particular, naming the minimum individual threshold “critical mass” does not independently prove that a cascade will occur or that the economy will reach the greatest equilibrium. No adoption dynamics establishing that convergence are supplied.
+
+Bitcoin’s unique advantage over competing neutral assets is also not established by the binary game. The conclusion identifies competing ledgers and autonomous AI agents’ settlement choices as questions outside its scope. The formal contribution is a framework showing how adoption incentives and an additional coalition-persistence restriction can support a durable Bitcoin equilibrium.

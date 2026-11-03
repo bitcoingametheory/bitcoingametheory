@@ -1,0 +1,107 @@
+V2 TO V3: CHANGE-SPECIFIC ADVERSARIAL REVIEW
+
+42 exact replacements; evidence root 90d32c118e2aa333fed6dd0a82e0dbc2084919c873bcf18a291bf23e2bc2a6d6.
+Downloaded primary math sources: BPW (1987), pp. 3, 6-7; Milgrom-Shannon (1994), printed pp. 162, 175 (PDF pp. 7, 20).
+
+LAYOUT
+DEFENSE: Original copy and equations should remain unchanged when a typesetting fix suffices.
+OBJECTION: The compiled PDF reports two small overfull text lines.
+RESOLUTION: Add emergency line-breaking stretch; no manuscript words or mathematical symbols change.
+NEW_HYPOTHESIS: None. Typography only, supported by the build log rather than a mathematical source.
+
+OWN-WEIGHT
+DEFENSE: v2 can be read as a price-taking threshold approximation; that preserves its increasing-incentive intuition.
+OBJECTION: The written aggregate gives each player strictly positive weight. Holding aggregate adoption fixed during its switch omits that weight. Finite binary players also do not imply continuous aggregate motion.
+RESOLUTION: With others at q, substitute p=q+a_i at Exit and p=q at Stay. F_i(q)=uE_i(q+a_i)-uS_i(q) is increasing. The threshold domain is [0,1-a_i]. A cutoff in q must not be described as a guaranteed threshold crossing from total p.
+NEW_HYPOTHESIS: Finite player population is specified explicitly; the payoff form and original A4 remain.
+
+POINTWISE
+DEFENSE: The original wording can mean expected utilities over a long horizon, not instantaneous returns.
+OBJECTION: A pointwise derivative proof cannot be justified by signs that hold only on an unspecified average. Continuity alone does not license differentiating the functions.
+RESOLUTION: Apply the signs pointwise to the modeled long-horizon continuously differentiable utility functions. This specifies the object the existing proof differentiates.
+NEW_HYPOTHESIS: Differentiability and the formal pointwise interpretation are explicit regularity requirements.
+
+BOUNDARY
+DEFENSE: At a genuine interior crossing, continuity gives zero gain, as v2 intended.
+OBJECTION: F(q)=1+q has threshold zero but F(0)=1, so the claimed equality at every finite threshold fails.
+RESOLUTION: Retain the threshold proof, state equality only at a finite interior threshold, and cover immediate Exit and the empty positive set separately.
+NEW_HYPOTHESIS: None beyond the stated continuity and monotonicity.
+
+POST-COALITION
+DEFENSE: If a Stay member really has a profitable feasible deviation at the proposed outcome, Proposition 2 is correct.
+OBJECTION: A member who prefers Exit at the original p may prefer Stay after its group reduces p. Threshold equality can also be indifference, not strict profitability.
+RESOLUTION: Use F_j(p)>0 at the proposed Stay outcome, hence uE_j(p+a_j)>uS_j(p). A group must contain that member. This restores the exact reduced-game comparison required by BPW.
+NEW_HYPOTHESIS: None; exact payoff arguments and strictness replace ambiguous summaries.
+
+A4-NR
+DEFENSE: Original A4 says switching costs exceed alternative gains after critical mass. If this includes coordinated switches, it can exclude the critics' profitable-return examples. A derivative-only example therefore does not refute every reading of all v2 premises.
+OBJECTION: The old proof never quantifies that coalitional scope. Indeed if every returner gains at r=p-a(C), each re-entrant at r+a(B)<=p receives uE_i(r+a(B))<=uE_i(p)<uS_i(r). The profitable return is strong Nash in its reduced game. The old claimed profitable breakaway cannot follow.
+RESOLUTION: Preserve A4 verbatim; state NR as explicit additional payoff content: every C of current Exit holders contains i with uE_i(p)>=uS_i(p-a(C)). The return lemma makes this exactly return resistance. At the greatest Nash profile, monotone best-response iteration excludes profitable entry-only deviations; any profitable combined entry/return deviation would imply a profitable return alone. Thus NR implies strong Nash and BPW.
+NEW_HYPOTHESIS: NR is substantive and maintained, not derived from M1-M4, P1-P7, source citations or model agreement.
+
+DRIFT
+DEFENSE: v2's comparative-statics theorem correctly targets a falling threshold, not universal adoption.
+OBJECTION: A threshold 0.4+0.2 exp(-t) decreases while adoption 0.2 never crosses it. Monotonicity does not make every plateau temporary. Differentiating a possibly nonsmooth minimum with infinite members is unnecessary.
+RESOLUTION: Maintain the threshold order at ordered macro states. Taking the minimum preserves that order. Delete the extra finite-plateau inference and synchronize summaries; no new adoption dynamic is introduced.
+NEW_HYPOTHESIS: Threshold ordering applies to corrected own-weight thresholds. It remains an explicit comparative-statics assumption.
+
+PROFILE-SCOPE
+DEFENSE: The phrase coalition-proof region can informally refer to equilibria within a region and resistance to returning coalitions.
+OBJECTION: BPW applies to strategy profiles and all self-enforcing coalition deviations. An aggregate p does not identify a profile; return resistance alone does not rule out collective entry. High-region equilibrium existence is not supplied by a falling cutoff.
+RESOLUTION: State return resistance for relevant Nash profiles. The greatest Nash profile exists by finite isotone iteration. If a high-region Nash profile exists, that greatest profile is high and NR makes it strong Nash and BPW. Repeat the existence qualification where this result is summarized.
+NEW_HYPOTHESIS: No high-region existence or convergence is asserted without its stated condition. Pure deviations, strict gains for every member, and no transfers are specified.
+
+FEASIBILITY
+DEFENSE: The original binary game already treats Exit as an available action and includes regulatory costs in its utility.
+OBJECTION: Permission to settle a transaction does not logically force an unwilling trading counterparty to transact. That sentence does not follow from a permissionless settlement premise.
+RESOLUTION: Identify feasibility as part of the modeled action set S_i and retain the settlement-access premise. The proof then tests a deviation within the game's stated feasible actions.
+NEW_HYPOTHESIS: Feasible binary actions are explicit; no universal counterparty obligation is claimed.
+
+RELEASE-NOTE
+DEFENSE: The May note documents the actual earlier revision and deserves preservation.
+OBJECTION: A final v3 PDF must not be labeled as the unchanged May revision or silently revise its historical note.
+RESOLUTION: Update the revision date and insert the concise v3 mathematical revision note requested by the author. Keep the May note as prior history.
+NEW_HYPOTHESIS: No mathematical hypothesis; release metadata authorized by the author.
+
+E01 / LAYOUT: Allow TeX extra line-breaking stretch to eliminate two small margin overruns without changing any words.
+E02 / A4-NR: Identify the explicit formal condition used by the replacement proof without rewriting the abstract.
+E03 / POST-COALITION: The coalition must contain the strictly profitable deviator; threshold equality need not be profitable.
+E04 / PROFILE-SCOPE: Distinguish directional resistance of high-adoption Nash profiles from full BPW of the greatest profile.
+E05 / RELEASE-NOTE: Identify the v3 revision requested by the author; preserve the prior revision note as history.
+E06 / RELEASE-NOTE: Explain the exact mathematical revision, as requested, without replacing the historical May note.
+E07 / PROFILE-SCOPE: Correct only the introduction sentence restating the affected theorem.
+E08 / OWN-WEIGHT: Use the finite-player game to which the supplied BPW recursion applies.
+E09 / OWN-WEIGHT: Finite binary weighted allocations do not imply continuous aggregate motion.
+E10 / OWN-WEIGHT: Best-response thresholds use others' adoption once own weight is included.
+E11 / DRIFT: Match the directional comparative-statics result without asserting an unstated adoption law.
+E12 / OWN-WEIGHT: Make the profile and own-weight comparison exact while retaining the reversible-threshold account.
+E13 / POINTWISE: The displayed derivative proof requires differentiability.
+E14 / OWN-WEIGHT: The columns compare others' adoption levels; they are not a two-player strategy matrix.
+E15 / OWN-WEIGHT: Identify the adoption input in the corrected payoff table.
+E16 / OWN-WEIGHT: Stay uses others' adoption q.
+E17 / OWN-WEIGHT: Exit adds the mover's positive capital weight.
+E18 / POINTWISE: A pointwise derivative proof must use pointwise signs of the modeled horizon payoffs.
+E19 / OWN-WEIGHT: Keep the same-adoption Delta comparison but define actual thresholds from the exact gain.
+E20 / OWN-WEIGHT: Correct the best-response threshold and specify the empty-positive-set convention.
+E21 / DRIFT: Apply state monotonicity explicitly to the corrected thresholds, including endpoints and infinity.
+E22 / OWN-WEIGHT: Use the same exact gain as the revised threshold definition.
+E23 / DRIFT: For finite positive weights, the onset threshold is the minimum; no derivative of that minimum is asserted.
+E24 / OWN-WEIGHT: A threshold measured in others' adoption is not automatically crossed when total adoption exceeds it; identify the cutoff without making that inference.
+E25 / PROFILE-SCOPE: Separate onset, the explicit persistence restriction, and the greatest-profile BPW result; correct the flat-adoption implication.
+E26 / PROFILE-SCOPE: State the actual BPW object and convention rather than conflating aggregate adoption, Nash, and coalition-proofness.
+E27 / OWN-WEIGHT: Synchronize the threshold convention with its exact definition.
+E28 / OWN-WEIGHT: Preserve the monotone threshold conclusion with the correct parameter and boundary.
+E29 / BOUNDARY: The IVT equality need not hold at a zero threshold when the gain is already positive; retain and extend the correct derivative calculation.
+E30 / POST-COALITION: Evaluate a Stay member's gain at the outcome being tested.
+E31 / POST-COALITION: Use the exact post-outcome unilateral comparison in Proposition 2.
+E32 / FEASIBILITY: Feasible actions are part of the game specification. Permissionless settlement does not logically require an unwilling counterparty to trade; retain the stated settlement premise.
+E33 / A4-NR: Replace the invalid current-H(p) inference with an explicit payoff-level persistence hypothesis, visibly additional formal content; preserve A4 itself.
+E34 / A4-NR: State the precise full-BPW result and the maintained condition it uses.
+E35 / A4-NR: Replace the defective coalition proof with the return lemma, greatest-equilibrium construction and exact BPW derivation; remove the unsupported finite-plateau inference.
+E36 / A4-NR: Carry the exact formal hypotheses into the concluding theorem.
+E37 / POST-COALITION: Keep Theorem 2(ii) consistent with the repaired Proposition 2.
+E38 / PROFILE-SCOPE: Summarize the proved profile-specific BPW result without adding a new adoption dynamic.
+E39 / DRIFT: The conjunction is about the game and ordered states; its proof specifies no adoption transition rule.
+E40 / DRIFT: Change only the conclusion sentence attributing actual adoption to comparative statics.
+E41 / A4-NR: Give the exact failure condition of the new formal persistence restriction, not a claim about all network-goods theory.
+E42 / PROFILE-SCOPE: Make note 26 identify the actual BPW profile; preserve the rest of the note.

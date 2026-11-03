@@ -1,0 +1,24 @@
+BITCOIN EXIT DOMINANCE — REVISION NOTE, NOVEMBER 2026 (v3)
+
+Readers identified that the coalition proof must evaluate payoffs after a
+proposed coordinated move. This revision includes each allocator's capital
+weight, states the coalitional-persistence condition (NR) explicitly, and
+proves that the greatest high-Exit Nash equilibrium, when one exists, is
+strong Nash and hence BPW coalition-proof. The threshold ratchet is retained;
+the inference that every adoption plateau must be temporary is removed.
+Assumptions A1–A4, Properties P1–P7, and the economic argument are retained.
+Theorem summaries are aligned with the repaired proof.
+
+NR is additional formal payoff content: every returning group contains a
+member who does not gain at the resulting adoption level. The derivative
+conditions do not establish NR. The new proof shows precisely how NR and the
+greatest-equilibrium construction yield the BPW result.
+
+The title remains Bitcoin Exit Dominance in Monetary Coordination Games.
+The original A4, related work, acknowledgements, author declarations and
+bibliographic entries are retained. The May revision note remains as history.
+No new game-theory citation is needed: BPW (1987) and Milgrom–Shannon (1994)
+were already cited. Exact source passages and deductions accompany the redline.
+
+SSRN 6299081: prepared for the author to upload. A website release is not an
+SSRN submission or acceptance receipt.

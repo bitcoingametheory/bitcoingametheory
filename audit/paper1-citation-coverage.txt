@@ -1,0 +1,27 @@
+FROZEN MAY V2 CITATION COVERAGE — final retrieval status, 2 November 2026
+
+Scope: 24 bibliographic works in archive/may-2026-before-proof-repair/BGT-PAPER-1.tex (notes11/26 are not works). Existing bibliography and evidence manifests unchanged. coverage.json distinguishes primary presence, parsing, exact edition, narrow text support and full-claim certification. It includes paths, hashes, URLs, extraction locators, DAG source nodes and failed retrievals. Runtime .deps/ is not evidence and is absent from source/DAG nodes.
+
+COUNTS: 19 same-work primary texts locally present; four explicit famous-old-book exceptions; one unresolved non-book full-original gap. Under the strict exact-edition/full-original rule coverage remains INCOMPLETE because of the edition/partial-book qualifications below.
+
+V2/V3 MISMATCHES AND RESOLUTIONS
+4 Powell1993: Guns, butter, and anarchy, APSR87(1),115–132, DOI10.2307/2938960. Existing Powell1994 Anarchy in International Relations Theory is a DIFFERENT work. Full original still unresolved. Publisher abstract downloaded/parsed; full PDF redirects to abstract. UCSD course syllabus points to JSTOR; its archived course-PDF list contains other Powell works. Terman course archive contains Powell1991/1994/1996, not1993. Author/archive discovery attempts were empty,503 or timed out; metadata supplied no open fulltext location. No book exception or substitute was accepted.
+15 Katz–Shapiro1985: Network externalities, competition, and compatibility, AER75(3),424–440, JSTOR1814809. Existing Katz–Shapiro1994 Systems Competition and Network Effects is a DIFFERENT work. RESOLVED: exact published18-page scan (cover plus printed424–440) downloaded and parsed from the 2010-07-15 Internet Archive capture of an academic course mirror. Title/authors/venue/year/range and final440/reference page checked. Files: katz1985network-academic-archive/{original.pdf,parsed.txt,provenance.json,identity-check.json}. URL: https://web.archive.org/web/20100715021123id_/http://idv.sinica.edu.tw:80/kongpin/teaching/io/KatzShapiro1.pdf . Printed424–425 / PDF2–3 support network externalities and multiple fulfilled-expectations equilibria; no certification of the manuscript's persistence/switching-cost inequality.
+22 IMF October2024 DATABASE: existing October2024 REPORT is a DIFFERENT object. Downloaded same-vintage primary dataset from DBnomics IMF source-data mirror; decoded UTF-16LE TSV, checked schema/year columns/USA general-government gross-debt-GDP series. Files: imf2024weo-mirrored-dataset/{original.tsv,parsed.txt,provenance.json,dataset-check.json}. Official downloads were blocked; official-host byte equivalence remains unverified. Dataset does not establish inevitable debasement.
+
+SUPPLEMENTAL PRIMARY SUPPORT FOR THE $344m SENTENCE
+Tether's23 April2026 statement was downloaded/parsed: https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/ . Files: tether2026-344m-primary/{original.html,parsed.txt,provenance.json,support-check.json}. Opening factual paragraphs after dateline directly support Tether assisting the U.S. Government in freezing$344m USDt across two addresses; U.S. authorities supplied information; issuer describes freezing assets upon request. This is issuer-primary support for amount/freeze/cooperation, not the legal-order document. It does not independently establish the following Iranian Bitcoin proposal. Existing April24 OFAC listing is NOT certified as amount/freeze support. Treasury sb0502 was also downloaded/parsed but concerns a later date and different amount, so is contextual only and not used to certify the April$344m claim. No manuscript wording changed.
+
+EDITION/PARTIAL-TEXT QUALIFICATIONS
+5 Armstrong:2013 FHI technical report, not2016 journal edition.
+9 Eyal–Sirer:November2013 arXiv, not2018 CACM edition.
+12 Biais et al.:January2018 TSE working paper, not2019 RFS edition.
+17 Arslanalp et al.:IMF WP/23/14, not2023 JIE edition.
+23 Reinhart–Sbrancia:IMF WP/15/7, not2015 Economic Policy edition.
+These are SAME-WORK PRIMARY texts, not substitutes; narrow support was checked in those versions, but published-edition equivalence/pagination is uncertified. Official fulltext attempts for Armstrong/Eyal/Biais were blocked or HTML responses.
+16 Menger and20 Feldstein:authorized later reprints identify original works; original-edition pagination not independently checked.
+6 Cantillon:partial primary Higgs translation chapterII.VI in1959 reprint of1931; full book and cited161–173 coverage uncertified. No new exception invented.
+3 Richardson1960;18 Fudenberg–Tirole1991;21 Fisher1928;24 Kuran1995:the four explicit famous-old-book exceptions already recorded in the review. Full texts/page claims uncertified.
+
+OTHER EXISTING PRIMARIES
+1,2,7,8,10,13,14,19,25:original files present and parsed; narrow relevant passages inspected. Primary-text support flags concern only the explicit narrow claim; no entry certifies all v2 prose. HTML/access responses named.pdf are recorded as failures, never as original PDFs. No AI TLDR/consensus/witness file is treated as original evidence.

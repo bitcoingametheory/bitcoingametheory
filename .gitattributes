@@ -1,0 +1,4 @@
+/papers/1-exit-dominance/** -text
+/ai/BGT-*.txt -text
+/audit/paper1-* -text
+/scripts/verify-evidence-dag.py -text

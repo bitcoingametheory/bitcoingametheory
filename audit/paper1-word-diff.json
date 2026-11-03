@@ -1,0 +1,137 @@
+{
+  "method": "Compare preserved versions and the separate proposal, without manuscript edits.\n\nProse words are Pandoc Str-node words matching the regex below. Math nodes,\nLaTeX commands and page numbers are excluded; title, notes, tables and references\nare included. SequenceMatcher operates within sections with autojunk=False.\nRetained is an order-preserving prose-token alignment, not a semantic measure.",
+  "word_regex": "[A-Za-z0-9]+(?:[-'’][A-Za-z0-9]+)*",
+  "versions": {
+    "original": {
+      "path": "rfc/draft/1-exit-dominance/archive/preprint-ssrn-6299081/BGT-PAPER-1-preprint.tex",
+      "total": 3055,
+      "sections": {
+        "Title, abstract, and revision note": 246,
+        "1. Introduction": 335,
+        "2. Related Work": 437,
+        "3. Model": 543,
+        "4. Main Results": 742,
+        "5. Falsification": 94,
+        "6. Limitations": 127,
+        "7. Conclusion": 71,
+        "References": 390,
+        "Notation": 70
+      }
+    },
+    "v2": {
+      "path": "rfc/draft/1-exit-dominance/archive/may-2026-before-proof-repair/BGT-PAPER-1.tex",
+      "total": 4750,
+      "sections": {
+        "Title, abstract, and revision note": 492,
+        "1. Introduction": 457,
+        "2. Related Work": 276,
+        "3. Model": 1350,
+        "4. Results": 958,
+        "5. Conclusion": 547,
+        "6. Notes and References": 670
+      }
+    },
+    "rejected_broad_v3": {
+      "path": "rfc/audit/paper1-2026-11-02/rejected-broad-v3/BGT-PAPER-1.tex",
+      "total": 4948,
+      "sections": {
+        "Title, abstract, and revision note": 565,
+        "1. Introduction": 307,
+        "2. Related Work": 193,
+        "3. Model": 971,
+        "4. Results": 1785,
+        "5. Conclusion": 336,
+        "Notation": 83,
+        "6. Notes and References": 708
+      }
+    },
+    "proposal": {
+      "path": "rfc/audit/paper1-2026-11-02/minimal-v2-proposal/BGT-PAPER-1.tex",
+      "total": 5199,
+      "sections": {
+        "Title, abstract, and revision note": 596,
+        "1. Introduction": 463,
+        "2. Related Work": 276,
+        "3. Model": 1403,
+        "4. Results": 1228,
+        "5. Conclusion": 549,
+        "6. Notes and References": 684
+      }
+    }
+  },
+  "sections": [
+    {
+      "section": "Title, abstract, and revision note",
+      "v2": 492,
+      "proposal": 596,
+      "net": 104,
+      "retained": 475,
+      "deleted": 17,
+      "added": 121
+    },
+    {
+      "section": "1. Introduction",
+      "v2": 457,
+      "proposal": 463,
+      "net": 6,
+      "retained": 445,
+      "deleted": 12,
+      "added": 18
+    },
+    {
+      "section": "2. Related Work",
+      "v2": 276,
+      "proposal": 276,
+      "net": 0,
+      "retained": 276,
+      "deleted": 0,
+      "added": 0
+    },
+    {
+      "section": "3. Model",
+      "v2": 1350,
+      "proposal": 1403,
+      "net": 53,
+      "retained": 1250,
+      "deleted": 100,
+      "added": 153
+    },
+    {
+      "section": "4. Results",
+      "v2": 958,
+      "proposal": 1228,
+      "net": 270,
+      "retained": 749,
+      "deleted": 209,
+      "added": 479
+    },
+    {
+      "section": "5. Conclusion",
+      "v2": 547,
+      "proposal": 549,
+      "net": 2,
+      "retained": 527,
+      "deleted": 20,
+      "added": 22
+    },
+    {
+      "section": "6. Notes and References",
+      "v2": 670,
+      "proposal": 684,
+      "net": 14,
+      "retained": 668,
+      "deleted": 2,
+      "added": 16
+    }
+  ],
+  "totals": {
+    "v2": 4750,
+    "proposal": 5199,
+    "net": 449,
+    "retained": 4390,
+    "deleted": 360,
+    "added": 809,
+    "v2_prose_retained_percent": 92.42
+  },
+  "caveat": "Gross edit counts depend on the stated alignment; net counts do not. Formula changes are listed in changes.json, not counted as prose."
+}

@@ -1,0 +1,39 @@
+BITCOIN EXIT DOMINANCE — HISTORY AND REVIEW RECORD
+Prepared 2 November 2026
+
+The private baseline contains 487 reachable project commits, 45 commits
+changing identified primary Paper 1 manuscript paths, and 86 named Paper 1 /
+SSRN changelog records. These are different units, not 487 published paper
+versions or a count of independent model reviews. Retained May records include
+the post-return payoff objection and the declining-threshold/crossing objection.
+The issue was not simply that no prior model noticed them: the records also
+document how findings were filtered or dismissed. Recorded model identifiers
+include Claude Opus 4.7 and Sonnet 4.6; unrecorded exact builds are not inferred.
+
+The original February preprint claimed absorption. The May revision replaced
+that with a ratchet and admitted holdouts. Its proof still evaluated potential
+defectors at the pre-coalition adoption level and inferred temporary plateaus
+from monotone threshold movement.
+
+The strongest defense of May v2 is its original A4: switching costs exceed
+alternative gains past critical mass. A strong coalitional reading can exclude
+the illustrative return counterexample. A derivative-only example is therefore
+not a certified refutation of every reading of all v2 premises. Final v3 keeps
+A4 and supplies explicit NR inequalities, rather than silently weakening A4.
+
+An earlier broad November rewrite was rejected by the author for editorial
+overreach. It was never pushed, deployed or uploaded to SSRN. The final v3
+instead repairs exact own-weight incentives and post-coalition comparisons,
+proves the greatest-equilibrium BPW result under NR, and retains directional
+threshold drift without the extra finite-plateau inference. The economic
+framing and original title remain.
+
+Fresh Sol and Astra neutral and critical reviews are recorded in
+paper1-review-results.txt. The unrestricted 'Poke holes' responses are retained
+alongside the source-linked redline. Review counts and hashes do not prove
+mathematical truth or the empirical validity of the maintained premises.
+
+Baseline PDF SHA-256 (private/public/live):
+5d9f0c38cf40b07d57dec11a180235ba4d6a35a9aaa4cac6229c10be14e87fff
+SSRN returned HTTP 403 to the available fetch. No newly authenticated SSRN
+bytes or complete SSRN upload ledger is claimed. The author will upload v3.
