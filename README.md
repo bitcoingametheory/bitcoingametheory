@@ -52,7 +52,7 @@ bitcoingametheory/
 
 | # | Title | Pages | Formats |
 |---|-------|-------|---------|
-| 1 | **Bitcoin Exit Dominance in Monetary Coordination Games** | 19 | [pdf](papers/1-exit-dominance/BGT-PAPER-1.pdf) / [tex](papers/1-exit-dominance/BGT-PAPER-1.tex) / [md](papers/1-exit-dominance/BGT-PAPER-1.md) / [Ledger variant](papers/1-exit-dominance/ledger/BGT-PAPER-1-LEDGER.pdf) |
+| 1 | **Bitcoin Exit Dominance in Monetary Coordination Games** | 18 | [pdf](papers/1-exit-dominance/BGT-PAPER-1.pdf) / [tex](papers/1-exit-dominance/BGT-PAPER-1.tex) / [md](papers/1-exit-dominance/BGT-PAPER-1.md) / [Ledger variant](papers/1-exit-dominance/ledger/BGT-PAPER-1-LEDGER.pdf) |
 | 2 | **Bitcoin as Unique Neutral Settlement: A Seven-Property Elimination** | 18 | [pdf](papers/2-neutral-settlement/BGT-PAPER-2.pdf) / [tex](papers/2-neutral-settlement/BGT-PAPER-2.tex) / [md](papers/2-neutral-settlement/BGT-PAPER-2.md) |
 | 3 | **Settlement at Zero Trust: Bitcoin and Autonomous Economic Agents** | 11 | [pdf](papers/3-zero-trust-settlement/BGT-PAPER-3.pdf) / [tex](papers/3-zero-trust-settlement/BGT-PAPER-3.tex) / [md](papers/3-zero-trust-settlement/BGT-PAPER-3.md) |
 | 4 | **Monetary Predator-Prey Dynamics: Enforcement Gridlock and Neutral Settlement Survival** | 14 | [pdf](papers/4-predator-prey-dynamics/BGT-PAPER-4.pdf) / [tex](papers/4-predator-prey-dynamics/BGT-PAPER-4.tex) / [md](papers/4-predator-prey-dynamics/BGT-PAPER-4.md) |
