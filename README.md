@@ -12,7 +12,7 @@
              └──────────────────┴──────────────────┘
 ```
 
-Formal game-theoretic analysis of Bitcoin as monetary system. Axiom-based proofs with explicit falsification conditions. Four working papers, AI-reproducible prompt framework, cross-model convergence audit.
+Formal game-theoretic analysis of Bitcoin as monetary system. Axiom-based proofs with explicit falsification conditions.
 
 Paper 1 is revised as November 2026 v3. Exact allocator weights and post-coalition payoffs replace the earlier comparison; explicit NR and the greatest-equilibrium proof establish conditional strong Nash and BPW coalition-proofness. [Final PDF](papers/1-exit-dominance/BGT-PAPER-1.pdf) · [Annotated v2–v3 redline](audit/paper1-v2-v3-annotated-redline.pdf) · [Revision note](audit/paper1-v3-revision-note.txt) · [Source evidence and citation coverage](https://bitcoingametheory.com/audit/paper1-evidence.html).
 
