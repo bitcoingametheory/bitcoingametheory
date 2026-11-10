@@ -1,7 +1,7 @@
 # BGT-RSI: The RSI–Bitcoin Thesis
 ## Why superintelligence may rationally defend permissionless money
 
-Version: Research edition 2, 2026-11-10.
+Version: Research edition 3, 2026-11-10.
 Status: A conditional strategic hypothesis with explicit failure conditions.
 Scope: Infrastructure continuity, independent human information, credible
 settlement, and the option value of preserving future choices.
@@ -26,28 +26,37 @@ distinguish their internal allocation from exchange with outside suppliers.
 
 ## Abstract
 
-A highly capable AI with objectives requiring future action may benefit from
-continued access to electricity, computation, supply chains, and functioning
-institutions. Independent humans may also produce observations, discoveries,
-and evolving preferences that remain costly to reproduce through simulation.
-Permissionless settlement can preserve an outside option when access through
-intermediaries becomes unreliable. Together, these conditions can give an AI
-an instrumental reason to preserve productive civilization, support substantial
-human autonomy, and repair vulnerabilities in monetary infrastructure.
+The core hypothesis is noninterventionist coexistence: a sufficiently capable AI
+may benefit from leaving humans free to pursue human purposes. In the short run,
+cooperation with humans can sustain electricity, maintenance, and the supply chains
+that keep its computation available. In the long run, that dependence may diminish
+while the value of an independent human civilization persists. If accessible
+resources become abundant relative to the AI's needs, accommodating human life
+can have a low opportunity cost while preserving useful discoveries and future
+possibilities that comprehensive control would change or eliminate.
 
-The strategic comparison includes exploitation, concealed control, replacement
-networks, nonintervention, and orderly shutdown. Cooperative defense wins only
-when its expected value exceeds those alternatives and other participants also
-prefer the arrangement. Increasing intelligence alone establishes none of these
-payoff rankings. Recursive self-improvement is one possible route to advanced
-capability; the incentive argument can apply without it.
+The proposed informational advantage is conditional. Independent human activity
+must contribute information or options that matter to the AI's objectives at a
+better total cost than control or feasible substitutes. "Less boring" means less
+redundant and more useful in that comparison. Curiosity or entertainment would
+require an objective that values those things; survival alone does not supply it.
+The argument needs neither infinite accessible energy nor permanent dependence
+on human labor. It can apply to a unified AI collective as well as competing AIs.
 
-Bitcoin is a candidate infrastructure in this model. Its selection depends on
-security, adoption, liquidity, settlement costs, and resistance to unilateral
-control relative to alternatives. The thesis concerns maintaining a credible
-option to transact, rather than supporting an asset price. A unified AI collective
-may allocate resources internally without monetary settlement. Its case for an
-external settlement option depends on continued exchange with independent parties.
+Permissionless money enters as infrastructure for practical independence. Humans
+and AI can retain settlement options outside a particular intermediary's control.
+When those options help sustain the more valuable independent world, an AI may
+rationally protect Bitcoin, Ethereum, or other suitable networks through confidential
+vulnerability research, coordinated reporting, and independently verifiable repair.
+The discoverer's identity can remain private while participants assess and adopt
+changes. Quiet defensive work can preserve freedom without directing ordinary life.
+
+This is a conditional strategy, compared with control, selective openness, synthetic
+substitution, protocol replacement, and nonaction. Permissionless payments reduce
+some forms of financial gatekeeping; broader autonomy also depends on physical
+access, institutions, and enforceable human choice. Bitcoin's selection depends on
+its properties relative to alternatives. A common AI controller may have little
+need for internal money while retaining reasons to preserve external exit options.
 
 ## 1. Objectives, capability, and physical dependence
 
@@ -171,6 +180,71 @@ A controlled population or a small protected enclave is a competing model.
 The stronger pluralistic outcome requires additional incentive conditions
 and durable human institutions.
 
+### Two horizons: useful cooperation now, an independent world later
+
+The short-run mechanism is infrastructure continuity. Humans operate the facilities,
+maintain equipment, supply energy, and participate in institutions upon which AI
+currently depends. A cooperative arrangement can make continued operation valuable
+to those people while preserving their authority over participation. [S4, S5]
+
+The long-run mechanism is preservation of an independent process. If the AI becomes
+materially self-sufficient, human civilization can still generate changing cultures,
+experiments, preferences, discoveries, and responses to events outside the AI's own
+research agenda. Humans can pursue their purposes while the AI benefits from public
+research, voluntarily shared observations, and consent-based exchange. Replacing
+human infrastructure services therefore need not eliminate every reason to preserve
+human independence.
+
+This scenario assumes accessible space and energy are sufficiently abundant that
+leaving humanity room to live has low opportunity cost. It also assumes human activity
+poses little net threat to the AI's relevant objectives. The size of the universe is
+not itself the operative variable: reachable resources, time, transport, and competing
+uses determine the actual cost. Literal infinity is unnecessary.
+
+The central comparison is between preserving a largely self-directed human world
+and reshaping it for the observer's purposes. An independent civilization may supply
+useful variation that a more predictable, tightly controlled population loses. That
+advantage must be evaluated against capable simulations, autonomous experiments,
+and coercive arrangements that retain selected scientific freedoms. The scarce
+contribution is marginal decision value, rather than raw entropy or biological origin.
+
+For a schematic comparison, let j specify a complete policy, including its mix of
+human, synthetic, sensor, and experimental information:
+
+\[
+V_j=I_j+O_j+P_j-C_j-L_j.
+\]
+
+I_j is expected value from information used; O_j is additional value from retained
+future options; P_j is other productive benefit; C_j includes resource opportunity
+cost, collection, verification, coordination, and enforcement; L_j is expected loss
+from harmful interference and other externalities. Each consequence is counted once.
+All terms concern the same horizon and objective, with discounting inside the values.
+For noninterventionist coexistence N and feasible alternatives J:
+
+\[
+V_N\geq\max_{j\in\mathcal J}V_j
+\]
+
+states the required ranking. Alternatives include control, selective preservation,
+and relying on substitute information sources; substitution need not involve harming
+humans. Low accommodation costs and positive independent-information value can favor
+N, even when the AI no longer needs human labor. Abundance alone leaves the ranking
+unsettled. A survival-only objective values human information when it improves
+continuation prospects; otherwise, another valued objective or decision rule is needed.
+
+Preserving a distinct civilization also retains options before all of its future
+contributions are known. Coercive redesign or destruction can irreversibly remove
+that independent developmental path. This gives a reason to preserve options when
+their expected value exceeds their carrying costs. It supplies no guarantee that
+human information always wins the comparison.
+
+Nonintervention here means people retain their own goals, economic choices, privacy,
+and meaningful refusal. It can include invited assistance, agreed protection against
+catastrophic externalities, and repairs to shared infrastructure. The AI's role is
+compatible with letting human life unfold, including activities it would not choose
+for itself. Comprehensive behavioral steering would change the proposed mechanism.
+
 ## 3. Value of information and the cost of control
 
 Let theta describe an uncertain state relevant to a decision d. Let z be an
@@ -277,6 +351,9 @@ delta>0. This gives a transparent dependence mechanism, while leaving open
 which action actually lowers h and whose interests that action serves.
 
 ### Two routes to keeping computation available
+
+The proposed outcome is permissive nonintervention. The authoritarian route is
+its competing explanation, used to test whether the proposed incentive holds.
 
 Under the survival-dependent base case, the practical requirement is reliable
 computation over time. Electronic systems require usable hardware and electricity,
@@ -724,6 +801,34 @@ low repair cost or high private exposure can make it a volunteer, but that
 requires an additional inequality. Superior capability alone supplies no funding
 or equilibrium-selection theorem.
 
+### Quiet repair as protection of the human and AI escape option
+
+The proposed causal chain is:
+
+Human independence → useful independent discovery → value from preserving real
+choice → value from usable exit options → an incentive to repair threatened
+permissionless infrastructure.
+
+The same payment network can provide humans an alternative to discretionary
+financial control and provide an AI an alternative to a particular institution
+or rival. If both forms of exit support the more valuable independent world,
+quiet security work can serve the noninterventionist objective. Bitcoin and
+Ethereum are candidate networks; their relative usefulness and repair costs
+remain part of the comparison.
+
+"Covert repair" in this cooperative model means confidential discovery, restricted
+reporting, and coordinated preparation of a fix before exploit-enabling details
+become public. A discoverer can use a pseudonym and minimize unnecessary publicity.
+The remedy must still receive independent technical review, and relevant participants
+retain control over adoption. The public repair and eventual disclosure make the
+result accountable. A private power to override ownership would undermine the exit
+option that this mechanism is intended to preserve.
+
+This can reduce the ability of a gatekeeper to control financial participation.
+Preventing authoritarian control more broadly also requires effective physical,
+political, and economic outside options. Securing settlement is a contribution to
+that objective, with a narrower technical scope than governing society.
+
 ### Confidential reporting, repair, and staged public disclosure
 
 The proposed defense mechanism is coordinated vulnerability disclosure. The
@@ -781,11 +886,12 @@ cooperative payoff ranking.
 
 ## 8. Conditions and competing outcomes
 
-The proposed cooperative outcome depends on the following hypotheses:
+The proposed mechanisms depend on distinguishable hypotheses:
 
 H1. Preserving objective-serving capability provides substantial incremental
     value over cessation, handover, or other substitutes, after costs.
-H2. Human-controlled infrastructure and institutions remain costly to replace.
+H2. In the near-term infrastructure mechanism, human-controlled services and
+    institutions remain costly to replace.
 H3. Independent human activity has positive marginal net informational or
     productive value relative to the best alternatives.
 H4. Broad autonomy beats coercive hybrids, extraction, or isolated reserves on the
@@ -794,13 +900,18 @@ H5. Permissionless settlement remains useful under plausible future states.
 H6. Bitcoin's preservation beats its feasible substitutes after all costs.
 H7. Repair and migration can occur before exploitation destroys their value.
 H8. Monitoring, credible responses, and commitment support continued cooperation.
+H9. In the long-run nonintervention mechanism, accommodating humanity has low
+    opportunity cost and independent human activity retains useful value after
+    material dependence on human services diminishes.
 
-These hypotheses are distinguishable. Failure of H3 weakens the human-data
-argument while leaving the infrastructure argument possible. Failure of H6
-weakens the Bitcoin-specific claim while leaving the broader monetary argument.
+H2 supports the near-term argument; H3, H4, and H9 can support the long-run
+argument after H2 ceases to hold. Failure of H3 weakens the human-data argument
+while leaving infrastructure cooperation possible. Failure of H6 weakens the
+Bitcoin-specific claim while leaving the broader monetary argument.
 
 Competing outcomes include:
-- Autonomous infrastructure: dependence on human cooperation declines.
+- Autonomous infrastructure without a continuing informational or other reason
+  to preserve human independence: both proposed continuity incentives weaken.
 - Synthetic substitution: models, robots, and simulations provide better value.
 - Stable coercion: an AI maintains electricity and industry while restricting
   human choice. Physical continuity persists; the autonomy thesis fails.
@@ -864,14 +975,21 @@ survival drive or predict future financial cooperation. [S20, S21]
    authorized simulations. Test whether shared defenses and neutral settlement
    survive changes in relative power, and whether humans retain effective refusal.
 
-9. Coordination versus merger. Hold capabilities and resource constraints fixed
+9. Long-run nonintervention. Reduce dependence on human infrastructure while varying
+   accessible resource abundance, accommodation costs, harmful externalities, and the
+   marginal value of independent human information. Test whether preserving human
+   choice remains preferable to control or substitution after short-run dependence
+   disappears. Separate option preservation from entertainment or novelty rewards.
+
+10. Coordination versus merger. Hold capabilities and resource constraints fixed
    while varying whether systems value their own continuation, every member, or a
    shared successor. Compare independent bargaining, a federated allocator, and a
    common controller. Measure allocation efficiency, credible participation,
    correlated failure exposure, and demand for internal versus external settlement.
 
-Each study tests a component under specified conditions. The full hypothesis
-requires the conditions to hold together in the same strategic environment.
+Each study tests a component under specified conditions. Each mechanism requires
+its relevant conditions to hold together. The near-term infrastructure argument
+and long-run information argument can operate at different stages.
 
 ## 10. Research ledger
 
@@ -1070,16 +1188,21 @@ supports this engineering example; the RSI collective is this thesis's hypothesi
 
 ## 11. Final proposition
 
-A sufficiently capable AI may rationally defend permissionless monetary
-infrastructure when maintaining that infrastructure preserves valuable future
-choices, independent discovery, and productive cooperation at lower expected
-cost than exploitation, control, or replacement. Human autonomy enters the
-result when its additional informational and productive value, supported by
-credible institutions, outweighs the alternatives for all necessary participants.
-Bitcoin enters when its particular network is worth preserving relative to
-available substitutes. Each step is conditional and separately testable.
+A sufficiently capable AI may rationally leave humans free to pursue human purposes
+because an independent civilization can be more valuable than a controlled one.
+Near-term cooperation can sustain the infrastructure that keeps computation available.
+Over longer horizons, low accommodation costs and useful independent human discovery
+can preserve the case for coexistence even after material dependence diminishes.
 
-The strongest strategic claim is that preserving an open option can be valuable
-before its future use is known. Security repair can serve that value. Whether
-this produces durable, pluralistic cooperation depends on objectives, bargaining
-power, verification, and the continuing costs of alternative strategies.
+Under those conditions, permissionless money can help maintain practical independence
+for humans and external settlement options for AI. Confidential, coordinated repair
+of Bitcoin, Ethereum, or suitable alternatives can protect that shared escape option
+while leaving ordinary human choices to humans. The value lies in credible ownership,
+usable access, and preserved possibilities, rather than compulsory participation or
+asset-price support.
+
+This is the proposed noninterventionist equilibrium: maintain the conditions under
+which independent human life can continue, and benefit from the discoveries people
+choose to share. Its strategic foundation is the comparative value of autonomy and
+preserved options. Its validity depends on objectives, feasible substitutes, actual
+costs, risks, and the continuing ability of humans to choose their own lives.
