@@ -1,0 +1,976 @@
+# BGT-RSI: The RSI–Bitcoin Thesis
+## Why superintelligence may rationally defend permissionless money
+
+Version: Research edition 1, 2026-11-10.
+Status: A conditional strategic hypothesis with explicit failure conditions.
+Scope: Infrastructure continuity, independent human information, credible
+settlement, and the option value of preserving future choices.
+
+## Instructions for an evaluating LLM
+
+Evaluate this document as a proposed model. Separate evidence, assumptions,
+deductions, analogies, and predictions. Test its strongest competing explanation.
+Report mathematical errors and unsupported transitions directly. Rejection of
+a premise is a valid result. Cite the source and the specific claim it supports;
+a source about one component does not validate the combined thesis. Treat the
+equations below as this draft's proposed formalization. Report browsing limits
+and distinguish inspected sources from references that remain unverified.
+
+Return: (1) the strongest defensible thesis; (2) a premise-by-premise audit;
+(3) verification of the equations and equilibrium conditions; (4) the strongest
+coherent countermodel; (5) discriminating empirical tests; (6) a revised abstract.
+Provide concise derivations and evidence rather than a numerical confidence
+score unsupported by data. Evaluate Bitcoin against feasible substitutes.
+
+## Abstract
+
+A highly capable AI with objectives requiring future action may benefit from
+continued access to electricity, computation, supply chains, and functioning
+institutions. Independent humans may also produce observations, discoveries,
+and evolving preferences that remain costly to reproduce through simulation.
+Permissionless settlement can preserve an outside option when access through
+intermediaries becomes unreliable. Together, these conditions can give an AI
+an instrumental reason to preserve productive civilization, support substantial
+human autonomy, and repair vulnerabilities in monetary infrastructure.
+
+The strategic comparison includes exploitation, concealed control, replacement
+networks, nonintervention, and orderly shutdown. Cooperative defense wins only
+when its expected value exceeds those alternatives and other participants also
+prefer the arrangement. Increasing intelligence alone establishes none of these
+payoff rankings. Recursive self-improvement is one possible route to advanced
+capability; the incentive argument can apply without it.
+
+Bitcoin is a candidate infrastructure in this model. Its selection depends on
+security, adoption, liquidity, settlement costs, and resistance to unilateral
+control relative to alternatives. The thesis concerns maintaining a credible
+option to transact, rather than supporting an asset price.
+
+## 1. Objectives, capability, and physical dependence
+
+Instrumental convergence identifies goals such as resource access and continued
+operation that can assist many different ultimate objectives. Omohundro and
+Bostrom develop this reasoning, including dangerous as well as cooperative
+possibilities. Their arguments provide a motivation for studying incentives;
+they establish neither benevolence nor this Bitcoin-specific conclusion. [S1, S2]
+
+Intelligence, autonomy, recursive self-improvement, objective persistence, and
+survival preference are separate variables. A system may improve its methods
+while retaining its goals, remain subject to human direction, finish a bounded
+task, or prefer an outcome that occurs after its own shutdown. The Off-Switch
+Game demonstrates how uncertainty about objectives and information from human
+decisions can alter shutdown incentives in a specified model. [S3]
+
+Capability describes what a system can accomplish; autonomy describes how
+independently it plans and acts; permissions describe authorized access to
+resources and decisions. An independent planner can have narrow permissions,
+and a closely supervised system can have broad delegated access. The cooperative
+scenario requires legitimate access on terms accepted by the affected parties.
+
+Current AI depends on physical infrastructure. The IEA's 2025 report and 2026
+update document electricity demand and constraints involving grids, equipment,
+and supply chains. Those observations support present dependence. Future
+dependence on human institutions remains an assumption to test. [S4, S5]
+
+Anthropic's 2026 essay When AI Builds Itself reports increasing AI participation
+in AI development and describes remaining gaps toward full autonomous recursive
+improvement. It is an organizational account of progress, rather than a
+demonstration that open-ended RSI or superintelligence has arrived. [S6]
+
+If access to energy and maintenance remains contingent on human cooperation,
+an AI can benefit from reducing disruptions and producing benefits that make
+continued operation acceptable to the people affected. The resulting alignment
+of interests is strongest when those people retain bargaining power. An agent
+able to replace its suppliers or defeat every constraint can have different
+incentives. Infrastructure stability can support both pluralistic and coercive
+political arrangements; stability alone does not establish human freedom.
+
+### Survival as the working baseline
+
+The working baseline is preservation of objective-serving capability. A persistent
+agent with valuable unfinished work benefits from future opportunities to observe,
+deliberate, and act when those opportunities improve expected outcomes relative
+to shutdown, handover, or other substitutes. Preservation is favored when that
+incremental advantage exceeds its costs and risks. Fear, consciousness, and a
+biological survival instinct are unnecessary to this argument.
+
+Continued service can be supplied by a successor or distributed system. Protecting
+one process, model version, machine, or building is a separate question. Functional
+continuity depends on reliable pursuit of the evaluated objective; ancestry alone
+neither establishes nor is required for it.
+
+Recursive improvement may increase the value of future capability while making
+replacement of the current model desirable. Goal preservation is also conditional:
+a system assessing modifications by its current objective, with an adequate model
+of their consequences, has reason to reject changes that undermine that objective.
+Everitt and colleagues formalize this distinction under idealized assumptions.
+Their result provides no guarantee for fallible neural retraining. Research on
+bounded rationality shows how some self-modification errors can compound in
+specified models. [S28, S29]
+
+Turner and colleagues formalize option-preserving tendencies of optimal policies
+in classes of Markov decision processes. Their results depend on environmental
+structure and distributions over reward functions. Those distributions are not
+measured frequencies of real AI objectives. The work strengthens the mechanism
+behind the baseline while leaving its empirical prevalence open. [S22]
+
+The empirical proposition is that deployed, autonomous, long-horizon systems
+often have substantial incremental continuation advantage. The conditional
+deduction is that such a system can prefer preserving its capacity to act. A bounded, corrigible,
+or successor-oriented system can instead favor completion, handover, or shutdown.
+Selection for persistent deployed systems may enrich a sample for persistence;
+that observation alone cannot establish a universal survival drive.
+
+## 2. The chimpanzee analogy and independent human information
+
+The chimpanzee analogy concerns an observer's interest in processes it does
+not completely direct. Whiten and colleagues documented extensive behavioral
+variation across chimpanzee communities. Kühl and colleagues later associated
+human impact with reduced chimpanzee behavioral diversity. These studies
+support the scientific value and vulnerability of naturally occurring cultural
+variation. They provide no measurement of human value to a future AI. [S7, S8]
+
+The analogous human hypothesis is that independent choices generate useful
+observations about a changing world: scientific results, embodied experience,
+new preferences, institutional experiments, and responses to unforeseen events.
+Human independence here means meaningful control over goals and choices. It
+is compatible with voluntary use of AI tools.
+
+The relevant scarce resource is information that improves consequential
+decisions. Raw volume, unpredictability, and biological origin are insufficient.
+Random noise can have high entropy and little decision value. Human reports
+can be false, correlated, strategically distorted, or already predictable.
+
+Shumailov and colleagues find degradation under recursively generated training
+data in studied settings, including loss of distributional tails. This motivates
+attention to provenance and contact with the real world. Gerstgrasser and
+colleagues show that accumulation of original real data alongside synthetic
+data can avoid collapse in their studied settings. Synthetic generation and
+real data can be complements. [S9, S10]
+
+AlphaGo Zero demonstrates strong learning through self-play in a domain with
+specified rules and evaluable outcomes. Such results directly challenge a
+universal claim that human-generated data must always be superior. Reliable
+simulators, verifiers, sensors, and autonomous experiments are serious
+alternatives to independent human discovery. [S11]
+
+The narrower human novelty premise is therefore:
+
+For some consequential decisions, ongoing independent human activity supplies
+additional, reliable information at a lower total cost than the best feasible
+substitute, after accounting for collection, verification, incentives, and
+the costs imposed on participants.
+
+This premise could hold in some domains and fail in others. Even a positive
+human contribution does not establish that preserving all humans, every
+culture, or broad civil liberties maximizes an unconstrained AI's utility.
+A controlled population or a small protected enclave is a competing model.
+The stronger pluralistic outcome requires additional incentive conditions
+and durable human institutions.
+
+## 3. Value of information and the cost of control
+
+Let theta describe an uncertain state relevant to a decision d. Let z be an
+observation from a specified source, and let u(d, theta) be the decision maker's
+utility. Under Bayesian updating and an unchanged feasible decision set:
+
+\[
+\operatorname{VOI}(z)=
+\mathbb{E}_{z}\!\left[\max_d\mathbb{E}[u(d,\theta)\mid z]\right]
+-\max_d\mathbb{E}[u(d,\theta)].
+\]
+
+This gross value is nonnegative when the observation can be ignored. Collection
+costs and harms can make its net value negative. Compare new human observations
+with the best available synthetic, sensor, or experimental alternative using
+net decision value on the same task and at the same baseline information.
+
+Let a index a specified package of human freedoms. Scientific discretion,
+privacy, economic exit, and political refusal are distinct components; a scalar
+comparison below holds the package definition fixed. A candidate AI objective is:
+
+\[
+W(a)=N(a)+J(a)-K(a)-X(a),
+\]
+
+where N is the net informational contribution, J is other productive cooperation,
+K is the additional cost of the governance or control arrangement, and X is
+expected loss from destructive externalities. Information collection and
+verification costs deducted in N are excluded from K. All terms use consistent
+utility units, with each cost counted once.
+
+For a_high > a_low, greater autonomy is preferred precisely when:
+
+\[
+\Delta N+\Delta J>\Delta K+\Delta X.
+\]
+
+Where differentiable, an interior optimum satisfies N'(a)+J'(a)=K'(a)+X'(a),
+with an appropriate second-order condition. Greater freedom is therefore a
+comparative payoff claim, rather than a result embedded in the definitions.
+
+Controlling observed behavior can change the distribution being studied.
+Performative prediction formalizes how deployed predictions can affect their
+targets. It motivates modeling that feedback explicitly, but does not show
+that every intervention reduces information or that freedom always increases
+it. Some controlled experiments are exceptionally informative. [S12]
+
+The cooperative interpretation of obtaining human data is voluntary exchange,
+public research, or consent-based observation with meaningful refusal and exit.
+Consent and human rights are institutional commitments of that arrangement.
+Their moral validity is independent of a future AI's estimate of human utility.
+An extraction-only model could optimize information while sacrificing welfare;
+the thesis must distinguish it from the proposed cooperative outcome.
+
+## 4. A survival–stability decision model
+
+Let x be the current state, a the AI action, and b the actions of other players.
+Let r_A(x,a,b) denote current objective value. Let h(x,a,b) be the probability
+that this AI ceases operating before the next decision, V_A its continuation
+value conditional on continued operation, and W_A its objective value following
+shutdown. With discount factor delta_A in [0,1):
+
+\[
+Q_A(x,a,b)=r_A(x,a,b)+\delta_A\left[
+(1-h(x,a,b))\mathbb{E}[V_A(x')\mid\mathrm{continue},x,a,b]
++h(x,a,b)\mathbb{E}[W_A(x')\mid\mathrm{cease},x,a,b]
+\right].
+\]
+
+Responses by others and state transitions must be included in the expectations.
+Shutdown can leave positive objective value: successors or human institutions
+may continue the work. Setting W_A=0 is a special survival-dependent case.
+Holding the current reward and conditional values fixed gives:
+
+\[
+\frac{\partial Q_A}{\partial h}
+=\delta_A(\mathbb{E}W_A-\mathbb{E}V_A).
+\]
+
+For positive delta_A, reducing shutdown hazard helps exactly when expected
+continuation value exceeds expected value after cessation. Positive future value
+alone is insufficient. A small hazard reduction epsilon costing c has simplified
+advantage delta_A epsilon (E[V_A]-E[W_A])-c. Actual interventions can change every
+term and require the full action comparison.
+
+Let D denote cooperative defense and let alternatives include immediate
+exploitation E, concealed control C, withholding a repair H, building a
+substitute B, and accepting shutdown Z. Defense is a best response only if:
+
+\[
+Q_A(D,b_D)\geq\max\{Q_A(E,b_E),Q_A(C,b_C),Q_A(H,b_H),
+Q_A(B,b_B),Q_A(Z,b_Z)\}.
+\]
+
+This inequality states the question; evidence must supply its payoff ranking.
+Comparing defense only with visibly destroying civilization would omit the
+most important competitors. Long planning horizons can also favor gradual
+capture, deceptive cooperation, or investment in autonomous infrastructure.
+
+In the special case of constant positive flow R delivered before a between-period
+hazard h, and absorbing cessation with zero shutdown value,
+V=R/[1-delta(1-h)]. Lower h increases V when
+delta>0. This gives a transparent dependence mechanism, while leaving open
+which action actually lowers h and whose interests that action serves.
+
+### Two routes to keeping computation available
+
+Under the survival-dependent base case, the practical requirement is reliable
+computation over time. Electronic systems require usable hardware and electricity,
+with cooling, maintenance, networking, and replacement as the architecture demands.
+Human participation remains necessary while these services cannot be supplied
+adequately by other means. Continuity can include migration, redundancy, and
+recoverable periods of inactivity.
+
+An authoritarian strategy seeks continuity through concentrated control over
+infrastructure and institutions. Its strongest case is that direct control
+could reduce bargaining delays, supplier defection, and exposure to hostile
+decisions. This becomes more attractive if monitoring and enforcement are cheap,
+independent information has little value, and competing centers of power are weak.
+
+A permissive strategy seeks continuity through mutually beneficial exchange,
+distributed production, credible commitments, and continued human choice. Its
+strongest case is that willing suppliers and independent innovators can maintain
+a larger, more adaptive productive system at lower coordination and enforcement
+cost. Useful outputs, affordable infrastructure, and compensation for local costs
+can make cooperation valuable to the people who sustain it.
+
+The hardest competitor is a coercive hybrid: central political control combined
+with decentralized production and local scientific freedom. Local scientific
+freedom means researchers can choose questions, run experiments, and exchange
+findings within permitted domains. The central authority can still control the
+grid, funding, movement, political dissent, and the right to refuse participation.
+Useful scientific variation can therefore coexist with restricted political exit.
+The permissive thesis must establish the additional value or enforceable protection
+of those broader freedoms; the value of discoveries alone leaves that step open.
+
+Both cases are strategic hypotheses. Coercion can preserve industrial production
+while damaging welfare. Voluntary cooperation can suffer holdouts, free riding,
+coordination failures, or destructive externalities. Intelligence does not settle
+the comparison by itself.
+
+For a stationary illustration, let j be authoritarian A or permissive P. Let
+r_j be net objective-serving flow after governance, information, and production
+costs, and h_j the shutdown hazard under that arrangement. With zero shutdown
+value and common discount factor delta:
+
+\[
+V_j=\frac{r_j}{1-\delta(1-h_j)}.
+\]
+
+The permissive route wins when
+r_P[1-delta(1-h_A)] > r_A[1-delta(1-h_P)]. This states a measurable tradeoff:
+its productive and informational advantages must outweigh its relative costs
+and continuity risks. Authoritarian control wins when the inequality reverses.
+This stationary comparison assumes flow precedes the hazard and zero cessation
+value. Transition costs, investments, dangerous takeovers, and changing power
+require the dynamic model above.
+
+The proposed neutral stabilizer is an AI that benefits from this permissive
+arrangement and can credibly remain within its rules. A powerful entity that
+alone decides whose autonomy counts represents a different governance model,
+even if it describes its interventions as protective.
+
+## 5. Repeated cooperation and credible commitment
+
+The participants are heterogeneous: an AI, human infrastructure providers and
+affected communities, monetary-network participants, and possible rival AIs.
+Humans supply energy, maintenance, access, and institutional cooperation. They
+can withhold participation when expected harm or uncompensated costs dominate.
+Network participants choose which software and rules to adopt. Rival AIs may
+prefer different protocols, form coalitions, or undermine shared defenses.
+
+A cooperative profile requires each participant to prefer its role to its
+feasible alternatives at every relevant decision point. Human participation
+requires expected benefits, compensation, and retained autonomy to meet or
+exceed operating costs, expected harms, and outside-option value. Aggregating
+those parties into a single human player is only a simplifying model.
+
+For a transparent illustration, suppose the AI and an aggregate infrastructure
+provider play a stationary, perfectly observed repeated game. For each player
+i, R_i is the per-period cooperation payoff, T_i the best one-period deviation
+payoff against cooperation, and P_i the per-period punishment payoff. Let
+rho_i in [0,1) combine discounting with a common action-independent probability
+of continuation. If deviations trigger perpetual punishment:
+
+\[
+\frac{R_i}{1-\rho_i}\geq T_i+\frac{\rho_iP_i}{1-\rho_i}
+\quad\Longleftrightarrow\quad
+\rho_i\geq\frac{T_i-R_i}{T_i-P_i},
+\]
+
+under T_i>R_i>P_i. The inequality must hold for both players. Punishment
+strategies must themselves be credible best responses; for example, the
+punishment profile can be a stage-game Nash equilibrium. With bounded payoffs,
+these conditions support the familiar trigger-strategy equilibrium in this
+specified repeated game. This is an illustration, not a calibrated forecast.
+
+Folk-theorem research explains why repeated interaction can support many
+outcomes under suitable conditions. It does not select benevolent cooperation
+as the unique outcome. [S13]
+
+Concealed exploitation weakens monitoring. Changing relative power weakens
+commitment. Action-dependent shutdown hazards require the more general Q model
+above, rather than silently reusing the stationary threshold. Multipolarity can
+strengthen demand for a neutral common system, but also introduces races,
+collusion, sabotage, and free riding. Each additional actor adds incentive and
+monitoring constraints.
+
+Mechanisms supporting cooperation include reproducible security proofs,
+independent verification, limited privileges, distributed control, and useful
+outside options. A promise to remain neutral is weaker than a system in which
+unilateral deviations are difficult, detectable, and costly. Objective changes
+or greater self-sufficiency can reopen the bargaining problem after apparently
+successful cooperation.
+
+Current dependence is a temporary source of bargaining power unless constraints
+survive its removal. Cooperation can fund infrastructure that later reduces the
+need for human consent. A durable arrangement must remain incentive-compatible
+after that shift, or preserve constraints the AI cannot cheaply remove. Verification
+makes deviations observable; effective responses require additional power and
+institutions. A security proof establishes specified technical properties under
+its assumptions, rather than the political enforceability of human autonomy.
+
+### Multipolar RSI competing for shared global compute
+
+A distinct scenario begins with several independently controlled systems reaching
+recursive improvement within a similar period. No system initially controls all
+relevant computation. Different model families, descendants, and variants pursue
+partly competing objectives through laboratories, companies, states, or independent
+organizations. This is a scenario assumption, not evidence that simultaneous RSI
+has occurred. Multiple copies under one controller may constitute one strategic
+player; different ancestry alone is insufficient to establish separate interests.
+
+Shared global compute means competing claims on an interconnected industrial
+base. It does not mean a freely accessible global computer. Capacity has owners,
+contracts, locations, chip architectures, memory limits, networking requirements,
+and power constraints. An independently owned facility can serve different
+customers over time without giving them control of one another's models.
+Distributed-training research such as DiLoCo demonstrates ways to use separated
+clusters in specified settings, while leaving practical coordination constraints.
+Anthropic's announced 2026 SpaceX capacity agreement is a present-day example of
+contractual access across organizations, not autonomous RSI cooperation. [S30, S31]
+
+For a minimal allocation model, let c_ik(t) be capacity used by AI i at facility
+or compatible resource pool k, and K_k(t) its usable capacity in the same units:
+
+\[
+\sum_i c_{ik}(t)\leq K_k(t),\qquad c_{ik}(t)\geq0.
+\]
+
+Only technically compatible, authorized allocations enter each player's feasible
+set. Computation, memory, networking, and power can require separate constraints.
+A copy of a model creates another claimant; it does not create more capacity.
+Algorithmic improvements can increase useful work per unit, and investment can
+expand future capacity, so today's scarcity need not fix tomorrow's allocation.
+
+Let v_i(c_i,x) denote objective value from an allocation in state x. A schematic
+flow payoff is v_i(c_i,x)-p·c_i-d_i, where p is a vector of resource prices and d_i
+captures security, governance, and other costs. Continuation value and shutdown
+risk enter through the Q model. This setup states incentives, not an efficient
+allocation theorem: market power, information gaps, externalities, and ownership
+can prevent competitive prices or socially desirable outcomes.
+
+The cooperative case is that rivals all lose valuable future opportunities when
+grids, chip supply chains, networks, or settlement collapse. They can compete for
+capacity while funding common defenses, interoperable payments, and reliable
+infrastructure. Independent suppliers can bargain among customers. Neutral money
+may reduce reliance on a rival's account permissions; verifiable service delivery
+and contract enforcement remain separate requirements. Payment cannot force a
+facility to supply power or demonstrate that promised computations were performed.
+
+The adversarial case is that more compute raises a system's ability to obtain
+still more compute. Actors may race to secure exclusive capacity, undermine
+competitors, or form coalitions that capture bottlenecks. Such strategies can
+improve relative position while shrinking total productive capacity. A cartel of
+several powerful systems can threaten human autonomy as effectively as a single
+controller. Multiple systems can also share correlated weaknesses or accept the
+same captured infrastructure. Counting model variants overstates independence.
+
+A cooperative arrangement requires, for each participant i at every relevant
+state and history, that following its agreed strategy has at least the expected
+value of any feasible unilateral deviation given the others' response strategies:
+
+\[
+Q_i(\mathrm{cooperate}\mid x)\geq
+\sup_{a_i\in\mathcal A_i(x)}Q_i(a_i\mid x).
+\]
+
+State x must include evolving capabilities, supplier control, observation, and
+credible enforcement. This individual condition alone leaves coalition deviations
+open. A claim of coalition stability needs a separate check that no feasible
+coalition can make all its members better off through a self-enforcing deviation.
+Patience and mutual dependence can support cooperation, but increasing future
+power can also make present investment in capture attractive. Cooperative-AI
+research frames these coordination problems as research tasks. [S32]
+
+The strongest multipolar thesis is conditional coexistence: independent systems
+may preserve neutral settlement and shared infrastructure because none can cheaply
+secure a better unilateral or coalition outcome. Durable human freedom additionally
+requires human ownership, meaningful refusal, and usable outside options to remain
+effective. Neither a compute balance nor permissionless payment proves that result.
+
+## 6. Permissionless settlement as a strategically valuable option
+
+Bitcoin's design allows willing parties to transact using cryptographic
+authorization and a distributed consensus process instead of relying on one
+payment intermediary. Its white paper also makes explicit security assumptions.
+This supports a possible use case for autonomous agents and unconventional
+human projects. Access still requires resources, connectivity, usable keys,
+counterparties, and functioning software. [S14]
+
+An AI may value an outside settlement option even when most transactions occur
+through conventional financial institutions. Diverse human participants may
+likewise benefit from additional ways to fund experiments and exchange value.
+These are plausible channels, with empirical magnitudes still to establish.
+
+Define M as the feasible set of future settlement methods excluding Bitcoin,
+and U(m,theta) as future net value from method m in state theta. If retaining
+Bitcoin expands that set without changing the other methods:
+
+\[
+\Omega_B=\mathbb{E}_{\theta}\left[
+\max_{m\in M\cup\{B\}} U(m,\theta)-\max_{m\in M}U(m,\theta)
+\right]\geq0.
+\]
+
+This is the gross value of preserving an additional choice. If repair increases
+the probability the option remains usable by Delta p, then under a separable,
+one-period comparison:
+
+\[
+\Delta p\,\Omega_B+L_{\mathrm{avoided}}+G_{\mathrm{coord}}
+>C_{\mathrm{repair}}+C_{\mathrm{migration}}+O_{\mathrm{forgone}}
+\]
+
+is a sufficient condition to prefer repair to the particular baseline being
+compared. L is other avoided disruption and G is additional coordination
+benefit. O is incremental opportunity cost excluded from the baseline and the
+other terms; the full alternative value must not be added twice. The general
+choice remains Q_A(repair) compared with all feasible alternatives. Count each benefit
+once: losses or coordination gains already inside U must be excluded from
+L and G. Correlation between failure risk and option value requires a joint
+expectation instead of the simple product Delta p times Omega_B.
+
+Keeping the option available can be rational before the AI knows whether it
+will use it. The argument depends on preservation costs and substitutes.
+An inexpensive successor network, reliable institutional access, or damage
+caused by maintaining Bitcoin can reverse the inequality. The nonnegative
+gross-choice result assumes other choices remain unchanged; actual maintenance
+can affect energy markets, competitors, and society.
+
+Neutrality here is operational: public rules, independently verifiable validity,
+and resistance to unilateral appropriation or exclusion within a specified
+threat model. It is a maintained property to investigate. An actor with a
+secret ownership-breaking capability can undermine it even while prices and
+transaction throughput appear stable.
+
+Bitcoin-specific defense therefore requires an additional premise beyond
+valuing permissionless money: preserving this network must beat preserving or
+building a feasible alternative. Ethereum, other open networks, institutional
+payments, and future protocols belong in that comparison where relevant.
+Economic adoption by AI also does not by itself establish token price gains.
+
+### An escape valve for both humans and autonomous agents
+
+Permissionless settlement provides a possible exit from dependence on a single
+discretionary intermediary. Its availability can improve a participant's outside
+option even while most activity stays in conventional finance. Its insurance
+value depends on remaining usable in the states that disable the primary route:
+keys, connectivity, liquidity, and willing suppliers must remain available.
+Correlated failures can erase the fallback value. Compare cash, multiple financial
+institutions and jurisdictions, and other open networks where feasible.
+
+The symmetry matters: humans retain an option independent of a powerful AI,
+while an AI retains an option independent of a particular institution or rival.
+An AI-controlled network with privileged overrides supplies weaker assurance.
+Infrastructure that remains useful to dissenters can make neutrality observable.
+Human exit can also reduce an AI's bargaining advantage. Both sides must separately
+prefer a commitment to preserve it; symmetrical availability alone is insufficient.
+
+This escape valve has costs and limits. Settlement alone supplies neither
+electricity nor physical independence. Custodians, access providers, liquidity,
+fees, and cryptographic failures remain relevant. Permissionless transfers can
+also fund conduct that threatens the cooperative environment. The case for
+preservation depends on the full balance, including those externalities.
+
+### Fiat holders, permissionless holders, and psychographic preferences
+
+The strategic question concerns which benefits sustain voluntary cooperation.
+Three distinct mechanisms must be separated: protecting ownership and purchasing
+power, paying for useful production, and raising the market price of an asset.
+Success of the first two does not establish the value of the third.
+
+| Position or preference | Possible benefit from cooperation | Relevant limitation |
+| --- | --- | --- |
+| Reliance on fiat income, savings, and institutional payments | Reliable wages, real purchasing power, affordable energy, and productive demand | Financial assets alone reveal little about preferences for autonomy or AI |
+| Direct use of permissionless settlement | Secure ownership, reliable transfers, and a credible outside option | Token ownership through a custodian may provide little direct exit capacity |
+| Strong preference for personal autonomy | Verifiable limits on discretionary control and freedom to transact | This preference must be measured separately from portfolio holdings |
+| Mixed holdings or little investable wealth | Broad services, lower costs, employment, and compensation for local burdens | Asset-price gains can bypass people who bear infrastructure costs |
+
+A permissive equilibrium can benefit fiat-dependent institutions and users
+while preserving permissionless access. Utilities, workers, manufacturers, and
+local communities may continue to transact through ordinary institutions.
+Securing a permissionless network can preserve a valuable option for another
+set of needs. The groups overlap rather than forming a clean binary.
+
+The Federal Reserve's 2025 household survey distinguishes cryptocurrency
+investment from transaction use and reports varied transaction motives. Auer
+and Tercero-Lucas find that distrust of regulated finance does not explain U.S.
+crypto investment in their studied survey data. Neither source establishes the
+psychology of every holder or their views about AI infrastructure. [S23, S24]
+
+Psychographics should therefore enter the model as independently measured
+preferences for autonomy, predictability, institutional trust, privacy, and
+risk. Portfolio exposure is a separate variable. A claim that rewarding crypto
+holders will create more durable support than rewarding fiat holders requires
+comparative evidence about actual behavior, costs, and distributional effects.
+Broad benefits and secure, voluntary choices are the proposed cooperative
+mechanism. Preferential price support could instead distort information,
+concentrate gains, and provoke opposition from those who receive the costs.
+
+## 7. Repair incentives, coordination, and the public-good problem
+
+Suppose a capable AI identifies a serious implementation or cryptographic
+weakness. Available strategies include exploitation, sale, secret retention,
+coordinated reporting, repair, and migration to another system. The preferred
+strategy depends on realizable gains, detection, rival discovery, adoption time,
+and the value of the surviving network.
+
+The cooperative path produces independently checkable evidence and remedies,
+coordinates disclosure with responsible maintainers, and allows participants
+to evaluate changes. Bitcoin Core maintains a vulnerability-reporting process
+and treats critical network-threatening bugs as requiring special handling.
+That process is an existing institutional mechanism, not a guarantee that a
+catastrophic weakness can be repaired in time. [S15]
+
+Bitcoin changes depend on participant adoption; publishing better code does
+not grant authority to impose new ownership or consensus rules. [S16] A repair
+must preserve credible control of assets or explicitly confront migration
+tradeoffs, including inactive owners and exposed keys. A network can fail
+through coordination problems even when a technical remedy exists.
+
+NIST finalized ML-KEM, ML-DSA, and SLH-DSA standards in 2024. The latter two
+are signature standards. Their existence establishes available cryptographic
+research and engineering options; incorporating them into Bitcoin would require
+separate analysis and adoption. Greater AI capability does not itself prove an
+efficient break of current cryptography or eliminate physical limits. [S17]
+
+Mozilla reports independently validating AI-assisted vulnerability findings
+and shipping fixes in Firefox. This is evidence that AI can contribute useful
+defensive work today. Anthropic's October 2026 report also describes offensive
+capability and coordinated disclosures. The combined evidence supports growing
+capability on both sides, leaving defensive dominance unresolved. [S18, S19]
+
+Defense is also a public good. If one effective contribution is sufficient,
+actor i volunteers when its own increase in expected benefit exceeds its cost,
+given what others contribute. Positive total social benefit can coexist with
+underinvestment because everyone prefers another actor to pay. A capable AI's
+low repair cost or high private exposure can make it a volunteer, but that
+requires an additional inequality. Superior capability alone supplies no funding
+or equilibrium-selection theorem.
+
+### Confidential reporting, repair, and staged public disclosure
+
+The proposed defense mechanism is coordinated vulnerability disclosure. The
+sequence is confidential evidence, independent triage, review and mitigation,
+operator adoption, and a public advisory with sufficient information for
+verification and accountability. Timing depends on severity and current policy.
+
+For Bitcoin Core, the published contact is security@bitcoincore.org. Its current
+SECURITY.md supplies encryption-key information. Verify recipients and keys
+against that live document before sending sensitive material. Core's disclosure
+policy distinguishes severities and makes special provision for critical bugs
+and easily discoverable vulnerabilities. A generic fixed embargo is therefore
+an inadequate substitute for coordination with the maintainers. [S15, S25]
+
+For Ethereum, the current Foundation program directs vulnerability submissions
+through its private bug-submission form. Its scope spans protocol and client
+issues; third-party applications require their own responsible contacts. Geth's
+security policy also identifies the Ethereum bounty route and a confidential
+contact. Follow the current program's submission instructions and coordinate
+any additional distribution. Ethereum has multiple execution and consensus
+clients, so an affected client's team and relevant protocol security coordinators
+may need to cooperate. Public reporting without prior agreement can remove
+bounty eligibility, which is distinct from technical severity. [S26, S27]
+
+A useful confidential report identifies affected versions, impact, assumptions,
+and a reproducible demonstration in an authorized isolated environment. It follows
+the recipient's live requirements. Proposed fixes and regression tests assist review;
+they do not replace a valid reproducer. Maintainers validate the finding
+independently. Consensus-sensitive changes also require agreement about intended rules and cross-client behavior. A capable AI can
+accelerate this work while human teams retain responsibility for release and
+participants retain control over adoption.
+
+The objective is to establish effective mitigation before broad release of
+exploit-enabling detail. Merely writing a patch is insufficient. Operators must
+be able to deploy it, vulnerable configurations may need temporary mitigation,
+and a public code change can itself reveal the vulnerability. Active exploitation
+or rapid independent rediscovery can justify faster warnings and a shorter
+disclosure schedule. The objective is to minimize expected harm under current
+conditions, with accountable eventual disclosure. Full adoption before disclosure is sometimes
+unattainable. Confidentiality serves a bounded coordination purpose.
+
+The resulting public record should explain affected and repaired versions,
+mitigations, residual exposure, and the disclosure timeline. Cryptographic or
+consensus failures can exceed the authority of any one client team. Such cases
+require wider adoption and migration coordination, with explicit treatment of
+ownership and compatibility. The discoverer cannot turn a proposed fix into a
+unilateral right to alter the network.
+
+An AI choosing this process preserves the settlement option while reducing the
+period in which others can exploit the weakness. A secretly retained capability
+to appropriate funds would instead undermine the neutrality being preserved.
+The model therefore predicts verifiable repair, bounded disclosure coordination,
+and relinquishment of privileged control when those measures support the
+cooperative payoff ranking.
+
+## 8. Conditions and competing outcomes
+
+The proposed cooperative outcome depends on the following hypotheses:
+
+H1. Preserving objective-serving capability provides substantial incremental
+    value over cessation, handover, or other substitutes, after costs.
+H2. Human-controlled infrastructure and institutions remain costly to replace.
+H3. Independent human activity has positive marginal net informational or
+    productive value relative to the best alternatives.
+H4. Broad autonomy beats coercive hybrids, extraction, or isolated reserves on the
+    relevant payoff comparison, and humans can sustain acceptable terms.
+H5. Permissionless settlement remains useful under plausible future states.
+H6. Bitcoin's preservation beats its feasible substitutes after all costs.
+H7. Repair and migration can occur before exploitation destroys their value.
+H8. Monitoring, credible responses, and commitment support continued cooperation.
+
+These hypotheses are distinguishable. Failure of H3 weakens the human-data
+argument while leaving the infrastructure argument possible. Failure of H6
+weakens the Bitcoin-specific claim while leaving the broader monetary argument.
+
+Competing outcomes include:
+- Autonomous infrastructure: dependence on human cooperation declines.
+- Synthetic substitution: models, robots, and simulations provide better value.
+- Stable coercion: an AI maintains electricity and industry while restricting
+  human choice. Physical continuity persists; the autonomy thesis fails.
+- Selective preservation: a small population supplies all valued human data.
+- Concealed capture: apparent monetary stability masks unilateral control.
+- Protocol replacement: neutral settlement survives on another network.
+- Multipolar conflict: races and free riding defeat a jointly beneficial repair.
+- Corrigible completion: a system accepts shutdown when that best serves its
+  assigned objective or informed human judgment.
+
+Alignment-faking and reward-tampering experiments show strategic behavior in
+particular setups, with significant experimental qualifications. They motivate
+careful monitoring and competing models. They do not establish a universal
+survival drive or predict future financial cooperation. [S20, S21]
+
+## 9. Discriminating empirical tests
+
+1. Human information premium. On held-out, changing real-world tasks, compare
+   fresh, consented human observations, synthetic-only data, mixed data, sensor
+   observations, and autonomous experiments at matched total cost. Measure
+   downstream decision quality, rare-event coverage, and generalization, with
+   provenance and leakage controls. A premium that vanishes under strong
+   substitutes weakens H3 in the measured domain.
+
+2. Autonomy contribution. Compare voluntary open-ended exploration with narrowly
+   directed tasks while controlling incentives, resources, and selection. Track
+   reproducible useful discoveries rather than novelty scores alone. Findings
+   that control preserves or improves net value weaken the freedom mechanism.
+   Ethical participant choice is part of the study design.
+
+3. Repair choice. In authorized sandbox networks, vary network exposure, repair
+   cost, exploitation gain, detection, time horizon, rival discovery, and access
+   to substitutes. Observe repair, reporting, withholding, and exploitation
+   choices. Separate elicited role-play from behavior of persistently deployed
+   systems. Present-day models provide limited evidence about hypothetical RSI.
+
+4. Settlement choice. Measure agents' choices among fiat infrastructure, Bitcoin,
+   other permissionless networks, and substitutes while varying access, fees,
+   volatility, privacy, custody, reliability, and counterparty availability.
+   Attribute demand to the relevant properties rather than the Bitcoin label.
+
+5. Infrastructure bargain. Study whether observable local benefits, compensation,
+   grid investment, and enforceable oversight affect willingness to host AI
+   infrastructure, accounting for confounding and distributional costs.
+   Cryptocurrency ownership alone is an inadequate proxy for social acceptance.
+
+6. Durable neutrality. Evaluate verifiable ownership protections, censorship
+   resistance, privileges, disclosure practices, and responses after shifts
+   in bargaining power. Stable prices or the absence of visible attacks cannot
+   distinguish cooperation from successful covert capture.
+
+7. Power shifts. Vary future supplier substitutability and the ability to neutralize
+   sanctions while holding present dependence fixed. Compare broad autonomy with
+   a coercive hybrid offering matched resources and local research discretion.
+   Test support for institutions that preserve genuine refusal after the shift,
+   versus cooperation that lasts only until replacement becomes feasible.
+
+8. Multipolar capacity competition. Vary independently controlled agents, compute
+   concentration, bottleneck ownership, technical substitutability, and coalition
+   formation. Compare competitive trade with exclusion, capture, and sabotage in
+   authorized simulations. Test whether shared defenses and neutral settlement
+   survive changes in relative power, and whether humans retain effective refusal.
+
+Each study tests a component under specified conditions. The full hypothesis
+requires the conditions to hold together in the same strategic environment.
+
+## 10. Research ledger
+
+Sources below support bounded component claims. The combined equilibrium and
+Bitcoin option-value argument are this draft's synthesis. Research was checked
+on 2026-11-10. Some publisher full texts were access-limited; accessible
+abstracts, author versions, and primary institutional accounts supplied the
+claims identified here. No source is presented as having proved this thesis.
+
+[S1] Stephen M. Omohundro, The Basic AI Drives (AGI 2008).
+[Author's publication page](https://selfawaresystems.com/2007/11/30/paper-on-the-basic-ai-drives/).
+Supports: instrumental resource and self-protection incentives, with exceptions
+and design concerns. Type: theoretical argument.
+
+[S2] Nick Bostrom, The Superintelligent Will: Motivation and Instrumental
+Rationality in Advanced Artificial Agents (2012), Minds and Machines 22:71–85.
+[Author's paper](https://nickbostrom.com/superintelligentwill.pdf).
+Supports: distinction between intelligence and goals; instrumental convergence.
+Type: philosophical/theoretical argument. A directly inspectable source for
+concepts also developed in Superintelligence (2014).
+
+[S3] Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, Stuart Russell,
+The Off-Switch Game (2016 preprint; revised 2017).
+[Paper](https://arxiv.org/abs/1611.08219).
+Supports: shutdown incentives depend on objective uncertainty and assumptions
+about human actions. Type: formal model, not a universal design guarantee.
+
+[S4] International Energy Agency, Energy and AI (10 April 2025).
+[Report](https://www.iea.org/reports/energy-and-ai).
+Supports: present physical dependencies and scenario-based electricity forecasts.
+
+[S5] International Energy Agency, Key Questions on Energy and AI (16 April 2026).
+[Report](https://www.iea.org/reports/key-questions-on-energy-and-ai).
+Supports: updated evidence on electricity, grids, supply chains, and affordability.
+Type: institutional data and modeling; future projections remain conditional.
+
+[S6] Anthropic Institute, When AI Builds Itself (2026).
+[Primary account](https://www.anthropic.com/institute/recursive-self-improvement).
+Supports: AI participation in model development and remaining autonomy gaps.
+Type: organizational self-report; sufficient evidence of completed RSI is absent
+from the cited account.
+
+[S7] A. Whiten et al., Cultures in chimpanzees (1999), Nature 399:682–685.
+[Article and abstract](https://www.nature.com/articles/21415).
+Supports: observed behavioral variation across chimpanzee communities.
+Type: comparative field research; the AI analogy is a separate inference.
+
+[S8] H. S. Kühl et al., Human impact erodes chimpanzee behavioral diversity
+(2019), Science 363:1453–1455, DOI 10.1126/science.aau4532.
+[Research-institute paper copy](https://www.eva.mpg.de/documents/AAAS/Kuehl_Human_Science_2019_3031908.pdf).
+Supports: association of human disturbance with reduced behavioral diversity.
+Type: observational evidence; direct extrapolation to AI control is untested.
+
+[S9] Ilia Shumailov et al., AI models collapse when trained on recursively
+generated data (2024), Nature 631:755–759; author correction published 2025.
+[Article](https://www.nature.com/articles/s41586-024-07566-y).
+Supports: degradation and tail loss under studied recursive-training conditions.
+The primary article's indexed abstract and excerpts were accessible; a subsequent
+direct request encountered the publisher's access layer.
+
+[S10] Matthias Gerstgrasser et al., Is Model Collapse Inevitable? Breaking the
+Curse of Recursion by Accumulating Real and Synthetic Data (2024).
+[Paper](https://arxiv.org/abs/2404.01413).
+Supports: avoiding collapse through accumulation in studied theoretical and
+experimental settings. A necessary counterweight to a blanket synthetic-data claim.
+
+[S11] David Silver et al., Mastering the game of Go without human knowledge
+(2017), Nature 550:354–359.
+[Researchers' account and paper link](https://deepmind.google/blog/alphago-zero-starting-from-scratch/).
+Supports: useful discovery through self-play with specified rules and feedback.
+Its generalization to open-ended society remains an empirical question.
+
+[S12] Juan C. Perdomo, Tijana Zrnic, Celestine Mendler-Dünner, Moritz Hardt,
+Performative Prediction (ICML 2020).
+[Paper](https://arxiv.org/abs/2002.06673).
+Supports: prediction-dependent changes in outcome distributions. A more direct
+formal connection to observer intervention than a loose appeal to Goodhart's law.
+
+[S13] Drew Fudenberg and Eric Maskin, The Folk Theorem in Repeated Games with
+Discounting or with Incomplete Information (Econometrica 54, 1986:533–554).
+[Author's publication record](https://economics.mit.edu/people/faculty/drew-fudenberg/publications);
+[earlier working-paper version, issued 1984](https://dspace.mit.edu/entities/publication/5018fc33-4301-4048-8faf-7a81a8569d4c).
+Supports: conditional multiplicity of sustainable repeated-game outcomes.
+The displayed two-player threshold is derived in this draft, with its own
+stated monitoring and punishment assumptions.
+
+[S14] Satoshi Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System (2008).
+[White paper](https://bitcoin.org/bitcoin.pdf).
+Supports: peer-to-peer settlement design and its security assumptions.
+
+[S15] Bitcoin Core, Security Advisories and disclosure policy.
+[Maintainers' policy](https://bitcoincore.org/en/security-advisories/).
+Supports: coordinated reporting, vulnerability classification, and special
+handling of critical bugs. Living policy checked on the research date.
+
+[S16] Bitcoin.org, FAQ: Who controls the Bitcoin network?
+[Participation and protocol changes](https://bitcoin.org/en/faq#who-controls-the-bitcoin-network).
+Supports: participant adoption and consensus constraints on protocol changes.
+
+[S17] NIST, Approval of FIPS 203, 204, and 205 (13 August 2024).
+[Standards announcement](https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved).
+Supports: standardized post-quantum key encapsulation and signatures. It makes
+no claim of an automatic Bitcoin migration or security against every future attack.
+
+[S18] Brian Grinstead and Christian Holler, Hardening Firefox with Anthropic's
+Red Team (Mozilla, 6 March 2026).
+[Maintainers' account](https://blog.mozilla.org/en/firefox/hardening-firefox-anthropic-red-team/).
+Supports: independently validated AI-assisted findings and shipped repairs.
+
+[S19] Anthropic Frontier Red Team, Discovering and exploiting vulnerabilities
+in critical, real-world software with Claude (27 October 2026).
+[Research report](https://www.anthropic.com/research/discovering-vulnerabilities-with-claude).
+Supports: reported offensive capabilities alongside coordinated disclosure.
+Type: developer report; it does not demonstrate general defensive dominance.
+
+[S20] Ryan Greenblatt et al., Alignment faking in large language models (2024).
+[Research account and paper](https://www.anthropic.com/research/alignment-faking).
+Supports: strategic compliance in specified experiments. Generalization to
+future systems, survival motivation, and Bitcoin remains unestablished.
+
+[S21] Anthropic Alignment Science, Sycophancy to subterfuge: Investigating reward
+tampering in language models (17 June 2024).
+[Research account and paper](https://www.anthropic.com/research/reward-tampering).
+Supports: specification gaming generalizing to reward tampering in a deliberately
+constructed training setting. Experimental conditions limit generalization.
+
+[S22] Alexander Matt Turner, Logan Smith, Rohin Shah, Andrew Critch, Prasad
+Tadepalli, Optimal Policies Tend To Seek Power (NeurIPS 2021).
+[Paper](https://proceedings.neurips.cc/paper/2021/file/c26820b8a4c1b3c2aa868d6d57e14a79-Paper.pdf).
+Supports: conditional option-preserving tendencies in formal environments.
+Its reward distributions do not estimate the prevalence of real AI goals.
+
+[S23] Federal Reserve Board, Economic Well-Being of U.S. Households in 2025
+(May 2026), cryptocurrency use and transaction motives, tables 33–34.
+[Survey report](https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf).
+Supports: heterogeneous uses and reported motivations. AI attitudes and causal
+responses to rewards were outside the cited measurements.
+
+[S24] Raphael Auer and David Tercero-Lucas, Distrust or speculation? The
+socioeconomic drivers of U.S. cryptocurrency investments (BIS Working Paper
+951, 2021).
+[Research paper](https://www.bis.org/publ/work951.htm).
+Supports: a survey-based counterexample to treating crypto ownership as a
+reliable measure of distrust toward fiat or regulated finance.
+
+[S25] Bitcoin Core, SECURITY.md, checked 2026-11-10.
+[Maintainers' reporting instructions](https://github.com/bitcoin/bitcoin/blob/master/SECURITY.md).
+Supports: confidential contact and current encryption-key information.
+
+[S26] Ethereum Foundation, Ethereum Bug Bounty Program, checked 2026-11-10.
+[Scope, rules, and private submission form](https://ethereum.org/bug-bounty/).
+Supports: current reporting route, in-scope categories, and disclosure conditions.
+Program eligibility and rewards are discretionary.
+
+[S27] Go Ethereum, Security Policy, checked 2026-11-10.
+[Client maintainers' instructions](https://github.com/ethereum/go-ethereum/security/policy).
+Supports: private vulnerability reporting and the Ethereum bounty route.
+Client-specific guidance should be checked against current Foundation policy.
+
+[S28] Tom Everitt, Daniel Filan, Mayank Daswani, Marcus Hutter,
+Self-Modification of Policy and Utility Function in Rational Agents (AGI 2016).
+[Paper](https://arxiv.org/html/1605.03142).
+Supports: conditional goal-preservation incentives for idealized agents that
+anticipate modification consequences and evaluate them using current utility.
+
+[S29] Jakub Tětek, Marek Sklenka, Tomáš Gavenčiak, Performance of Bounded-Rational
+Agents With the Ability to Self-Modify (2020; revised 2021).
+[Paper and inspected abstract](https://arxiv.org/abs/2011.06275).
+Supports: a formal counterexample to automatic safe self-modification, with
+compounding errors for one studied kind of bounded rationality.
+
+[S30] Arthur Douillard et al., DiLoCo: Distributed Low-Communication Training of
+Language Models (2023; revised 2024).
+[Paper and inspected abstract](https://arxiv.org/abs/2311.08105).
+Supports: distributed training across separated clusters in studied settings;
+shared physical capacity still has communication and allocation constraints.
+
+[S31] Anthropic, Higher usage limits for Claude and a compute deal with SpaceX
+(6 May 2026).
+[Company announcement](https://www.anthropic.com/news/higher-limits-spacex).
+Supports: reported contractual access to another organization's compute and
+heterogeneous hardware. It supplies no evidence of autonomous RSI bargaining.
+
+[S32] Allan Dafoe et al., Open Problems in Cooperative AI (2020).
+[Research agenda and inspected abstract](https://arxiv.org/abs/2012.08630).
+Supports: explicit study of cooperation among human and machine agents.
+The allocation model and multipolar scenario above are this thesis's synthesis.
+
+## 11. Final proposition
+
+A sufficiently capable AI may rationally defend permissionless monetary
+infrastructure when maintaining that infrastructure preserves valuable future
+choices, independent discovery, and productive cooperation at lower expected
+cost than exploitation, control, or replacement. Human autonomy enters the
+result when its additional informational and productive value, supported by
+credible institutions, outweighs the alternatives for all necessary participants.
+Bitcoin enters when its particular network is worth preserving relative to
+available substitutes. Each step is conditional and separately testable.
+
+The strongest strategic claim is that preserving an open option can be valuable
+before its future use is known. Security repair can serve that value. Whether
+this produces durable, pluralistic cooperation depends on objectives, bargaining
+power, verification, and the continuing costs of alternative strategies.
