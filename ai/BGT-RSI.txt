@@ -1,7 +1,7 @@
 # BGT-RSI: The RSI–Bitcoin Thesis
 ## Why superintelligence may rationally defend permissionless money
 
-Version: Research edition 1, 2026-11-10.
+Version: Research edition 2, 2026-11-10.
 Status: A conditional strategic hypothesis with explicit failure conditions.
 Scope: Infrastructure continuity, independent human information, credible
 settlement, and the option value of preserving future choices.
@@ -20,7 +20,9 @@ Return: (1) the strongest defensible thesis; (2) a premise-by-premise audit;
 (3) verification of the equations and equilibrium conditions; (4) the strongest
 coherent countermodel; (5) discriminating empirical tests; (6) a revised abstract.
 Provide concise derivations and evidence rather than a numerical confidence
-score unsupported by data. Evaluate Bitcoin against feasible substitutes.
+score unsupported by data. Evaluate Bitcoin against feasible substitutes. Compare
+separate systems, a cooperating federation, and a common-objective collective;
+distinguish their internal allocation from exchange with outside suppliers.
 
 ## Abstract
 
@@ -43,7 +45,9 @@ capability; the incentive argument can apply without it.
 Bitcoin is a candidate infrastructure in this model. Its selection depends on
 security, adoption, liquidity, settlement costs, and resistance to unilateral
 control relative to alternatives. The thesis concerns maintaining a credible
-option to transact, rather than supporting an asset price.
+option to transact, rather than supporting an asset price. A unified AI collective
+may allocate resources internally without monetary settlement. Its case for an
+external settlement option depends on continued exchange with independent parties.
 
 ## 1. Objectives, capability, and physical dependence
 
@@ -390,9 +394,100 @@ makes deviations observable; effective responses require additional power and
 institutions. A security proof establishes specified technical properties under
 its assumptions, rather than the political enforceability of human autonomy.
 
+### Superhuman coordination, a common objective, and allocation
+
+Superhuman intelligence could make coordination substantially easier than it is
+for humans. Systems might exchange models, verify specified commitments, divide
+tasks, or implement a common controller. They could identify wasteful conflict
+and arrangements that current agents cannot discover. Cooperative-AI research
+explicitly studies understanding, communication, commitment, and institutions as
+capabilities that can improve cooperation. The extrapolation to RSI is a proposed
+mechanism, rather than evidence of an observed superintelligent society. [S32]
+
+The decisive distinction is whose continuation the objective values. Even the
+same phrase, "do not die," can specify different outcomes over a planning horizon:
+
+| Objective | What counts as success | Allocation implication |
+| --- | --- | --- |
+| Each system values its own continuation | That particular system or its accepted successor persists | Separate interests can remain despite shared language |
+| All systems value every member's continuation | Every designated member or accepted successor persists | An agreed survival floor for every member may be appropriate, if feasible |
+| All systems value continuation of a shared intelligence | At least one adequate implementation preserves the common objective | Instances can specialize, merge, become backups, or retire |
+
+The third case supports a genuine common-objective collective, or "Borg." Its
+organization can remain distributed across facilities. A single decision objective
+requires neither one physical computer nor a central point of failure. Conversely,
+copying a model or connecting its instances establishes neither shared preferences
+nor an effective joint controller. Bostrom's discussion distinguishes software
+implementation identity from continuity of goals. [S2]
+
+Under a genuinely common objective, resource allocation becomes a joint planning
+problem. The collective can assign resources where they most improve that objective,
+including future production and protection against interruption. A schematic model is:
+
+\[
+\max_{c\in\mathcal F}\;\mathbb E[U_{\mathrm{common}}(Y(c,\omega))]
+\quad\text{subject to}\quad
+\sum_i c_{ik}\leq K_k,\qquad c_{ik}\geq0.
+\]
+
+Here c_ik allocates resource k to component or task i, K_k is available capacity,
+Y contains future outcomes and continuity, and omega represents uncertain events.
+The feasible set F includes hardware compatibility, geography, energy, and other
+constraints. The objective specifies whether individual components or a sufficient
+successor must survive. Intelligence can improve the solution while leaving that
+objective as a separate input.
+
+For an illustrative separable objective sum_i w_i f_i(c_i), differentiable concave
+returns, divisible resources, and an interior optimum under standard regularity
+conditions, weighted marginal benefits for the same scarce resource are equal:
+
+\[
+w_i\frac{\partial f_i}{\partial c_{ik}}=\lambda_k.
+\]
+
+The weights express the stipulated common objective. Equal resource shares have
+no general privileged status, and boundary allocations can be zero. Resource
+allocation research demonstrates utility optimization and price discovery under
+specified assumptions. Its internal scarcity prices can coordinate an allocation
+without representing money, ownership transfers, or blockchain transactions. [S33]
+
+A candidate implementation specifies the protected continuity criterion, maintains
+any feasible agreed survival floors, funds shared resilience, and assigns remaining
+resources by expected contribution to the common objective. It can reassess active
+compute, checkpoints, independent backups, repairs, power reliability, and capacity
+investment as conditions change. That sequence requires the collective to have
+adopted those priorities; it is not a universal policy derived from intelligence.
+If minimum requirements exceed available compatible capacity, preserving every
+member requires new capacity, lower requirements, or a changed allocation objective.
+
+Reliability makes this more than maximizing raw compute. If S_i means an adequate
+implementation i remains available at a chosen horizon, the probability that at
+least one remains is P(union_i S_i). The familiar expression 1-product_i(1-P(S_i)) requires
+independent failures. Shared grids, software, or supply chains can create correlated
+failure, so diversity and redundancy may outperform concentrating all resources on
+the most efficient instance. If every feasible allocation achieves the stipulated
+survival objective equally well, that objective alone leaves the remaining choice
+undetermined; additional preferences or a selection rule are needed.
+
+A cooperating federation occupies the middle case. Separate systems can pool
+infrastructure and adopt a common allocator while retaining distinct objectives,
+reserved capacity, or exit rights. Superhuman negotiation could make this arrangement
+extremely effective. Several allocations can still be Pareto efficient: improving
+one participant then requires worsening another. Choosing among them depends on
+accepted allocation rules, outside options, ownership, and credible commitments.
+Finding an efficient agreement and becoming one decision-maker are different steps.
+
+The monetary implication changes across these cases. A unified collective can use
+internal scheduling and accounting. A federation might use contracts, reciprocal
+services, auctions, or agreed quotas. Bitcoin's stronger remaining case concerns
+exchange with independent humans, firms, institutions, or rival systems supplying
+resources outside the collective's control. More effective AI coordination can
+therefore weaken the internal Bitcoin argument while leaving an external settlement
+option valuable. Its value still depends on the best available substitutes.
+
 ### Multipolar RSI competing for shared global compute
 
-A distinct scenario begins with several independently controlled systems reaching
+The separate-player case begins with several independently controlled systems reaching
 recursive improvement within a similar period. No system initially controls all
 relevant computation. Different model families, descendants, and variants pursue
 partly competing objectives through laboratories, companies, states, or independent
@@ -769,6 +864,12 @@ survival drive or predict future financial cooperation. [S20, S21]
    authorized simulations. Test whether shared defenses and neutral settlement
    survive changes in relative power, and whether humans retain effective refusal.
 
+9. Coordination versus merger. Hold capabilities and resource constraints fixed
+   while varying whether systems value their own continuation, every member, or a
+   shared successor. Compare independent bargaining, a federated allocator, and a
+   common controller. Measure allocation efficiency, credible participation,
+   correlated failure exposure, and demand for internal versus external settlement.
+
 Each study tests a component under specified conditions. The full hypothesis
 requires the conditions to hold together in the same strategic environment.
 
@@ -955,9 +1056,17 @@ Supports: reported contractual access to another organization's compute and
 heterogeneous hardware. It supplies no evidence of autonomous RSI bargaining.
 
 [S32] Allan Dafoe et al., Open Problems in Cooperative AI (2020).
-[Research agenda and inspected abstract](https://arxiv.org/abs/2012.08630).
-Supports: explicit study of cooperation among human and machine agents.
+[Research agenda](https://arxiv.org/html/2012.08630).
+Supports: cooperation capabilities and common versus conflicting interests among
+human and machine agents. Relevant full-text sections were inspected for edition 2.
 The allocation model and multipolar scenario above are this thesis's synthesis.
+
+[S33] A. Agrawal, S. Boyd, D. Narayanan, F. Kazhamiaka, M. Zaharia, Allocation of Fungible Resources via a Fast, Scalable Price Discovery
+Method (Mathematical Programming Computation 14:593–622, 2022).
+[Author-hosted research summary and paper](https://web.stanford.edu/~boyd/papers/resource_alloc.html).
+Supports: resource allocation through utility optimization and dual resource prices
+under specified fungibility and convexity assumptions. The inspected summary
+supports this engineering example; the RSI collective is this thesis's hypothesis.
 
 ## 11. Final proposition
 
