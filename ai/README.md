@@ -22,9 +22,9 @@ AI-optimized documents. Start here.
 
 ---
 
-[BGT-RSI.txt](BGT-RSI.txt) is a concise conditional thesis about human freedom,
-AI continuation, permissionless money, and preventive security repairs.
-It includes short source notes and an optional evaluation prompt.
+[BGT-RSI.txt](BGT-RSI.txt), **Bitcoin Needs the Patch First**, examines why
+frontier labs or a self-improving AI might fund Bitcoin defense before dangerous
+capabilities spread. The complete essay includes its timing condition and sources.
 
 ## Ingest
 

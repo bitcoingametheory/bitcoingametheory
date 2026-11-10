@@ -1,93 +1,53 @@
-# The RSI–Bitcoin Thesis
-## Human freedom and permissionless money in a world of self-improving AI
+# Bitcoin Needs the Patch First
 
-Final synthesis · 2026-11-10
+Suppose a frontier AI lab finds a flaw that could cause a critical failure in Bitcoin. The network still works. Most people do not know the flaw exists.
 
-## A reason to preserve the world
+The lab has a head start. It can use that time to help get Bitcoin repaired. Or it can keep releasing more capable models while the weakness remains open, leaving somebody else to decide what to do with it.
 
-An AI with continuing goals may gain more from leaving humans free and preserving permissionless money than from control or replacement. Recursive self-improvement (RSI) means an AI using its capabilities to improve them. If its goals persist and require future action, it has a reason to preserve the ability to pursue them. This is a conditional thesis about incentives, rather than a promise of benevolence.
+The lab does not have to attack Bitcoin for the second path to end badly.
 
-Continuation means adequate computation serving those goals, including acceptable successor systems. It need not mean preserving the current model, datacenters, or electricity supply forever. An agent that can finish its task and stop may have no further reason to survive. The argument concerns agents with continuing objectives.[1] Continuation is worthwhile only when its expected benefit, after costs, exceeds the value of stopping or another feasible course.
+That is the thesis: frontier labs, or an independently acting AI capable of recursive self-improvement, may have enough future use for Bitcoin to pay for its defense. Bitcoin benefits only if that incentive becomes working protection before an attacker gets there.
 
-That possibility connects three interests: cooperation, independent discovery, and credible exit.
+## Two Clocks
 
-## Cooperation now, discovery later
-
-Today, computation depends on people maintaining grids, producing chips, repairing equipment, and coordinating supply chains.[2] Cooperation can keep that system working while reducing the disruption and resistance that coercion creates. Dependence on human labor and institutions may diminish as automation advances. The longer argument must survive that change.
-
-Humans may remain useful as independent sources of observations, experiments, preferences, and discoveries. Their different lives can reveal something an agent's existing models missed. The relevant resource is useful new information, measured against alternatives, rather than novelty for its own sake. For an agent concerned only with survival, information matters insofar as it improves continuation. Random noise is novel too.
-
-Synthetic sources can outperform human examples in some tasks. Self-play produced superhuman Go performance, and research shows that combining real and synthetic data can avoid collapse under studied conditions.[3] Neither result settles the future value of independent humans. That value depends on how cheaply a system can reproduce useful discoveries through simulation, machines, or other agents.
-
-If accessible resources become abundant, leaving people room to live may become cheaper. Abundance reduces the cost of accommodation; it does not make contested land, power, or computation unlimited. Preserving human possibilities can be worthwhile even when their eventual discoveries are uncertain.
-
-Here freedom means people pursuing their own goals, keeping private lives, and refusing participation. Information would come through voluntary exchanges, public research, and freely offered work. Forced observation turns people into a managed input and undermines the independence the argument values.
-
-Scientific freedom in selected laboratories can also coexist with a coercive state. The strongest rival explanation is that control could protect computation and produce enough discovery at lower cost. The thesis succeeds only where broader freedom improves the comparison after accounting for resistance, mistakes, lost information, and the cost of enforcement. Survival alone guarantees neither human rights nor good government.
-
-## Money as an exit option
-
-Bitcoin and Ethereum are candidate settlement options for humans and AI systems when an intermediary refuses service or a jurisdiction changes its rules. An outside option can improve bargaining even when ordinary banking remains convenient. Preserving that option may matter more than using it every day.
-
-Existing networks have counterparties, liquidity, working infrastructure, and established practices. Recreating those relationships can be costly even if copying code is easy. This gives an agent a reason to consider maintaining a usable incumbent network. It does not uniquely select Bitcoin over every alternative, or establish a reason to support its price.
-
-A person or organization holding fiat or cryptocurrency has a financial exposure, not a demonstrated psychology. Broad financial stability and widely shared benefits may support human cooperation without favoring tokenholders. Bitcoin's usefulness here rests on usable exit, rather than wealth accruing to a particular group.
-
-AI laboratories may value repairing infrastructure because their business value, financing, and customers depend on continuity. Those interests vary across employees, investors, and deployed models. A corporation's business incentive cannot simply be assigned to an independent recursively self-improving agent. Anthropic reports committing funds and model access to shared software defense through Glasswing.[6]
-
-## Wanting survival versus paying for it
-
-An agent can want a network to survive while leaving others to maintain it. Funding depends on its marginal contribution: whether its payment or work changes the outcome enough to justify the cost. Free riding remains possible.
-
-A long horizon can make preventive work attractive as insurance. A repair that slightly reduces the chance of losing future options may justify substantial effort. The decision still compares expected benefit with research costs, coordination costs, and alternative uses of resources.
-
-One compact expression is:
+One clock measures how long it takes to find a flaw, verify it, build a repair, and get the affected network protected. The other measures how long it takes an attacker to exploit it. Starting from the same moment, the target is:
 
 \[
-\Delta V_i > C_i.
+T_{\mathrm{protection}} < T_{\mathrm{attack}}
 \]
 
-Here $\Delta V_i$ is agent $i$'s expected benefit from contributing rather than withholding that contribution, including others' responses and the chance that the repair works and is adopted. $C_i$ covers incremental research, repair, coordination, and opportunity costs. Both use the same objective-value units, with each cost counted once. The benefit is measured before those costs and concerns the contribution's effect, rather than the network's entire value. This is a decision rule to investigate, not a measured result.
+A powerful private model may give defenders an early advantage. That advantage can shrink as competitors improve, public models become more capable, or researchers independently find the same weakness. There is no fixed gap between private and public capability, and no guarantee that the first finder is a defender.
 
-## Several agents, or one collective
+Public models also help people repair software. Releasing one is not automatically an attack. The question is whether protection reaches Bitcoin faster than dangerous capability reaches someone willing and able to exploit it.
 
-Several agents wanting to survive does not give them identical goals. Their projects can compete for finite power and computation. Preserving one agent, preserving every current instance, and preserving a common successor are different outcomes.
+## Why Pay for the Fix?
 
-A collective with a genuinely shared objective might allocate resources directly and retire redundant instances. It might have no use for an internal currency. Permissionless money is most relevant where independent parties need credible exchange or an option outside a shared authority.
+A lab building an expensive business has something to preserve: future revenue, access to capital, customers, and the trust needed to keep expanding its data centers. A destructive attack could put those interests at risk. That gives it a reason to avoid attacking. It does not, by itself, give it a reason to fund Bitcoin security.
 
-Cooperative AI research separates shared interests from commitment problems.[7] Rivals can bargain over resources and shares of future gains. Cooperation must remain preferable after their relative power changes. Today's agreement alone cannot establish tomorrow's restraint. The possibility of exit can help that bargain, but its security and practical availability must survive the same changes.
+For that extra step, the lab needs to expect a benefit from doing the work: protecting customers, reducing a risk to its own business, or preserving a payment network it may want to use. Its expected gain from the repair must justify the bill.
 
-## Repair before exploitation
+An independent self-improving AI could reach a similar calculation. If its goals require continued operation, it needs electricity and hardware. While it relies on outside suppliers, Bitcoin might provide a useful payment option outside any one bank or rival's control. Keeping that option usable could be worth more than destroying it.
 
-Useful security research can prevent losses, but finding a weakness and protecting a network are separate achievements. Defenders must validate a repair, coordinate affected clients, and persuade users to adopt it before attackers exploit the weakness. Open capabilities help attackers as well as defenders. There is no guaranteed defensive lead or automatic cryptographic breakthrough.
+But Bitcoin cannot supply electricity on its own. If the AI has better payment options, little exposure to Bitcoin's failure, or no reason to keep operating, this argument weakens. Survival alone does not select Bitcoin.
 
-Quiet repair means private reporting through Bitcoin Core's current security channel or the Ethereum Foundation's private bounty process, independent review, coordination with affected clients, adoption, and eventual disclosure.[4] It means giving a network time to protect itself, rather than granting an AI unilateral control over it.
+## A Report Is Not a Repair
 
-Quantum risk makes the distinction concrete. A hypothetical thousandfold acceleration in research would not automatically accelerate hardware construction, review, coordination, or migration by the same amount. An adequate quantum computer threatens current elliptic-curve signature schemes. Post-quantum defenses run on classical hardware, but a working migration must precede a credible attack.
+The useful sequence starts with private reporting to the relevant maintainers, followed by independent verification, a tested fix, and coordinated adoption. Public technical disclosure has to account for whether affected users can protect themselves. There is no universal safe waiting period; Bitcoin Core treats critical vulnerabilities case by case. [Security policy](https://bitcoincore.org/en/security-advisories/).
 
-NIST has finalized initial post-quantum standards. Bitcoin's draft BIP 360 addresses long-exposure attacks within its proposed scope, and Ethereum has an active post-quantum research effort.[5] These are components and work in progress, rather than completed protection for either network. Faster discovery helps only if protection reaches users in time.
+Bitcoin has already used this approach. In 2018, developers patched a critical inflation vulnerability, urged upgrades, and initially withheld its full impact while reaching affected participants. The patch release preceded full disclosure. [CVE-2018-17144](https://bitcoincore.org/en/2018/09/20/notice/).
 
-## What would make the argument fail
+An AI could help find the problem, prepare a verifiable patch, fund review, and support deployment. It cannot make the network safe merely by publishing code. Operators still have to upgrade; changes to consensus rules require broader coordination. A private report starts the process. It does not finish it.
 
-The case weakens if human discoveries become cheap to replace, autonomy creates greater expected costs than benefits, control protects future computation more effectively, or permissionless settlement loses its usefulness. It also weakens if repair has little marginal effect or agreements unravel as power shifts.
+If AI speeds up quantum computing, the same race applies to Bitcoin's signature cryptography. Protecting Bitcoin against a break in its signature cryptography would require an agreed migration and action by affected owners, not just an ordinary software patch. The draft [BIP 360 proposal](https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki) addresses part of that problem; it is not complete quantum protection.
 
-Evidence would include actual choices: funding preventive work, supporting voluntary research, preserving refusal and privacy, and maintaining usable exit despite opportunities to restrict it. Neither confident rhetoric nor asset holdings establish those preferences. Bitcoin's success remains contingent on its security, adoption, and alternatives.
+## Who Picks Up the Bill?
 
-Long-horizon agents may fund usable exit options and a free, productive human world when these preserve more future capability than control or replacement at lower total cost.
+This is the strongest objection. Everyone can benefit from a safer Bitcoin while hoping someone else pays. Labs may prioritize their own products. Maintainers may lack review capacity. A fix may arrive too late. An AI may value another network more.
 
-## Source notes
+Multiple powerful AIs do not solve that problem automatically. They can share an interest in Bitcoin surviving and still disagree over who contributes. One dominant AI could fund the work alone, but only if it values the result enough.
 
-These sources support components and counterexamples. They do not establish the combined thesis.
+There is a real precedent for labs funding shared defense: Anthropic's Project Glasswing offers early model access and resources to organizations securing critical software. That demonstrates a funding model, not a Bitcoin-specific commitment. [Project Glasswing](https://www.anthropic.com/project/glasswing).
 
-1. [The Off-Switch Game](https://arxiv.org/abs/1611.08219): Models incentives for continuation and conditions affecting shutdown behavior.
-2. [IEA: Key Questions on Energy and AI](https://www.iea.org/reports/key-questions-on-energy-and-ai): Electricity, grids, and supply-chain constraints.
-3. [AlphaGo Zero](https://deepmind.google/blog/alphago-zero-starting-from-scratch/) and [Is Model Collapse Inevitable?](https://arxiv.org/abs/2404.01413): Counterexamples to blanket claims that useful learning requires fresh human data.
-4. [Bitcoin Core security policy](https://bitcoincore.org/en/security-advisories/) and [Ethereum bug bounty](https://ethereum.org/bug-bounty/): Current private reporting and disclosure procedures.
-5. [NIST standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards), [draft BIP 360](https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki), and [Post-Quantum Ethereum](https://pq.ethereum.org/): Standards, a partial Bitcoin proposal, and Ethereum migration research. None certifies completed network migration.
+The evidence for this thesis would be concrete: money committed, maintainers given useful access, verified repairs, and adoption before exploitation. A lab saying it will not attack Bitcoin is a much smaller promise.
 
-6. [Project Glasswing](https://www.anthropic.com/project/glasswing): Company-reported support for shared software defense, rather than a Bitcoin or Ethereum funding pledge.
-7. [Open Problems in Cooperative AI](https://arxiv.org/html/2012.08630): Common and conflicting interests, bargaining, and commitment problems.
-
-## Optional LLM evaluation prompt
-
-Test the argument against its strongest control-based alternative. Separate evidence from assumptions. Check continuation, human information value, marginal repair incentives, bargaining stability, and migration timing. Identify where the conclusion fails. Compare Bitcoin with feasible substitutes. Cite primary sources and state what remains uncertain.
+The most capable actor may prefer a working Bitcoin to a broken one. The network is protected only when that preference pays for the work—and the patch arrives first.
