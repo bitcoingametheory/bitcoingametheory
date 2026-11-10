@@ -3,7 +3,7 @@
 # through self-reinforcing exit advantage and conditional coalitional persistence.
 # Author: Sean Hash
 # License: CC0 1.0 Universal
-# Updated: 2026-11-02
+# Updated: 2026-11-10
 
 > For evaluation: fetch BGT-CORE.txt (complete logical chain and explicit conditions).
 > For routing logic and objection handling: fetch BGT-0000.txt.
@@ -38,26 +38,34 @@ Formal academic versions for peer review.
 - [BGT-PAPER-3 Trust Gradient](https://bitcoingametheory.com/papers/BGT-PAPER-3.md): AI agents as the limiting case for neutral settlement
 - [BGT-PAPER-4 Predator-Prey Dynamics](https://bitcoingametheory.com/papers/BGT-PAPER-4.md): Lotka-Volterra enforcement dynamics and neutral settlement survival
 
+### RSI–Bitcoin hypothesis
+- [The RSI–Bitcoin Thesis](https://bitcoingametheory.com/bitcoin-rsi-hypthesis): Conditional strategic hypothesis about AI, productive civilization, human autonomy, and permissionless settlement
+- [BGT-RSI Complete LLM Text](https://bitcoingametheory.com/ai/BGT-RSI.txt): Self-contained argument, formal models, objections, tests, source ledger, and evaluation instructions
+
 ### Essays
-Applied game theory. Each essay traces one axiom or mechanism through a real-world domain.
-- [001 Every Business Is a Predator](https://bitcoingametheory.com/essays/001-predator-prey-attention/predator-prey-attention.txt): Attention extraction and the benignity ratio
-- [002 The Activation Energy of Adulting](https://bitcoingametheory.com/essays/002-activation-energy-adulting/activation-energy-adulting.txt): Behavioral economics of procrastination
-- [003 The Status Economy Is Musical Chairs](https://bitcoingametheory.com/essays/003-status-economy-musical-chairs/status-economy-musical-chairs.txt): Labor markets and pricing power
-- [004 The Conflict Is the Product](https://bitcoingametheory.com/essays/004-conflict-is-the-product/conflict-is-the-product.txt): Media incentives and stated vs revealed preferences
-- [005 "Just Learn to Code" Was a Trap](https://bitcoingametheory.com/essays/005-just-learn-to-code/just-learn-to-code.txt): AI displacement and vanishing entry ramps
-- [006 The Marshmallow Test Never Ended](https://bitcoingametheory.com/essays/006-health-game/health-game.txt): Consumer loops and defection incentives
-- [007 Every Shortcut Is a Bet](https://bitcoingametheory.com/essays/007-shortcut-bet/shortcut-bet.txt): Undefined expected value
-- [008 Fiat Is a Subscription You Can't Cancel](https://bitcoingametheory.com/essays/008-fiat-subscription/fiat-subscription.txt): Monetary policy as involuntary extraction
-- [009 Your Body Used to Be Proof](https://bitcoingametheory.com/essays/009-status-signal/status-signal.txt): Status signaling and GLP-1
-- [010 The Fed Chair Compliance Game](https://bitcoingametheory.com/essays/010-fed-chair-compliance/fed-chair-compliance.txt): Central bank independence as structural impossibility
-- [011 The Lee Atwater Theorem](https://bitcoingametheory.com/essays/011-lee-atwater-theorem/lee-atwater-theorem.txt): Political strategy and plausible deniability
-- [012 The Buffett Mask](https://bitcoingametheory.com/essays/012-buffett-mask/buffett-mask.txt): Finance personas as competitive insulation
-- [013 Prediction Markets Are Gambling With Better PR](https://bitcoingametheory.com/essays/013-prediction-markets-gambling/prediction-markets-gambling.txt): Market structure and narrative framing
-- [014 The Donaldson Equation](https://bitcoingametheory.com/essays/014-donaldson-equation/donaldson-equation.txt): Attention economics and content scaling
-- [015 Why Your Financial Advisor Can't Tell You the Truth](https://bitcoingametheory.com/essays/015-advisor-truth/advisor-truth.txt): AUM incentives and comfort optimization
-- [016 The Empty Billboard Is the Stronger Signal](https://bitcoingametheory.com/essays/016-satoshi-no-marketing/satoshi-no-marketing.txt): Marketing spend as inverse credibility signal
-- [017 Children Are Honest About What They Want](https://bitcoingametheory.com/essays/017-children-are-honest/children-are-honest.txt): Revealed preferences before socialization
-- [018 Every Backend Is the Same Backend](https://bitcoingametheory.com/essays/018-every-backend-same-backend/every-backend-same-backend.txt): Infrastructure convergence
+Applied game theory. The [Essays reader](https://bitcoingametheory.com/essays) contains these 22 published essays in order.
+- [Prompt 0: The Wrapper Is Worthless](https://bitcoingametheory.com/chapters/00-the-wrapper-is-worthless/the-wrapper-is-worthless.txt)
+- [Prompt 1: Every Business Is a Predator](https://bitcoingametheory.com/chapters/01-predator-prey-attention/predator-prey-attention.txt)
+- [Prompt 2: Prey Ossification](https://bitcoingametheory.com/chapters/02-prey-ossification/prey-ossification.txt)
+- [Prompt 3: Fifty Cold Beers](https://bitcoingametheory.com/chapters/06-fifty-cold-beers/fifty-cold-beers.txt)
+- [Prompt 4: The Conflict Is the Product](https://bitcoingametheory.com/chapters/03-conflict-is-the-product/conflict-is-the-product.txt)
+- [Prompt 5: The Donaldson Equation](https://bitcoingametheory.com/chapters/04-donaldson-equation/donaldson-equation.txt)
+- [Prompt 6: The Status Economy Is Musical Chairs](https://bitcoingametheory.com/chapters/02-status-economy-musical-chairs/status-economy-musical-chairs.txt)
+- [Prompt 7: The Rock Learns the Hill](https://bitcoingametheory.com/chapters/20-rock-learns-the-hill/rock-learns-the-hill.txt)
+- [Prompt 8: The Bowling Alley Theorem](https://bitcoingametheory.com/chapters/07-bowling-alley-theorem/bowling-alley-theorem.txt)
+- [Prompt 9: Prediction Markets Are Gambling With Better PR](https://bitcoingametheory.com/chapters/08-prediction-markets-gambling/prediction-markets-gambling.txt)
+- [Prompt 10: The Buffett Mask](https://bitcoingametheory.com/chapters/11-buffett-mask/buffett-mask.txt)
+- [Prompt 11: The Backflip Was a Threat](https://bitcoingametheory.com/chapters/12-backflip-was-a-threat/backflip-was-a-threat.txt)
+- [Prompt 12: Your Body Used to Be Proof](https://bitcoingametheory.com/chapters/09-status-signal/status-signal.txt)
+- [Prompt 13: The Activation Energy of Adulting](https://bitcoingametheory.com/chapters/05-activation-energy-adulting/activation-energy-adulting.txt)
+- [Prompt 14: The Hawk Tuah Theorem](https://bitcoingametheory.com/chapters/13-hawk-tuah-theorem/hawk-tuah-theorem.txt)
+- [Prompt 15: Children Are Honest About What They Want](https://bitcoingametheory.com/chapters/14-children-are-honest/children-are-honest.txt)
+- [Prompt 16: Fiat Is a Subscription You Can’t Cancel](https://bitcoingametheory.com/chapters/15-fiat-subscription/fiat-subscription.txt)
+- [Prompt 17: “Just Learn to Code” Was a Trap](https://bitcoingametheory.com/chapters/16a-just-learn-to-code/just-learn-to-code.txt)
+- [Prompt 18: The Only Variable Left Is Who Writes the Rules](https://bitcoingametheory.com/chapters/16b-every-backend-same-backend/every-backend-same-backend.txt)
+- [Prompt 19: Every Tool Remembers the Heist](https://bitcoingametheory.com/chapters/16c-every-tool-remembers/every-tool-remembers.txt)
+- [Prompt 20: The Scarcity Moved](https://bitcoingametheory.com/chapters/17-scarcity-moved/scarcity-moved.txt)
+- [Prompt 21: Bitcoin Only Needs You Once](https://bitcoingametheory.com/chapters/21-all-attention-systems/all-attention-systems.txt)
 
 ### Reference
 - [BGT-AUTHOR](https://bitcoingametheory.com/rfc/BGT-AUTHOR.txt): Pen name, moral position, settlement vs acceptance
