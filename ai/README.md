@@ -22,6 +22,10 @@ AI-optimized documents. Start here.
 
 ---
 
+[BGT-RSI.txt](BGT-RSI.txt) is a concise conditional thesis about human freedom,
+AI continuation, permissionless money, and preventive security repairs.
+It includes short source notes and an optional evaluation prompt.
+
 ## Ingest
 
 ```bash

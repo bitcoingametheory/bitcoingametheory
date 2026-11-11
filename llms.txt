@@ -39,8 +39,8 @@ Formal academic versions for peer review.
 - [BGT-PAPER-4 Predator-Prey Dynamics](https://bitcoingametheory.com/papers/BGT-PAPER-4.md): Lotka-Volterra enforcement dynamics and neutral settlement survival
 
 ### RSI–Bitcoin hypothesis
-- [The RSI–Bitcoin Thesis](https://bitcoingametheory.com/bitcoin-rsi-hypthesis): Conditional strategic hypothesis about AI, productive civilization, human autonomy, and permissionless settlement
-- [BGT-RSI Complete LLM Text](https://bitcoingametheory.com/ai/BGT-RSI.txt): Self-contained argument, formal models, objections, tests, source ledger, and evaluation instructions
+- [The RSI–Bitcoin Thesis](https://bitcoingametheory.com/bitcoin-rsi-hypthesis): Concise conditional thesis about human freedom, AI continuation, usable exit, and preventive repair
+- [BGT-RSI Complete LLM Text](https://bitcoingametheory.com/ai/BGT-RSI.txt): Complete concise essay, one decision rule, short source notes, and an optional evaluation prompt
 
 ### Essays
 Applied game theory. The [Essays reader](https://bitcoingametheory.com/essays) contains these 22 published essays in order.
