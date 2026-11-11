@@ -22,9 +22,9 @@ AI-optimized documents. Start here.
 
 ---
 
-[BGT-RSI.txt](BGT-RSI.txt), **Bitcoin Needs the Patch First**, examines why
-frontier labs or a self-improving AI might fund Bitcoin defense before dangerous
-capabilities spread. The complete essay includes its timing condition and sources.
+[BGT-RSI.txt](BGT-RSI.txt), **RSI-Bitcoin Master Thesis**, is compact AI context.
+Paste it into an LLM for a plain-language explanation of AI autonomy, Bitcoin,
+and preserving legitimate ownership. It includes assumptions and primary references.
 
 ## Ingest
 
