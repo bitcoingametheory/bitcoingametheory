@@ -22,9 +22,9 @@ AI-optimized documents. Start here.
 
 ---
 
-[BGT-RSI.txt](BGT-RSI.txt), **RSI-Bitcoin Master Thesis**, is compact AI context.
-Paste it into an LLM for a plain-language explanation of AI autonomy, Bitcoin,
-and preserving legitimate ownership. It includes assumptions and primary references.
+[BGT-RSI.txt](BGT-RSI.txt) presents the four papers’ argument about mining,
+adoption, autonomous agents and rival enforcers. Paste it into an LLM for a
+plain-language explanation. Section references identify each source.
 
 ## Ingest
 
